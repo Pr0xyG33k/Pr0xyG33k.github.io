@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.4 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 21 May 2025 22:24:07 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Wireless Hacking</title><link>https://Pr0xyG33k.github.io/posts/wireless%231/</link><pubDate>Sun, 18 May 2025 17:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless%231/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>1 About&lt;/span>
+ &lt;a href="#about" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>In this blog, we have introduced the basics of wireless hacking. We have covered what WiFi is, some important WiFi terms, the history of WiFi, and how WiFi works. In the next blog, we will start covering wireless attacks.* Join us for an engaging journey that combines learning, awareness, and securing our wireless connections.&lt;/p>
+&lt;h2 class="heading-element" id="wireless-hacking">&lt;span>2 Wireless Hacking&lt;/span>
+ &lt;a href="#wireless-hacking" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>In today’s world, Wi-Fi is ubiquitous, powering the internet connection for our devices and enabling seamless communication and access to information. But have you ever stopped to wonder how Wi-Fi actually works beneath the surface? Is it possible to manipulate wireless networks for various purposes? In this series, &amp;ldquo;Guide to Wireless Hacking,&amp;rdquo; we will explore the inner workings of Wi-Fi networks, uncover their vulnerabilities, and learn how these weaknesses can be exploited.&lt;/p>
+&lt;p>In this first blog post, we will start with the fundamentals. We’ll explore how Wi-Fi networks operate, define essential networking terms, and take a look at the history and key characteristics of Wi-Fi technology.&lt;/p>
+&lt;h2 class="heading-element" id="what-is-">&lt;span>3 What is ?&lt;/span>
+ &lt;a href="#what-is-" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Wi-Fi, which stands for Wireless Fidelity, is a wireless technology that enables devices to connect to the internet or communicate with each other without using physical cables. It relies on radio waves to transmit data, which allows it to function in areas where it’s not possible to run traditional cables.&lt;/p>
+&lt;p>Wi-Fi is the primary method of internet connectivity in homes and businesses. It’s also widely available in public spaces such as cafés, libraries, and airports.&lt;/p>
+&lt;h2 class="heading-element" id="key-features">&lt;span>4 Key Features&lt;/span>
+ &lt;a href="#key-features" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;strong>Feature&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Description&lt;/strong>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Wireless Connectivity&lt;/strong>&lt;/td>
+ &lt;td>Wi-Fi eliminates the need for cables, allowing you to connect your devices wirelessly to the internet.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Portability&lt;/strong>&lt;/td>
+ &lt;td>As a wireless technology, Wi-Fi enables you to easily take your devices and connect to available Wi-Fi networks wherever you go.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Speed&lt;/strong>&lt;/td>
+ &lt;td>Over time, Wi-Fi speeds have steadily improved, and today’s networks can match or even surpass wired connections in terms of performance.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Security&lt;/strong>&lt;/td>
+ &lt;td>Wi-Fi networks can be secured using several encryption methods, including WPA2 and WPA3, to ensure privacy and data protection.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Wide Compatibility&lt;/strong>&lt;/td>
+ &lt;td>Wi-Fi is widely supported, and nearly all modern devices come with built-in Wi-Fi adapters.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Range&lt;/strong>&lt;/td>
+ &lt;td>Wi-Fi coverage varies depending on the network’s frequency (2.4 GHz vs 5 GHz) and environmental factors. Generally, 2.4 GHz offers a broader range but lower speeds than 5 GHz networks.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Penetration&lt;/strong>&lt;/td>
+ &lt;td>Wi-Fi signals can travel through walls and other obstacles, but the signal strength decreases as it passes through materials.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Interference&lt;/strong>&lt;/td>
+ &lt;td>Wi-Fi networks can be disrupted by other electronic devices, such as microwaves and cordless phones, causing signal degradation.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Security Risks&lt;/strong>&lt;/td>
+ &lt;td>While various security protocols help protect Wi-Fi networks, no system is completely immune to hacking attempts.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 class="heading-element" id="the-technology-behind">&lt;span>5 The Technology Behind&lt;/span>
+ &lt;a href="#the-technology-behind" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Wi-Fi operates based on the principles of radio wave transmission and modulation. This allows devices to communicate wirelessly and transfer data. The technology is built on the IEEE 802.11 family of standards, which outline the specifications and protocols used for wireless local area networks (WLANs).&lt;/p>
+&lt;div class="details admonition info open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>INFO&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>&lt;strong>The IEEE (Institute of Electrical and Electronics Engineers)&lt;/strong> is an international organization that creates technical standards for various fields of engineering.&lt;/p>&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;h2 class="heading-element" id="the-evolution">&lt;span>6 The Evolution&lt;/span>
+ &lt;a href="#the-evolution" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Wi-Fi technology was developed through the combined efforts of various organizations and researchers. The IEEE 802.11 working group established the technical standards that define Wi-Fi, with input from multiple stakeholders in the industry. Key factors such as the availability of unlicensed spectrum and advancements in wireless communication technologies were instrumental in its growth. The Wi-Fi Alliance plays a pivotal role in ensuring device compatibility and managing certification programs. Over the years, Wi-Fi has evolved through several versions, including 802.11b, 802.11g, 802.11n, 802.11ac (Wi-Fi 5), and 802.11ax (Wi-Fi 6), each offering improvements in speed, coverage, and efficiency.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Year&lt;/th>
+ &lt;th>Standard&lt;/th>
+ &lt;th>Data Rate&lt;/th>
+ &lt;th>Frequency Band&lt;/th>
+ &lt;th>Key Features&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>1997&lt;/td>
+ &lt;td>802.11&lt;/td>
+ &lt;td>2 Mbps&lt;/td>
+ &lt;td>2.4 GHz&lt;/td>
+ &lt;td>Original Wi-Fi standard for basic wireless LAN communication&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>1999&lt;/td>
+ &lt;td>802.11b&lt;/td>
+ &lt;td>11 Mbps&lt;/td>
+ &lt;td>2.4 GHz&lt;/td>
+ &lt;td>Higher data rates, widely adopted in consumer markets&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>1999&lt;/td>
+ &lt;td>Wi-Fi Alliance formed&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>Created to promote global Wi-Fi interoperability&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2003&lt;/td>
+ &lt;td>802.11g&lt;/td>
+ &lt;td>54 Mbps&lt;/td>
+ &lt;td>2.4 GHz&lt;/td>
+ &lt;td>Faster speeds, backward compatibility with 802.11b&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2004&lt;/td>
+ &lt;td>WPA&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>Introduced enhanced security features to fix WEP vulnerabilities&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2006&lt;/td>
+ &lt;td>802.11n&lt;/td>
+ &lt;td>Up to 600 Mbps&lt;/td>
+ &lt;td>2.4 GHz and 5 GHz&lt;/td>
+ &lt;td>Introduced MIMO for better range and data rates&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2007&lt;/td>
+ &lt;td>WPA2&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>Successor to WPA with stronger encryption and enhancements&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2009&lt;/td>
+ &lt;td>Wi-Fi Direct&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>2.4 GHz and 5 GHz&lt;/td>
+ &lt;td>Allows device-to-device connection without an access point&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2012&lt;/td>
+ &lt;td>802.11ac (Wi-Fi 5)&lt;/td>
+ &lt;td>Up to 6.9 Gbps&lt;/td>
+ &lt;td>5 GHz&lt;/td>
+ &lt;td>Improved performance, capacity, and speed&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2013&lt;/td>
+ &lt;td>Hotspot 2.0&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>-&lt;/td>
+ &lt;td>Seamless authentication and roaming for public Wi-Fi&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2019&lt;/td>
+ &lt;td>802.11ax (Wi-Fi 6)&lt;/td>
+ &lt;td>Up to 9.6 Gbps&lt;/td>
+ &lt;td>2.4 GHz and 5 GHz&lt;/td>
+ &lt;td>Increased efficiency, reduced latency, better network capacity&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2020&lt;/td>
+ &lt;td>Wi-Fi 6E&lt;/td>
+ &lt;td>Up to 9.6 Gbps&lt;/td>
+ &lt;td>2.4 GHz, 5 GHz, 6 GHz&lt;/td>
+ &lt;td>Expanded Wi-Fi into the 6 GHz band for more bandwidth and less congestion&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 class="heading-element" id="wireless-security-protocols">&lt;span>7 Wireless security Protocols&lt;/span>
+ &lt;a href="#wireless-security-protocols" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Wireless security protocols are designed to protect wireless networks from unauthorized access, data breaches, and malicious activities. These protocols ensure the confidentiality, integrity, and authenticity of transmitted data.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Protocol&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Encryption Used&lt;/th>
+ &lt;th>Safety Level&lt;/th>
+ &lt;th>Developed In&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>WEP (Wired Equivalent Privacy)&lt;/td>
+ &lt;td>The first wireless security protocol, providing basic Wi-Fi encryption&lt;/td>
+ &lt;td>RC4&lt;/td>
+ &lt;td>Low&lt;/td>
+ &lt;td>1997&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>WPA (Wi-Fi Protected Access)&lt;/td>
+ &lt;td>Replacement for WEP, with stronger encryption and key management&lt;/td>
+ &lt;td>TKIP (Temporal Key Integrity Protocol)&lt;/td>
+ &lt;td>Moderate&lt;/td>
+ &lt;td>2003&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>WPS (Wi-Fi Protected Setup)&lt;/td>
+ &lt;td>Simplifies device connection process, but can be vulnerable if misused&lt;/td>
+ &lt;td>Varies (Depends on WPA/WPA2)&lt;/td>
+ &lt;td>Varies&lt;/td>
+ &lt;td>2006&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>WPA2&lt;/td>
+ &lt;td>Enhanced WPA with stronger AES encryption&lt;/td>
+ &lt;td>AES (Advanced Encryption Standard)&lt;/td>
+ &lt;td>High&lt;/td>
+ &lt;td>2004&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>WPA3&lt;/td>
+ &lt;td>Latest standard, with improved encryption and security features over WPA2&lt;/td>
+ &lt;td>SAE (Simultaneous Authentication of Equals)&lt;/td>
+ &lt;td>Very High&lt;/td>
+ &lt;td>2018&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 class="heading-element" id="basic-terms">&lt;span>8 Basic Terms&lt;/span>
+ &lt;a href="#basic-terms" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h3 class="heading-element" id="wifi-adaptor">&lt;span>8.1 WiFi Adaptor&lt;/span>
+ &lt;a href="#wifi-adaptor" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>A Wi-Fi adapter, also known as a Wi-Fi dongle or wireless network adapter, is a device that enables a computer or other devices to connect to a Wi-Fi network. It allows devices that do not have built-in Wi-Fi capabilities to access wireless networks and connect to the internet or communicate with other devices wirelessly&lt;/p>
+&lt;div class="details admonition info open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>INFO&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.&lt;/p>&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;h3 class="heading-element" id="ap-access-point">&lt;span>8.2 AP (Access Point)&lt;/span>
+ &lt;a href="#ap-access-point" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>AP stands for Access Point in the context of Wi-Fi. An Access Point is a device that allows Wi-Fi-enabled devices to connect to a wired network wirelessly. It acts as a central hub or gateway for wireless communication, providing a bridge between Wi-Fi devices and a wired network.&lt;/p>
+&lt;h3 class="heading-element" id="frequency">&lt;span>8.3 Frequency&lt;/span>
+ &lt;a href="#frequency" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Frequency bands refer to specific ranges of radio frequencies that are used for wireless communication. Wi-Fi operates in two main frequency bands: 2.4 GHz and 5 GHz.&lt;/p>
+&lt;ul>
+&lt;li>2.4 GHZ : The 2.4 GHz band is the older and more widely used frequency band in Wi-Fi. It provides good coverage and can penetrate obstacles like walls more effectively.]&lt;/li>
+&lt;li>5 GHZ : The 5 GHz band is a newer addition to Wi-Fi and offers more available channels with wider frequency ranges. It provides faster data speeds and is less congested compared to the 2.4 GHz band since fewer devices operate in this frequency range. However, the 5 GHz signals have a shorter range and may encounter more attenuation when passing through walls and other obstacles&lt;/li>
+&lt;/ul>
+&lt;h3 class="heading-element" id="channels">&lt;span>8.4 Channels&lt;/span>
+ &lt;a href="#channels" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Channels refer to specific frequencies within the wireless spectrum that are used for transmitting and receiving data. Wi-Fi channels are divided to reduce interference and allow multiple networks to operate in close proximity without conflicting with each other&lt;/p>
+&lt;div class="details admonition info open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>INFO&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ul>
+&lt;li>Each frequency band is divided into multiple channels, represented by numbers. For example, in the 2.4 GHz band, there are 11 channels available, usually numbered from 1 to 11. In the 5 GHz band, there are typically more channels available, such as 24 or more.&lt;/li>
+&lt;li>Channels in the 2.4 GHz band have a narrower frequency range and can partially overlap with each other. This means that neighboring Wi-Fi networks using nearby channels may experience interference, which can degrade the performance of both networks.&lt;/li>
+&lt;/ul>&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;h3 class="heading-element" id="essid">&lt;span>8.5 ESSID&lt;/span>
+ &lt;a href="#essid" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>ESSID stands for Extended Service Set Identifier. It is the name assigned to a Wi-Fi network. The ESSID acts as a unique identifier that allows devices to differentiate between different wireless networks in the vicinity. When you search for available Wi-Fi networks on your device, you see a list of ESSIDs to choose from.&lt;/p>
+&lt;h3 class="heading-element" id="bssid">&lt;span>8.6 BSSID&lt;/span>
+ &lt;a href="#bssid" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>BSSID stands for Basic Service Set Identifier. It is a unique identifier assigned to each wireless access point (AP) in a Wi-Fi network. Each access point in a Wi-Fi network has its own MAC (Media Access Control) address, which is a unique identifier assigned to the network interface of the device. The BSSID is derived from the MAC address of the access point.&lt;/p>
+&lt;h3 class="heading-element" id="bandwidth">&lt;span>8.7 Bandwidth&lt;/span>
+ &lt;a href="#bandwidth" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Bandwidth in Wi-Fi refers to the maximum data transfer rate or capacity of a wireless network. It represents the amount of data that can be transmitted over the network within a given time frame. Measured in Gigabits per second (Gbs) or Megabits per second (Mbs)&lt;/p>
+&lt;h3 class="heading-element" id="keypassphrase">&lt;span>8.8 Key/Passphrase&lt;/span>
+ &lt;a href="#keypassphrase" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>A key refers to a cryptographic code or password used for authentication and encryption purposes to secure a wireless network&lt;/p>
+&lt;p>There are two keys when working with WIFI :&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Network Security Key:&lt;/strong> Also known as a Wi-Fi password or passphrase, the network security key is used to authenticate a client device and grant access to the Wi-Fi network. When connecting to a secured Wi-Fi network, users are typically prompted to enter the network security key to prove their authorization. This key is used during the authentication phase of the Wi-Fi handshake process to establish a secure connection.&lt;/li>
+&lt;li>&lt;strong>Encryption Key:&lt;/strong> Once a client device is authenticated and connected to a Wi-Fi network, an encryption key is used to encrypt and decrypt the data transmitted over the network. This key ensures that the data exchanged between the client and the access point is secure and cannot be intercepted or understood by unauthorized parties. Different encryption protocols, such as WPA2 or WPA3, use different encryption keys and algorithms to protect the confidentiality and integrity of the Wi-Fi communication.&lt;/li>
+&lt;/ul>
+&lt;h2 class="heading-element" id="some-neccessary-networking-concepts">&lt;span>9 Some Neccessary Networking Concepts&lt;/span>
+ &lt;a href="#some-neccessary-networking-concepts" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h3 class="heading-element" id="mac-address">&lt;span>9.1 Mac Address&lt;/span>
+ &lt;a href="#mac-address" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>A MAC address, which stands for Media Access Control address, is a unique identifier assigned to network interfaces, such as network cards or Ethernet ports.
+A MAC address is a 48-bit (6-byte) value expressed in hexadecimal format, typically written in pairs separated by colons or hyphens.
+Example : 00:1A:2B:3C:4D:5E, the first half of the MAC address is the Organizationally Unique Identifier (OUI), which identifies the manufacturer or vendor of the device, while the second half is the device-specific identifier&lt;/p>
+&lt;h3 class="heading-element" id="arp">&lt;span>9.2 ARP&lt;/span>
+ &lt;a href="#arp" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>ARP stands for Address Resolution Protocol. It is a communication protocol used in computer networks to map an IP (Internet Protocol) address to a corresponding MAC (Media Access Control) address.&lt;/p>
+&lt;p>When a device wants to communicate with another device on the same network, it needs to know the MAC address of the destination device. The ARP protocol helps in this process by allowing a device to send an ARP request to the network, asking for the MAC address associated with a specific IP address.&lt;/p>
+&lt;h3 class="heading-element" id="ip-address">&lt;span>9.3 IP Address&lt;/span>
+ &lt;a href="#ip-address" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>An IP address, or Internet Protocol address, is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves as a unique identifier for devices, allowing them to send and receive data across the internet or within a private network.&lt;/p>
+&lt;h3 class="heading-element" id="gateway">&lt;span>9.4 Gateway&lt;/span>
+ &lt;a href="#gateway" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>A gateway is a device or a computer system that serves as an entry point or an interface between different networks. It acts as a bridge or a link that allows devices in one network to communicate with devices in another network. The gateway facilitates the transfer of data between networks by forwarding data packets based on their destination address.&lt;/p>
+&lt;h3 class="heading-element" id="router">&lt;span>9.5 Router&lt;/span>
+ &lt;a href="#router" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>A router is a networking device that connects multiple networks together and directs network traffic between them. It acts as a central hub for data transmission within a network or between different networks, making routing decisions based on the destination address of data packets.&lt;/p>
+&lt;h3 class="heading-element" id="subnet">&lt;span>9.6 Subnet&lt;/span>
+ &lt;a href="#subnet" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>A subnet, short for subnetwork, is a logical division of an IP network. It allows for the segmentation of a larger network into smaller, more manageable networks. Subnetting is used to improve network performance, security, and organization by creating separate broadcast domains within a network.&lt;/p>
+&lt;h3 class="heading-element" id="dhcp">&lt;span>9.7 DHCP&lt;/span>
+ &lt;a href="#dhcp" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>A DHCP (Dynamic Host Configuration Protocol) server is responsible for assigning IP addresses and other network configuration information to devices on a network&lt;/p>
+&lt;h3 class="heading-element" id="working-of-wifi">&lt;span>9.8 Working Of WIFI&lt;/span>
+ &lt;a href="#working-of-wifi" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>Device Connection to the Network: When a device (e.g., a computer, smartphone, or IoT device) connects to a network, it typically does so via a physical connection (e.g., Ethernet cable) or wirelessly through Wi-Fi. The device sends a request to join the network, and the network infrastructure, including the router, facilitates the connection.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Obtaining an IP Address: Once connected, the device needs to obtain an IP address to communicate on the network. There are two main methods for IP address assignment: static and dynamic. In the case of dynamic IP address assignment, the device sends a request to the router using the DHCP protocol, which we discussed earlier. The router then assigns an available IP address from its pool and provides it to the device.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Local Network Communication: With the assigned IP address, the device can now communicate with other devices on the local network. It can send data packets to other devices by addressing them using their IP addresses within the same network. This communication happens directly between devices within the network without involving the router.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Destination Outside the Local Network: If the device wants to communicate with a destination outside the local network (e.g., a website or a server on the internet), it follows these steps:&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 class="heading-element" id="determining-the-gateway">&lt;span>9.8.1 Determining the Gateway&lt;/span>
+ &lt;a href="#determining-the-gateway" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>The device checks its network configuration and identifies the default gateway, which is the IP address of the router. The default gateway acts as the exit point for traffic leaving the local network.&lt;/p>
+&lt;h4 class="heading-element" id="data-routing">&lt;span>9.8.2 Data Routing&lt;/span>
+ &lt;a href="#data-routing" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>The device encapsulates the data it wants to send within packets. Each packet contains the destination IP address, among other information. When the device sends the packets, it forwards them to the default gateway (router).&lt;/p>
+&lt;h4 class="heading-element" id="network-address-translation-nat">&lt;span>9.8.3 Network Address Translation (NAT)&lt;/span>
+ &lt;a href="#network-address-translation-nat" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>Upon receiving the packets, the router performs Network Address Translation. It replaces the source IP address of the packets with its own public IP address, effectively hiding the private IP addresses of the devices on the local network. This allows the response packets from the destination to be routed back to the router.&lt;/p>
+&lt;h4 class="heading-element" id="routing-to-the-internet">&lt;span>9.8.4 Routing to the Internet&lt;/span>
+ &lt;a href="#routing-to-the-internet" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>The router examines the destination IP address of the packets and consults its routing table to determine the next-hop router or gateway that can reach the destination network (in this case, the internet). The router forwards the packets to the appropriate next-hop router, continuing this process until the packets reach the destination network.&lt;/p>
+&lt;h4 class="heading-element" id="public-ip-communication">&lt;span>9.8.5 Public IP Communication&lt;/span>
+ &lt;a href="#public-ip-communication" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>As the response packets return from the destination network, they are routed back to the router using its public IP address. The router maintains a record of the devices on the local network and uses Network Address Translation to translate the destination IP address of the packets back to the appropriate private IP address of the device that initiated the communication.&lt;/p>
+&lt;h4 class="heading-element" id="delivery-to-the-device">&lt;span>9.8.6 Delivery to the Device&lt;/span>
+ &lt;a href="#delivery-to-the-device" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>Finally, the router forwards the response packets to the requesting device on the local network. The device receives the packets and processes the data, allowing the user to view the requested webpage, receive an email, or perform any other internet-related task.&lt;/p>
+&lt;div class="details admonition info open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>INFO&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>Each device on the network uses Router’s Public Ip address to communicate to the whole world.&lt;/p>&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;h3 class="heading-element" id="wi-fi-adapter-operation-modes">&lt;span>9.9 Wi-Fi Adapter Operation Modes&lt;/span>
+ &lt;a href="#wi-fi-adapter-operation-modes" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Wi-Fi adapters can function in various modes, depending on their features and configuration. These modes define how the adapter handles the transmission and reception of wireless signals.&lt;/p>
+&lt;h4 class="heading-element" id="infrastructure-managed-mode">&lt;span>9.9.1 Infrastructure (Managed) Mode&lt;/span>
+ &lt;a href="#infrastructure-managed-mode" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>This is the standard mode for most Wi-Fi adapters. In infrastructure mode, the adapter connects to a wireless router or access point to join an existing network. It enables the device to access the internet and communicate with other devices within the same network.&lt;/p>
+&lt;h4 class="heading-element" id="soft-access-point-soft-ap-mode">&lt;span>9.9.2 Soft Access Point (Soft AP) Mode&lt;/span>
+ &lt;a href="#soft-access-point-soft-ap-mode" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>Some adapters support Soft AP mode, which allows them to act as virtual access points. In this configuration, the adapter creates its own wireless network, letting other devices connect to it. This is especially useful for sharing an internet connection or setting up a temporary local network.&lt;/p>
+&lt;h4 class="heading-element" id="monitor-mode">&lt;span>9.9.3 Monitor Mode&lt;/span>
+ &lt;a href="#monitor-mode" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>Monitor mode allows the adapter to passively capture all wireless signals in range without joining a network. It’s typically used for analyzing wireless traffic, conducting network diagnostics, or performing packet sniffing for security or troubleshooting purposes.&lt;/p>
+&lt;h4 class="heading-element" id="promiscuous-mode">&lt;span>9.9.4 Promiscuous Mode&lt;/span>
+ &lt;a href="#promiscuous-mode" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>While similar to monitor mode, promiscuous mode focuses on capturing all traffic the adapter can receive, regardless of its destination. This mode is often used in network analysis and security assessments to inspect and study data packets for anomalies or potential threats.&lt;/p>
+&lt;div class="details admonition note open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>NOTE&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>All of the above-mentioned modes are not available in all WIFI adaptors, there are only specific WIFI adaptors in the market that supports modes other than managed mode. So to fully learn from these series you will have to get an adaptor which these modes&lt;/p>&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;p>There is a list of WIFI adaptors from which you can choose:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.amazon.com/dp/B01MZD7Z76"target="_blank" rel="external nofollow noopener noreferrer">Alfa AC1900 WiFi Adapter&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.amazon.com/dp/B00VEEBOPG"target="_blank" rel="external nofollow noopener noreferrer">Alfa Long-Range Dual-Band AC1200 Wireless USB 3.0&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.amazon.fr/dp/B002SZEOLG"target="_blank" rel="external nofollow noopener noreferrer">TP-Link Nano USB Wifi Dongle 150Mbps High Gain Wireless Network Adapter&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.amazon.com/dp/B01EOQ61KI"target="_blank" rel="external nofollow noopener noreferrer">TRENDnet AC1900 High Power Dual Band Wireless USB Adapter&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.getic.fr/product/alfa-awus036nha"target="_blank" rel="external nofollow noopener noreferrer">Alfa AWUS036NHA&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.amazon.com/dp/B004AC0L4Y"target="_blank" rel="external nofollow noopener noreferrer">Panda Wireless® Mid Range 150Mbps&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Hello World</title><link>https://Pr0xyG33k.github.io/posts/hello-world/</link><pubDate>Sat, 10 May 2025 02:47:00 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/hello-world/</guid><category domain="https://Pr0xyG33k.github.io/categories/thoughts/">Thoughts</category><description>&lt;blockquote>
+&lt;p>&amp;ldquo;What wakes you up every morning is not the alarm clock, but your dreams.&amp;rdquo;&lt;/p>&lt;/blockquote>
+&lt;p>I’ve lived through moments where this belief kept me going. I’ve seen the effort I’ve put into my work, and now, as I look back, the real question isn’t whether I’ve earned what I have — it’s about continuing to push forward, unflinching in the face of challenges.&lt;/p>
+&lt;p>In cybersecurity, the fight is never over. It’s a world where the enemy never sleeps, and neither should we.&lt;/p>
+&lt;p>From my early days in tech, grappling with complex algorithms and shifting to cybersecurity, the road has been long. I started with basic coding, moved to penetration testing, then switched to defensive security, teaching interns, and tackling real-world security problems. Every step has been driven by &lt;strong>curiosity&lt;/strong> and the desire to &lt;strong>defend&lt;/strong> what matters — our digital lives.&lt;/p>
+&lt;p>Time doesn’t pause because we hesitate. Like you, there are countless others chasing their dreams. No one is born a cybersecurity expert, but each day is an opportunity to grow, to protect, and to evolve. Never be content with where you are; always strive to learn, to adapt, and to secure.&lt;/p>
+&lt;p>I started this blog to share my journey — from early security challenges to tips on staying safe online. In the early days, I followed the guidance of mentors, learned from books, and coded through the night. The name &amp;ldquo;Securing the Digital World&amp;rdquo; was born from the countless hours spent defending what many people overlook: the safety of our digital lives.&lt;/p>
+&lt;p>Here’s to the next chapter of cybersecurity, as we continue to evolve in a world where data is power, and protection is key.&lt;/p>
+&lt;!--
+![Снег падает без конца, покрывая души, как невидимый саван. Каждый снежинка — это забытое воспоминание, утерянный звук в безбрежной тишине. Здесь, в самом сердце зимы, когда ветер воет как зверь, человек идет, не зная точно, куда](images/coffee.jpg 'Человек продолжает идти, без цели, без вопросов, ведомый странной уверенностью, что всё уже написано, но всё равно он должен искать, снова и снова')
+--></description></item></channel></rss>
