@@ -3,19 +3,19 @@
 
 ## About
 
-In this blog, we have introduced the basics of wireless hacking. We have covered what WiFi is, some important WiFi terms, the history of WiFi, and how WiFi works. In the next blog, we will start covering wireless attacks.* Join us for an engaging journey that combines learning, awareness, and securing our wireless connections.
+In this blog, we have introduced the **basics of wireless hacking**. We have covered what **WiFi** is, some important WiFi terms, the history of WiFi, and how WiFi works. In the next blog, we will start covering **wireless attacks**. _Join us for an engaging journey that combines learning, awareness, and securing our wireless connections._
 
 ## Wireless Hacking
 
-In today’s world, Wi-Fi is ubiquitous, powering the internet connection for our devices and enabling seamless communication and access to information. But have you ever stopped to wonder how Wi-Fi actually works beneath the surface? Is it possible to manipulate wireless networks for various purposes? In this series, "Guide to Wireless Hacking," we will explore the inner workings of Wi-Fi networks, uncover their vulnerabilities, and learn how these weaknesses can be exploited.
+In today’s world, **Wi-Fi** is ubiquitous, powering the internet connection for our devices and enabling seamless communication and access to information. But have you ever stopped to wonder how Wi-Fi actually works beneath the surface? Is it possible to **manipulate wireless networks** for various purposes? In this series, **"Guide to Wireless Hacking,"** we will explore the inner workings of Wi-Fi networks, uncover their **vulnerabilities**, and learn how these weaknesses can be exploited.
 
-In this first blog post, we will start with the fundamentals. We’ll explore how Wi-Fi networks operate, define essential networking terms, and take a look at the history and key characteristics of Wi-Fi technology.
+In this first blog post, we will start with the **fundamentals**. We’ll explore how Wi-Fi networks operate, define essential networking terms, and take a look at the **history** and key characteristics of Wi-Fi technology.
 
-## What is ?
+## What is Wi-Fi?
 
-Wi-Fi, which stands for Wireless Fidelity, is a wireless technology that enables devices to connect to the internet or communicate with each other without using physical cables. It relies on radio waves to transmit data, which allows it to function in areas where it’s not possible to run traditional cables.
+**Wi-Fi**, which stands for Wireless Fidelity, is a wireless technology that enables devices to **connect to the internet** or communicate with each other without using physical cables. It relies on **radio waves** to transmit data, which allows it to function in areas where it’s not possible to run traditional cables.
 
-Wi-Fi is the primary method of internet connectivity in homes and businesses. It’s also widely available in public spaces such as cafés, libraries, and airports.
+Wi-Fi is the primary method of internet connectivity in **homes** and **businesses**. It’s also widely available in **public spaces** such as cafés, libraries, and airports.
 
 ## Key Features
 
@@ -73,25 +73,25 @@ Wireless security protocols are designed to protect wireless networks from unaut
 
 ### WiFi Adaptor
 
-A Wi-Fi adapter, also known as a Wi-Fi dongle or wireless network adapter, is a device that enables a computer or other devices to connect to a Wi-Fi network. It allows devices that do not have built-in Wi-Fi capabilities to access wireless networks and connect to the internet or communicate with other devices wirelessly
+A **Wi-Fi adapter**, also known as a **Wi-Fi dongle** or **wireless network adapter**, is a device that enables a computer or other devices to **connect to a Wi-Fi network**. It allows devices that do not have built-in Wi-Fi capabilities to access **wireless networks** and **connect to the internet** or communicate with other devices **wirelessly**.
 
 > [!INFO]INFO
 > If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.
 
 ### AP (Access Point)
 
-AP stands for Access Point in the context of Wi-Fi. An Access Point is a device that allows Wi-Fi-enabled devices to connect to a wired network wirelessly. It acts as a central hub or gateway for wireless communication, providing a bridge between Wi-Fi devices and a wired network.
+**AP** stands for **Access Point** in the context of Wi-Fi. An Access Point is a device that allows **Wi-Fi-enabled devices** to connect to a **wired network wirelessly**. It acts as a **central hub** or **gateway** for wireless communication, providing a **bridge** between Wi-Fi devices and a wired network.
 
 ### Frequency
 
-Frequency bands refer to specific ranges of radio frequencies that are used for wireless communication. Wi-Fi operates in two main frequency bands: 2.4 GHz and 5 GHz.
+**Frequency bands** refer to specific ranges of **radio frequencies** that are used for wireless communication. Wi-Fi operates in two main frequency bands: **2.4 GHz** and **5 GHz**.
 
-- 2.4 GHZ : The 2.4 GHz band is the older and more widely used frequency band in Wi-Fi. It provides good coverage and can penetrate obstacles like walls more effectively.]
-- 5 GHZ : The 5 GHz band is a newer addition to Wi-Fi and offers more available channels with wider frequency ranges. It provides faster data speeds and is less congested compared to the 2.4 GHz band since fewer devices operate in this frequency range. However, the 5 GHz signals have a shorter range and may encounter more attenuation when passing through walls and other obstacles
+- **2.4 GHz**: The 2.4 GHz band is the **older** and more **widely used** frequency band in Wi-Fi. It provides **good coverage** and can **penetrate obstacles** like walls more effectively.
+- **5 GHz**: The 5 GHz band is a **newer** addition to Wi-Fi and offers more **available channels** with **wider frequency ranges**. It provides **faster data speeds** and is **less congested** compared to the 2.4 GHz band since fewer devices operate in this range. However, the 5 GHz signals have a **shorter range** and may encounter more **attenuation** when passing through walls and other obstacles.
 
 ### Channels
 
-Channels refer to specific frequencies within the wireless spectrum that are used for transmitting and receiving data. Wi-Fi channels are divided to reduce interference and allow multiple networks to operate in close proximity without conflicting with each other
+**Channels** refer to specific **frequencies** within the **wireless spectrum** that are used for **transmitting and receiving data**. Wi-Fi channels are **divided** to reduce **interference** and allow multiple networks to operate in **close proximity** without conflicting with each other.
 
 > [!INFO]INFO
 >
@@ -100,15 +100,15 @@ Channels refer to specific frequencies within the wireless spectrum that are use
 
 ### ESSID
 
-ESSID stands for Extended Service Set Identifier. It is the name assigned to a Wi-Fi network. The ESSID acts as a unique identifier that allows devices to differentiate between different wireless networks in the vicinity. When you search for available Wi-Fi networks on your device, you see a list of ESSIDs to choose from.
+**ESSID** stands for **Extended Service Set Identifier**. It is the **name assigned to a Wi-Fi network**. The ESSID acts as a **unique identifier** that allows devices to **differentiate between different wireless networks** in the vicinity. When you search for available Wi-Fi networks on your device, you see a list of **ESSIDs** to choose from.
 
 ### BSSID
 
-BSSID stands for Basic Service Set Identifier. It is a unique identifier assigned to each wireless access point (AP) in a Wi-Fi network. Each access point in a Wi-Fi network has its own MAC (Media Access Control) address, which is a unique identifier assigned to the network interface of the device. The BSSID is derived from the MAC address of the access point.
+**BSSID** stands for **Basic Service Set Identifier**. It is a **unique identifier** assigned to each **wireless access point (AP)** in a Wi-Fi network. Each access point in a Wi-Fi network has its own **MAC (Media Access Control) address**, which is a **unique identifier** assigned to the **network interface** of the device. The BSSID is **derived from the MAC address** of the access point.
 
 ### Bandwidth
 
-Bandwidth in Wi-Fi refers to the maximum data transfer rate or capacity of a wireless network. It represents the amount of data that can be transmitted over the network within a given time frame. Measured in Gigabits per second (Gbs) or Megabits per second (Mbs)
+**Bandwidth** in Wi-Fi refers to the **maximum data transfer rate** or **capacity** of a wireless network. It represents the **amount of data** that can be transmitted over the network within a given time frame. Measured in **Gigabits per second (Gbps)** or **Megabits per second (Mbps)**.
 
 ### Key/Passphrase
 
@@ -121,94 +121,106 @@ There are two keys when working with WIFI :
 
 ## Some Neccessary Networking Concepts
 
-### Mac Address
+### MAC Address
 
-A MAC address, which stands for Media Access Control address, is a unique identifier assigned to network interfaces, such as network cards or Ethernet ports.
-A MAC address is a 48-bit (6-byte) value expressed in hexadecimal format, typically written in pairs separated by colons or hyphens.
-Example : 00:1A:2B:3C:4D:5E, the first half of the MAC address is the Organizationally Unique Identifier (OUI), which identifies the manufacturer or vendor of the device, while the second half is the device-specific identifier
+A **MAC address** (Media Access Control address) is a **unique identifier** assigned to **network interfaces**, such as network cards or Ethernet ports.  
+It is a **48-bit** (6-byte) value expressed in **hexadecimal format**, typically written in pairs separated by colons or hyphens.  
+Example: `00:1A:2B:3C:4D:5E` — the first half is the **Organizationally Unique Identifier (OUI)** (identifies the **manufacturer**), and the second half is the **device-specific identifier**.
 
 ### ARP
 
-ARP stands for Address Resolution Protocol. It is a communication protocol used in computer networks to map an IP (Internet Protocol) address to a corresponding MAC (Media Access Control) address.
+**ARP** stands for **Address Resolution Protocol**. It is used in networks to **map an IP address to a MAC address**.
 
-When a device wants to communicate with another device on the same network, it needs to know the MAC address of the destination device. The ARP protocol helps in this process by allowing a device to send an ARP request to the network, asking for the MAC address associated with a specific IP address.
+When a device wants to communicate with another on the same network, it uses ARP to find the **MAC address** of the destination by sending an **ARP request**.
+
+<p align="center">
+  <img src="/posts/_wireless/hacking01/images/arp.svg" alt="arp">
+</p>
 
 ### IP Address
 
-An IP address, or Internet Protocol address, is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves as a unique identifier for devices, allowing them to send and receive data across the internet or within a private network.
+An **IP address** (Internet Protocol address) is a **numerical label** assigned to each device connected to a network.
+
+It serves as a **unique identifier**, allowing devices to **send and receive data** over the internet or a private network.
 
 ### Gateway
 
-A gateway is a device or a computer system that serves as an entry point or an interface between different networks. It acts as a bridge or a link that allows devices in one network to communicate with devices in another network. The gateway facilitates the transfer of data between networks by forwarding data packets based on their destination address.
+A **gateway** is a device or system that serves as an **entry point** between different networks.
+
+It **forwards data packets** based on their destination and enables **communication between networks**.
 
 ### Router
 
-A router is a networking device that connects multiple networks together and directs network traffic between them. It acts as a central hub for data transmission within a network or between different networks, making routing decisions based on the destination address of data packets.
+A **router** is a networking device that **connects multiple networks** and **routes traffic** between them.
+
+It acts as a **central hub** and makes decisions based on the **destination address** of data packets.
 
 ### Subnet
 
-A subnet, short for subnetwork, is a logical division of an IP network. It allows for the segmentation of a larger network into smaller, more manageable networks. Subnetting is used to improve network performance, security, and organization by creating separate broadcast domains within a network.
+A **subnet** (subnetwork) is a **logical division** of an IP network.
+
+**Subnetting** improves **network performance**, **security**, and **organization** by separating broadcast domains.
 
 ### DHCP
 
-A DHCP (Dynamic Host Configuration Protocol) server is responsible for assigning IP addresses and other network configuration information to devices on a network
+**DHCP** (Dynamic Host Configuration Protocol) is responsible for **automatically assigning IP addresses** and other network settings to devices on a network.
 
 ### Working Of WIFI
 
-- Device Connection to the Network: When a device (e.g., a computer, smartphone, or IoT device) connects to a network, it typically does so via a physical connection (e.g., Ethernet cable) or wirelessly through Wi-Fi. The device sends a request to join the network, and the network infrastructure, including the router, facilitates the connection.
+- **Device Connection to the Network:** When a device (e.g., a computer, smartphone, or IoT device) connects to a network, it typically does so via a physical connection (e.g., Ethernet cable) or wirelessly through Wi-Fi. The device sends a request to join the network, and the network infrastructure, including the router, facilitates the connection.
 
-- Obtaining an IP Address: Once connected, the device needs to obtain an IP address to communicate on the network. There are two main methods for IP address assignment: static and dynamic. In the case of dynamic IP address assignment, the device sends a request to the router using the DHCP protocol, which we discussed earlier. The router then assigns an available IP address from its pool and provides it to the device.
+- **Obtaining an IP Address:** Once connected, the device needs to obtain an IP address to communicate on the network. There are two main methods for IP address assignment: static and dynamic. In the case of dynamic IP address assignment, the device sends a request to the router using the DHCP protocol, which we discussed earlier. The router then assigns an available IP address from its pool and provides it to the device.
 
-- Local Network Communication: With the assigned IP address, the device can now communicate with other devices on the local network. It can send data packets to other devices by addressing them using their IP addresses within the same network. This communication happens directly between devices within the network without involving the router.
+- **Local Network Communication:** With the assigned IP address, the device can now communicate with other devices on the local network. It can send data packets to other devices by addressing them using their IP addresses within the same network. This communication happens directly between devices within the network without involving the router.
 
-- Destination Outside the Local Network: If the device wants to communicate with a destination outside the local network (e.g., a website or a server on the internet), it follows these steps:
+- **Destination Outside the Local Network:** If the device wants to communicate with a destination outside the local network (e.g., a website or a server on the internet), it follows these steps:
 
 #### Determining the Gateway
 
-The device checks its network configuration and identifies the default gateway, which is the IP address of the router. The default gateway acts as the exit point for traffic leaving the local network.
+The device checks its **network configuration** and identifies the **default gateway**, which is the **IP address of the router**. The gateway acts as the **exit point** for traffic leaving the local network.
 
 #### Data Routing
 
-The device encapsulates the data it wants to send within packets. Each packet contains the destination IP address, among other information. When the device sends the packets, it forwards them to the default gateway (router).
+The device **encapsulates the data** it wants to send within **packets**. Each packet contains the **destination IP address**. When sent, the packets are forwarded to the **default gateway** (router).
 
 #### Network Address Translation (NAT)
 
-Upon receiving the packets, the router performs Network Address Translation. It replaces the source IP address of the packets with its own public IP address, effectively hiding the private IP addresses of the devices on the local network. This allows the response packets from the destination to be routed back to the router.
+Upon receiving the packets, the router performs **Network Address Translation (NAT)**. It replaces the **source IP address** with its own **public IP address**, **hiding private IPs** of local devices. This ensures that **response packets** can return to the router.
 
 #### Routing to the Internet
 
-The router examines the destination IP address of the packets and consults its routing table to determine the next-hop router or gateway that can reach the destination network (in this case, the internet). The router forwards the packets to the appropriate next-hop router, continuing this process until the packets reach the destination network.
+The router examines the **destination IP** and checks its **routing table** to find the **next-hop router** or **gateway**. It forwards the packets until they reach the **destination network** (e.g., the internet).
 
 #### Public IP Communication
 
-As the response packets return from the destination network, they are routed back to the router using its public IP address. The router maintains a record of the devices on the local network and uses Network Address Translation to translate the destination IP address of the packets back to the appropriate private IP address of the device that initiated the communication.
+Response packets are routed back using the router’s **public IP address**. The router uses its **NAT records** to translate the **destination IP** back to the **private IP** of the originating device.
 
 #### Delivery to the Device
 
-Finally, the router forwards the response packets to the requesting device on the local network. The device receives the packets and processes the data, allowing the user to view the requested webpage, receive an email, or perform any other internet-related task.
+The router **forwards the response packets** to the correct device on the **local network**. The device processes the data, enabling the user to **view webpages**, **receive emails**, or **use internet services**.
 
 > [!INFO]INFO
 > Each device on the network uses Router’s Public Ip address to communicate to the whole world.
 
 ### Wi-Fi Adapter Operation Modes
 
-Wi-Fi adapters can function in various modes, depending on their features and configuration. These modes define how the adapter handles the transmission and reception of wireless signals.
+Wi-Fi adapters can function in various **modes**, depending on their features and configuration. These modes define how the adapter handles the **transmission and reception** of wireless signals.
 
 #### Infrastructure (Managed) Mode
 
-This is the standard mode for most Wi-Fi adapters. In infrastructure mode, the adapter connects to a wireless router or access point to join an existing network. It enables the device to access the internet and communicate with other devices within the same network.
+This is the **standard mode** for most Wi-Fi adapters. In infrastructure mode, the adapter **connects to a wireless router or access point** to join an existing network. It enables the device to **access the internet** and **communicate with other devices** within the same network.
 
 #### Soft Access Point (Soft AP) Mode
 
-Some adapters support Soft AP mode, which allows them to act as virtual access points. In this configuration, the adapter creates its own wireless network, letting other devices connect to it. This is especially useful for sharing an internet connection or setting up a temporary local network.
+Some adapters support **Soft AP mode**, which allows them to act as **virtual access points**. In this configuration, the adapter **creates its own wireless network**, letting other devices **connect to it**. Useful for **sharing an internet connection** or setting up a **temporary local network**.
 
 #### Monitor Mode
 
-Monitor mode allows the adapter to passively capture all wireless signals in range without joining a network. It’s typically used for analyzing wireless traffic, conducting network diagnostics, or performing packet sniffing for security or troubleshooting purposes.
+**Monitor mode** allows the adapter to **passively capture all wireless signals** in range **without joining a network**. It’s used for **analyzing wireless traffic**, **network diagnostics**, or **packet sniffing** for **security** or **troubleshooting**.
 
 #### Promiscuous Mode
 
-While similar to monitor mode, promiscuous mode focuses on capturing all traffic the adapter can receive, regardless of its destination. This mode is often used in network analysis and security assessments to inspect and study data packets for anomalies or potential threats.
+While similar to monitor mode, **promiscuous mode** focuses on **capturing all traffic** the adapter can receive, **regardless of destination**. It is used in **network analysis** and **security assessments** to inspect and study **data packets** for **anomalies** or **threats**.
 
 > [!NOTE]NOTE
 > All of the above-mentioned modes are not available in all WIFI adaptors, there are only specific WIFI adaptors in the market that supports modes other than managed mode. So to fully learn from these series you will have to get an adaptor which these modes
