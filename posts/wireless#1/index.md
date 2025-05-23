@@ -165,6 +165,10 @@ A **subnet** (subnetwork) is a **logical division** of an IP network.
 
 **DHCP** (Dynamic Host Configuration Protocol) is responsible for **automatically assigning IP addresses** and other network settings to devices on a network.
 
+<p align="center">
+  <img src="/posts/_wireless/hacking01/images/dhcp.svg" alt="dhcp" width="1000">
+</p>
+
 ### Working Of WIFI
 
 - **Device Connection to the Network:** When a device (e.g., a computer, smartphone, or IoT device) connects to a network, it typically does so via a physical connection (e.g., Ethernet cable) or wirelessly through Wi-Fi. The device sends a request to join the network, and the network infrastructure, including the router, facilitates the connection.
