@@ -99,7 +99,7 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;/h2>&lt;p>To begin, open &lt;strong>virt-manager&lt;/strong> (Virtual Machine Manager) on your Arch Linux system. This graphical tool will allow you to easily manage virtual machines using QEMU/KVM in the background. Once the application is open, click on the &lt;strong>&amp;ldquo;Create a new virtual machine&amp;rdquo;&lt;/strong> button.&lt;/p>
 &lt;p>In the wizard that appears, select &lt;strong>&amp;ldquo;Local install media (ISO image or CDROM)&amp;rdquo;&lt;/strong>, then browse to and select the &lt;strong>Kali Linux ISO file&lt;/strong> you previously downloaded. Next, choose the OS type as &lt;strong>Linux&lt;/strong>, and for the version, select either &lt;strong>Debian 10/11 (64-bit)&lt;/strong> or &lt;strong>Generic Linux (64-bit)&lt;/strong>—both will work well for Kali.&lt;/p>
 &lt;div style="display: flex; justify-content: space-between;">
- &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking02/images/os.pngc" alt="os" style="width: 45%; margin-right: 10px;" />
+ &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking02/images/os.png" alt="os" style="width: 45%; margin-right: 10px;" />
  &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking02/images/set.png" alt="set" style="width: 45%;" />
 &lt;/div>
 &lt;p>You’ll then be prompted to assign system resources to the VM. It is recommended to allocate &lt;strong>at least 2GB of RAM&lt;/strong>, but &lt;strong>4GB (4096MB)&lt;/strong> is ideal if your host machine allows it. You should also assign &lt;strong>2 or more CPU cores&lt;/strong> to ensure smooth performance. After this, you’ll create a virtual hard disk—make sure it is &lt;strong>at least 20GB&lt;/strong>, and &lt;strong>dynamically allocated&lt;/strong> to save space.&lt;/p>
@@ -222,6 +222,9 @@ Join us as we continue this educational journey through ethical hacking and wire
  &lt;/a>
 &lt;/h3>&lt;p>Before installing Kali, a few adjustments to the virtual hardware settings are necessary. In &lt;strong>virt-manager&lt;/strong>, select your newly created Kali VM and click &lt;strong>Open&lt;/strong> to access its console. Then click the &lt;strong>lightbulb icon&lt;/strong>, which opens the &lt;strong>Virtual Hardware Details&lt;/strong> panel.&lt;/p>
 &lt;p>Inside this panel, check that the &lt;strong>Kali Linux ISO&lt;/strong> is correctly attached as the &lt;strong>boot media&lt;/strong> under the &amp;ldquo;IDE CDROM&amp;rdquo; section. Next, review the &lt;strong>network settings&lt;/strong>. By default, the network is set to &lt;strong>NAT&lt;/strong>, which provides Internet access through your host. However, if you want the VM to be visible on your local network (useful for advanced testing), you can change it to &lt;strong>Bridged&lt;/strong> mode and select your host interface.&lt;/p>
+&lt;div style="display: flex; justify-content: center;">
+ &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking02/images/network.png" alt="set" />
+&lt;/div>
 &lt;p>Finally, scroll down to ensure that a &lt;strong>USB controller&lt;/strong> (either USB 2.0 or 3.0) is present and enabled. This will be important later when attaching a USB Wi-Fi adapter.&lt;/p>
 &lt;h3 class="heading-element" id="installing">&lt;span>16.3 Installing&lt;/span>
  &lt;a href="#installing" class="heading-mark">

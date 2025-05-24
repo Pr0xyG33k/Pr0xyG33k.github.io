@@ -73,7 +73,7 @@ To begin, open **virt-manager** (Virtual Machine Manager) on your Arch Linux sys
 In the wizard that appears, select **"Local install media (ISO image or CDROM)"**, then browse to and select the **Kali Linux ISO file** you previously downloaded. Next, choose the OS type as **Linux**, and for the version, select either **Debian 10/11 (64-bit)** or **Generic Linux (64-bit)**—both will work well for Kali.
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="/posts/_wireless/hacking02/images/os.pngc" alt="os" style="width: 45%; margin-right: 10px;" />
+  <img src="/posts/_wireless/hacking02/images/os.png" alt="os" style="width: 45%; margin-right: 10px;" />
   <img src="/posts/_wireless/hacking02/images/set.png" alt="set" style="width: 45%;" />
 </div>
 
@@ -146,6 +146,10 @@ All done! If you see 'kali-linux-2025.1c-installer-amd64.iso: OK' above, your IS
 Before installing Kali, a few adjustments to the virtual hardware settings are necessary. In **virt-manager**, select your newly created Kali VM and click **Open** to access its console. Then click the **lightbulb icon**, which opens the **Virtual Hardware Details** panel.
 
 Inside this panel, check that the **Kali Linux ISO** is correctly attached as the **boot media** under the "IDE CDROM" section. Next, review the **network settings**. By default, the network is set to **NAT**, which provides Internet access through your host. However, if you want the VM to be visible on your local network (useful for advanced testing), you can change it to **Bridged** mode and select your host interface.
+
+<div style="display: flex; justify-content: center;">
+  <img src="/posts/_wireless/hacking02/images/network.png" alt="set" />
+</div>
 
 Finally, scroll down to ensure that a **USB controller** (either USB 2.0 or 3.0) is present and enabled. This will be important later when attaching a USB Wi-Fi adapter.
 
