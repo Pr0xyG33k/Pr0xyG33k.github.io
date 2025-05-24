@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 31 May 2025 02:15:54 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Wireless Hacking Part 2</title><link>https://Pr0xyG33k.github.io/posts/wireless02/</link><pubDate>Fri, 23 May 2025 17:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless02/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>10 About&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 31 May 2025 02:15:54 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Wireless Hacking Part 2</title><link>https://Pr0xyG33k.github.io/posts/wireless02/</link><pubDate>Fri, 23 May 2025 17:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless02/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>13 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>In this second part of the Wireless Hacking series, we shift our focus from theory to practice. Before diving into real-world attacks, it’s crucial to prepare a safe, legal, and isolated environment to experiment and learn.
 Join us as we continue this educational journey through ethical hacking and wireless security.&lt;/p>
-&lt;h2 class="heading-element" id="environment">&lt;span>11 Environment&lt;/span>
+&lt;h2 class="heading-element" id="environment">&lt;span>14 Environment&lt;/span>
  &lt;a href="#environment" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>Before performing any wireless attacks or experiments, it&amp;rsquo;s crucial to set up a safe and isolated testing environment. Here are two solid options depending on your setup and preferences:&lt;/p>
-&lt;h3 class="heading-element" id="option-1-installing-kali-linux-on-a-virtual-machine">&lt;span>11.1 Option 1: Installing Kali Linux on a Virtual Machine&lt;/span>
+&lt;h3 class="heading-element" id="option-1-installing-kali-linux-on-a-virtual-machine">&lt;span>14.1 Option 1: Installing Kali Linux on a Virtual Machine&lt;/span>
  &lt;a href="#option-1-installing-kali-linux-on-a-virtual-machine" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h3>&lt;p>&lt;strong>Recommended software&lt;/strong>: &lt;a href="https://www.virtualbox.org/"target="_blank" rel="external nofollow noopener noreferrer">VirtualBox&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> or &lt;a href="https://www.vmware.com/products/workstation-player.html"target="_blank" rel="external nofollow noopener noreferrer">VMware Workstation Player&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> (free for personal use).&lt;/p>
-&lt;h4 class="heading-element" id="downloads">&lt;span>11.1.1 Downloads&lt;/span>
- &lt;a href="#downloads" class="heading-mark">
+&lt;/h3>&lt;p>&lt;strong>Recommended software&lt;/strong>: &lt;a href="https://www.virtualbox.org/"target="_blank" rel="external nofollow noopener noreferrer">VirtualBox&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> or &lt;a href="https://www.vmware.com/products/workstation-player.html"target="_blank" rel="external nofollow noopener noreferrer">VMware Workstation Player&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> (free for personal use) or &lt;a href="https://www.qemu.org/download/"target="_blank" rel="external nofollow noopener noreferrer">QEMU/KVM&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>.&lt;/p>
+&lt;h4 class="heading-element" id="downloads-links">&lt;span>14.1.1 Downloads Links&lt;/span>
+ &lt;a href="#downloads-links" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;ul>
-&lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-virtual-machines"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux VirtualBox Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-virtual-machines"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux Virtual Machines Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-installer-images"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux ISO Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="installation-steps">&lt;span>11.1.2 Installation Steps&lt;/span>
+&lt;h4 class="heading-element" id="installation-steps">&lt;span>14.1.2 Installation Steps&lt;/span>
  &lt;a href="#installation-steps" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -33,7 +33,7 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;li>Use a &lt;strong>USB Wi-Fi adapter that supports monitor mode&lt;/strong>, and pass it through to the VM.&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h3 class="heading-element" id="option-2-installing-kali-linux-on-a-raspberry-pi">&lt;span>11.2 Option 2: Installing Kali Linux on a Raspberry Pi&lt;/span>
+&lt;h3 class="heading-element" id="option-2-installing-kali-linux-on-a-raspberry-pi">&lt;span>14.2 Option 2: Installing Kali Linux on a Raspberry Pi&lt;/span>
  &lt;a href="#option-2-installing-kali-linux-on-a-raspberry-pi" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -43,14 +43,14 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;li>MicroSD card (minimum 16 GB)&lt;/li>
 &lt;li>Power supply, keyboard, mouse, and HDMI screen&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="downloads-links">&lt;span>11.2.1 Downloads Links&lt;/span>
- &lt;a href="#downloads-links" class="heading-mark">
+&lt;h4 class="heading-element" id="links">&lt;span>14.2.1 Links&lt;/span>
+ &lt;a href="#links" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;ul>
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-arm"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux ARM image for Raspberry Pi&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="steps">&lt;span>11.2.2 Steps&lt;/span>
+&lt;h4 class="heading-element" id="steps">&lt;span>14.2.2 Steps&lt;/span>
  &lt;a href="#steps" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -59,7 +59,7 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;li>Insert the card into the Raspberry Pi, connect all peripherals, and boot it up.&lt;/li>
 &lt;li>Follow the on-screen setup instructions and ensure your Wi-Fi adapter is compatible with monitor mode.&lt;/li>
 &lt;/ol>
-&lt;h2 class="heading-element" id="architecture">&lt;span>12 Architecture&lt;/span>
+&lt;h2 class="heading-element" id="architecture">&lt;span>15 Architecture&lt;/span>
  &lt;a href="#architecture" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -92,18 +92,165 @@ Join us as we continue this educational journey through ethical hacking and wire
  ap -->|Connects through| firewall
  attacker -->|Sends data for analysis| monitor
  client -->|Traffic monitored by| monitor
- firewall -.->|Blocks traffic to Internet| Internet["Internet"]&lt;/template></description></item><item><title>This site is a personal space where I publish technical write-ups, offensive security research, and practical guides focused on penetration testing, exploit development, and red team operations.</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Wed, 21 May 2025 20:58:06 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
+ firewall -.->|Blocks traffic to Internet| Internet["Internet"]&lt;/template>&lt;h2 class="heading-element" id="qemukvm">&lt;span>16 QEMU/KVM&lt;/span>
+ &lt;a href="#qemukvm" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>To begin, open &lt;strong>virt-manager&lt;/strong> (Virtual Machine Manager) on your Arch Linux system. This graphical tool will allow you to easily manage virtual machines using QEMU/KVM in the background. Once the application is open, click on the &lt;strong>&amp;ldquo;Create a new virtual machine&amp;rdquo;&lt;/strong> button.&lt;/p>
+&lt;p>In the wizard that appears, select &lt;strong>&amp;ldquo;Local install media (ISO image or CDROM)&amp;rdquo;&lt;/strong>, then browse to and select the &lt;strong>Kali Linux ISO file&lt;/strong> you previously downloaded. Next, choose the OS type as &lt;strong>Linux&lt;/strong>, and for the version, select either &lt;strong>Debian 10/11 (64-bit)&lt;/strong> or &lt;strong>Generic Linux (64-bit)&lt;/strong>—both will work well for Kali.&lt;/p>
+&lt;p>You’ll then be prompted to assign system resources to the VM. It is recommended to allocate &lt;strong>at least 2GB of RAM&lt;/strong>, but &lt;strong>4GB (4096MB)&lt;/strong> is ideal if your host machine allows it. You should also assign &lt;strong>2 or more CPU cores&lt;/strong> to ensure smooth performance. After this, you’ll create a virtual hard disk—make sure it is &lt;strong>at least 20GB&lt;/strong>, and &lt;strong>dynamically allocated&lt;/strong> to save space.&lt;/p>
+&lt;p>Once these steps are complete, click &lt;strong>Finish&lt;/strong> to create and launch the virtual machine.&lt;/p>
+&lt;div class="alert alert-caution">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M4.47.22A.749.749.0 015 0h6c.199.0.389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749.0 01-.22.53l-4.25 4.25A.749.749.0 0111 16H5a.749.749.0 01-.53-.22L.22 11.53A.749.749.0 010 11V5c0-.199.079-.389.22-.53zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5zM8 4a.75.75.0 01.75.75v3.5a.75.75.0 01-1.5.0v-3.5A.75.75.0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Caution&lt;/p>&lt;p>Before proceeding with creating the virtual machine, it&amp;rsquo;s strongly recommended to &lt;strong>verify the SHA256 checksum&lt;/strong> of the Kali Linux ISO. This helps ensure that the file has not been corrupted during download or maliciously altered.&lt;/p>&lt;/div>&lt;h3 class="heading-element" id="checksum">&lt;span>16.1 Checksum&lt;/span>
+ &lt;a href="#checksum" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">set&lt;/span> -e
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">VERSION&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;2025.1c&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">BASE_URL&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;https://cdimage.kali.org/kali-&lt;/span>&lt;span class="nv">$VERSION&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">ISO&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;kali-linux-&lt;/span>&lt;span class="nv">$VERSION&lt;/span>&lt;span class="s2">-installer-amd64.iso&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Creating download directory...&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mkdir -p ~/Downloads/iso/kali-&lt;span class="nv">$VERSION&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> ~/Downloads/iso/kali-&lt;span class="nv">$VERSION&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Downloading Kali Linux ISO and verification files...&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget -q --show-progress &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$BASE_URL&lt;/span>&lt;span class="s2">/&lt;/span>&lt;span class="nv">$ISO&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget -q --show-progress &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$BASE_URL&lt;/span>&lt;span class="s2">/SHA256SUMS&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget -q --show-progress &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$BASE_URL&lt;/span>&lt;span class="s2">/SHA256SUMS.gpg&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Importing Kali Linux official GPG key...&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Verifying SHA256SUMS signature...&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpg --verify SHA256SUMS.gpg SHA256SUMS
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Verifying ISO checksum...&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sha256sum -c SHA256SUMS 2&amp;gt;/dev/null &lt;span class="p">|&lt;/span> grep &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$ISO&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;All done! If you see &amp;#39;&lt;/span>&lt;span class="nv">$ISO&lt;/span>&lt;span class="s2">: OK&amp;#39; above, your ISO is verified and safe to use.&amp;#34;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Creating&lt;/span> &lt;span class="n">download&lt;/span> &lt;span class="n">directory&lt;/span>&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Downloading&lt;/span> &lt;span class="n">Kali&lt;/span> &lt;span class="n">Linux&lt;/span> &lt;span class="n">ISO&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">verification&lt;/span> &lt;span class="n">files&lt;/span>&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">kali&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">linux&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mf">2025.1&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">installer&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="o">%&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="o">===========================================&amp;gt;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="mf">4.13&lt;/span>&lt;span class="n">G&lt;/span> &lt;span class="mi">107&lt;/span>&lt;span class="n">MB&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">s&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="mi">41&lt;/span>&lt;span class="n">s&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">SHA256SUMS&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="o">%&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="o">===========================================&amp;gt;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="mf">2.80&lt;/span>&lt;span class="n">K&lt;/span> &lt;span class="o">--.-&lt;/span>&lt;span class="n">KB&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">s&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="n">s&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">SHA256SUMS&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">gpg&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="o">%&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="o">===========================================&amp;gt;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="mi">833&lt;/span> &lt;span class="o">--.-&lt;/span>&lt;span class="n">KB&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">s&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="n">s&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Importing&lt;/span> &lt;span class="n">Kali&lt;/span> &lt;span class="n">Linux&lt;/span> &lt;span class="n">official&lt;/span> &lt;span class="n">GPG&lt;/span> &lt;span class="n">key&lt;/span>&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">key&lt;/span> &lt;span class="n">ED444FF07D8D0BF6&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="n">duplicate&lt;/span> &lt;span class="n">signatures&lt;/span> &lt;span class="n">removed&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">key&lt;/span> &lt;span class="n">ED444FF07D8D0BF6&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Kali Linux Repository &amp;lt;devel@kali.org&amp;gt;&amp;#34;&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="n">changed&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Total&lt;/span> &lt;span class="n">number&lt;/span> &lt;span class="n">processed&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">unchanged&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Verifying&lt;/span> &lt;span class="n">SHA256SUMS&lt;/span> &lt;span class="n">signature&lt;/span>&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Signature&lt;/span> &lt;span class="n">made&lt;/span> &lt;span class="n">Thu&lt;/span> &lt;span class="mi">24&lt;/span> &lt;span class="n">Apr&lt;/span> &lt;span class="mi">2025&lt;/span> &lt;span class="mi">05&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="mi">31&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="mi">10&lt;/span> &lt;span class="n">AM&lt;/span> &lt;span class="n">CEST&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">using&lt;/span> &lt;span class="n">RSA&lt;/span> &lt;span class="n">key&lt;/span> &lt;span class="mi">827&lt;/span>&lt;span class="n">C8569F2518CC677FECA1AED65462EC8D5E4C5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">checking&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">trustdb&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">marginals&lt;/span> &lt;span class="n">needed&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="n">completes&lt;/span> &lt;span class="n">needed&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="n">trust&lt;/span> &lt;span class="n">model&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">pgp&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">depth&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="n">valid&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="n">signed&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="n">trust&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="n">q&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="n">u&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">next&lt;/span> &lt;span class="n">trustdb&lt;/span> &lt;span class="n">check&lt;/span> &lt;span class="n">due&lt;/span> &lt;span class="n">at&lt;/span> &lt;span class="mi">2028&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">04&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">17&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">gpg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Good&lt;/span> &lt;span class="n">signature&lt;/span> &lt;span class="n">from&lt;/span> &lt;span class="s2">&amp;#34;Kali Linux Archive Automatic Signing Key (2025) &amp;lt;devel@kali.org&amp;gt;&amp;#34;&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">ultimate&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Verifying&lt;/span> &lt;span class="n">ISO&lt;/span> &lt;span class="n">checksum&lt;/span>&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">kali&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">linux&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mf">2025.1&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">installer&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">amd64&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">iso&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">OK&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">kali&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">linux&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mf">2025.1&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">installer&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">amd64&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">iso&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">torrent&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">FAILED&lt;/span> &lt;span class="n">open&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">read&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">All&lt;/span> &lt;span class="n">done&lt;/span>&lt;span class="o">!&lt;/span> &lt;span class="n">If&lt;/span> &lt;span class="n">you&lt;/span> &lt;span class="n">see&lt;/span> &lt;span class="s1">&amp;#39;kali-linux-2025.1c-installer-amd64.iso: OK&amp;#39;&lt;/span> &lt;span class="n">above&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">your&lt;/span> &lt;span class="n">ISO&lt;/span> &lt;span class="n">is&lt;/span> &lt;span class="n">verified&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">safe&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">use&lt;/span>&lt;span class="o">.&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 class="heading-element" id="configuring">&lt;span>16.2 Configuring&lt;/span>
+ &lt;a href="#configuring" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Before installing Kali, a few adjustments to the virtual hardware settings are necessary. In &lt;strong>virt-manager&lt;/strong>, select your newly created Kali VM and click &lt;strong>Open&lt;/strong> to access its console. Then click the &lt;strong>lightbulb icon&lt;/strong>, which opens the &lt;strong>Virtual Hardware Details&lt;/strong> panel.&lt;/p>
+&lt;p>Inside this panel, check that the &lt;strong>Kali Linux ISO&lt;/strong> is correctly attached as the &lt;strong>boot media&lt;/strong> under the &amp;ldquo;IDE CDROM&amp;rdquo; section. Next, review the &lt;strong>network settings&lt;/strong>. By default, the network is set to &lt;strong>NAT&lt;/strong>, which provides Internet access through your host. However, if you want the VM to be visible on your local network (useful for advanced testing), you can change it to &lt;strong>Bridged&lt;/strong> mode and select your host interface.&lt;/p>
+&lt;p>Finally, scroll down to ensure that a &lt;strong>USB controller&lt;/strong> (either USB 2.0 or 3.0) is present and enabled. This will be important later when attaching a USB Wi-Fi adapter.&lt;/p>
+&lt;h3 class="heading-element" id="installing">&lt;span>16.3 Installing&lt;/span>
+ &lt;a href="#installing" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Now that your VM is ready, start it up. The system should boot directly into the Kali Linux ISO. On the boot menu, select &lt;strong>&amp;ldquo;Graphical Install&amp;rdquo;&lt;/strong> to launch the graphical installer, which is easier for most users to navigate.&lt;/p>
+&lt;p>Proceed through the installation by choosing your &lt;strong>language&lt;/strong>, &lt;strong>country&lt;/strong>, and &lt;strong>keyboard layout&lt;/strong>. You’ll then configure your &lt;strong>network settings&lt;/strong>, including a hostname (e.g., &lt;code>kali-vm&lt;/code>) and an optional domain name. After that, create a &lt;strong>user account and password&lt;/strong>. Kali now defaults to a non-root user, which improves security and mirrors real-world Linux use.&lt;/p>
+&lt;p>For disk setup, select &lt;strong>Guided - use entire disk&lt;/strong>, which is the simplest and safest option for a VM. Confirm your partitioning choices and let the installer complete the process. Once installation is finished, &lt;strong>remove the ISO&lt;/strong> from the virtual CD-ROM and &lt;strong>reboot&lt;/strong> the VM.&lt;/p>
+&lt;h3 class="heading-element" id="setting">&lt;span>16.4 Setting&lt;/span>
+ &lt;a href="#setting" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>If you plan to use tools that require raw access to a wireless interface, such as &lt;code>aircrack-ng&lt;/code> or &lt;code>bettercap&lt;/code>, you’ll need to passthrough a &lt;strong>USB Wi-Fi adapter&lt;/strong> that supports &lt;strong>monitor mode and packet injection&lt;/strong>.&lt;/p>
+&lt;p>To do this, plug your adapter into the host machine. Then, with the Kali VM powered off, open &lt;strong>Virtual Hardware Details&lt;/strong> in virt-manager. Click &lt;strong>&amp;ldquo;Add Hardware&amp;rdquo;&lt;/strong>, choose &lt;strong>&amp;ldquo;USB Host Device&amp;rdquo;&lt;/strong>, and select your USB Wi-Fi adapter from the list.&lt;/p>
+&lt;p>Once added, start the VM again. Inside Kali Linux, open a terminal and run:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">iwconfig&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>This site is a personal space where I publish technical write-ups, offensive security research, and practical guides focused on penetration testing, exploit development, and red team operations.</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Wed, 21 May 2025 20:58:06 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
  &lt;a href="#proxygeek-blog" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>5 articles in total&lt;/p>
+&lt;/h2>&lt;p>4 articles in total&lt;/p>
 &lt;h2 class="heading-element" id="2025">&lt;span>2025&lt;/span>
  &lt;a href="#2025" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>5 articles in total&lt;/p>
+&lt;/h2>&lt;p>4 articles in total&lt;/p>
 &lt;ul>
-&lt;li>05-23 &lt;a href="https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-ruby/" title="2025-05-23 21:15:58"target="_blank" rel="external nofollow noopener noreferrer">The &lt;code>offsec-ruby&lt;/code> directory houses Ruby scripts and modules tailored for use with the Metasploit Framework, including custom exploits, payloads, and automation tools.&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>05-23 &lt;a href="https://Pr0xyG33k.github.io/posts/wireless02/" title="2025-05-23 17:50:15"target="_blank" rel="external nofollow noopener noreferrer">Wireless Hacking Part 2&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>05-21 &lt;a href="https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/" title="2025-05-21 20:58:06"target="_blank" rel="external nofollow noopener noreferrer">This site is a personal space where I publish technical write-ups, offensive security research, and practical guides focused on penetration testing, exploit development, and red team operations.&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>05-20 &lt;a href="https://Pr0xyG33k.github.io/posts/wireless01/" title="2025-05-20 10:48:10"target="_blank" rel="external nofollow noopener noreferrer">Wireless Hacking Part 1&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
@@ -180,13 +327,7 @@ Join us as we continue this educational journey through ethical hacking and wire
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>Wi-Fi operates based on the principles of radio wave transmission and modulation. This allows devices to communicate wirelessly and transfer data. The technology is built on the IEEE 802.11 family of standards, which outline the specifications and protocols used for wireless local area networks (WLANs).&lt;/p>
-&lt;div class="details admonition info open">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>Info&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;strong>The IEEE (Institute of Electrical and Electronics Engineers)&lt;/strong> is an international organization that creates technical standards for various fields of engineering.&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="the-evolution">&lt;span>33 The Evolution&lt;/span>
+&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>&lt;strong>The IEEE (Institute of Electrical and Electronics Engineers)&lt;/strong> is an international organization that creates technical standards for various fields of engineering.&lt;/p>&lt;/div>&lt;h2 class="heading-element" id="the-evolution">&lt;span>33 The Evolution&lt;/span>
  &lt;a href="#the-evolution" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -350,13 +491,7 @@ Join us as we continue this educational journey through ethical hacking and wire
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>A &lt;strong>Wi-Fi adapter&lt;/strong>, also known as a &lt;strong>Wi-Fi dongle&lt;/strong> or &lt;strong>wireless network adapter&lt;/strong>, is a device that enables a computer or other devices to &lt;strong>connect to a Wi-Fi network&lt;/strong>. It allows devices that do not have built-in Wi-Fi capabilities to access &lt;strong>wireless networks&lt;/strong> and &lt;strong>connect to the internet&lt;/strong> or communicate with other devices &lt;strong>wirelessly&lt;/strong>.&lt;/p>
-&lt;div class="details admonition info open">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>Info&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h3 class="heading-element" id="ap-access-point">&lt;span>35.2 AP (Access Point)&lt;/span>
+&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.&lt;/p>&lt;/div>&lt;h3 class="heading-element" id="ap-access-point">&lt;span>35.2 AP (Access Point)&lt;/span>
  &lt;a href="#ap-access-point" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -375,17 +510,8 @@ Join us as we continue this educational journey through ethical hacking and wire
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>Channels&lt;/strong> refer to specific &lt;strong>frequencies&lt;/strong> within the &lt;strong>wireless spectrum&lt;/strong> that are used for &lt;strong>transmitting and receiving data&lt;/strong>. Wi-Fi channels are &lt;strong>divided&lt;/strong> to reduce &lt;strong>interference&lt;/strong> and allow multiple networks to operate in &lt;strong>close proximity&lt;/strong> without conflicting with each other.&lt;/p>
-&lt;div class="details admonition info open">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>Info&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;ul>
-&lt;li>Each frequency band is divided into multiple channels, represented by numbers. For example, in the 2.4 GHz band, there are 11 channels available, usually numbered from 1 to 11. In the 5 GHz band, there are typically more channels available, such as 24 or more.&lt;/li>
-&lt;li>Channels in the 2.4 GHz band have a narrower frequency range and can partially overlap with each other. This means that neighboring Wi-Fi networks using nearby channels may experience interference, which can degrade the performance of both networks.&lt;/li>
-&lt;/ul>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h3 class="heading-element" id="essid">&lt;span>35.5 ESSID&lt;/span>
+&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>Each frequency band is divided into multiple channels, represented by numbers. For example, in the 2.4 GHz band, there are 11 channels available, usually numbered from 1 to 11. In the 5 GHz band, there are typically more channels available, such as 24 or more.
+Channels in the 2.4 GHz band have a narrower frequency range and can partially overlap with each other. This means that neighboring Wi-Fi networks using nearby channels may experience interference, which can degrade the performance of both networks.&lt;/p>&lt;/div>&lt;h3 class="heading-element" id="essid">&lt;span>35.5 ESSID&lt;/span>
  &lt;a href="#essid" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -564,13 +690,7 @@ Example: &lt;code>00:1A:2B:3C:4D:5E&lt;/code> — the first half is the &lt;stro
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>The router &lt;strong>forwards the response packets&lt;/strong> to the correct device on the &lt;strong>local network&lt;/strong>. The device processes the data, enabling the user to &lt;strong>view webpages&lt;/strong>, &lt;strong>receive emails&lt;/strong>, or &lt;strong>use internet services&lt;/strong>.&lt;/p>
-&lt;div class="details admonition info open">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>Info&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">Each device on the network uses Router’s Public Ip address to communicate to the whole world.&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h3 class="heading-element" id="wi-fi-adapter-operation-modes">&lt;span>36.9 Wi-Fi Adapter Operation Modes&lt;/span>
+&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>Each device on the network uses Router’s Public Ip address to communicate to the whole world.&lt;/p>&lt;/div>&lt;h3 class="heading-element" id="wi-fi-adapter-operation-modes">&lt;span>36.9 Wi-Fi Adapter Operation Modes&lt;/span>
  &lt;a href="#wi-fi-adapter-operation-modes" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -595,13 +715,7 @@ Example: &lt;code>00:1A:2B:3C:4D:5E&lt;/code> — the first half is the &lt;stro
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>While similar to monitor mode, &lt;strong>promiscuous mode&lt;/strong> focuses on &lt;strong>capturing all traffic&lt;/strong> the adapter can receive, &lt;strong>regardless of destination&lt;/strong>. It is used in &lt;strong>network analysis&lt;/strong> and &lt;strong>security assessments&lt;/strong> to inspect and study &lt;strong>data packets&lt;/strong> for &lt;strong>anomalies&lt;/strong> or &lt;strong>threats&lt;/strong>.&lt;/p>
-&lt;div class="details admonition note open">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>Note&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">All of the above-mentioned modes are not available in all WIFI adaptors, there are only specific WIFI adaptors in the market that supports modes other than managed mode. So to fully learn from these series you will have to get an adaptor which these modes&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;p>There is a list of WIFI adaptors from which you can choose:&lt;/p>
+&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>All of the above-mentioned modes are not available in all WIFI adaptors, there are only specific WIFI adaptors in the market that supports modes other than managed mode. So to fully learn from these series you will have to get an adaptor which these modes&lt;/p>&lt;/div>&lt;p>There is a list of WIFI adaptors from which you can choose:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.amazon.com/dp/B01MZD7Z76"target="_blank" rel="external nofollow noopener noreferrer">Alfa AC1900 WiFi Adapter&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.amazon.com/dp/B00VEEBOPG"target="_blank" rel="external nofollow noopener noreferrer">Alfa Long-Range Dual-Band AC1200 Wireless USB 3.0&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>

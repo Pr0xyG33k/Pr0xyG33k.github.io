@@ -35,9 +35,8 @@ Wi-Fi is the primary method of internet connectivity in **homes** and **business
 
 Wi-Fi operates based on the principles of radio wave transmission and modulation. This allows devices to communicate wirelessly and transfer data. The technology is built on the IEEE 802.11 family of standards, which outline the specifications and protocols used for wireless local area networks (WLANs).
 
-{{< admonition info >}}
-**The IEEE (Institute of Electrical and Electronics Engineers)** is an international organization that creates technical standards for various fields of engineering.
-{{< /admonition >}}
+> [!NOTE]
+> **The IEEE (Institute of Electrical and Electronics Engineers)** is an international organization that creates technical standards for various fields of engineering.
 
 ## The Evolution
 
@@ -76,9 +75,8 @@ Wireless security protocols are designed to protect wireless networks from unaut
 
 A **Wi-Fi adapter**, also known as a **Wi-Fi dongle** or **wireless network adapter**, is a device that enables a computer or other devices to **connect to a Wi-Fi network**. It allows devices that do not have built-in Wi-Fi capabilities to access **wireless networks** and **connect to the internet** or communicate with other devices **wirelessly**.
 
-{{< admonition info >}}
-If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.
-{{< /admonition >}}
+> [!NOTE]
+> If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.
 
 ### AP (Access Point)
 
@@ -196,11 +194,9 @@ If you want to use WIFI functionality in a virtual machine, you will have to use
 
 **Channels** refer to specific **frequencies** within the **wireless spectrum** that are used for **transmitting and receiving data**. Wi-Fi channels are **divided** to reduce **interference** and allow multiple networks to operate in **close proximity** without conflicting with each other.
 
-{{< admonition info >}}
-
-- Each frequency band is divided into multiple channels, represented by numbers. For example, in the 2.4 GHz band, there are 11 channels available, usually numbered from 1 to 11. In the 5 GHz band, there are typically more channels available, such as 24 or more.
-- Channels in the 2.4 GHz band have a narrower frequency range and can partially overlap with each other. This means that neighboring Wi-Fi networks using nearby channels may experience interference, which can degrade the performance of both networks.
-{{< /admonition >}}
+> [!NOTE]
+> Each frequency band is divided into multiple channels, represented by numbers. For example, in the 2.4 GHz band, there are 11 channels available, usually numbered from 1 to 11. In the 5 GHz band, there are typically more channels available, such as 24 or more.
+> Channels in the 2.4 GHz band have a narrower frequency range and can partially overlap with each other. This means that neighboring Wi-Fi networks using nearby channels may experience interference, which can degrade the performance of both networks.
 
 ### ESSID
 
@@ -336,9 +332,8 @@ Response packets are routed back using the router’s **public IP address**. The
 
 The router **forwards the response packets** to the correct device on the **local network**. The device processes the data, enabling the user to **view webpages**, **receive emails**, or **use internet services**.
 
-{{< admonition info >}}
-Each device on the network uses Router’s Public Ip address to communicate to the whole world.
-{{< /admonition >}}
+> [!NOTE]
+> Each device on the network uses Router’s Public Ip address to communicate to the whole world.
 
 ### Wi-Fi Adapter Operation Modes
 
@@ -360,9 +355,8 @@ Some adapters support **Soft AP mode**, which allows them to act as **virtual ac
 
 While similar to monitor mode, **promiscuous mode** focuses on **capturing all traffic** the adapter can receive, **regardless of destination**. It is used in **network analysis** and **security assessments** to inspect and study **data packets** for **anomalies** or **threats**.
 
-{{< admonition note >}}
-All of the above-mentioned modes are not available in all WIFI adaptors, there are only specific WIFI adaptors in the market that supports modes other than managed mode. So to fully learn from these series you will have to get an adaptor which these modes
-{{< /admonition >}}
+> [!NOTE]
+> All of the above-mentioned modes are not available in all WIFI adaptors, there are only specific WIFI adaptors in the market that supports modes other than managed mode. So to fully learn from these series you will have to get an adaptor which these modes
 
 There is a list of WIFI adaptors from which you can choose:
 
