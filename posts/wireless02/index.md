@@ -72,6 +72,11 @@ To begin, open **virt-manager** (Virtual Machine Manager) on your Arch Linux sys
 
 In the wizard that appears, select **"Local install media (ISO image or CDROM)"**, then browse to and select the **Kali Linux ISO file** you previously downloaded. Next, choose the OS type as **Linux**, and for the version, select either **Debian 10/11 (64-bit)** or **Generic Linux (64-bit)**—both will work well for Kali.
 
+<div style="display: flex; justify-content: space-between;">
+  <img src="/posts/_wireless/hacking02/images/os.pngc" alt="os" style="width: 45%; margin-right: 10px;" />
+  <img src="/posts/_wireless/hacking02/images/set.png" alt="set" style="width: 45%;" />
+</div>
+
 You’ll then be prompted to assign system resources to the VM. It is recommended to allocate **at least 2GB of RAM**, but **4GB (4096MB)** is ideal if your host machine allows it. You should also assign **2 or more CPU cores** to ensure smooth performance. After this, you’ll create a virtual hard disk—make sure it is **at least 20GB**, and **dynamically allocated** to save space.
 
 Once these steps are complete, click **Finish** to create and launch the virtual machine.
