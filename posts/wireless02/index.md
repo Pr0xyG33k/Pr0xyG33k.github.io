@@ -46,6 +46,26 @@ Before performing any wireless attacks or experiments, it's crucial to set up a 
 2. Insert the card into the Raspberry Pi, connect all peripherals, and boot it up.
 3. Follow the on-screen setup instructions and ensure your Wi-Fi adapter is compatible with monitor mode.
 
+## Architecture
+
+```mermaid
+graph TD
+    subgraph "Wi-Fi Hacking Lab"
+        attacker["Attacker Machine (Kali Linux)"]
+        ap["Target Access Point (Test AP)"]
+        client["Test Client Device"]
+        firewall["Isolation Switch / Firewall"]
+        monitor["Monitoring & Logging Station"]
+    end
+
+    attacker -->|Inject & Capture Traffic| ap
+    client -->|Connects to| ap
+    ap -->|Connects through| firewall
+    attacker -->|Sends data for analysis| monitor
+    client -->|Traffic monitored by| monitor
+    firewall -.->|Blocks traffic to Internet| Internet["Internet"]
+```
+
 
 ---
 

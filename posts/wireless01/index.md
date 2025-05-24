@@ -35,8 +35,9 @@ Wi-Fi is the primary method of internet connectivity in **homes** and **business
 
 Wi-Fi operates based on the principles of radio wave transmission and modulation. This allows devices to communicate wirelessly and transfer data. The technology is built on the IEEE 802.11 family of standards, which outline the specifications and protocols used for wireless local area networks (WLANs).
 
-> [!INFO]INFO
-> **The IEEE (Institute of Electrical and Electronics Engineers)** is an international organization that creates technical standards for various fields of engineering.
+{{< admonition info >}}
+**The IEEE (Institute of Electrical and Electronics Engineers)** is an international organization that creates technical standards for various fields of engineering.
+{{< /admonition >}}
 
 ## The Evolution
 
@@ -75,8 +76,9 @@ Wireless security protocols are designed to protect wireless networks from unaut
 
 A **Wi-Fi adapter**, also known as a **Wi-Fi dongle** or **wireless network adapter**, is a device that enables a computer or other devices to **connect to a Wi-Fi network**. It allows devices that do not have built-in Wi-Fi capabilities to access **wireless networks** and **connect to the internet** or communicate with other devices **wirelessly**.
 
-> [!INFO]INFO
-> If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.
+{{< admonition info >}}
+If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.
+{{< /admonition >}}
 
 ### AP (Access Point)
 
@@ -89,14 +91,116 @@ A **Wi-Fi adapter**, also known as a **Wi-Fi dongle** or **wireless network adap
 - **2.4 GHz**: The 2.4 GHz band is the **older** and more **widely used** frequency band in Wi-Fi. It provides **good coverage** and can **penetrate obstacles** like walls more effectively.
 - **5 GHz**: The 5 GHz band is a **newer** addition to Wi-Fi and offers more **available channels** with **wider frequency ranges**. It provides **faster data speeds** and is **less congested** compared to the 2.4 GHz band since fewer devices operate in this range. However, the 5 GHz signals have a **shorter range** and may encounter more **attenuation** when passing through walls and other obstacles.
 
+```echarts {js=true}
+{
+  "color": ["#00BFFF", "#FF7F50"],
+  "title": {
+    "text": "Wi-Fi Frequency Bands Overview",
+    "top": "2%",
+    "left": "center"
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "cross",
+      "label": {
+        "backgroundColor": "#6a7985"
+      }
+    }
+  },
+  "legend": {
+    "data": ["2.4 GHz", "5 GHz"],
+    "top": "10%"
+  },
+  "toolbox": {
+    "feature": {
+      "saveAsImage": {}
+    }
+  },
+  "grid": {
+    "left": "5%",
+    "right": "5%",
+    "bottom": "5%",
+    "top": "20%",
+    "containLabel": true
+  },
+  "xAxis": [
+    {
+      "type": "category",
+      "boundaryGap": false,
+      "data": ["Coverage", "Channels", "Speed", "Penetration", "Congestion"]
+    }
+  ],
+  "yAxis": [
+    {
+      "type": "value",
+      "max": 10
+    }
+  ],
+  "series": [
+    {
+      "name": "2.4 GHz",
+      "type": "line",
+      "stack": "Total",
+      "smooth": true,
+      "lineStyle": { "width": 0 },
+      "showSymbol": false,
+      "areaStyle": {
+        "opacity": 0.8,
+        "color": {
+          "type": "linear",
+          "x": 0,
+          "y": 0,
+          "x2": 0,
+          "y2": 1,
+          "colorStops": [
+            { "offset": 0, "color": "rgb(0, 191, 255)" },
+            { "offset": 1, "color": "rgb(135, 206, 250)" }
+          ]
+        }
+      },
+      "emphasis": { "focus": "series" },
+      "data": [9, 3, 5, 8, 7]
+    },
+    {
+      "name": "5 GHz",
+      "type": "line",
+      "stack": "Total",
+      "smooth": true,
+      "lineStyle": { "width": 0 },
+      "showSymbol": false,
+      "areaStyle": {
+        "opacity": 0.8,
+        "color": {
+          "type": "linear",
+          "x": 0,
+          "y": 0,
+          "x2": 0,
+          "y2": 1,
+          "colorStops": [
+            { "offset": 0, "color": "rgb(255, 127, 80)" },
+            { "offset": 1, "color": "rgb(255, 160, 122)" }
+          ]
+        }
+      },
+      "emphasis": { "focus": "series" },
+      "data": [6, 9, 9, 5, 3]
+    }
+  ]
+}
+
+
+```
+
 ### Channels
 
 **Channels** refer to specific **frequencies** within the **wireless spectrum** that are used for **transmitting and receiving data**. Wi-Fi channels are **divided** to reduce **interference** and allow multiple networks to operate in **close proximity** without conflicting with each other.
 
-> [!INFO]INFO
->
-> - Each frequency band is divided into multiple channels, represented by numbers. For example, in the 2.4 GHz band, there are 11 channels available, usually numbered from 1 to 11. In the 5 GHz band, there are typically more channels available, such as 24 or more.
-> - Channels in the 2.4 GHz band have a narrower frequency range and can partially overlap with each other. This means that neighboring Wi-Fi networks using nearby channels may experience interference, which can degrade the performance of both networks.
+{{< admonition info >}}
+
+- Each frequency band is divided into multiple channels, represented by numbers. For example, in the 2.4 GHz band, there are 11 channels available, usually numbered from 1 to 11. In the 5 GHz band, there are typically more channels available, such as 24 or more.
+- Channels in the 2.4 GHz band have a narrower frequency range and can partially overlap with each other. This means that neighboring Wi-Fi networks using nearby channels may experience interference, which can degrade the performance of both networks.
+{{< /admonition >}}
 
 ### ESSID
 
@@ -133,9 +237,21 @@ Example: `00:1A:2B:3C:4D:5E` — the first half is the **Organizationally Unique
 
 When a device wants to communicate with another on the same network, it uses ARP to find the **MAC address** of the destination by sending an **ARP request**.
 
-<p align="center">
-  <img src="/posts/_wireless/hacking01/images/arp.svg" alt="arp">
-</p>
+```mermaid
+sequenceDiagram
+    participant PC1 as PC1 (Requester)
+    participant Network as Network (Broadcast)
+    participant PC2 as PC2 (Responder)
+
+    PC1->>Network: ARP Request (Who has IP 192.168.1.2?)
+    Note over Network: Broadcast message to all devices
+    Network->>PC2: ARP Request
+
+    PC2->>Network: ARP Reply (The MAC address for 192.168.1.2 is 00:11:22:33:44:55)
+    Network->>PC1: ARP Reply
+
+    PC1->>PC2: Direct communication using found MAC address
+```
 
 ### IP Address
 
@@ -165,9 +281,26 @@ A **subnet** (subnetwork) is a **logical division** of an IP network.
 
 **DHCP** (Dynamic Host Configuration Protocol) is responsible for **automatically assigning IP addresses** and other network settings to devices on a network.
 
-<p align="center">
-  <img src="/posts/_wireless/hacking01/images/dhcp.svg" alt="dhcp" width="1000">
-</p>
+```mermaid
+sequenceDiagram
+    participant Client as Client (Device)
+    participant Network as Network (Broadcast)
+    participant DHCPServer as DHCP Server
+
+    Client->>Network: DHCP Discover (Looking for DHCP server)
+    Network->>DHCPServer: DHCP Discover
+
+    DHCPServer->>Network: DHCP Offer (IP address + config)
+    Network->>Client: DHCP Offer
+
+    Client->>Network: DHCP Request (Requesting offered IP)
+    Network->>DHCPServer: DHCP Request
+
+    DHCPServer->>Network: DHCP Acknowledgment (Confirm IP assigned)
+    Network->>Client: DHCP Acknowledgment
+
+    Client->>DHCPServer: Communication with assigned IP
+```
 
 ### Working Of WIFI
 
@@ -203,8 +336,9 @@ Response packets are routed back using the router’s **public IP address**. The
 
 The router **forwards the response packets** to the correct device on the **local network**. The device processes the data, enabling the user to **view webpages**, **receive emails**, or **use internet services**.
 
-> [!INFO]INFO
-> Each device on the network uses Router’s Public Ip address to communicate to the whole world.
+{{< admonition info >}}
+Each device on the network uses Router’s Public Ip address to communicate to the whole world.
+{{< /admonition >}}
 
 ### Wi-Fi Adapter Operation Modes
 
@@ -226,8 +360,9 @@ Some adapters support **Soft AP mode**, which allows them to act as **virtual ac
 
 While similar to monitor mode, **promiscuous mode** focuses on **capturing all traffic** the adapter can receive, **regardless of destination**. It is used in **network analysis** and **security assessments** to inspect and study **data packets** for **anomalies** or **threats**.
 
-> [!NOTE]NOTE
-> All of the above-mentioned modes are not available in all WIFI adaptors, there are only specific WIFI adaptors in the market that supports modes other than managed mode. So to fully learn from these series you will have to get an adaptor which these modes
+{{< admonition note >}}
+All of the above-mentioned modes are not available in all WIFI adaptors, there are only specific WIFI adaptors in the market that supports modes other than managed mode. So to fully learn from these series you will have to get an adaptor which these modes
+{{< /admonition >}}
 
 There is a list of WIFI adaptors from which you can choose:
 

@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 31 May 2025 02:15:54 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>The `offsec-ruby` directory houses Ruby scripts and modules tailored for use with the Metasploit Framework, including custom exploits, payloads, and automation tools.</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-ruby/</link><pubDate>Fri, 23 May 2025 21:15:58 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-ruby/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description/></item><item><title>Wireless Hacking Part 2</title><link>https://Pr0xyG33k.github.io/posts/wireless02/</link><pubDate>Fri, 23 May 2025 17:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless02/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>1 About&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 31 May 2025 02:15:54 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Wireless Hacking Part 2</title><link>https://Pr0xyG33k.github.io/posts/wireless02/</link><pubDate>Fri, 23 May 2025 17:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless02/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>10 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>In this second part of the Wireless Hacking series, we shift our focus from theory to practice. Before diving into real-world attacks, it’s crucial to prepare a safe, legal, and isolated environment to experiment and learn.
 Join us as we continue this educational journey through ethical hacking and wireless security.&lt;/p>
-&lt;h2 class="heading-element" id="environment">&lt;span>2 Environment&lt;/span>
+&lt;h2 class="heading-element" id="environment">&lt;span>11 Environment&lt;/span>
  &lt;a href="#environment" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>Before performing any wireless attacks or experiments, it&amp;rsquo;s crucial to set up a safe and isolated testing environment. Here are two solid options depending on your setup and preferences:&lt;/p>
-&lt;h3 class="heading-element" id="option-1-installing-kali-linux-on-a-virtual-machine">&lt;span>2.1 Option 1: Installing Kali Linux on a Virtual Machine&lt;/span>
+&lt;h3 class="heading-element" id="option-1-installing-kali-linux-on-a-virtual-machine">&lt;span>11.1 Option 1: Installing Kali Linux on a Virtual Machine&lt;/span>
  &lt;a href="#option-1-installing-kali-linux-on-a-virtual-machine" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>Recommended software&lt;/strong>: &lt;a href="https://www.virtualbox.org/"target="_blank" rel="external nofollow noopener noreferrer">VirtualBox&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> or &lt;a href="https://www.vmware.com/products/workstation-player.html"target="_blank" rel="external nofollow noopener noreferrer">VMware Workstation Player&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> (free for personal use).&lt;/p>
-&lt;h4 class="heading-element" id="downloads">&lt;span>2.1.1 Downloads&lt;/span>
+&lt;h4 class="heading-element" id="downloads">&lt;span>11.1.1 Downloads&lt;/span>
  &lt;a href="#downloads" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -22,7 +22,7 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-virtual-machines"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux VirtualBox Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-installer-images"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux ISO Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="installation-steps">&lt;span>2.1.2 Installation Steps&lt;/span>
+&lt;h4 class="heading-element" id="installation-steps">&lt;span>11.1.2 Installation Steps&lt;/span>
  &lt;a href="#installation-steps" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -33,7 +33,7 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;li>Use a &lt;strong>USB Wi-Fi adapter that supports monitor mode&lt;/strong>, and pass it through to the VM.&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h3 class="heading-element" id="option-2-installing-kali-linux-on-a-raspberry-pi">&lt;span>2.2 Option 2: Installing Kali Linux on a Raspberry Pi&lt;/span>
+&lt;h3 class="heading-element" id="option-2-installing-kali-linux-on-a-raspberry-pi">&lt;span>11.2 Option 2: Installing Kali Linux on a Raspberry Pi&lt;/span>
  &lt;a href="#option-2-installing-kali-linux-on-a-raspberry-pi" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -43,14 +43,14 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;li>MicroSD card (minimum 16 GB)&lt;/li>
 &lt;li>Power supply, keyboard, mouse, and HDMI screen&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="downloads-links">&lt;span>2.2.1 Downloads Links&lt;/span>
+&lt;h4 class="heading-element" id="downloads-links">&lt;span>11.2.1 Downloads Links&lt;/span>
  &lt;a href="#downloads-links" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;ul>
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-arm"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux ARM image for Raspberry Pi&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="steps">&lt;span>2.2.2 Steps&lt;/span>
+&lt;h4 class="heading-element" id="steps">&lt;span>11.2.2 Steps&lt;/span>
  &lt;a href="#steps" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -58,37 +58,74 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;li>Use &lt;a href="https://www.raspberrypi.org/software/"target="_blank" rel="external nofollow noopener noreferrer">Raspberry Pi Imager&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> or a similar tool to flash the Kali image onto the microSD card.&lt;/li>
 &lt;li>Insert the card into the Raspberry Pi, connect all peripherals, and boot it up.&lt;/li>
 &lt;li>Follow the on-screen setup instructions and ensure your Wi-Fi adapter is compatible with monitor mode.&lt;/li>
-&lt;/ol></description></item><item><title>This site is a personal space where I publish technical write-ups, offensive security research, and practical guides focused on penetration testing, exploit development, and red team operations.</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Wed, 21 May 2025 20:58:06 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
+&lt;/ol>
+&lt;h2 class="heading-element" id="architecture">&lt;span>12 Architecture&lt;/span>
+ &lt;a href="#architecture" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;pre class="mermaid">graph TD
+ subgraph "Wi-Fi Hacking Lab"
+ attacker["Attacker Machine (Kali Linux)"]
+ ap["Target Access Point (Test AP)"]
+ client["Test Client Device"]
+ firewall["Isolation Switch / Firewall"]
+ monitor["Monitoring &amp; Logging Station"]
+ end
+
+ attacker -->|Inject &amp; Capture Traffic| ap
+ client -->|Connects to| ap
+ ap -->|Connects through| firewall
+ attacker -->|Sends data for analysis| monitor
+ client -->|Traffic monitored by| monitor
+ firewall -.->|Blocks traffic to Internet| Internet["Internet"]&lt;/pre>
+&lt;template>graph TD
+ subgraph "Wi-Fi Hacking Lab"
+ attacker["Attacker Machine (Kali Linux)"]
+ ap["Target Access Point (Test AP)"]
+ client["Test Client Device"]
+ firewall["Isolation Switch / Firewall"]
+ monitor["Monitoring &amp; Logging Station"]
+ end
+
+ attacker -->|Inject &amp; Capture Traffic| ap
+ client -->|Connects to| ap
+ ap -->|Connects through| firewall
+ attacker -->|Sends data for analysis| monitor
+ client -->|Traffic monitored by| monitor
+ firewall -.->|Blocks traffic to Internet| Internet["Internet"]&lt;/template></description></item><item><title>This site is a personal space where I publish technical write-ups, offensive security research, and practical guides focused on penetration testing, exploit development, and red team operations.</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Wed, 21 May 2025 20:58:06 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
  &lt;a href="#proxygeek-blog" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>2 articles in total&lt;/p>
+&lt;/h2>&lt;p>5 articles in total&lt;/p>
 &lt;h2 class="heading-element" id="2025">&lt;span>2025&lt;/span>
  &lt;a href="#2025" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>2 articles in total&lt;/p>
+&lt;/h2>&lt;p>5 articles in total&lt;/p>
 &lt;ul>
-&lt;li>05-18 &lt;a href="https://Pr0xyG33k.github.io/posts/wireless%231/" title="2025-05-18 17:50:15"target="_blank" rel="external nofollow noopener noreferrer">Wireless Hacking&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>05-23 &lt;a href="https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-ruby/" title="2025-05-23 21:15:58"target="_blank" rel="external nofollow noopener noreferrer">The &lt;code>offsec-ruby&lt;/code> directory houses Ruby scripts and modules tailored for use with the Metasploit Framework, including custom exploits, payloads, and automation tools.&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>05-23 &lt;a href="https://Pr0xyG33k.github.io/posts/wireless02/" title="2025-05-23 17:50:15"target="_blank" rel="external nofollow noopener noreferrer">Wireless Hacking Part 2&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>05-21 &lt;a href="https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/" title="2025-05-21 20:58:06"target="_blank" rel="external nofollow noopener noreferrer">This site is a personal space where I publish technical write-ups, offensive security research, and practical guides focused on penetration testing, exploit development, and red team operations.&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>05-20 &lt;a href="https://Pr0xyG33k.github.io/posts/wireless01/" title="2025-05-20 10:48:10"target="_blank" rel="external nofollow noopener noreferrer">Wireless Hacking Part 1&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>05-10 &lt;a href="https://Pr0xyG33k.github.io/posts/hello-world/" title="2025-05-10 02:47:00"target="_blank" rel="external nofollow noopener noreferrer">Hello World&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Wireless Hacking Part 1</title><link>https://Pr0xyG33k.github.io/posts/wireless01/</link><pubDate>Tue, 20 May 2025 10:48:10 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless01/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>1 About&lt;/span>
+&lt;/ul></description></item><item><title>Wireless Hacking Part 1</title><link>https://Pr0xyG33k.github.io/posts/wireless01/</link><pubDate>Tue, 20 May 2025 10:48:10 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless01/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>28 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>In this blog, we have introduced the &lt;strong>basics of wireless hacking&lt;/strong>. We have covered what &lt;strong>WiFi&lt;/strong> is, some important WiFi terms, the history of WiFi, and how WiFi works. In the next blog, we will start covering &lt;strong>wireless attacks&lt;/strong>. &lt;em>Join us for an engaging journey that combines learning, awareness, and securing our wireless connections.&lt;/em>&lt;/p>
-&lt;h2 class="heading-element" id="wireless-hacking">&lt;span>2 Wireless Hacking&lt;/span>
+&lt;h2 class="heading-element" id="wireless-hacking">&lt;span>29 Wireless Hacking&lt;/span>
  &lt;a href="#wireless-hacking" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>In today’s world, &lt;strong>Wi-Fi&lt;/strong> is ubiquitous, powering the internet connection for our devices and enabling seamless communication and access to information. But have you ever stopped to wonder how Wi-Fi actually works beneath the surface? Is it possible to &lt;strong>manipulate wireless networks&lt;/strong> for various purposes? In this series, &lt;strong>&amp;ldquo;Guide to Wireless Hacking,&amp;rdquo;&lt;/strong> we will explore the inner workings of Wi-Fi networks, uncover their &lt;strong>vulnerabilities&lt;/strong>, and learn how these weaknesses can be exploited.&lt;/p>
 &lt;p>In this first blog post, we will start with the &lt;strong>fundamentals&lt;/strong>. We’ll explore how Wi-Fi networks operate, define essential networking terms, and take a look at the &lt;strong>history&lt;/strong> and key characteristics of Wi-Fi technology.&lt;/p>
-&lt;h2 class="heading-element" id="what-is-wi-fi">&lt;span>3 What is Wi-Fi?&lt;/span>
+&lt;h2 class="heading-element" id="what-is-wi-fi">&lt;span>30 What is Wi-Fi?&lt;/span>
  &lt;a href="#what-is-wi-fi" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>&lt;strong>Wi-Fi&lt;/strong>, which stands for Wireless Fidelity, is a wireless technology that enables devices to &lt;strong>connect to the internet&lt;/strong> or communicate with each other without using physical cables. It relies on &lt;strong>radio waves&lt;/strong> to transmit data, which allows it to function in areas where it’s not possible to run traditional cables.&lt;/p>
 &lt;p>Wi-Fi is the primary method of internet connectivity in &lt;strong>homes&lt;/strong> and &lt;strong>businesses&lt;/strong>. It’s also widely available in &lt;strong>public spaces&lt;/strong> such as cafés, libraries, and airports.&lt;/p>
-&lt;h2 class="heading-element" id="key-features">&lt;span>4 Key Features&lt;/span>
+&lt;h2 class="heading-element" id="key-features">&lt;span>31 Key Features&lt;/span>
  &lt;a href="#key-features" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -138,17 +175,18 @@ Join us as we continue this educational journey through ethical hacking and wire
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 class="heading-element" id="the-technology-behind">&lt;span>5 The Technology Behind&lt;/span>
+&lt;h2 class="heading-element" id="the-technology-behind">&lt;span>32 The Technology Behind&lt;/span>
  &lt;a href="#the-technology-behind" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>Wi-Fi operates based on the principles of radio wave transmission and modulation. This allows devices to communicate wirelessly and transfer data. The technology is built on the IEEE 802.11 family of standards, which outline the specifications and protocols used for wireless local area networks (WLANs).&lt;/p>
-&lt;div class="details admonition info open disabled">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>INFO&lt;/div>
+&lt;div class="details admonition info open">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>Info&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>&lt;strong>The IEEE (Institute of Electrical and Electronics Engineers)&lt;/strong> is an international organization that creates technical standards for various fields of engineering.&lt;/p>&lt;/div>
+ &lt;div class="admonition-content">&lt;strong>The IEEE (Institute of Electrical and Electronics Engineers)&lt;/strong> is an international organization that creates technical standards for various fields of engineering.&lt;/div>
  &lt;/div>
-&lt;/div>&lt;h2 class="heading-element" id="the-evolution">&lt;span>6 The Evolution&lt;/span>
+&lt;/div>
+&lt;h2 class="heading-element" id="the-evolution">&lt;span>33 The Evolution&lt;/span>
  &lt;a href="#the-evolution" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -250,7 +288,7 @@ Join us as we continue this educational journey through ethical hacking and wire
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 class="heading-element" id="wireless-security-protocols">&lt;span>7 Wireless security Protocols&lt;/span>
+&lt;h2 class="heading-element" id="wireless-security-protocols">&lt;span>34 Wireless security Protocols&lt;/span>
  &lt;a href="#wireless-security-protocols" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -303,26 +341,27 @@ Join us as we continue this educational journey through ethical hacking and wire
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 class="heading-element" id="basic-terms">&lt;span>8 Basic Terms&lt;/span>
+&lt;h2 class="heading-element" id="basic-terms">&lt;span>35 Basic Terms&lt;/span>
  &lt;a href="#basic-terms" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="wifi-adaptor">&lt;span>8.1 WiFi Adaptor&lt;/span>
+&lt;/h2>&lt;h3 class="heading-element" id="wifi-adaptor">&lt;span>35.1 WiFi Adaptor&lt;/span>
  &lt;a href="#wifi-adaptor" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>A &lt;strong>Wi-Fi adapter&lt;/strong>, also known as a &lt;strong>Wi-Fi dongle&lt;/strong> or &lt;strong>wireless network adapter&lt;/strong>, is a device that enables a computer or other devices to &lt;strong>connect to a Wi-Fi network&lt;/strong>. It allows devices that do not have built-in Wi-Fi capabilities to access &lt;strong>wireless networks&lt;/strong> and &lt;strong>connect to the internet&lt;/strong> or communicate with other devices &lt;strong>wirelessly&lt;/strong>.&lt;/p>
-&lt;div class="details admonition info open disabled">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>INFO&lt;/div>
+&lt;div class="details admonition info open">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>Info&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.&lt;/p>&lt;/div>
+ &lt;div class="admonition-content">If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.&lt;/div>
  &lt;/div>
-&lt;/div>&lt;h3 class="heading-element" id="ap-access-point">&lt;span>8.2 AP (Access Point)&lt;/span>
+&lt;/div>
+&lt;h3 class="heading-element" id="ap-access-point">&lt;span>35.2 AP (Access Point)&lt;/span>
  &lt;a href="#ap-access-point" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>AP&lt;/strong> stands for &lt;strong>Access Point&lt;/strong> in the context of Wi-Fi. An Access Point is a device that allows &lt;strong>Wi-Fi-enabled devices&lt;/strong> to connect to a &lt;strong>wired network wirelessly&lt;/strong>. It acts as a &lt;strong>central hub&lt;/strong> or &lt;strong>gateway&lt;/strong> for wireless communication, providing a &lt;strong>bridge&lt;/strong> between Wi-Fi devices and a wired network.&lt;/p>
-&lt;h3 class="heading-element" id="frequency">&lt;span>8.3 Frequency&lt;/span>
+&lt;h3 class="heading-element" id="frequency">&lt;span>35.3 Frequency&lt;/span>
  &lt;a href="#frequency" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -331,35 +370,37 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;li>&lt;strong>2.4 GHz&lt;/strong>: The 2.4 GHz band is the &lt;strong>older&lt;/strong> and more &lt;strong>widely used&lt;/strong> frequency band in Wi-Fi. It provides &lt;strong>good coverage&lt;/strong> and can &lt;strong>penetrate obstacles&lt;/strong> like walls more effectively.&lt;/li>
 &lt;li>&lt;strong>5 GHz&lt;/strong>: The 5 GHz band is a &lt;strong>newer&lt;/strong> addition to Wi-Fi and offers more &lt;strong>available channels&lt;/strong> with &lt;strong>wider frequency ranges&lt;/strong>. It provides &lt;strong>faster data speeds&lt;/strong> and is &lt;strong>less congested&lt;/strong> compared to the 2.4 GHz band since fewer devices operate in this range. However, the 5 GHz signals have a &lt;strong>shorter range&lt;/strong> and may encounter more &lt;strong>attenuation&lt;/strong> when passing through walls and other obstacles.&lt;/li>
 &lt;/ul>
-&lt;h3 class="heading-element" id="channels">&lt;span>8.4 Channels&lt;/span>
+&lt;div class="echarts" style="width: 100%; height: 30rem;">&lt;/div>&lt;template data-fmt="js" data-async="false">{ &amp;#34;color&amp;#34;: [&amp;#34;#00BFFF&amp;#34;, &amp;#34;#FF7F50&amp;#34;], &amp;#34;title&amp;#34;: { &amp;#34;text&amp;#34;: &amp;#34;Wi-Fi Frequency Bands Overview&amp;#34;, &amp;#34;top&amp;#34;: &amp;#34;2%&amp;#34;, &amp;#34;left&amp;#34;: &amp;#34;center&amp;#34; }, &amp;#34;tooltip&amp;#34;: { &amp;#34;trigger&amp;#34;: &amp;#34;axis&amp;#34;, &amp;#34;axisPointer&amp;#34;: { &amp;#34;type&amp;#34;: &amp;#34;cross&amp;#34;, &amp;#34;label&amp;#34;: { &amp;#34;backgroundColor&amp;#34;: &amp;#34;#6a7985&amp;#34; } } }, &amp;#34;legend&amp;#34;: { &amp;#34;data&amp;#34;: [&amp;#34;2.4 GHz&amp;#34;, &amp;#34;5 GHz&amp;#34;], &amp;#34;top&amp;#34;: &amp;#34;10%&amp;#34; }, &amp;#34;toolbox&amp;#34;: { &amp;#34;feature&amp;#34;: { &amp;#34;saveAsImage&amp;#34;: {} } }, &amp;#34;grid&amp;#34;: { &amp;#34;left&amp;#34;: &amp;#34;5%&amp;#34;, &amp;#34;right&amp;#34;: &amp;#34;5%&amp;#34;, &amp;#34;bottom&amp;#34;: &amp;#34;5%&amp;#34;, &amp;#34;top&amp;#34;: &amp;#34;20%&amp;#34;, &amp;#34;containLabel&amp;#34;: true }, &amp;#34;xAxis&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;category&amp;#34;, &amp;#34;boundaryGap&amp;#34;: false, &amp;#34;data&amp;#34;: [&amp;#34;Coverage&amp;#34;, &amp;#34;Channels&amp;#34;, &amp;#34;Speed&amp;#34;, &amp;#34;Penetration&amp;#34;, &amp;#34;Congestion&amp;#34;] } ], &amp;#34;yAxis&amp;#34;: [ { &amp;#34;type&amp;#34;: &amp;#34;value&amp;#34;, &amp;#34;max&amp;#34;: 10 } ], &amp;#34;series&amp;#34;: [ { &amp;#34;name&amp;#34;: &amp;#34;2.4 GHz&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;line&amp;#34;, &amp;#34;stack&amp;#34;: &amp;#34;Total&amp;#34;, &amp;#34;smooth&amp;#34;: true, &amp;#34;lineStyle&amp;#34;: { &amp;#34;width&amp;#34;: 0 }, &amp;#34;showSymbol&amp;#34;: false, &amp;#34;areaStyle&amp;#34;: { &amp;#34;opacity&amp;#34;: 0.8, &amp;#34;color&amp;#34;: { &amp;#34;type&amp;#34;: &amp;#34;linear&amp;#34;, &amp;#34;x&amp;#34;: 0, &amp;#34;y&amp;#34;: 0, &amp;#34;x2&amp;#34;: 0, &amp;#34;y2&amp;#34;: 1, &amp;#34;colorStops&amp;#34;: [ { &amp;#34;offset&amp;#34;: 0, &amp;#34;color&amp;#34;: &amp;#34;rgb(0, 191, 255)&amp;#34; }, { &amp;#34;offset&amp;#34;: 1, &amp;#34;color&amp;#34;: &amp;#34;rgb(135, 206, 250)&amp;#34; } ] } }, &amp;#34;emphasis&amp;#34;: { &amp;#34;focus&amp;#34;: &amp;#34;series&amp;#34; }, &amp;#34;data&amp;#34;: [9, 3, 5, 8, 7] }, { &amp;#34;name&amp;#34;: &amp;#34;5 GHz&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;line&amp;#34;, &amp;#34;stack&amp;#34;: &amp;#34;Total&amp;#34;, &amp;#34;smooth&amp;#34;: true, &amp;#34;lineStyle&amp;#34;: { &amp;#34;width&amp;#34;: 0 }, &amp;#34;showSymbol&amp;#34;: false, &amp;#34;areaStyle&amp;#34;: { &amp;#34;opacity&amp;#34;: 0.8, &amp;#34;color&amp;#34;: { &amp;#34;type&amp;#34;: &amp;#34;linear&amp;#34;, &amp;#34;x&amp;#34;: 0, &amp;#34;y&amp;#34;: 0, &amp;#34;x2&amp;#34;: 0, &amp;#34;y2&amp;#34;: 1, &amp;#34;colorStops&amp;#34;: [ { &amp;#34;offset&amp;#34;: 0, &amp;#34;color&amp;#34;: &amp;#34;rgb(255, 127, 80)&amp;#34; }, { &amp;#34;offset&amp;#34;: 1, &amp;#34;color&amp;#34;: &amp;#34;rgb(255, 160, 122)&amp;#34; } ] } }, &amp;#34;emphasis&amp;#34;: { &amp;#34;focus&amp;#34;: &amp;#34;series&amp;#34; }, &amp;#34;data&amp;#34;: [6, 9, 9, 5, 3] } ] }&lt;/template>&lt;h3 class="heading-element" id="channels">&lt;span>35.4 Channels&lt;/span>
  &lt;a href="#channels" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>Channels&lt;/strong> refer to specific &lt;strong>frequencies&lt;/strong> within the &lt;strong>wireless spectrum&lt;/strong> that are used for &lt;strong>transmitting and receiving data&lt;/strong>. Wi-Fi channels are &lt;strong>divided&lt;/strong> to reduce &lt;strong>interference&lt;/strong> and allow multiple networks to operate in &lt;strong>close proximity&lt;/strong> without conflicting with each other.&lt;/p>
-&lt;div class="details admonition info open disabled">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>INFO&lt;/div>
+&lt;div class="details admonition info open">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>Info&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;ul>
 &lt;li>Each frequency band is divided into multiple channels, represented by numbers. For example, in the 2.4 GHz band, there are 11 channels available, usually numbered from 1 to 11. In the 5 GHz band, there are typically more channels available, such as 24 or more.&lt;/li>
 &lt;li>Channels in the 2.4 GHz band have a narrower frequency range and can partially overlap with each other. This means that neighboring Wi-Fi networks using nearby channels may experience interference, which can degrade the performance of both networks.&lt;/li>
-&lt;/ul>&lt;/div>
+&lt;/ul>
+&lt;/div>
  &lt;/div>
-&lt;/div>&lt;h3 class="heading-element" id="essid">&lt;span>8.5 ESSID&lt;/span>
+&lt;/div>
+&lt;h3 class="heading-element" id="essid">&lt;span>35.5 ESSID&lt;/span>
  &lt;a href="#essid" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>ESSID&lt;/strong> stands for &lt;strong>Extended Service Set Identifier&lt;/strong>. It is the &lt;strong>name assigned to a Wi-Fi network&lt;/strong>. The ESSID acts as a &lt;strong>unique identifier&lt;/strong> that allows devices to &lt;strong>differentiate between different wireless networks&lt;/strong> in the vicinity. When you search for available Wi-Fi networks on your device, you see a list of &lt;strong>ESSIDs&lt;/strong> to choose from.&lt;/p>
-&lt;h3 class="heading-element" id="bssid">&lt;span>8.6 BSSID&lt;/span>
+&lt;h3 class="heading-element" id="bssid">&lt;span>35.6 BSSID&lt;/span>
  &lt;a href="#bssid" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>BSSID&lt;/strong> stands for &lt;strong>Basic Service Set Identifier&lt;/strong>. It is a &lt;strong>unique identifier&lt;/strong> assigned to each &lt;strong>wireless access point (AP)&lt;/strong> in a Wi-Fi network. Each access point in a Wi-Fi network has its own &lt;strong>MAC (Media Access Control) address&lt;/strong>, which is a &lt;strong>unique identifier&lt;/strong> assigned to the &lt;strong>network interface&lt;/strong> of the device. The BSSID is &lt;strong>derived from the MAC address&lt;/strong> of the access point.&lt;/p>
-&lt;h3 class="heading-element" id="bandwidth">&lt;span>8.7 Bandwidth&lt;/span>
+&lt;h3 class="heading-element" id="bandwidth">&lt;span>35.7 Bandwidth&lt;/span>
  &lt;a href="#bandwidth" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>Bandwidth&lt;/strong> in Wi-Fi refers to the &lt;strong>maximum data transfer rate&lt;/strong> or &lt;strong>capacity&lt;/strong> of a wireless network. It represents the &lt;strong>amount of data&lt;/strong> that can be transmitted over the network within a given time frame. Measured in &lt;strong>Gigabits per second (Gbps)&lt;/strong> or &lt;strong>Megabits per second (Mbps)&lt;/strong>.&lt;/p>
-&lt;h3 class="heading-element" id="keypassphrase">&lt;span>8.8 Key/Passphrase&lt;/span>
+&lt;h3 class="heading-element" id="keypassphrase">&lt;span>35.8 Key/Passphrase&lt;/span>
  &lt;a href="#keypassphrase" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -369,59 +410,113 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;li>&lt;strong>Network Security Key:&lt;/strong> Also known as a Wi-Fi password or passphrase, the network security key is used to authenticate a client device and grant access to the Wi-Fi network. When connecting to a secured Wi-Fi network, users are typically prompted to enter the network security key to prove their authorization. This key is used during the authentication phase of the Wi-Fi handshake process to establish a secure connection.&lt;/li>
 &lt;li>&lt;strong>Encryption Key:&lt;/strong> Once a client device is authenticated and connected to a Wi-Fi network, an encryption key is used to encrypt and decrypt the data transmitted over the network. This key ensures that the data exchanged between the client and the access point is secure and cannot be intercepted or understood by unauthorized parties. Different encryption protocols, such as WPA2 or WPA3, use different encryption keys and algorithms to protect the confidentiality and integrity of the Wi-Fi communication.&lt;/li>
 &lt;/ul>
-&lt;h2 class="heading-element" id="some-neccessary-networking-concepts">&lt;span>9 Some Neccessary Networking Concepts&lt;/span>
+&lt;h2 class="heading-element" id="some-neccessary-networking-concepts">&lt;span>36 Some Neccessary Networking Concepts&lt;/span>
  &lt;a href="#some-neccessary-networking-concepts" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="mac-address">&lt;span>9.1 MAC Address&lt;/span>
+&lt;/h2>&lt;h3 class="heading-element" id="mac-address">&lt;span>36.1 MAC Address&lt;/span>
  &lt;a href="#mac-address" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>A &lt;strong>MAC address&lt;/strong> (Media Access Control address) is a &lt;strong>unique identifier&lt;/strong> assigned to &lt;strong>network interfaces&lt;/strong>, such as network cards or Ethernet ports.&lt;br>
 It is a &lt;strong>48-bit&lt;/strong> (6-byte) value expressed in &lt;strong>hexadecimal format&lt;/strong>, typically written in pairs separated by colons or hyphens.&lt;br>
 Example: &lt;code>00:1A:2B:3C:4D:5E&lt;/code> — the first half is the &lt;strong>Organizationally Unique Identifier (OUI)&lt;/strong> (identifies the &lt;strong>manufacturer&lt;/strong>), and the second half is the &lt;strong>device-specific identifier&lt;/strong>.&lt;/p>
-&lt;h3 class="heading-element" id="arp">&lt;span>9.2 ARP&lt;/span>
+&lt;h3 class="heading-element" id="arp">&lt;span>36.2 ARP&lt;/span>
  &lt;a href="#arp" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>ARP&lt;/strong> stands for &lt;strong>Address Resolution Protocol&lt;/strong>. It is used in networks to &lt;strong>map an IP address to a MAC address&lt;/strong>.&lt;/p>
 &lt;p>When a device wants to communicate with another on the same network, it uses ARP to find the &lt;strong>MAC address&lt;/strong> of the destination by sending an &lt;strong>ARP request&lt;/strong>.&lt;/p>
-&lt;p align="center">
- &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking01/images/arp.svg" alt="arp">
-&lt;/p>
-&lt;h3 class="heading-element" id="ip-address">&lt;span>9.3 IP Address&lt;/span>
+&lt;pre class="mermaid">sequenceDiagram
+ participant PC1 as PC1 (Requester)
+ participant Network as Network (Broadcast)
+ participant PC2 as PC2 (Responder)
+
+ PC1->>Network: ARP Request (Who has IP 192.168.1.2?)
+ Note over Network: Broadcast message to all devices
+ Network->>PC2: ARP Request
+
+ PC2->>Network: ARP Reply (The MAC address for 192.168.1.2 is 00:11:22:33:44:55)
+ Network->>PC1: ARP Reply
+
+ PC1->>PC2: Direct communication using found MAC address&lt;/pre>
+&lt;template>sequenceDiagram
+ participant PC1 as PC1 (Requester)
+ participant Network as Network (Broadcast)
+ participant PC2 as PC2 (Responder)
+
+ PC1->>Network: ARP Request (Who has IP 192.168.1.2?)
+ Note over Network: Broadcast message to all devices
+ Network->>PC2: ARP Request
+
+ PC2->>Network: ARP Reply (The MAC address for 192.168.1.2 is 00:11:22:33:44:55)
+ Network->>PC1: ARP Reply
+
+ PC1->>PC2: Direct communication using found MAC address&lt;/template>&lt;h3 class="heading-element" id="ip-address">&lt;span>36.3 IP Address&lt;/span>
  &lt;a href="#ip-address" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>An &lt;strong>IP address&lt;/strong> (Internet Protocol address) is a &lt;strong>numerical label&lt;/strong> assigned to each device connected to a network.&lt;/p>
 &lt;p>It serves as a &lt;strong>unique identifier&lt;/strong>, allowing devices to &lt;strong>send and receive data&lt;/strong> over the internet or a private network.&lt;/p>
-&lt;h3 class="heading-element" id="gateway">&lt;span>9.4 Gateway&lt;/span>
+&lt;h3 class="heading-element" id="gateway">&lt;span>36.4 Gateway&lt;/span>
  &lt;a href="#gateway" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>A &lt;strong>gateway&lt;/strong> is a device or system that serves as an &lt;strong>entry point&lt;/strong> between different networks.&lt;/p>
 &lt;p>It &lt;strong>forwards data packets&lt;/strong> based on their destination and enables &lt;strong>communication between networks&lt;/strong>.&lt;/p>
-&lt;h3 class="heading-element" id="router">&lt;span>9.5 Router&lt;/span>
+&lt;h3 class="heading-element" id="router">&lt;span>36.5 Router&lt;/span>
  &lt;a href="#router" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>A &lt;strong>router&lt;/strong> is a networking device that &lt;strong>connects multiple networks&lt;/strong> and &lt;strong>routes traffic&lt;/strong> between them.&lt;/p>
 &lt;p>It acts as a &lt;strong>central hub&lt;/strong> and makes decisions based on the &lt;strong>destination address&lt;/strong> of data packets.&lt;/p>
-&lt;h3 class="heading-element" id="subnet">&lt;span>9.6 Subnet&lt;/span>
+&lt;h3 class="heading-element" id="subnet">&lt;span>36.6 Subnet&lt;/span>
  &lt;a href="#subnet" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>A &lt;strong>subnet&lt;/strong> (subnetwork) is a &lt;strong>logical division&lt;/strong> of an IP network.&lt;/p>
 &lt;p>&lt;strong>Subnetting&lt;/strong> improves &lt;strong>network performance&lt;/strong>, &lt;strong>security&lt;/strong>, and &lt;strong>organization&lt;/strong> by separating broadcast domains.&lt;/p>
-&lt;h3 class="heading-element" id="dhcp">&lt;span>9.7 DHCP&lt;/span>
+&lt;h3 class="heading-element" id="dhcp">&lt;span>36.7 DHCP&lt;/span>
  &lt;a href="#dhcp" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>DHCP&lt;/strong> (Dynamic Host Configuration Protocol) is responsible for &lt;strong>automatically assigning IP addresses&lt;/strong> and other network settings to devices on a network.&lt;/p>
-&lt;p align="center">
- &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking01/images/dhcp.svg" alt="dhcp" width="1000">
-&lt;/p>
-&lt;h3 class="heading-element" id="working-of-wifi">&lt;span>9.8 Working Of WIFI&lt;/span>
+&lt;pre class="mermaid">sequenceDiagram
+ participant Client as Client (Device)
+ participant Network as Network (Broadcast)
+ participant DHCPServer as DHCP Server
+
+ Client->>Network: DHCP Discover (Looking for DHCP server)
+ Network->>DHCPServer: DHCP Discover
+
+ DHCPServer->>Network: DHCP Offer (IP address + config)
+ Network->>Client: DHCP Offer
+
+ Client->>Network: DHCP Request (Requesting offered IP)
+ Network->>DHCPServer: DHCP Request
+
+ DHCPServer->>Network: DHCP Acknowledgment (Confirm IP assigned)
+ Network->>Client: DHCP Acknowledgment
+
+ Client->>DHCPServer: Communication with assigned IP&lt;/pre>
+&lt;template>sequenceDiagram
+ participant Client as Client (Device)
+ participant Network as Network (Broadcast)
+ participant DHCPServer as DHCP Server
+
+ Client->>Network: DHCP Discover (Looking for DHCP server)
+ Network->>DHCPServer: DHCP Discover
+
+ DHCPServer->>Network: DHCP Offer (IP address + config)
+ Network->>Client: DHCP Offer
+
+ Client->>Network: DHCP Request (Requesting offered IP)
+ Network->>DHCPServer: DHCP Request
+
+ DHCPServer->>Network: DHCP Acknowledgment (Confirm IP assigned)
+ Network->>Client: DHCP Acknowledgment
+
+ Client->>DHCPServer: Communication with assigned IP&lt;/template>&lt;h3 class="heading-element" id="working-of-wifi">&lt;span>36.8 Working Of WIFI&lt;/span>
  &lt;a href="#working-of-wifi" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -439,72 +534,74 @@ Example: &lt;code>00:1A:2B:3C:4D:5E&lt;/code> — the first half is the &lt;stro
 &lt;p>&lt;strong>Destination Outside the Local Network:&lt;/strong> If the device wants to communicate with a destination outside the local network (e.g., a website or a server on the internet), it follows these steps:&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="determining-the-gateway">&lt;span>9.8.1 Determining the Gateway&lt;/span>
+&lt;h4 class="heading-element" id="determining-the-gateway">&lt;span>36.8.1 Determining the Gateway&lt;/span>
  &lt;a href="#determining-the-gateway" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>The device checks its &lt;strong>network configuration&lt;/strong> and identifies the &lt;strong>default gateway&lt;/strong>, which is the &lt;strong>IP address of the router&lt;/strong>. The gateway acts as the &lt;strong>exit point&lt;/strong> for traffic leaving the local network.&lt;/p>
-&lt;h4 class="heading-element" id="data-routing">&lt;span>9.8.2 Data Routing&lt;/span>
+&lt;h4 class="heading-element" id="data-routing">&lt;span>36.8.2 Data Routing&lt;/span>
  &lt;a href="#data-routing" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>The device &lt;strong>encapsulates the data&lt;/strong> it wants to send within &lt;strong>packets&lt;/strong>. Each packet contains the &lt;strong>destination IP address&lt;/strong>. When sent, the packets are forwarded to the &lt;strong>default gateway&lt;/strong> (router).&lt;/p>
-&lt;h4 class="heading-element" id="network-address-translation-nat">&lt;span>9.8.3 Network Address Translation (NAT)&lt;/span>
+&lt;h4 class="heading-element" id="network-address-translation-nat">&lt;span>36.8.3 Network Address Translation (NAT)&lt;/span>
  &lt;a href="#network-address-translation-nat" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>Upon receiving the packets, the router performs &lt;strong>Network Address Translation (NAT)&lt;/strong>. It replaces the &lt;strong>source IP address&lt;/strong> with its own &lt;strong>public IP address&lt;/strong>, &lt;strong>hiding private IPs&lt;/strong> of local devices. This ensures that &lt;strong>response packets&lt;/strong> can return to the router.&lt;/p>
-&lt;h4 class="heading-element" id="routing-to-the-internet">&lt;span>9.8.4 Routing to the Internet&lt;/span>
+&lt;h4 class="heading-element" id="routing-to-the-internet">&lt;span>36.8.4 Routing to the Internet&lt;/span>
  &lt;a href="#routing-to-the-internet" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>The router examines the &lt;strong>destination IP&lt;/strong> and checks its &lt;strong>routing table&lt;/strong> to find the &lt;strong>next-hop router&lt;/strong> or &lt;strong>gateway&lt;/strong>. It forwards the packets until they reach the &lt;strong>destination network&lt;/strong> (e.g., the internet).&lt;/p>
-&lt;h4 class="heading-element" id="public-ip-communication">&lt;span>9.8.5 Public IP Communication&lt;/span>
+&lt;h4 class="heading-element" id="public-ip-communication">&lt;span>36.8.5 Public IP Communication&lt;/span>
  &lt;a href="#public-ip-communication" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>Response packets are routed back using the router’s &lt;strong>public IP address&lt;/strong>. The router uses its &lt;strong>NAT records&lt;/strong> to translate the &lt;strong>destination IP&lt;/strong> back to the &lt;strong>private IP&lt;/strong> of the originating device.&lt;/p>
-&lt;h4 class="heading-element" id="delivery-to-the-device">&lt;span>9.8.6 Delivery to the Device&lt;/span>
+&lt;h4 class="heading-element" id="delivery-to-the-device">&lt;span>36.8.6 Delivery to the Device&lt;/span>
  &lt;a href="#delivery-to-the-device" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>The router &lt;strong>forwards the response packets&lt;/strong> to the correct device on the &lt;strong>local network&lt;/strong>. The device processes the data, enabling the user to &lt;strong>view webpages&lt;/strong>, &lt;strong>receive emails&lt;/strong>, or &lt;strong>use internet services&lt;/strong>.&lt;/p>
-&lt;div class="details admonition info open disabled">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>INFO&lt;/div>
+&lt;div class="details admonition info open">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>Info&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>Each device on the network uses Router’s Public Ip address to communicate to the whole world.&lt;/p>&lt;/div>
+ &lt;div class="admonition-content">Each device on the network uses Router’s Public Ip address to communicate to the whole world.&lt;/div>
  &lt;/div>
-&lt;/div>&lt;h3 class="heading-element" id="wi-fi-adapter-operation-modes">&lt;span>9.9 Wi-Fi Adapter Operation Modes&lt;/span>
+&lt;/div>
+&lt;h3 class="heading-element" id="wi-fi-adapter-operation-modes">&lt;span>36.9 Wi-Fi Adapter Operation Modes&lt;/span>
  &lt;a href="#wi-fi-adapter-operation-modes" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>Wi-Fi adapters can function in various &lt;strong>modes&lt;/strong>, depending on their features and configuration. These modes define how the adapter handles the &lt;strong>transmission and reception&lt;/strong> of wireless signals.&lt;/p>
-&lt;h4 class="heading-element" id="infrastructure-managed-mode">&lt;span>9.9.1 Infrastructure (Managed) Mode&lt;/span>
+&lt;h4 class="heading-element" id="infrastructure-managed-mode">&lt;span>36.9.1 Infrastructure (Managed) Mode&lt;/span>
  &lt;a href="#infrastructure-managed-mode" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>This is the &lt;strong>standard mode&lt;/strong> for most Wi-Fi adapters. In infrastructure mode, the adapter &lt;strong>connects to a wireless router or access point&lt;/strong> to join an existing network. It enables the device to &lt;strong>access the internet&lt;/strong> and &lt;strong>communicate with other devices&lt;/strong> within the same network.&lt;/p>
-&lt;h4 class="heading-element" id="soft-access-point-soft-ap-mode">&lt;span>9.9.2 Soft Access Point (Soft AP) Mode&lt;/span>
+&lt;h4 class="heading-element" id="soft-access-point-soft-ap-mode">&lt;span>36.9.2 Soft Access Point (Soft AP) Mode&lt;/span>
  &lt;a href="#soft-access-point-soft-ap-mode" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>Some adapters support &lt;strong>Soft AP mode&lt;/strong>, which allows them to act as &lt;strong>virtual access points&lt;/strong>. In this configuration, the adapter &lt;strong>creates its own wireless network&lt;/strong>, letting other devices &lt;strong>connect to it&lt;/strong>. Useful for &lt;strong>sharing an internet connection&lt;/strong> or setting up a &lt;strong>temporary local network&lt;/strong>.&lt;/p>
-&lt;h4 class="heading-element" id="monitor-mode">&lt;span>9.9.3 Monitor Mode&lt;/span>
+&lt;h4 class="heading-element" id="monitor-mode">&lt;span>36.9.3 Monitor Mode&lt;/span>
  &lt;a href="#monitor-mode" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>&lt;strong>Monitor mode&lt;/strong> allows the adapter to &lt;strong>passively capture all wireless signals&lt;/strong> in range &lt;strong>without joining a network&lt;/strong>. It’s used for &lt;strong>analyzing wireless traffic&lt;/strong>, &lt;strong>network diagnostics&lt;/strong>, or &lt;strong>packet sniffing&lt;/strong> for &lt;strong>security&lt;/strong> or &lt;strong>troubleshooting&lt;/strong>.&lt;/p>
-&lt;h4 class="heading-element" id="promiscuous-mode">&lt;span>9.9.4 Promiscuous Mode&lt;/span>
+&lt;h4 class="heading-element" id="promiscuous-mode">&lt;span>36.9.4 Promiscuous Mode&lt;/span>
  &lt;a href="#promiscuous-mode" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;p>While similar to monitor mode, &lt;strong>promiscuous mode&lt;/strong> focuses on &lt;strong>capturing all traffic&lt;/strong> the adapter can receive, &lt;strong>regardless of destination&lt;/strong>. It is used in &lt;strong>network analysis&lt;/strong> and &lt;strong>security assessments&lt;/strong> to inspect and study &lt;strong>data packets&lt;/strong> for &lt;strong>anomalies&lt;/strong> or &lt;strong>threats&lt;/strong>.&lt;/p>
-&lt;div class="details admonition note open disabled">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>NOTE&lt;/div>
+&lt;div class="details admonition note open">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>Note&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>All of the above-mentioned modes are not available in all WIFI adaptors, there are only specific WIFI adaptors in the market that supports modes other than managed mode. So to fully learn from these series you will have to get an adaptor which these modes&lt;/p>&lt;/div>
+ &lt;div class="admonition-content">All of the above-mentioned modes are not available in all WIFI adaptors, there are only specific WIFI adaptors in the market that supports modes other than managed mode. So to fully learn from these series you will have to get an adaptor which these modes&lt;/div>
  &lt;/div>
-&lt;/div>&lt;p>There is a list of WIFI adaptors from which you can choose:&lt;/p>
+&lt;/div>
+&lt;p>There is a list of WIFI adaptors from which you can choose:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.amazon.com/dp/B01MZD7Z76"target="_blank" rel="external nofollow noopener noreferrer">Alfa AC1900 WiFi Adapter&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.amazon.com/dp/B00VEEBOPG"target="_blank" rel="external nofollow noopener noreferrer">Alfa Long-Range Dual-Band AC1200 Wireless USB 3.0&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
