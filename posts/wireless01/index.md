@@ -1,4 +1,4 @@
-# Wireless Hacking
+# Wireless Hacking Part 1
 
 
 ## About
@@ -242,5 +242,5 @@ There is a list of WIFI adaptors from which you can choose:
 ---
 
 > Author: [ProxyGeek](https://github.com/Pr0xyG33k)  
-> URL: https://Pr0xyG33k.github.io/posts/wireless%231/  
+> URL: https://Pr0xyG33k.github.io/posts/wireless01/  
 

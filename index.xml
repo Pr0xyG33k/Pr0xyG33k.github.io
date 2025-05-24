@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 24 May 2025 02:15:54 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Wireless Hacking</title><link>https://Pr0xyG33k.github.io/posts/wireless%231/</link><pubDate>Sun, 18 May 2025 17:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless%231/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>1 About&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 31 May 2025 02:15:54 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>The `offsec-ruby` directory houses Ruby scripts and modules tailored for use with the Metasploit Framework, including custom exploits, payloads, and automation tools.</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-ruby/</link><pubDate>Fri, 23 May 2025 21:15:58 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-ruby/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description/></item><item><title>Wireless Hacking Part 2</title><link>https://Pr0xyG33k.github.io/posts/wireless02/</link><pubDate>Fri, 23 May 2025 17:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless02/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>1 About&lt;/span>
+ &lt;a href="#about" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>In this second part of the Wireless Hacking series, we shift our focus from theory to practice. Before diving into real-world attacks, it’s crucial to prepare a safe, legal, and isolated environment to experiment and learn.
+Join us as we continue this educational journey through ethical hacking and wireless security.&lt;/p>
+&lt;h2 class="heading-element" id="environment">&lt;span>2 Environment&lt;/span>
+ &lt;a href="#environment" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Before performing any wireless attacks or experiments, it&amp;rsquo;s crucial to set up a safe and isolated testing environment. Here are two solid options depending on your setup and preferences:&lt;/p>
+&lt;h3 class="heading-element" id="option-1-installing-kali-linux-on-a-virtual-machine">&lt;span>2.1 Option 1: Installing Kali Linux on a Virtual Machine&lt;/span>
+ &lt;a href="#option-1-installing-kali-linux-on-a-virtual-machine" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>&lt;strong>Recommended software&lt;/strong>: &lt;a href="https://www.virtualbox.org/"target="_blank" rel="external nofollow noopener noreferrer">VirtualBox&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> or &lt;a href="https://www.vmware.com/products/workstation-player.html"target="_blank" rel="external nofollow noopener noreferrer">VMware Workstation Player&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> (free for personal use).&lt;/p>
+&lt;h4 class="heading-element" id="downloads">&lt;span>2.1.1 Downloads&lt;/span>
+ &lt;a href="#downloads" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;ul>
+&lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-virtual-machines"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux VirtualBox Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-installer-images"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux ISO Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 class="heading-element" id="installation-steps">&lt;span>2.1.2 Installation Steps&lt;/span>
+ &lt;a href="#installation-steps" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;ul>
+&lt;li>Make sure virtualization (Intel VT or AMD-V) is enabled in your computer’s BIOS/UEFI settings.&lt;/li>
+&lt;li>Allocate at least &lt;strong>2 GB of RAM&lt;/strong> and &lt;strong>20 GB of disk space&lt;/strong>.&lt;/li>
+&lt;li>Set the network adapter to &lt;strong>&amp;ldquo;Bridged Adapter&amp;rdquo;&lt;/strong> to give Kali access to your local network.&lt;/li>
+&lt;li>Use a &lt;strong>USB Wi-Fi adapter that supports monitor mode&lt;/strong>, and pass it through to the VM.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 class="heading-element" id="option-2-installing-kali-linux-on-a-raspberry-pi">&lt;span>2.2 Option 2: Installing Kali Linux on a Raspberry Pi&lt;/span>
+ &lt;a href="#option-2-installing-kali-linux-on-a-raspberry-pi" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>&lt;strong>Required hardware&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Raspberry Pi 4&lt;/li>
+&lt;li>MicroSD card (minimum 16 GB)&lt;/li>
+&lt;li>Power supply, keyboard, mouse, and HDMI screen&lt;/li>
+&lt;/ul>
+&lt;h4 class="heading-element" id="downloads-links">&lt;span>2.2.1 Downloads Links&lt;/span>
+ &lt;a href="#downloads-links" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;ul>
+&lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-arm"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux ARM image for Raspberry Pi&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 class="heading-element" id="steps">&lt;span>2.2.2 Steps&lt;/span>
+ &lt;a href="#steps" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;ol>
+&lt;li>Use &lt;a href="https://www.raspberrypi.org/software/"target="_blank" rel="external nofollow noopener noreferrer">Raspberry Pi Imager&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> or a similar tool to flash the Kali image onto the microSD card.&lt;/li>
+&lt;li>Insert the card into the Raspberry Pi, connect all peripherals, and boot it up.&lt;/li>
+&lt;li>Follow the on-screen setup instructions and ensure your Wi-Fi adapter is compatible with monitor mode.&lt;/li>
+&lt;/ol></description></item><item><title>This site is a personal space where I publish technical write-ups, offensive security research, and practical guides focused on penetration testing, exploit development, and red team operations.</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Wed, 21 May 2025 20:58:06 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
+ &lt;a href="#proxygeek-blog" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>2 articles in total&lt;/p>
+&lt;h2 class="heading-element" id="2025">&lt;span>2025&lt;/span>
+ &lt;a href="#2025" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>2 articles in total&lt;/p>
+&lt;ul>
+&lt;li>05-18 &lt;a href="https://Pr0xyG33k.github.io/posts/wireless%231/" title="2025-05-18 17:50:15"target="_blank" rel="external nofollow noopener noreferrer">Wireless Hacking&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;li>05-10 &lt;a href="https://Pr0xyG33k.github.io/posts/hello-world/" title="2025-05-10 02:47:00"target="_blank" rel="external nofollow noopener noreferrer">Hello World&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Wireless Hacking Part 1</title><link>https://Pr0xyG33k.github.io/posts/wireless01/</link><pubDate>Tue, 20 May 2025 10:48:10 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless01/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>1 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -447,6 +520,54 @@ Example: &lt;code>00:1A:2B:3C:4D:5E&lt;/code> — the first half is the &lt;stro
 &lt;p>Time doesn’t pause because we hesitate. Like you, there are countless others chasing their dreams. No one is born a cybersecurity expert, but each day is an opportunity to grow, to protect, and to evolve. Never be content with where you are; always strive to learn, to adapt, and to secure.&lt;/p>
 &lt;p>I started this blog to share my journey — from early security challenges to tips on staying safe online. In the early days, I followed the guidance of mentors, learned from books, and coded through the night. The name &amp;ldquo;Securing the Digital World&amp;rdquo; was born from the countless hours spent defending what many people overlook: the safety of our digital lives.&lt;/p>
 &lt;p>Here’s to the next chapter of cybersecurity, as we continue to evolve in a world where data is power, and protection is key.&lt;/p>
+&lt;div class="music-player" data-fixed="true">
+ 
+
+ &lt;div class="music-embed soundcloud-container" data-url="https://soundcloud.com/lorientestard/sets/clair-obscur-expedition-33-6">
+ &lt;div class="loading">Loading player…&lt;/div>
+ &lt;/div>
+&lt;/div>
+
+&lt;script>
+ document.addEventListener("DOMContentLoaded", function () {
+ const containers = document.querySelectorAll(".soundcloud-container");
+ containers.forEach(container => {
+ const url = encodeURIComponent(container.dataset.url);
+ const iframe = document.createElement("iframe");
+ iframe.width = "100%";
+ iframe.height = "100";
+ iframe.scrolling = "no";
+ iframe.frameBorder = "no";
+ iframe.allow = "autoplay";
+ iframe.src = `https://w.soundcloud.com/player/?url=${url}&amp;color=%23ff5500&amp;auto_play=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true`;
+ container.innerHTML = "";
+ container.appendChild(iframe);
+ });
+ });
+&lt;/script>
+
+&lt;style>
+
+ .music-info {
+ margin-bottom: 0.5em;
+ font-weight: bold;
+ color: #333;
+ }
+
+ .loading {
+ font-size: 0.9em;
+ color: #888;
+ }
+
+ [data-fixed="true"] iframe {
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ width: 20% !important;
+ z-index: 9999;
+ }
+&lt;/style>
+
 &lt;!--
 ![Снег падает без конца, покрывая души, как невидимый саван. Каждый снежинка — это забытое воспоминание, утерянный звук в безбрежной тишине. Здесь, в самом сердце зимы, когда ветер воет как зверь, человек идет, не зная точно, куда](images/coffee.jpg 'Человек продолжает идти, без цели, без вопросов, ведомый странной уверенностью, что всё уже написано, но всё равно он должен искать, снова и снова')
 --></description></item></channel></rss>
