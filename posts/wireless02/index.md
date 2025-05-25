@@ -162,6 +162,10 @@ For disk setup, select Guided - use entire disk, which is the simplest and safes
 If you plan to use tools that require raw access to a wireless interface, such as aircrack-ng or bettercap, you’ll need to passthrough a USB Wi-Fi adapter that supports monitor mode and packet injection.
 The first step is to install the necessary packages that will allow Kali to build the driver for your USB Wi-Fi adapter
 
+The driver you’re installing, `8814au`, is designed for Wi-Fi cards that use the **Realtek RTL8814AU chipset**. Before proceeding, it’s crucial to verify that your Wi-Fi card uses this chipset, as the driver will only work with compatible hardware [ALFA Network RTL8814AU Linux Driver Support](https://docs.alfa.com.tw/Support/Linux/RTL8814AU/).
+
+To check your Wi-Fi card’s chipset, you can use the `lsusb` or `lspci` command in your terminal (depending on whether it’s a USB or PCI card).
+
 ```bash
 ┌──(proxygeek㉿VMware-kali)-[~]
 └─$ sudo apt install -y linux-headers-$(uname -r) build-essential bc dkms git libelf-dev rfkill iw
@@ -183,13 +187,15 @@ After running this command, you’ll have a new folder named `src` in your home 
 Now that you're in the correct directory, it's time to download the driver. In this case, the driver files are hosted on GitHub, a popular platform for sharing and collaborating on code. The easiest way to get the driver is by cloning the GitHub repository that contains it. To clone a repository, you use the `git clone` command, which will create a local copy of the repository on your system. The repository we’re using is hosted at `https://github.com/morrownr/8814au.git`. This repository contains the necessary files to install the driver for your device.
 
 ```bash
-git clone https://github.com/morrownr/8814au.git
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ git clone https://github.com/morrownr/8814au.git
 ```
 
 The installation process is handled by a script named `install-driver.sh`. Running this script will compile and install the necessary files to get the driver working on your system. There are two ways to execute the script, both of which require elevated privileges since you’re installing software that will affect system-wide settings.
 
 ```bash
-sudo ./install-driver.sh
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo ./install-driver.sh
 ```
 
 By following these steps, you will have successfully downloaded, installed, and configured the necessary driver for your device. Rebooting your system afterward will ensure that the installation is fully effective.
