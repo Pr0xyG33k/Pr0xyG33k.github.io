@@ -14,16 +14,16 @@ Join us as we continue this educational journey through ethical hacking and wire
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>Recommended software&lt;/strong>: &lt;a href="https://www.virtualbox.org/"target="_blank" rel="external nofollow noopener noreferrer">VirtualBox&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> or &lt;a href="https://www.vmware.com/products/workstation-player.html"target="_blank" rel="external nofollow noopener noreferrer">VMware Workstation Player&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> (free for personal use) or &lt;a href="https://www.qemu.org/download/"target="_blank" rel="external nofollow noopener noreferrer">QEMU/KVM&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>.&lt;/p>
-&lt;h4 class="heading-element" id="downloads-links">&lt;span>14.1.1 Downloads Links&lt;/span>
- &lt;a href="#downloads-links" class="heading-mark">
+&lt;h4 class="heading-element" id="option-1-downloads-links">&lt;span>14.1.1 Option 1 Downloads Links&lt;/span>
+ &lt;a href="#option-1-downloads-links" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;ul>
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-virtual-machines"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux Virtual Machines Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-installer-images"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux ISO Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="installation-steps">&lt;span>14.1.2 Installation Steps&lt;/span>
- &lt;a href="#installation-steps" class="heading-mark">
+&lt;h4 class="heading-element" id="option-1-installation-steps">&lt;span>14.1.2 Option 1 Installation Steps&lt;/span>
+ &lt;a href="#option-1-installation-steps" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;ul>
@@ -43,15 +43,15 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;li>MicroSD card (minimum 16 GB)&lt;/li>
 &lt;li>Power supply, keyboard, mouse, and HDMI screen&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="links">&lt;span>14.2.1 Links&lt;/span>
- &lt;a href="#links" class="heading-mark">
+&lt;h4 class="heading-element" id="option-2-downloads-links">&lt;span>14.2.1 Option 2 Downloads Links&lt;/span>
+ &lt;a href="#option-2-downloads-links" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;ul>
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-arm"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux ARM image for Raspberry Pi&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="steps">&lt;span>14.2.2 Steps&lt;/span>
- &lt;a href="#steps" class="heading-mark">
+&lt;h4 class="heading-element" id="option-2-installations-steps">&lt;span>14.2.2 Option 2 Installations Steps&lt;/span>
+ &lt;a href="#option-2-installations-steps" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;ol>
@@ -92,19 +92,11 @@ Join us as we continue this educational journey through ethical hacking and wire
  ap -->|Connects through| firewall
  attacker -->|Sends data for analysis| monitor
  client -->|Traffic monitored by| monitor
- firewall -.->|Blocks traffic to Internet| Internet["Internet"]&lt;/template>&lt;h2 class="heading-element" id="qemukvm">&lt;span>16 QEMU/KVM&lt;/span>
- &lt;a href="#qemukvm" class="heading-mark">
+ firewall -.->|Blocks traffic to Internet| Internet["Internet"]&lt;/template>&lt;h2 class="heading-element" id="vmware-workstation">&lt;span>16 VMware Workstation&lt;/span>
+ &lt;a href="#vmware-workstation" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>To begin, open &lt;strong>virt-manager&lt;/strong> (Virtual Machine Manager) on your Arch Linux system. This graphical tool will allow you to easily manage virtual machines using QEMU/KVM in the background. Once the application is open, click on the &lt;strong>&amp;ldquo;Create a new virtual machine&amp;rdquo;&lt;/strong> button.&lt;/p>
-&lt;p>In the wizard that appears, select &lt;strong>&amp;ldquo;Local install media (ISO image or CDROM)&amp;rdquo;&lt;/strong>, then browse to and select the &lt;strong>Kali Linux ISO file&lt;/strong> you previously downloaded. Next, choose the OS type as &lt;strong>Linux&lt;/strong>, and for the version, select either &lt;strong>Debian 10/11 (64-bit)&lt;/strong> or &lt;strong>Generic Linux (64-bit)&lt;/strong>—both will work well for Kali.&lt;/p>
-&lt;div style="display: flex; justify-content: space-between;">
- &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking02/images/os.png" alt="os" style="width: 45%; margin-right: 10px;" />
- &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking02/images/set.png" alt="set" style="width: 45%;" />
-&lt;/div>
-&lt;p>You’ll then be prompted to assign system resources to the VM. It is recommended to allocate &lt;strong>at least 2GB of RAM&lt;/strong>, but &lt;strong>4GB (4096MB)&lt;/strong> is ideal if your host machine allows it. You should also assign &lt;strong>2 or more CPU cores&lt;/strong> to ensure smooth performance. After this, you’ll create a virtual hard disk—make sure it is &lt;strong>at least 20GB&lt;/strong>, and &lt;strong>dynamically allocated&lt;/strong> to save space.&lt;/p>
-&lt;p>Once these steps are complete, click &lt;strong>Finish&lt;/strong> to create and launch the virtual machine.&lt;/p>
-&lt;div class="alert alert-caution">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M4.47.22A.749.749.0 015 0h6c.199.0.389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749.0 01-.22.53l-4.25 4.25A.749.749.0 0111 16H5a.749.749.0 01-.53-.22L.22 11.53A.749.749.0 010 11V5c0-.199.079-.389.22-.53zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5zM8 4a.75.75.0 01.75.75v3.5a.75.75.0 01-1.5.0v-3.5A.75.75.0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Caution&lt;/p>&lt;p>Before proceeding with creating the virtual machine, it&amp;rsquo;s strongly recommended to &lt;strong>verify the SHA256 checksum&lt;/strong> of the Kali Linux ISO. This helps ensure that the file has not been corrupted during download or maliciously altered.&lt;/p>&lt;/div>&lt;h3 class="heading-element" id="checksum">&lt;span>16.1 Checksum&lt;/span>
+&lt;/h2>&lt;div class="alert alert-caution">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M4.47.22A.749.749.0 015 0h6c.199.0.389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749.0 01-.22.53l-4.25 4.25A.749.749.0 0111 16H5a.749.749.0 01-.53-.22L.22 11.53A.749.749.0 010 11V5c0-.199.079-.389.22-.53zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5zM8 4a.75.75.0 01.75.75v3.5a.75.75.0 01-1.5.0v-3.5A.75.75.0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Caution&lt;/p>&lt;p>Before proceeding with creating the virtual machine, it&amp;rsquo;s strongly recommended to &lt;strong>verify the SHA256 checksum&lt;/strong> of the Kali Linux ISO. This helps ensure that the file has not been corrupted during download or maliciously altered.&lt;/p>&lt;/div>&lt;h3 class="heading-element" id="checksum">&lt;span>16.1 Checksum&lt;/span>
  &lt;a href="#checksum" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -216,36 +208,77 @@ Join us as we continue this educational journey through ethical hacking and wire
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">kali&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">linux&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mf">2025.1&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">installer&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">amd64&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">iso&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">torrent&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">FAILED&lt;/span> &lt;span class="n">open&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">read&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">All&lt;/span> &lt;span class="n">done&lt;/span>&lt;span class="o">!&lt;/span> &lt;span class="n">If&lt;/span> &lt;span class="n">you&lt;/span> &lt;span class="n">see&lt;/span> &lt;span class="s1">&amp;#39;kali-linux-2025.1c-installer-amd64.iso: OK&amp;#39;&lt;/span> &lt;span class="n">above&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">your&lt;/span> &lt;span class="n">ISO&lt;/span> &lt;span class="n">is&lt;/span> &lt;span class="n">verified&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">safe&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">use&lt;/span>&lt;span class="o">.&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 class="heading-element" id="configuring">&lt;span>16.2 Configuring&lt;/span>
- &lt;a href="#configuring" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Before installing Kali, a few adjustments to the virtual hardware settings are necessary. In &lt;strong>virt-manager&lt;/strong>, select your newly created Kali VM and click &lt;strong>Open&lt;/strong> to access its console. Then click the &lt;strong>lightbulb icon&lt;/strong>, which opens the &lt;strong>Virtual Hardware Details&lt;/strong> panel.&lt;/p>
-&lt;p>Inside this panel, check that the &lt;strong>Kali Linux ISO&lt;/strong> is correctly attached as the &lt;strong>boot media&lt;/strong> under the &amp;ldquo;IDE CDROM&amp;rdquo; section. Next, review the &lt;strong>network settings&lt;/strong>. By default, the network is set to &lt;strong>NAT&lt;/strong>, which provides Internet access through your host. However, if you want the VM to be visible on your local network (useful for advanced testing), you can change it to &lt;strong>Bridged&lt;/strong> mode and select your host interface.&lt;/p>
-&lt;div style="display: flex; justify-content: center;">
- &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking02/images/network.png" alt="set" />
+&lt;/div>&lt;p>To begin, open &lt;strong>VMware Workstation&lt;/strong> on your system. This graphical tool will allow you to easily manage virtual machines. Once the application is open, click on the &lt;strong>&amp;ldquo;Create a New Virtual Machine&amp;rdquo;&lt;/strong> button.&lt;/p>
+&lt;p>In the wizard that appears, select &lt;strong>&amp;ldquo;Installer disc image file (iso)&amp;rdquo;&lt;/strong> and browse to the &lt;strong>Kali Linux ISO&lt;/strong> you previously downloaded. Next, choose the OS type as &lt;strong>Linux&lt;/strong>, and for the version, select &lt;strong>Debian 10.x 64-bit&lt;/strong>—this works well for Kali Linux.&lt;/p>
+&lt;div style="display: flex; justify-content: space-between;">
+ &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking02/images/vm_create.png" alt="create" style="width: 45%; margin-right: 10px;" />
+ &lt;img src="https://Pr0xyG33k.github.io/posts/_wireless/hacking02/images/vm_conf.png" alt="conf" style="width: 45%;" />
 &lt;/div>
-&lt;p>Finally, scroll down to ensure that a &lt;strong>USB controller&lt;/strong> (either USB 2.0 or 3.0) is present and enabled. This will be important later when attaching a USB Wi-Fi adapter.&lt;/p>
-&lt;h3 class="heading-element" id="installing">&lt;span>16.3 Installing&lt;/span>
- &lt;a href="#installing" class="heading-mark">
+&lt;p>You’ll then be prompted to assign system resources to the VM. It is recommended to allocate &lt;strong>at least 2GB of RAM&lt;/strong>, but &lt;strong>4GB (4096MB)&lt;/strong> is ideal if your host machine allows it. You should also assign &lt;strong>2 or more CPU cores&lt;/strong> to ensure smooth performance. After this, you’ll create a virtual hard disk—make sure it is &lt;strong>at least 20GB&lt;/strong>, and &lt;strong>dynamically allocated&lt;/strong> to save space.&lt;/p>
+&lt;p>Once these steps are complete, click &lt;strong>Finish&lt;/strong> to create and launch the virtual machine.&lt;/p>
+&lt;h3 class="heading-element" id="configuration">&lt;span>16.2 Configuration&lt;/span>
+ &lt;a href="#configuration" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h3>&lt;p>Now that your VM is ready, start it up. The system should boot directly into the Kali Linux ISO. On the boot menu, select &lt;strong>&amp;ldquo;Graphical Install&amp;rdquo;&lt;/strong> to launch the graphical installer, which is easier for most users to navigate.&lt;/p>
-&lt;p>Proceed through the installation by choosing your &lt;strong>language&lt;/strong>, &lt;strong>country&lt;/strong>, and &lt;strong>keyboard layout&lt;/strong>. You’ll then configure your &lt;strong>network settings&lt;/strong>, including a hostname (e.g., &lt;code>kali-vm&lt;/code>) and an optional domain name. After that, create a &lt;strong>user account and password&lt;/strong>. Kali now defaults to a non-root user, which improves security and mirrors real-world Linux use.&lt;/p>
-&lt;p>For disk setup, select &lt;strong>Guided - use entire disk&lt;/strong>, which is the simplest and safest option for a VM. Confirm your partitioning choices and let the installer complete the process. Once installation is finished, &lt;strong>remove the ISO&lt;/strong> from the virtual CD-ROM and &lt;strong>reboot&lt;/strong> the VM.&lt;/p>
-&lt;h3 class="heading-element" id="setting">&lt;span>16.4 Setting&lt;/span>
- &lt;a href="#setting" class="heading-mark">
+&lt;/h3>&lt;p>Before installing Kali, a few adjustments to the virtual hardware settings are necessary. In VMware Workstation, select your newly created Kali VM and click Edit Virtual Machine Settings to access its configuration panel.&lt;/p>
+&lt;p>Inside this panel, make sure that the Kali Linux ISO is correctly attached as the boot media under the CD/DVD section. Next, review the network settings. By default, the network is set to NAT, which provides Internet access through your host. However, if you want the VM to be visible on your local network (useful for advanced testing), you can change it to Bridged mode and select your host interface.&lt;/p>
+&lt;p>Finally, ensure that a USB controller (either USB 2.0 or 3.0) is present and enabled in the settings. This will be important later when attaching a USB Wi-Fi adapter.&lt;/p>
+&lt;h3 class="heading-element" id="installation">&lt;span>16.3 Installation&lt;/span>
+ &lt;a href="#installation" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h3>&lt;p>If you plan to use tools that require raw access to a wireless interface, such as &lt;code>aircrack-ng&lt;/code> or &lt;code>bettercap&lt;/code>, you’ll need to passthrough a &lt;strong>USB Wi-Fi adapter&lt;/strong> that supports &lt;strong>monitor mode and packet injection&lt;/strong>.&lt;/p>
-&lt;p>To do this, plug your adapter into the host machine. Then, with the Kali VM powered off, open &lt;strong>Virtual Hardware Details&lt;/strong> in virt-manager. Click &lt;strong>&amp;ldquo;Add Hardware&amp;rdquo;&lt;/strong>, choose &lt;strong>&amp;ldquo;USB Host Device&amp;rdquo;&lt;/strong>, and select your USB Wi-Fi adapter from the list.&lt;/p>
-&lt;p>Once added, start the VM again. Inside Kali Linux, open a terminal and run:&lt;/p>
+&lt;/h3>&lt;p>Now that your VM is ready, start it up. The system should boot directly into the Kali Linux ISO. On the boot menu, select &amp;ldquo;Graphical Install&amp;rdquo; to launch the graphical installer, which is easier for most users to navigate.&lt;/p>
+&lt;p>Proceed through the installation by choosing your language, country, and keyboard layout. You’ll then configure your network settings, including a hostname (e.g., kali-vm) and an optional domain name. After that, create a user account and password. Kali now defaults to a non-root user, which improves security and mirrors real-world Linux use.&lt;/p>
+&lt;p>For disk setup, select Guided - use entire disk, which is the simplest and safest option for a VM. Confirm your partitioning choices and let the installer complete the process. Once installation is finished, remove the ISO from the virtual CD-ROM and reboot the VM.&lt;/p>
+&lt;h3 class="heading-element" id="settings">&lt;span>16.4 Settings&lt;/span>
+ &lt;a href="#settings" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>If you plan to use tools that require raw access to a wireless interface, such as aircrack-ng or bettercap, you’ll need to passthrough a USB Wi-Fi adapter that supports monitor mode and packet injection.
+The first step is to install the necessary packages that will allow Kali to build the driver for your USB Wi-Fi adapter&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">iwconfig&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">┌──&lt;span class="o">(&lt;/span>proxygeek㉿VMware-kali&lt;span class="o">)&lt;/span>-&lt;span class="o">[&lt;/span>~&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└─$ sudo apt install -y linux-headers-&lt;span class="k">$(&lt;/span>uname -r&lt;span class="k">)&lt;/span> build-essential bc dkms git libelf-dev rfkill iw&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>To do this, plug your adapter into the host machine. Then, with the Kali VM powered off, open Edit Virtual Machine Settings. Click Add and choose USB Controller, then select USB Device and pick your USB Wi-Fi adapter from the list.&lt;/p>
+&lt;p>Once added, start the VM again. Inside Kali Linux, open a terminal and run:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">┌──&lt;span class="o">(&lt;/span>proxygeek㉿VMware-kali&lt;span class="o">)&lt;/span>-&lt;span class="o">[&lt;/span>~&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└─$ iwconfig 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lo no wireless extensions.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">eth0 no wireless extensions.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wlan0 IEEE 802.11b ESSID:&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> Nickname:&lt;span class="s2">&amp;#34;WIFI@RTL8814AU&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Mode:Monitor Frequency:2.472 GHz Access Point: Not-Associated 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Sensitivity:0/0 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Retry:off RTS thr:off Fragment thr:off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Power Management:off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Link Quality:0 Signal level:0 Noise level:0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Rx invalid nwid:0 Rx invalid crypt:0 Rx invalid frag:0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Tx excessive retries:0 Invalid misc:0 Missed beacon:0&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div></description></item><item><title>This site is a personal space where I publish technical write-ups, offensive security research, and practical guides focused on penetration testing, exploit development, and red team operations.</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Wed, 21 May 2025 20:58:06 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
  &lt;a href="#proxygeek-blog" class="heading-mark">
