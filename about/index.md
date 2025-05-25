@@ -19,7 +19,7 @@ By day, I work on secure development and exploit analysis. By night, I explore r
 
 - **Cybersecurity Enginer Security & CTF Player**
 - Interests: Web exploitation, privilege escalation, binary exploitation, threat modeling
-- Frequent player on **Hack The Box**, **TryHackMe**, and local CTFs
+- Frequent player on **Hack The Box**, **RootMe**, **TryHackMe**  and local CTFs
 - Background in Computer Science & Security Engineering
 - Strong belief in knowledge sharing & open-source collaboration
 - GitHub: [@ProxyGeek](https://github.com/Pr0xyG33k)
@@ -34,7 +34,7 @@ This space serves as a personal knowledge base and a digital lab notebook. Youâ€
 - Cybersecurity tooling tips and custom scripts
 - Philosophy, digital hygiene, and opsec mindset
 
-You can subscribe via [GitHub](https://github.com/Pr0xyG33k/proxy-blog).
+You can subscribe via [GitHub](https://github.com/Pr0xyG33k/hugo-blog).
 
 {{< style "min-height: 350px;" >}}
 {{< typeit code=python speed=20 >}}
@@ -56,15 +56,16 @@ const website = new Blog('A Collection of Strengths', 'ProxyGeek', 'https://prox
 {{< /style >}}
 
 {{< details "History" >}}
-```timeline {reverse=true, animation=true, height="180px"}
+```timeline {reverse=true, animation=true, height="230px"}
 events:
   - timestamp: 2025-05-01
     content: Official launch of this cybersecurity-focused blog. A space to share learning, experiments, and reflections.
+  - timestamp: 2025-05-10
+    content: Started working toward OffSec certifications to deepen technical skills and validate knowledge.
   - timestamp: 2024-12-12
     content: Started drafting write-ups on CTFs and security tooling. Idea for a blog took shape.
   - timestamp: 2024-08-20
     content: Began diving seriously into InfoSec and ethical hacking. Joined a few beginner-friendly CTFs.
-```
 {{< /details >}}
 
 ---

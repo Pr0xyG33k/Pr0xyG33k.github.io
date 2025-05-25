@@ -73,7 +73,7 @@ Wireless security protocols are designed to protect wireless networks from unaut
 
 ### WiFi Adaptor
 
-A **Wi-Fi adapter**, also known as a **Wi-Fi dongle** or **wireless network adapter**, is a device that enables a computer or other devices to **connect to a Wi-Fi network**. It allows devices that do not have built-in Wi-Fi capabilities to access **wireless networks** and **connect to the internet** or communicate with other devices **wirelessly**.
+A **Wi-Fi adapter**, also known as a **Wi-Fi dongle** or **wireless network adapter**, is a device that enables a computer or other devices to connect to a Wi-Fi network. It allows devices that do not have built-in Wi-Fi capabilities to access **wireless networks** and **connect to the internet** or communicate with other devices **wirelessly**.
 
 > [!NOTE]
 > If you want to use WIFI functionality in a virtual machine, you will have to use an external WIFI adaptor and will have configure it with VMware or Virtual box.
@@ -86,8 +86,8 @@ A **Wi-Fi adapter**, also known as a **Wi-Fi dongle** or **wireless network adap
 
 **Frequency bands** refer to specific ranges of **radio frequencies** that are used for wireless communication. Wi-Fi operates in two main frequency bands: **2.4 GHz** and **5 GHz**.
 
-- **2.4 GHz**: The 2.4 GHz band is the **older** and more **widely used** frequency band in Wi-Fi. It provides **good coverage** and can **obstacles** like walls more effectively.
-- **5 GHz**: The 5 GHz band is a **newer** addition to Wi-Fi and offers more **available channels** with **wider frequency ranges**. It provides **faster data speeds** and is **less congested** compared to the 2.4 GHz band since fewer devices operate in this range. However, the 5 GHz signals have a **shorter range** and may encounter more **attenuation** when passing through walls and other obstacles.
+- **2.4 GHz**: The 2.4 GHz band is the older and more widely used frequency band in Wi-Fi. It provides good coverage and can obstacles like walls more effectively.
+- **5 GHz**: The 5 GHz band is a newer addition to Wi-Fi and offers more available channels with wider frequency ranges. It provides faster data speeds and is less congested compared to the 2.4 GHz band since fewer devices operate in this range. However, the 5 GHz signals have a shorter range and may encounter more attenuation when passing through walls and other obstacles.
 
 ```echarts {js=true}
 {
