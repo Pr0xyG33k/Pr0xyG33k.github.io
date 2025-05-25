@@ -133,8 +133,8 @@ To begin, open **VMware Workstation** on your system. This graphical tool will a
 In the wizard that appears, select **"Installer disc image file (iso)"** and browse to the **Kali Linux ISO** you previously downloaded. Next, choose the OS type as **Linux**, and for the version, select **Debian 10.x 64-bit**—this works well for Kali Linux.
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="/posts/_wireless/hacking02/images/vm_create.png" alt="create" style="width: 45%; margin-right: 10px;" />
-  <img src="/posts/_wireless/hacking02/images/vm_conf.png" alt="conf" style="width: 45%;" />
+  <img src="/posts/_wireless/hacking02/images/vm_create.png" alt="create" style="width: 50%; margin-right: 10px;" />
+  <img src="/posts/_wireless/hacking02/images/vm_conf.png" alt="conf" style="width: 50%;" />
 </div>
 
 You’ll then be prompted to assign system resources to the VM. It is recommended to allocate **at least 2GB of RAM**, but **4GB (4096MB)** is ideal if your host machine allows it. You should also assign **2 or more CPU cores** to ensure smooth performance. After this, you’ll create a virtual hard disk—make sure it is **at least 20GB**, and **dynamically allocated** to save space.
@@ -167,7 +167,35 @@ The first step is to install the necessary packages that will allow Kali to buil
 └─$ sudo apt install -y linux-headers-$(uname -r) build-essential bc dkms git libelf-dev rfkill iw
 ```
 
+> [!NOTE]
+> If you encounter an error while installing the dependencies, make sure your system is up to date by running `sudo apt update && sudo apt upgrade`. If the issue persists, check that your Linux kernel is compatible with the `linux-headers` package you installed.
+
 To do this, plug your adapter into the host machine. Then, with the Kali VM powered off, open Edit Virtual Machine Settings. Click Add and choose USB Controller, then select USB Device and pick your USB Wi-Fi adapter from the list.
+
+<div style="display: flex; justify-content: center;">
+  <img src="/posts/_wireless/hacking02/images/vm_usb.png" alt="usb" style="width: 50%; margin-right: 10px;">
+</div>
+
+The first task is to prepare a location on your system where the downloaded driver files will be stored. This is important to keep everything organized and ensure that the installation files are easily accessible. To create the directory, you will use the `mkdir` command, which stands for "make directory." The `-p` flag ensures that if the directory does not already exist, it will be created. The directory we will create is called `src`, and it will be placed in your home directory (`~/`), which is a standard practice for organizing source files.
+
+After running this command, you’ll have a new folder named `src` in your home directory. This folder will be used specifically for storing the driver files that you will download in later steps.
+
+Now that you're in the correct directory, it's time to download the driver. In this case, the driver files are hosted on GitHub, a popular platform for sharing and collaborating on code. The easiest way to get the driver is by cloning the GitHub repository that contains it. To clone a repository, you use the `git clone` command, which will create a local copy of the repository on your system. The repository we’re using is hosted at `https://github.com/morrownr/8814au.git`. This repository contains the necessary files to install the driver for your device.
+
+```bash
+git clone https://github.com/morrownr/8814au.git
+```
+
+The installation process is handled by a script named `install-driver.sh`. Running this script will compile and install the necessary files to get the driver working on your system. There are two ways to execute the script, both of which require elevated privileges since you’re installing software that will affect system-wide settings.
+
+```bash
+sudo ./install-driver.sh
+```
+
+By following these steps, you will have successfully downloaded, installed, and configured the necessary driver for your device. Rebooting your system afterward will ensure that the installation is fully effective.
+
+> [!NOTE]
+> If you are asked to choose a provider, make sure to choose the one that corresponds to your version of the Linux kernel (for example, `linux510-headers` for Linux kernel version 5.10). If you install the incorrect version, you'll have to uninstall it and install the correct version.
 
 Once added, start the VM again. Inside Kali Linux, open a terminal and run:
 
@@ -187,6 +215,8 @@ wlan0     IEEE 802.11b  ESSID:""  Nickname:"WIFI@RTL8814AU"
           Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
           Tx excessive retries:0  Invalid misc:0   Missed beacon:0
 ```
+
+Monitor mode allows your Wi-Fi adapter to capture all radio packets in the air, even those that are not destined for your device. This is essential for performing attacks like packet injection or capturing packets for penetration testing.
 
 
 ---
