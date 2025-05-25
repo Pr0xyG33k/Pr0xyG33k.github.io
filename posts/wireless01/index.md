@@ -27,7 +27,7 @@ Wi-Fi is the primary method of internet connectivity in **homes** and **business
 | **Security**              | Wi-Fi networks can be secured using several encryption methods, including WPA2 and WPA3, to ensure privacy and data protection. |
 | **Wide Compatibility**    | Wi-Fi is widely supported, and nearly all modern devices come with built-in Wi-Fi adapters. |
 | **Range**                 | Wi-Fi coverage varies depending on the network’s frequency (2.4 GHz vs 5 GHz) and environmental factors. Generally, 2.4 GHz offers a broader range but lower speeds than 5 GHz networks. |
-| **Penetration**           | Wi-Fi signals can travel through walls and other obstacles, but the signal strength decreases as it passes through materials. |
+| **Obstacle**           | Wi-Fi signals can travel through walls and other obstacles, but the signal strength decreases as it passes through materials. |
 | **Interference**          | Wi-Fi networks can be disrupted by other electronic devices, such as microwaves and cordless phones, causing signal degradation. |
 | **Security Risks**        | While various security protocols help protect Wi-Fi networks, no system is completely immune to hacking attempts. |
 
@@ -86,107 +86,114 @@ A **Wi-Fi adapter**, also known as a **Wi-Fi dongle** or **wireless network adap
 
 **Frequency bands** refer to specific ranges of **radio frequencies** that are used for wireless communication. Wi-Fi operates in two main frequency bands: **2.4 GHz** and **5 GHz**.
 
-- **2.4 GHz**: The 2.4 GHz band is the **older** and more **widely used** frequency band in Wi-Fi. It provides **good coverage** and can **penetrate obstacles** like walls more effectively.
+- **2.4 GHz**: The 2.4 GHz band is the **older** and more **widely used** frequency band in Wi-Fi. It provides **good coverage** and can **obstacles** like walls more effectively.
 - **5 GHz**: The 5 GHz band is a **newer** addition to Wi-Fi and offers more **available channels** with **wider frequency ranges**. It provides **faster data speeds** and is **less congested** compared to the 2.4 GHz band since fewer devices operate in this range. However, the 5 GHz signals have a **shorter range** and may encounter more **attenuation** when passing through walls and other obstacles.
 
 ```echarts {js=true}
 {
-  "color": ["#00BFFF", "#FF7F50"],
-  "title": {
-    "text": "Wi-Fi Frequency Bands Overview",
-    "top": "2%",
-    "left": "center"
+  color: ['#00BFFF', '#FF7F50'],
+  title: {
+    text: 'Wi-Fi Frequency Bands Overview',
+    top: '2%',
+    left: 'center'
   },
-  "tooltip": {
-    "trigger": "axis",
-    "axisPointer": {
-      "type": "cross",
-      "label": {
-        "backgroundColor": "#6a7985"
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow',
+      label: {
+        backgroundColor: '#6a7985'
       }
+    },
+    formatter: function(params) {
+      const defs = {
+        "Coverage": "Area where the Wi-Fi signal can be effectively received.",
+        "Channels": "Number of available channels for data transmission.",
+        "Speed": "Maximum theoretical data transmission speed.",
+        "Obstacle": "Ability of the signal to pass through walls and obstacles.",
+        "Congestion": "Level of interference caused by other devices.",
+        "Connectivity": "Ease of connection without physical cables.",
+        "Portability": "Ability to use Wi-Fi on mobile and portable devices.",
+        "Security": "Level of data protection on the network (WPA2/WPA3).",
+        "Compatibility": "Number of devices supporting this frequency band.",
+        "Range": "Maximum distance at which the signal is usable.",
+        "Interference": "Disturbances caused by other electronic devices."
+      };
+      let category = params[0].axisValue;
+      let tooltipText = `<b>${category}</b><br>${defs[category]}<br><br>`;
+      params.forEach(item => {
+        tooltipText += `${item.marker} ${item.seriesName}: ${item.data}<br>`;
+      });
+      return tooltipText;
     }
   },
-  "legend": {
-    "data": ["2.4 GHz", "5 GHz"],
-    "top": "10%"
+  legend: {
+    data: ['2.4 GHz', '5 GHz'],
+    top: '10%'
   },
-  "toolbox": {
-    "feature": {
-      "saveAsImage": {}
+  toolbox: {
+    feature: {
+      saveAsImage: {}
     }
   },
-  "grid": {
-    "left": "5%",
-    "right": "5%",
-    "bottom": "5%",
-    "top": "20%",
-    "containLabel": true
+  grid: {
+    left: '5%',
+    right: '5%',
+    bottom: '10%',
+    top: '20%',
+    containLabel: true
   },
-  "xAxis": [
+  xAxis: {
+    type: 'category',
+    data: [
+      "Coverage",
+      "Channels",
+      "Speed",
+      "Obstacle",
+      "Congestion",
+      "Connectivity",
+      "Portability",
+      "Security",
+      "Compatibility",
+      "Range",
+      "Interference"
+    ],
+    axisLine: { lineStyle: { color: '#888' } },
+    axisTick: { alignWithLabel: true }
+  },
+  yAxis: {
+    type: 'value',
+    max: 10,
+    axisLine: { lineStyle: { color: '#888' } },
+    splitLine: { lineStyle: { type: 'dashed', color: '#ddd' } }
+  },
+  series: [
     {
-      "type": "category",
-      "boundaryGap": false,
-      "data": ["Coverage", "Channels", "Speed", "Penetration", "Congestion"]
-    }
-  ],
-  "yAxis": [
-    {
-      "type": "value",
-      "max": 10
-    }
-  ],
-  "series": [
-    {
-      "name": "2.4 GHz",
-      "type": "line",
-      "stack": "Total",
-      "smooth": true,
-      "lineStyle": { "width": 0 },
-      "showSymbol": false,
-      "areaStyle": {
-        "opacity": 0.8,
-        "color": {
-          "type": "linear",
-          "x": 0,
-          "y": 0,
-          "x2": 0,
-          "y2": 1,
-          "colorStops": [
-            { "offset": 0, "color": "rgb(0, 191, 255)" },
-            { "offset": 1, "color": "rgb(135, 206, 250)" }
-          ]
-        }
+      name: '2.4 GHz',
+      type: 'bar',
+      barGap: 0,
+      barCategoryGap: '40%',
+      emphasis: {
+        focus: 'series'
       },
-      "emphasis": { "focus": "series" },
-      "data": [9, 3, 5, 8, 7]
+      data: [9, 3, 5, 8, 7, 10, 10, 7, 10, 9, 6],
+      itemStyle: {
+        color: 'rgb(0, 191, 255)'
+      }
     },
     {
-      "name": "5 GHz",
-      "type": "line",
-      "stack": "Total",
-      "smooth": true,
-      "lineStyle": { "width": 0 },
-      "showSymbol": false,
-      "areaStyle": {
-        "opacity": 0.8,
-        "color": {
-          "type": "linear",
-          "x": 0,
-          "y": 0,
-          "x2": 0,
-          "y2": 1,
-          "colorStops": [
-            { "offset": 0, "color": "rgb(255, 127, 80)" },
-            { "offset": 1, "color": "rgb(255, 160, 122)" }
-          ]
-        }
+      name: '5 GHz',
+      type: 'bar',
+      emphasis: {
+        focus: 'series'
       },
-      "emphasis": { "focus": "series" },
-      "data": [6, 9, 9, 5, 3]
+      data: [6, 9, 9, 5, 3, 10, 10, 9, 10, 6, 4],
+      itemStyle: {
+        color: 'rgb(255, 127, 80)'
+      }
     }
   ]
 }
-
 
 ```
 
