@@ -3,7 +3,14 @@
 
 ## About
 
-In this blog, we have introduced the **basics of wireless hacking**. We have covered what **WiFi** is, some important WiFi terms, the history of WiFi, and how WiFi works. In the next blog, we will start covering **wireless attacks**. _Join us for an engaging journey that combines learning, awareness, and securing our wireless connections._
+In this blog, we have introduced the basics of wireless hacking to lay the groundwork for understanding how wireless networks function and the security challenges they present. We began by discussing the fundamental concepts of WiFi, including its evolution, how it enables wireless communication, and the crucial terminology used in the realm of wireless networking.
+
+Additionally, we explored the history of WiFi—from its early days as a simple communication medium to its widespread adoption in homes, businesses, and public spaces. Understanding this evolution provides us with context for the vulnerabilities that exist in modern wireless systems today.
+
+_Join us for an engaging journey that combines learning, awareness, and securing our wireless connections._
+
+> [!CAUTION]
+> **Ethical Hacking Reminder**: Only perform wireless penetration tests on networks you own or have explicit permission to test. Unauthorized hacking is illegal and unethical.
 
 ## Wireless Hacking
 
@@ -373,6 +380,12 @@ There is a list of WIFI adaptors from which you can choose:
 - [TRENDnet AC1900 High Power Dual Band Wireless USB Adapter](https://www.amazon.com/dp/B01EOQ61KI)
 - [Alfa AWUS036NHA](https://www.getic.fr/product/alfa-awus036nha)
 - [Panda Wireless® Mid Range 150Mbps](https://www.amazon.com/dp/B004AC0L4Y)
+
+## Conclusion
+
+In this first part of our wireless hacking series, we’ve laid the foundation for understanding how Wi-Fi networks work, covering the fundamental concepts, essential terms, and the history behind the technology. Understanding these basics is key to mastering more advanced topics like network security, encryption protocols, and wireless attacks.
+
+As we move forward, we’ll dive deeper into practical techniques and tools that will help us secure and audit wireless networks. In the next part, we’ll set up a safe, isolated testing environment to begin experimenting with attacks, allowing us to learn by doing.
 
 
 ---

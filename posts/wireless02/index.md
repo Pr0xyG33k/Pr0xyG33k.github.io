@@ -231,6 +231,51 @@ wlan0     IEEE 802.11b  ESSID:""  Nickname:"WIFI@RTL8814AU"
 
 Monitor mode allows your Wi-Fi adapter to capture all radio packets in the air, even those that are not destined for your device. This is essential for performing attacks like packet injection or capturing packets for penetration testing.
 
+## Monitoring
+
+As we continue to explore wireless security in a controlled and isolated environment, we can utilize tools like Wifite2 to audit and capture network data. For example, the following command:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo wifite --kill
+   .               .    
+ .´  ·  .     .  ·  `.  wifite2 2.7.0
+ :  :  :  (¯)  :  :  :  a wireless auditor by derv82
+ `.  ·  ` /¯\ ´  ·  .´  maintained by kimocoder
+   `     /¯¯¯\     ´    https://github.com/kimocoder/wifite2
+
+ [+] option: kill conflicting processes enabled
+ [+] Using wlan0 already in monitor mode                                                                         
+```
+
+This command helps stop conflicting processes (like `NetworkManager` or `wpa_supplicant`), and sets your wireless interface to monitor mode, which is essential for packet sniffing and capturing data from nearby networks. Once in monitor mode, you can analyze various wireless networks in your environment.
+
+Here is a sample of the output you might see when running wifite:
+
+```bash
+   NUM                      ESSID   CH  ENCR    PWR    WPS  CLIENT                                               
+   ---  -------------------------  ---  -----   ----   ---  ------
+     1       (1X:XX:XX:XX:XX:XX)     1  WPA     99db    no                                                       
+     2       (2X:XX:XX:XX:XX:XX)    11  WPA     99db    no                                                       
+     3              WIFI01-GUEST     8  WPA-P   63db    no                                                       
+     4              WIFI02-GUEST     6  WPA-P   38db  lock                                                       
+     5       (3X:XX:XX:XX:XX:XX)     6  WPA     38db    no                                                       
+     6              WIFI03-GUEST     6  WPA-P   30db  lock                                                       
+     7       (4X:XX:XX:XX:XX:XX)     6  WPA     29db    no                                                       
+     8       (5X:XX:XX:XX:XX:XX)     1  WPA-P   21db    no                                                       
+     9              WIFI04-GUEST     1  WPA-P   20db   yes                                                       
+    10              WIFI05-GUEST     6  WPA-P   20db   yes                                                       
+    11              WIFI06-GUEST    11  WPA-P   19db  lock
+```
+
+In this list, each entry represents a wireless access point (AP) detected within range, with information about its ESSID (network name), channel, encryption type, signal strength (PWR), WPS status, and connected clients.
+
+This tool is essential for understanding and evaluating the security of wireless networks within a controlled and isolated environment, providing insight into nearby networks and preparing for more complex penetration testing in future parts of this series.
+
+## Conclusion
+
+This section introduces a fundamental practice for wireless hacking: monitoring and gathering data on surrounding networks. The next steps will involve more hands-on attacks like spoofing or deauthentication to better understand potential vulnerabilities. Make sure to always work in an isolated and ethical testing environment to avoid any unintended consequences.
+
 
 ---
 
