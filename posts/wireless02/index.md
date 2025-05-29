@@ -274,7 +274,9 @@ This tool is essential for understanding and evaluating the security of wireless
 
 ## Conclusion
 
-This section introduces a fundamental practice for wireless hacking: monitoring and gathering data on surrounding networks. The next steps will involve more hands-on attacks like spoofing or deauthentication to better understand potential vulnerabilities. Make sure to always work in an isolated and ethical testing environment to avoid any unintended consequences.
+In this second part, we have focused on setting up a secure and isolated environment to safely explore wireless hacking techniques. By preparing the necessary tools and addressing potential conflicts with networking processes, we’ve laid the groundwork for testing wireless security in a controlled manner. This is a crucial step before diving into more complex attacks and deeper exploitation of vulnerabilities.
+
+With these configurations in place, you are now ready to experiment and start using tools like Wifite for capturing traffic and testing wireless network security. The next step will take us into the world of active attacks and intrusion attempts in Part 3, where we will explore the first of many practical wireless attacks.
 
 
 ---
