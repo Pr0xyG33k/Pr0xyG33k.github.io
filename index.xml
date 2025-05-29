@@ -1,213 +1,107 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.6 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 May 2025 14:31:31 +0000</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Honeypot Server</title><link>https://Pr0xyG33k.github.io/projects/honeypot/</link><pubDate>Mon, 26 May 2025 00:13:11 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/projects/honeypot/</guid><category domain="https://Pr0xyG33k.github.io/categories/cyber-threat-intelligence/">Cyber Threat Intelligence</category><description>&lt;h2 class="heading-element" id="about">&lt;span>10 About&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.6 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 30 May 2025 19:20:54 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Wireless Hacking Part 3</title><link>https://Pr0xyG33k.github.io/posts/wireless03/</link><pubDate>Mon, 26 May 2025 17:05:48 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless03/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><description>&lt;h2 class="heading-element" id="about">&lt;span>10 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>&lt;a href="https://prometheus.io"target="_blank" rel="external nofollow noopener noreferrer">Prometheus&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> is an open-source monitoring and alerting toolkit designed for reliability and scalability. Initially developed at SoundCloud in 2012, it&amp;rsquo;s now a graduated project under the Cloud Native Computing Foundation (CNCF).&lt;/p>
-&lt;h2 class="heading-element" id="git">&lt;span>11 Git&lt;/span>
- &lt;a href="#git" class="heading-mark">
+&lt;/h2>&lt;p>In Part 3 of our Wireless Hacking series, we will delve into the practical application of wireless attacks. Now that we have set up a secure and isolated testing environment in previous sections, it’s time to take a closer look at some of the most common and effective wireless attacks.
+These types of attacks are a cornerstone in the world of wireless security testing. From there, we will continue to expand our knowledge by examining other attack techniques such as deauthentication, packet sniffing, and man-in-the-middle (MITM) attacks.&lt;/p>
+&lt;p>We will begin by exploring spoofing attacks, which can manipulate network traffic and impersonate trusted devices.&lt;/p>
+&lt;div class="alert alert-caution">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M4.47.22A.749.749.0 015 0h6c.199.0.389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749.0 01-.22.53l-4.25 4.25A.749.749.0 0111 16H5a.749.749.0 01-.53-.22L.22 11.53A.749.749.0 010 11V5c0-.199.079-.389.22-.53zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5zM8 4a.75.75.0 01.75.75v3.5a.75.75.0 01-1.5.0v-3.5A.75.75.0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Caution&lt;/p>&lt;p>&lt;strong>Ethical Hacking Reminder&lt;/strong>: Only perform wireless penetration tests on networks you own or have explicit permission to test. Unauthorized hacking is illegal and unethical.&lt;/p>&lt;/div>&lt;h2 class="heading-element" id="rc4-stream-cipher">&lt;span>11 RC4/ Stream Cipher&lt;/span>
+ &lt;a href="#rc4-stream-cipher" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>This project uses a clean and scalable Git workflow to organize the development and deployment lifecycle. By leveraging feature branches and a clear separation between stable and in-progress code, we ensure that our honeypot system remains reliable while encouraging rapid iteration and experimentation.&lt;/p>
-&lt;h3 class="heading-element" id="branch-strategy">&lt;span>11.1 Branch Strategy&lt;/span>
- &lt;a href="#branch-strategy" class="heading-mark">
+&lt;/h2>&lt;p>The process starts when the user creates a root key of size 128 bits. This root key is then encrypted using the RC4 algorithm, which generates a keystream. Once the keystream is generated, it is combined with the plaintext data using an XOR gate (logical operation). The result of this operation gives us the &lt;strong>ciphertext&lt;/strong>, which can then be sent.&lt;/p>
+&lt;pre class="mermaid">graph LR
+ A[Create 128-bit Root Key] --> B[Encrypt with RC4 Algorithm]
+ B --> C[Generate Keystream]
+ C --> D[Combine Keystream with Plain Data using XOR Gate]
+ D --> E[Get Ciphertext]
+ E --> F[Send Ciphertext]&lt;/pre>
+&lt;template>graph LR
+ A[Create 128-bit Root Key] --> B[Encrypt with RC4 Algorithm]
+ B --> C[Generate Keystream]
+ C --> D[Combine Keystream with Plain Data using XOR Gate]
+ D --> E[Get Ciphertext]
+ E --> F[Send Ciphertext]&lt;/template>&lt;h2 class="heading-element" id="monitoring">&lt;span>12 Monitoring&lt;/span>
+ &lt;a href="#monitoring" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h3>&lt;ul>
-&lt;li>&lt;strong>&lt;code>main&lt;/code>&lt;/strong> – The production branch. Only stable, tested code is merged here.&lt;/li>
-&lt;li>&lt;strong>&lt;code>develop&lt;/code>&lt;/strong> – Active development branch. All features are integrated here before being released.&lt;/li>
-&lt;li>&lt;strong>&lt;code>feature/*&lt;/code>&lt;/strong> – Temporary branches for individual features such as log capture, alerting, or interface improvements.&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="git-flow">&lt;span>11.2 Git Flow&lt;/span>
- &lt;a href="#git-flow" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre class="mermaid">
-gitGraph
- commit id: "Initial commit"
- commit id: "Setup Hugo and theme"
- branch develop
- checkout develop
- commit id: "Create honeypot layout and structure"
- branch feature/logging
- checkout feature/logging
- commit id: "Implement traffic logging"
- checkout develop
- merge feature/logging
- branch feature/alerting
- checkout feature/alerting
- commit id: "Add alert system for intrusions"
- commit id: "Connect webhook for alert delivery"
- checkout develop
- merge feature/alerting
- branch feature/visualization
- checkout feature/visualization
- commit id: "Add data visualization dashboard"
- checkout develop
- merge feature/visualization
- commit id: "Final testing and cleanup"
- checkout main
- merge develop
- commit id: "Release v1.0"
-&lt;/pre>
-&lt;template>
-gitGraph
- commit id: "Initial commit"
- commit id: "Setup Hugo and theme"
- branch develop
- checkout develop
- commit id: "Create honeypot layout and structure"
- branch feature/logging
- checkout feature/logging
- commit id: "Implement traffic logging"
- checkout develop
- merge feature/logging
- branch feature/alerting
- checkout feature/alerting
- commit id: "Add alert system for intrusions"
- commit id: "Connect webhook for alert delivery"
- checkout develop
- merge feature/alerting
- branch feature/visualization
- checkout feature/visualization
- commit id: "Add data visualization dashboard"
- checkout develop
- merge feature/visualization
- commit id: "Final testing and cleanup"
- checkout main
- merge develop
- commit id: "Release v1.0"
-&lt;/template>
-&lt;h2 class="heading-element" id="architecture">&lt;span>12 Architecture&lt;/span>
- &lt;a href="#architecture" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>Prometheus automatically collects metrics from applications and services using exporters. For short-lived jobs, it relies on an intermediary called the Pushgateway. It discovers monitoring targets through automatic methods like Kubernetes or configuration files. The collected data is stored in a specialized time series database called TSDB on disk. Prometheus provides a web interface and can integrate with Grafana for data visualization. It also manages alerts via the Alertmanager, which sends notifications when issues occur. This architecture enables efficient and comprehensive system monitoring.&lt;/p>
-&lt;pre class="mermaid">graph TD
-
-subgraph "Jobs"
- J1[Jobs/exporters]
- J2[Short-lived jobs]
-end
-
-subgraph "Service Discovery"
- SD1[Kubernetes]
- SD2[file_sd]
-end
-
-subgraph "Prometheus Server"
- RET[Retrieval]
- TSDB[TSDB]
- HTTP[HTTP server]
-end
-
-subgraph "Storage"
- HDD[HDD/SSD]
-end
-
-subgraph "Visualization"
- UI[Prometheus web UI]
- G[Grafana]
- API[API clients]
-end
-
-subgraph "Alerting"
- AM[Alertmanager]
- PD[pagerduty]
- Email[Email]
- ETC[etc]
-end
-
-subgraph "Pushgateway"
- PG[Pushgateway]
-end
-
-%% Data Flow
-J1 -->|pull metrics| RET
-J2 -->|push metrics at exit| PG
-PG -->|pull metrics| RET
-SD1 -->|discover targets| RET
-SD2 -->|discover targets| RET
-RET --> TSDB
-TSDB --> HTTP
-TSDB --> HDD
-HTTP --> UI
-HTTP --> G
-HTTP --> API
-HTTP -->|push alerts| AM
-AM -->|notify| PD
-AM -->|notify| Email
-AM -->|notify| ETC&lt;/pre>
-&lt;template>graph TD
-
-subgraph "Jobs"
- J1[Jobs/exporters]
- J2[Short-lived jobs]
-end
-
-subgraph "Service Discovery"
- SD1[Kubernetes]
- SD2[file_sd]
-end
-
-subgraph "Prometheus Server"
- RET[Retrieval]
- TSDB[TSDB]
- HTTP[HTTP server]
-end
-
-subgraph "Storage"
- HDD[HDD/SSD]
-end
-
-subgraph "Visualization"
- UI[Prometheus web UI]
- G[Grafana]
- API[API clients]
-end
-
-subgraph "Alerting"
- AM[Alertmanager]
- PD[pagerduty]
- Email[Email]
- ETC[etc]
-end
-
-subgraph "Pushgateway"
- PG[Pushgateway]
-end
-
-%% Data Flow
-J1 -->|pull metrics| RET
-J2 -->|push metrics at exit| PG
-PG -->|pull metrics| RET
-SD1 -->|discover targets| RET
-SD2 -->|discover targets| RET
-RET --> TSDB
-TSDB --> HTTP
-TSDB --> HDD
-HTTP --> UI
-HTTP --> G
-HTTP --> API
-HTTP -->|push alerts| AM
-AM -->|notify| PD
-AM -->|notify| Email
-AM -->|notify| ETC&lt;/template></description></item><item><title>Wireless Hacking Part 2</title><link>https://Pr0xyG33k.github.io/posts/wireless02/</link><pubDate>Fri, 23 May 2025 08:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless02/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><description>&lt;h2 class="heading-element" id="about">&lt;span>22 About&lt;/span>
+&lt;/h2>&lt;p>As we continue to explore wireless security in a controlled and isolated environment, we can utilize tools like Wifite2 to audit and capture network data. For example, the following command:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">┌──&lt;span class="o">(&lt;/span>proxygeek㉿VMware-kali&lt;span class="o">)&lt;/span>-&lt;span class="o">[&lt;/span>~&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└─$ sudo wifite --kill
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> . . 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> .´ · . . · &lt;span class="sb">`&lt;/span>. wifite2 2.7.0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> : : : &lt;span class="o">(&lt;/span>¯&lt;span class="o">)&lt;/span> : : : a wireless auditor by derv82
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sb">`&lt;/span>. · &lt;span class="sb">`&lt;/span> /¯&lt;span class="se">\ &lt;/span>´ · .´ maintained by kimocoder
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sb">`&lt;/span> /¯¯¯&lt;span class="se">\ &lt;/span> ´ https://github.com/kimocoder/wifite2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">[&lt;/span>+&lt;span class="o">]&lt;/span> option: &lt;span class="nb">kill&lt;/span> conflicting processes enabled
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">[&lt;/span>+&lt;span class="o">]&lt;/span> Using wlan0 already in monitor mode &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This command helps stop conflicting processes (like &lt;code>NetworkManager&lt;/code> or &lt;code>wpa_supplicant&lt;/code>), and sets your wireless interface to monitor mode, which is essential for packet sniffing and capturing data from nearby networks. Once in monitor mode, you can analyze various wireless networks in your environment.&lt;/p>
+&lt;p>Here is a sample of the output you might see when running wifite:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> NUM ESSID CH ENCR PWR WPS CLIENT 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --- ------------------------- --- ----- ---- --- ------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1&lt;/span> &lt;span class="o">(&lt;/span>1X:XX:XX:XX:XX:XX&lt;span class="o">)&lt;/span> &lt;span class="m">1&lt;/span> WPA 99db no 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">2&lt;/span> &lt;span class="o">(&lt;/span>2X:XX:XX:XX:XX:XX&lt;span class="o">)&lt;/span> &lt;span class="m">11&lt;/span> WPA 99db no 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">3&lt;/span> WIFI01-GUEST &lt;span class="m">8&lt;/span> WPA-P 63db no 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">4&lt;/span> WIFI02-GUEST &lt;span class="m">6&lt;/span> WPA-P 38db lock 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">5&lt;/span> &lt;span class="o">(&lt;/span>3X:XX:XX:XX:XX:XX&lt;span class="o">)&lt;/span> &lt;span class="m">6&lt;/span> WPA 38db no 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">6&lt;/span> WIFI03-GUEST &lt;span class="m">6&lt;/span> WPA-P 30db lock 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">7&lt;/span> &lt;span class="o">(&lt;/span>4X:XX:XX:XX:XX:XX&lt;span class="o">)&lt;/span> &lt;span class="m">6&lt;/span> WPA 29db no 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">8&lt;/span> &lt;span class="o">(&lt;/span>5X:XX:XX:XX:XX:XX&lt;span class="o">)&lt;/span> &lt;span class="m">1&lt;/span> WPA-P 21db no 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">9&lt;/span> WIFI04-GUEST &lt;span class="m">1&lt;/span> WPA-P 20db yes 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">10&lt;/span> WIFI05-GUEST &lt;span class="m">6&lt;/span> WPA-P 20db yes 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">11&lt;/span> WIFI06-GUEST &lt;span class="m">11&lt;/span> WPA-P 19db lock&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>In this list, each entry represents a wireless access point (AP) detected within range, with information about its ESSID (network name), channel, encryption type, signal strength (PWR), WPS status, and connected clients.&lt;/p>
+&lt;p>This tool is essential for understanding and evaluating the security of wireless networks within a controlled and isolated environment, providing insight into nearby networks and preparing for more complex penetration testing in future parts of this series.&lt;/p></description></item><item><title>Wireless Hacking Part 2</title><link>https://Pr0xyG33k.github.io/posts/wireless02/</link><pubDate>Fri, 23 May 2025 08:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless02/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><description>&lt;h2 class="heading-element" id="about">&lt;span>19 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>In this second part of the Wireless Hacking series, we shift our focus from theory to practice.
+&lt;/h2>&lt;p>In Part 2 of our Wireless Hacking series, we shift our focus from theory to practice.
 Having explored the fundamental concepts of wireless networks and security in the first part of this series, it&amp;rsquo;s now time to transition from theoretical knowledge to hands-on experience. While understanding the theory behind wireless attacks is essential, practical skills are just as important in mastering wireless security. However, before we begin exploring the world of wireless hacking and penetration testing, it&amp;rsquo;s critical to create a safe and controlled environment in which to learn&lt;/p>
-&lt;div class="alert alert-caution">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M4.47.22A.749.749.0 015 0h6c.199.0.389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749.0 01-.22.53l-4.25 4.25A.749.749.0 0111 16H5a.749.749.0 01-.53-.22L.22 11.53A.749.749.0 010 11V5c0-.199.079-.389.22-.53zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5zM8 4a.75.75.0 01.75.75v3.5a.75.75.0 01-1.5.0v-3.5A.75.75.0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Caution&lt;/p>&lt;p>&lt;strong>Ethical Hacking Reminder&lt;/strong>: Only perform wireless penetration tests on networks you own or have explicit permission to test. Unauthorized hacking is illegal and unethical.&lt;/p>&lt;/div>&lt;h2 class="heading-element" id="environment">&lt;span>23 Environment&lt;/span>
+&lt;div class="alert alert-caution">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M4.47.22A.749.749.0 015 0h6c.199.0.389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749.0 01-.22.53l-4.25 4.25A.749.749.0 0111 16H5a.749.749.0 01-.53-.22L.22 11.53A.749.749.0 010 11V5c0-.199.079-.389.22-.53zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5zM8 4a.75.75.0 01.75.75v3.5a.75.75.0 01-1.5.0v-3.5A.75.75.0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Caution&lt;/p>&lt;p>&lt;strong>Ethical Hacking Reminder&lt;/strong>: Only perform wireless penetration tests on networks you own or have explicit permission to test. Unauthorized hacking is illegal and unethical.&lt;/p>&lt;/div>&lt;h2 class="heading-element" id="environment">&lt;span>20 Environment&lt;/span>
  &lt;a href="#environment" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>Before performing any wireless attacks or experiments, it&amp;rsquo;s crucial to set up a safe and isolated testing environment. Here are two solid options depending on your setup and preferences:&lt;/p>
-&lt;h3 class="heading-element" id="option-1-installing-kali-linux-on-a-virtual-machine">&lt;span>23.1 Option 1: Installing Kali Linux on a Virtual Machine&lt;/span>
+&lt;h3 class="heading-element" id="option-1-installing-kali-linux-on-a-virtual-machine">&lt;span>20.1 Option 1: Installing Kali Linux on a Virtual Machine&lt;/span>
  &lt;a href="#option-1-installing-kali-linux-on-a-virtual-machine" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>&lt;strong>Recommended software&lt;/strong>: &lt;a href="https://www.virtualbox.org/"target="_blank" rel="external nofollow noopener noreferrer">VirtualBox&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> or &lt;a href="https://www.vmware.com/products/workstation-player.html"target="_blank" rel="external nofollow noopener noreferrer">VMware Workstation Player&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> (free for personal use) or &lt;a href="https://www.qemu.org/download/"target="_blank" rel="external nofollow noopener noreferrer">QEMU/KVM&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>.&lt;/p>
-&lt;h4 class="heading-element" id="option-1-downloads-links">&lt;span>23.1.1 Option 1 Downloads Links&lt;/span>
+&lt;h4 class="heading-element" id="option-1-downloads-links">&lt;span>20.1.1 Option 1 Downloads Links&lt;/span>
  &lt;a href="#option-1-downloads-links" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -215,7 +109,7 @@ Having explored the fundamental concepts of wireless networks and security in th
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-virtual-machines"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux Virtual Machines Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-installer-images"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux ISO Image&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="option-1-installation-steps">&lt;span>23.1.2 Option 1 Installation Steps&lt;/span>
+&lt;h4 class="heading-element" id="option-1-installation-steps">&lt;span>20.1.2 Option 1 Installation Steps&lt;/span>
  &lt;a href="#option-1-installation-steps" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -226,7 +120,7 @@ Having explored the fundamental concepts of wireless networks and security in th
 &lt;li>Use a &lt;strong>USB Wi-Fi adapter that supports monitor mode&lt;/strong>, and pass it through to the VM.&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h3 class="heading-element" id="option-2-installing-kali-linux-on-a-raspberry-pi">&lt;span>23.2 Option 2: Installing Kali Linux on a Raspberry Pi&lt;/span>
+&lt;h3 class="heading-element" id="option-2-installing-kali-linux-on-a-raspberry-pi">&lt;span>20.2 Option 2: Installing Kali Linux on a Raspberry Pi&lt;/span>
  &lt;a href="#option-2-installing-kali-linux-on-a-raspberry-pi" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -236,14 +130,14 @@ Having explored the fundamental concepts of wireless networks and security in th
 &lt;li>MicroSD card (minimum 16 GB)&lt;/li>
 &lt;li>Power supply, keyboard, mouse, and HDMI screen&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="option-2-downloads-links">&lt;span>23.2.1 Option 2 Downloads Links&lt;/span>
+&lt;h4 class="heading-element" id="option-2-downloads-links">&lt;span>20.2.1 Option 2 Downloads Links&lt;/span>
  &lt;a href="#option-2-downloads-links" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h4>&lt;ul>
 &lt;li>&lt;a href="https://www.kali.org/get-kali/#kali-arm"target="_blank" rel="external nofollow noopener noreferrer">Kali Linux ARM image for Raspberry Pi&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h4 class="heading-element" id="option-2-installations-steps">&lt;span>23.2.2 Option 2 Installations Steps&lt;/span>
+&lt;h4 class="heading-element" id="option-2-installations-steps">&lt;span>20.2.2 Option 2 Installations Steps&lt;/span>
  &lt;a href="#option-2-installations-steps" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -252,41 +146,43 @@ Having explored the fundamental concepts of wireless networks and security in th
 &lt;li>Insert the card into the Raspberry Pi, connect all peripherals, and boot it up.&lt;/li>
 &lt;li>Follow the on-screen setup instructions and ensure your Wi-Fi adapter is compatible with monitor mode.&lt;/li>
 &lt;/ol>
-&lt;h2 class="heading-element" id="architecture">&lt;span>24 Architecture&lt;/span>
+&lt;h2 class="heading-element" id="architecture">&lt;span>21 Architecture&lt;/span>
  &lt;a href="#architecture" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>The architecture of a Wi-Fi hacking lab is designed to create a controlled environment for safely testing wireless security. At the core of the lab is the Attacker Machine (Kali Linux), which runs penetration testing tools to perform attacks on the Target Access Point (Test AP). The Test Client Device connects to the AP, simulating a user’s interaction with the network. The Isolation Switch/Firewall ensures the lab is separated from the wider network and blocks unauthorized internet access, protecting the external network from any potential disruption. Finally, the Monitoring &amp;amp; Logging Station captures and analyzes the traffic between the attacker, the AP, and the client, allowing for detailed analysis and logging of all actions. This setup ensures that wireless security testing can be performed safely and ethically within an isolated environment.&lt;/p>
 &lt;pre class="mermaid">graph TD
- subgraph "Wi-Fi Hacking Lab"
  attacker["Attacker Machine (Kali Linux)"]
  ap["Target Access Point (Test AP)"]
  client["Test Client Device"]
  firewall["Isolation Switch / Firewall"]
  monitor["Monitoring &amp; Logging Station"]
- end
+ Internet["Internet"]
 
  attacker -->|Inject &amp; Capture Traffic| ap
  client -->|Connects to| ap
  ap -->|Connects through| firewall
  attacker -->|Sends data for analysis| monitor
  client -->|Traffic monitored by| monitor
- firewall -.->|Blocks traffic to Internet| Internet["Internet"]&lt;/pre>
+ firewall -.->|Blocks traffic to Internet| Internet
+ 
+ class attacker,ap,client,firewall,monitor,Internet neutral;&lt;/pre>
 &lt;template>graph TD
- subgraph "Wi-Fi Hacking Lab"
  attacker["Attacker Machine (Kali Linux)"]
  ap["Target Access Point (Test AP)"]
  client["Test Client Device"]
  firewall["Isolation Switch / Firewall"]
  monitor["Monitoring &amp; Logging Station"]
- end
+ Internet["Internet"]
 
  attacker -->|Inject &amp; Capture Traffic| ap
  client -->|Connects to| ap
  ap -->|Connects through| firewall
  attacker -->|Sends data for analysis| monitor
  client -->|Traffic monitored by| monitor
- firewall -.->|Blocks traffic to Internet| Internet["Internet"]&lt;/template>&lt;h2 class="heading-element" id="checksum">&lt;span>25 Checksum&lt;/span>
+ firewall -.->|Blocks traffic to Internet| Internet
+ 
+ class attacker,ap,client,firewall,monitor,Internet neutral;&lt;/template>&lt;h2 class="heading-element" id="checksum">&lt;span>22 Checksum&lt;/span>
  &lt;a href="#checksum" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -399,7 +295,7 @@ Having explored the fundamental concepts of wireless networks and security in th
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">kali&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">linux&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mf">2025.1&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">installer&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">amd64&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">iso&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">torrent&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">FAILED&lt;/span> &lt;span class="n">open&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">read&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">All&lt;/span> &lt;span class="n">done&lt;/span>&lt;span class="o">!&lt;/span> &lt;span class="n">If&lt;/span> &lt;span class="n">you&lt;/span> &lt;span class="n">see&lt;/span> &lt;span class="s1">&amp;#39;kali-linux-2025.1c-installer-amd64.iso: OK&amp;#39;&lt;/span> &lt;span class="n">above&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">your&lt;/span> &lt;span class="n">ISO&lt;/span> &lt;span class="n">is&lt;/span> &lt;span class="n">verified&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">safe&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">use&lt;/span>&lt;span class="o">.&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 class="heading-element" id="vmware-workstation">&lt;span>26 VMware Workstation&lt;/span>
+&lt;/div>&lt;h2 class="heading-element" id="vmware-workstation">&lt;span>23 VMware Workstation&lt;/span>
  &lt;a href="#vmware-workstation" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -411,21 +307,21 @@ Having explored the fundamental concepts of wireless networks and security in th
 &lt;/div>
 &lt;p>You’ll then be prompted to assign system resources to the VM. It is recommended to allocate &lt;strong>at least 2GB of RAM&lt;/strong>, but &lt;strong>4GB (4096MB)&lt;/strong> is ideal if your host machine allows it. You should also assign &lt;strong>2 or more CPU cores&lt;/strong> to ensure smooth performance. After this, you’ll create a virtual hard disk—make sure it is &lt;strong>at least 20GB&lt;/strong>, and &lt;strong>dynamically allocated&lt;/strong> to save space.&lt;/p>
 &lt;p>Once these steps are complete, click &lt;strong>Finish&lt;/strong> to create and launch the virtual machine.&lt;/p>
-&lt;h3 class="heading-element" id="configuration">&lt;span>26.1 Configuration&lt;/span>
+&lt;h3 class="heading-element" id="configuration">&lt;span>23.1 Configuration&lt;/span>
  &lt;a href="#configuration" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>Before installing Kali, a few adjustments to the virtual hardware settings are necessary. In VMware Workstation, select your newly created Kali VM and click Edit Virtual Machine Settings to access its configuration panel.&lt;/p>
 &lt;p>Inside this panel, make sure that the Kali Linux ISO is correctly attached as the boot media under the CD/DVD section. Next, review the network settings. By default, the network is set to NAT, which provides Internet access through your host. However, if you want the VM to be visible on your local network (useful for advanced testing), you can change it to Bridged mode and select your host interface.&lt;/p>
 &lt;p>Finally, ensure that a USB controller (either USB 2.0 or 3.0) is present and enabled in the settings. This will be important later when attaching a USB Wi-Fi adapter.&lt;/p>
-&lt;h3 class="heading-element" id="installation">&lt;span>26.2 Installation&lt;/span>
+&lt;h3 class="heading-element" id="installation">&lt;span>23.2 Installation&lt;/span>
  &lt;a href="#installation" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h3>&lt;p>Now that your VM is ready, start it up. The system should boot directly into the Kali Linux ISO. On the boot menu, select &amp;ldquo;Graphical Install&amp;rdquo; to launch the graphical installer, which is easier for most users to navigate.&lt;/p>
 &lt;p>Proceed through the installation by choosing your language, country, and keyboard layout. You’ll then configure your network settings, including a hostname (e.g., kali-vm) and an optional domain name. After that, create a user account and password. Kali now defaults to a non-root user, which improves security and mirrors real-world Linux use.&lt;/p>
 &lt;p>For disk setup, select Guided - use entire disk, which is the simplest and safest option for a VM. Confirm your partitioning choices and let the installer complete the process. Once installation is finished, remove the ISO from the virtual CD-ROM and reboot the VM.&lt;/p>
-&lt;h3 class="heading-element" id="settings">&lt;span>26.3 Settings&lt;/span>
+&lt;h3 class="heading-element" id="settings">&lt;span>23.3 Settings&lt;/span>
  &lt;a href="#settings" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -504,72 +400,7 @@ The first step is to install the necessary packages that will allow Kali to buil
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Tx excessive retries:0 Invalid misc:0 Missed beacon:0&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Monitor mode allows your Wi-Fi adapter to capture all radio packets in the air, even those that are not destined for your device. This is essential for performing attacks like packet injection or capturing packets for penetration testing.&lt;/p>
-&lt;h2 class="heading-element" id="monitoring">&lt;span>27 Monitoring&lt;/span>
- &lt;a href="#monitoring" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>As we continue to explore wireless security in a controlled and isolated environment, we can utilize tools like Wifite2 to audit and capture network data. For example, the following command:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">┌──&lt;span class="o">(&lt;/span>proxygeek㉿VMware-kali&lt;span class="o">)&lt;/span>-&lt;span class="o">[&lt;/span>~&lt;span class="o">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└─$ sudo wifite --kill
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> . . 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> .´ · . . · &lt;span class="sb">`&lt;/span>. wifite2 2.7.0
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> : : : &lt;span class="o">(&lt;/span>¯&lt;span class="o">)&lt;/span> : : : a wireless auditor by derv82
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sb">`&lt;/span>. · &lt;span class="sb">`&lt;/span> /¯&lt;span class="se">\ &lt;/span>´ · .´ maintained by kimocoder
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sb">`&lt;/span> /¯¯¯&lt;span class="se">\ &lt;/span> ´ https://github.com/kimocoder/wifite2
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">[&lt;/span>+&lt;span class="o">]&lt;/span> option: &lt;span class="nb">kill&lt;/span> conflicting processes enabled
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">[&lt;/span>+&lt;span class="o">]&lt;/span> Using wlan0 already in monitor mode &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>This command helps stop conflicting processes (like &lt;code>NetworkManager&lt;/code> or &lt;code>wpa_supplicant&lt;/code>), and sets your wireless interface to monitor mode, which is essential for packet sniffing and capturing data from nearby networks. Once in monitor mode, you can analyze various wireless networks in your environment.&lt;/p>
-&lt;p>Here is a sample of the output you might see when running wifite:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> NUM ESSID CH ENCR PWR WPS CLIENT 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --- ------------------------- --- ----- ---- --- ------
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1&lt;/span> &lt;span class="o">(&lt;/span>1X:XX:XX:XX:XX:XX&lt;span class="o">)&lt;/span> &lt;span class="m">1&lt;/span> WPA 99db no 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">2&lt;/span> &lt;span class="o">(&lt;/span>2X:XX:XX:XX:XX:XX&lt;span class="o">)&lt;/span> &lt;span class="m">11&lt;/span> WPA 99db no 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">3&lt;/span> WIFI01-GUEST &lt;span class="m">8&lt;/span> WPA-P 63db no 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">4&lt;/span> WIFI02-GUEST &lt;span class="m">6&lt;/span> WPA-P 38db lock 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">5&lt;/span> &lt;span class="o">(&lt;/span>3X:XX:XX:XX:XX:XX&lt;span class="o">)&lt;/span> &lt;span class="m">6&lt;/span> WPA 38db no 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">6&lt;/span> WIFI03-GUEST &lt;span class="m">6&lt;/span> WPA-P 30db lock 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">7&lt;/span> &lt;span class="o">(&lt;/span>4X:XX:XX:XX:XX:XX&lt;span class="o">)&lt;/span> &lt;span class="m">6&lt;/span> WPA 29db no 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">8&lt;/span> &lt;span class="o">(&lt;/span>5X:XX:XX:XX:XX:XX&lt;span class="o">)&lt;/span> &lt;span class="m">1&lt;/span> WPA-P 21db no 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">9&lt;/span> WIFI04-GUEST &lt;span class="m">1&lt;/span> WPA-P 20db yes 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">10&lt;/span> WIFI05-GUEST &lt;span class="m">6&lt;/span> WPA-P 20db yes 
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">11&lt;/span> WIFI06-GUEST &lt;span class="m">11&lt;/span> WPA-P 19db lock&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>In this list, each entry represents a wireless access point (AP) detected within range, with information about its ESSID (network name), channel, encryption type, signal strength (PWR), WPS status, and connected clients.&lt;/p>
-&lt;p>This tool is essential for understanding and evaluating the security of wireless networks within a controlled and isolated environment, providing insight into nearby networks and preparing for more complex penetration testing in future parts of this series.&lt;/p>
-&lt;h2 class="heading-element" id="conclusion">&lt;span>28 Conclusion&lt;/span>
+&lt;h2 class="heading-element" id="conclusion">&lt;span>24 Conclusion&lt;/span>
  &lt;a href="#conclusion" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
