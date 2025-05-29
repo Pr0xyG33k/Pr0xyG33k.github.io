@@ -3,8 +3,11 @@
 
 ## About
 
-In this second part of the Wireless Hacking series, we shift our focus from theory to practice. Before diving into real-world attacks, it’s crucial to prepare a safe, legal, and isolated environment to experiment and learn.
-Join us as we continue this educational journey through ethical hacking and wireless security.
+In this second part of the Wireless Hacking series, we shift our focus from theory to practice.
+Having explored the fundamental concepts of wireless networks and security in the first part of this series, it's now time to transition from theoretical knowledge to hands-on experience. While understanding the theory behind wireless attacks is essential, practical skills are just as important in mastering wireless security. However, before we begin exploring the world of wireless hacking and penetration testing, it's critical to create a safe and controlled environment in which to learn
+
+> [!CAUTION]
+> **Ethical Hacking Reminder**: Only perform wireless penetration tests on networks you own or have explicit permission to test. Unauthorized hacking is illegal and unethical.
 
 ## Environment
 
@@ -48,6 +51,8 @@ Before performing any wireless attacks or experiments, it's crucial to set up a 
 
 ## Architecture
 
+The architecture of a Wi-Fi hacking lab is designed to create a controlled environment for safely testing wireless security. At the core of the lab is the Attacker Machine (Kali Linux), which runs penetration testing tools to perform attacks on the Target Access Point (Test AP). The Test Client Device connects to the AP, simulating a user’s interaction with the network. The Isolation Switch/Firewall ensures the lab is separated from the wider network and blocks unauthorized internet access, protecting the external network from any potential disruption. Finally, the Monitoring & Logging Station captures and analyzes the traffic between the attacker, the AP, and the client, allowing for detailed analysis and logging of all actions. This setup ensures that wireless security testing can be performed safely and ethically within an isolated environment.
+
 ```mermaid
 graph TD
     subgraph "Wi-Fi Hacking Lab"
@@ -66,12 +71,12 @@ graph TD
     firewall -.->|Blocks traffic to Internet| Internet["Internet"]
 ```
 
-## VMware Workstation
+## Checksum
 
-> [!CAUTION]
-> Before proceeding with creating the virtual machine, it's strongly recommended to **verify the SHA256 checksum** of the Kali Linux ISO. This helps ensure that the file has not been corrupted during download or maliciously altered.
+> [!WARNING]
+> Before proceeding with creating the virtual machine, it's strongly recommended to **verify the SHA256 checksum** of the Kali Linux ISO. This helps ensure that the file has not been corrupted during download or maliciously altered. Verifying the checksum is an important security step to ensure the integrity of the ISO file, especially when downloading from the internet. Without this verification, you could be running a compromised version of Kali Linux, which could expose your system to unnecessary risks.
 
-### Checksum
+Here’s how you can verify the checksum and ensure that the ISO is safe to use:
 
 ```bash
 #!/bin/bash
@@ -127,6 +132,8 @@ kali-linux-2025.1c-installer-amd64.iso: OK
 kali-linux-2025.1c-installer-amd64.iso.torrent: FAILED open or read
 All done! If you see 'kali-linux-2025.1c-installer-amd64.iso: OK' above, your ISO is verified and safe to use.
 ```
+
+## VMware Workstation
 
 To begin, open **VMware Workstation** on your system. This graphical tool will allow you to easily manage virtual machines. Once the application is open, click on the **"Create a New Virtual Machine"** button.
 

@@ -48,6 +48,8 @@ gitGraph
 
 ## Architecture
 
+Prometheus automatically collects metrics from applications and services using exporters. For short-lived jobs, it relies on an intermediary called the Pushgateway. It discovers monitoring targets through automatic methods like Kubernetes or configuration files. The collected data is stored in a specialized time series database called TSDB on disk. Prometheus provides a web interface and can integrate with Grafana for data visualization. It also manages alerts via the Alertmanager, which sends notifications when issues occur. This architecture enables efficient and comprehensive system monitoring.
+
 ```mermaid
 graph TD
 
