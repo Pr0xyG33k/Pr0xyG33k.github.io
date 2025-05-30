@@ -9,36 +9,20 @@
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>The process starts when the user creates a root key of size 128 bits. This root key is then encrypted using the RC4 algorithm, which generates a keystream. Once the keystream is generated, it is combined with the plaintext data using an XOR gate (logical operation). The result of this operation gives us the &lt;strong>ciphertext&lt;/strong>, which can then be sent.&lt;/p>
-&lt;pre class="mermaid">graph TD
- RK[128-bit Root Key]
- RC4[RC4 Algorithm]
- KS[Pseudorandom Keystream]
- XOR[XOR Operation]
- PT[Plaintext Data]
- CT[Ciphertext]
- NET[Send over Network]
-
- RK --> RC4
- RC4 --> KS
+&lt;pre class="mermaid">flowchart LR
+ RK[128-bit Root Key] --> RC4[RC4 Algorithm]
+ RC4 --> KS[Pseudorandom Keystream]
+ PT[Plaintext Data] --> XOR[XOR Operation]
  KS --> XOR
- PT --> XOR
- XOR --> CT
- CT --> NET&lt;/pre>
-&lt;template>graph TD
- RK[128-bit Root Key]
- RC4[RC4 Algorithm]
- KS[Pseudorandom Keystream]
- XOR[XOR Operation]
- PT[Plaintext Data]
- CT[Ciphertext]
- NET[Send over Network]
-
- RK --> RC4
- RC4 --> KS
+ XOR --> CT[Ciphertext]
+ CT --> NET[Send over Network]&lt;/pre>
+&lt;template>flowchart LR
+ RK[128-bit Root Key] --> RC4[RC4 Algorithm]
+ RC4 --> KS[Pseudorandom Keystream]
+ PT[Plaintext Data] --> XOR[XOR Operation]
  KS --> XOR
- PT --> XOR
- XOR --> CT
- CT --> NET&lt;/template>&lt;h2 class="heading-element" id="wep-packet">&lt;span>18 WEP Packet&lt;/span>
+ XOR --> CT[Ciphertext]
+ CT --> NET[Send over Network]&lt;/template>&lt;h2 class="heading-element" id="wep-packet">&lt;span>18 WEP Packet&lt;/span>
  &lt;a href="#wep-packet" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1007,7 +991,193 @@ Example: &lt;code>00:1A:2B:3C:4D:5E&lt;/code> — the first half is the &lt;stro
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>In this first part of our wireless hacking series, we’ve laid the foundation for understanding how Wi-Fi networks work, covering the fundamental concepts, essential terms, and the history behind the technology. Understanding these basics is key to mastering more advanced topics like network security, encryption protocols, and wireless attacks.&lt;/p>
-&lt;p>As we move forward, we’ll dive deeper into practical techniques and tools that will help us secure and audit wireless networks. In the next part, we’ll set up a safe, isolated testing environment to begin experimenting with attacks, allowing us to learn by doing.&lt;/p></description></item><item><title>Hello World</title><link>https://Pr0xyG33k.github.io/posts/hello-world/</link><pubDate>Sat, 10 May 2025 02:47:00 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/hello-world/</guid><category domain="https://Pr0xyG33k.github.io/categories/thoughts/">Thoughts</category><description>&lt;blockquote>
+&lt;p>As we move forward, we’ll dive deeper into practical techniques and tools that will help us secure and audit wireless networks. In the next part, we’ll set up a safe, isolated testing environment to begin experimenting with attacks, allowing us to learn by doing.&lt;/p></description></item><item><title>Github Page</title><link>https://Pr0xyG33k.github.io/posts/github/</link><pubDate>Mon, 12 May 2025 18:26:49 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/github/</guid><category domain="https://Pr0xyG33k.github.io/categories/thoughts/">Thoughts</category><description>&lt;blockquote>
+&lt;p>&amp;ldquo;Behind every well-organized repo lies a story of purpose, experimentation, and constant iteration.&amp;rdquo;&lt;/p>&lt;/blockquote>
+&lt;p>After years of hands-on experience in cybersecurity and development, I’ve learned that code is just one part of the battle. The &lt;strong>structure&lt;/strong> we build around our work — our process, our repository, our mindset — is what allows our projects to scale, evolve, and remain resilient.&lt;/p>
+&lt;p>This GitHub Page is more than just a collection of code — it&amp;rsquo;s a reflection of my workflow, my evolution, and the systems I’ve put in place to stay adaptable in a fast-changing world.&lt;/p>
+&lt;h2 class="heading-element" id="repository">&lt;span>7 Repository&lt;/span>
+ &lt;a href="#repository" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Each directory, file, and branch serves a purpose. Here’s a high-level overview of how my main repository is structured:&lt;/p>
+&lt;pre class="mermaid">flowchart LR
+ L[Local Files]
+ L2[Local Files]
+
+ GH_Private[(GitHub Private Repo)]
+ GH_Public[(GitHub Public Repo)]
+
+ Actions[GitHub Actions]
+
+ GH_Pages[GitHub Pages]
+ Vercel[Vercel]
+ More[More...]
+
+ L -->|Git Push| GH_Private
+ L2 -->|Git Push| GH_Public
+
+ GH_Private -->|Git Submodule| GH_Public
+ GH_Public --> Actions
+
+ Actions -->|Deploy| GH_Pages
+ Actions -->|Deploy| Vercel
+ Actions -->|Deploy| More&lt;/pre>
+&lt;template>flowchart LR
+ L[Local Files]
+ L2[Local Files]
+
+ GH_Private[(GitHub Private Repo)]
+ GH_Public[(GitHub Public Repo)]
+
+ Actions[GitHub Actions]
+
+ GH_Pages[GitHub Pages]
+ Vercel[Vercel]
+ More[More...]
+
+ L -->|Git Push| GH_Private
+ L2 -->|Git Push| GH_Public
+
+ GH_Private -->|Git Submodule| GH_Public
+ GH_Public --> Actions
+
+ Actions -->|Deploy| GH_Pages
+ Actions -->|Deploy| Vercel
+ Actions -->|Deploy| More&lt;/template>&lt;h2 class="heading-element" id="branch">&lt;span>8 Branch&lt;/span>
+ &lt;a href="#branch" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Maintaining a clean and sustainable workflow is key in collaborative and long-term projects. Here’s the branching model I follow:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>&lt;code>main&lt;/code>&lt;/strong> – The &lt;strong>production&lt;/strong> branch. Only stable, reviewed, and tested code lives here.&lt;/li>
+&lt;li>&lt;strong>&lt;code>develop&lt;/code>&lt;/strong> – The &lt;strong>integration&lt;/strong> branch for ongoing development. Features are merged here after review and testing.&lt;/li>
+&lt;li>&lt;strong>&lt;code>feature/*&lt;/code>&lt;/strong> – Used for individual feature development (e.g., &lt;code>feature/log-capture&lt;/code>, &lt;code>feature/api-hardening&lt;/code>).&lt;/li>
+&lt;li>&lt;strong>&lt;code>bugfix/*&lt;/code>&lt;/strong> – Quick patches or specific bug resolutions.&lt;/li>
+&lt;li>&lt;strong>&lt;code>release/*&lt;/code>&lt;/strong> – For preparing stable releases, including documentation and final testing.&lt;/li>
+&lt;/ul>
+&lt;p>This structure allows me to stay agile while ensuring quality and traceability in the work I deliver.&lt;/p>
+&lt;pre class="mermaid">gitGraph
+ commit id: "Initial commit"
+ branch develop
+ checkout develop
+ commit id: "Init project structure"
+ commit id: "Setup CI/CD"
+ 
+ branch feature/log-capture
+ checkout feature/log-capture
+ commit id: "Add log capture module"
+ checkout develop
+ merge feature/log-capture id: "Merge log-capture"
+
+ branch feature/api-hardening
+ checkout feature/api-hardening
+ commit id: "Improve API input validation"
+ commit id: "Add rate limiting"
+ checkout develop
+ merge feature/api-hardening id: "Merge api-hardening"
+
+ branch bugfix/token-expiry
+ checkout bugfix/token-expiry
+ commit id: "Fix token expiry bug"
+ checkout develop
+ merge bugfix/token-expiry id: "Merge token fix"
+
+ branch release/v1.0
+ checkout release/v1.0
+ commit id: "Prepare release v1.0"
+ checkout main
+ merge release/v1.0 id: "Release v1.0 to production"
+ commit id: "Hotfix README"
+
+ checkout develop
+ branch feature/ui-redesign
+ commit id: "Start UI redesign"&lt;/pre>
+&lt;template>gitGraph
+ commit id: "Initial commit"
+ branch develop
+ checkout develop
+ commit id: "Init project structure"
+ commit id: "Setup CI/CD"
+ 
+ branch feature/log-capture
+ checkout feature/log-capture
+ commit id: "Add log capture module"
+ checkout develop
+ merge feature/log-capture id: "Merge log-capture"
+
+ branch feature/api-hardening
+ checkout feature/api-hardening
+ commit id: "Improve API input validation"
+ commit id: "Add rate limiting"
+ checkout develop
+ merge feature/api-hardening id: "Merge api-hardening"
+
+ branch bugfix/token-expiry
+ checkout bugfix/token-expiry
+ commit id: "Fix token expiry bug"
+ checkout develop
+ merge bugfix/token-expiry id: "Merge token fix"
+
+ branch release/v1.0
+ checkout release/v1.0
+ commit id: "Prepare release v1.0"
+ checkout main
+ merge release/v1.0 id: "Release v1.0 to production"
+ commit id: "Hotfix README"
+
+ checkout develop
+ branch feature/ui-redesign
+ commit id: "Start UI redesign"&lt;/template>&lt;div class="music-player" data-fixed="true">
+ 
+
+ &lt;div class="music-embed soundcloud-container" data-url="https://soundcloud.com/lorientestard/sets/clair-obscur-expedition-33-6">
+ &lt;div class="loading">Loading player…&lt;/div>
+ &lt;/div>
+&lt;/div>
+
+&lt;script>
+ document.addEventListener("DOMContentLoaded", function () {
+ const containers = document.querySelectorAll(".soundcloud-container");
+ containers.forEach(container => {
+ const url = encodeURIComponent(container.dataset.url);
+ const iframe = document.createElement("iframe");
+ iframe.width = "100%";
+ iframe.height = "100";
+ iframe.scrolling = "no";
+ iframe.frameBorder = "no";
+ iframe.allow = "autoplay";
+ iframe.src = `https://w.soundcloud.com/player/?url=${url}&amp;color=%23ff5500&amp;auto_play=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true`;
+ container.innerHTML = "";
+ container.appendChild(iframe);
+ });
+ });
+&lt;/script>
+
+&lt;style>
+
+ .music-info {
+ margin-bottom: 0.5em;
+ font-weight: bold;
+ color: #333;
+ }
+
+ .loading {
+ font-size: 0.9em;
+ color: #888;
+ }
+
+ [data-fixed="true"] iframe {
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ width: 20% !important;
+ z-index: 9999;
+ }
+&lt;/style>
+
+&lt;!--
+![Снег падает без конца, покрывая души, как невидимый саван. Каждый снежинка — это забытое воспоминание, утерянный звук в безбрежной тишине. Здесь, в самом сердце зимы, когда ветер воет как зверь, человек идет, не зная точно, куда](images/coffee.jpg 'Человек продолжает идти, без цели, без вопросов, ведомый странной уверенностью, что всё уже написано, но всё равно он должен искать, снова и снова')
+--></description></item><item><title>Hello World</title><link>https://Pr0xyG33k.github.io/posts/hello-world/</link><pubDate>Sat, 10 May 2025 02:47:00 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/hello-world/</guid><category domain="https://Pr0xyG33k.github.io/categories/thoughts/">Thoughts</category><description>&lt;blockquote>
 &lt;p>&amp;ldquo;What wakes you up every morning is not the alarm clock, but your dreams.&amp;rdquo;&lt;/p>&lt;/blockquote>
 &lt;p>I’ve lived through moments where this belief kept me going. I’ve seen the effort I’ve put into my work, and now, as I look back, the real question isn’t whether I’ve earned what I have — it’s about continuing to push forward, unflinching in the face of challenges.&lt;/p>
 &lt;p>In cybersecurity, the fight is never over. It’s a world where the enemy never sleeps, and neither should we.&lt;/p>

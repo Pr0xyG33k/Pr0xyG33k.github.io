@@ -15,21 +15,14 @@ In this post, you’ll learn how WEP works, the cryptographic weaknesses it suff
 The process starts when the user creates a root key of size 128 bits. This root key is then encrypted using the RC4 algorithm, which generates a keystream. Once the keystream is generated, it is combined with the plaintext data using an XOR gate (logical operation). The result of this operation gives us the **ciphertext**, which can then be sent.
 
 ```mermaid
-graph TD
-    RK[128-bit Root Key]
-    RC4[RC4 Algorithm]
-    KS[Pseudorandom Keystream]
-    XOR[XOR Operation]
-    PT[Plaintext Data]
-    CT[Ciphertext]
-    NET[Send over Network]
-
-    RK --> RC4
-    RC4 --> KS
+flowchart LR
+    RK[128-bit Root Key] --> RC4[RC4 Algorithm]
+    RC4 --> KS[Pseudorandom Keystream]
+    PT[Plaintext Data] --> XOR[XOR Operation]
     KS --> XOR
-    PT --> XOR
-    XOR --> CT
-    CT --> NET
+    XOR --> CT[Ciphertext]
+    CT --> NET[Send over Network]
+
 
 ```
 
