@@ -7,6 +7,10 @@ After years of hands-on experience in cybersecurity and development, I’ve lear
 
 This GitHub Page is more than just a collection of code — it's a reflection of my workflow, my evolution, and the systems I’ve put in place to stay adaptable in a fast-changing world.
 
+## Architecture
+
+To give you a better idea of how I separate concerns and automate deployments, here's a simplified view of the repository workflow
+
 Each directory, file, and branch serves a purpose. Here’s a high-level overview of how my main repository is structured:
 
 ```mermaid
@@ -34,6 +38,11 @@ flowchart LR
     Actions -->|Deploy| More
 
 ```
+
+## Branch
+
+I follow a Git Flow-inspired model because it enforces discipline in collaborative work.
+It allows features, hotfixes, and releases to evolve in parallel, with clear boundaries and responsibilities
 
 Maintaining a clean and sustainable workflow is key in collaborative and long-term projects. Here’s the branching model I follow:
 
