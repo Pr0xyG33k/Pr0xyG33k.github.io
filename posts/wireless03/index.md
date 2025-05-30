@@ -59,7 +59,7 @@ graph TD
 
 ## Router-side Decryption
 
-During router-side decryption, the process begins by appending the root key with the 24-bit Initialization Vector (IV) extracted from the received data packet. This new key is then used as input to the RC4 algorithm, which generates a pseudorandom keystream. Next, this keystream is combined with the ciphertext using an XOR operation. The result is the original data stream requested by the device. However, it is important to note that the mathematical weaknesses of RC4 expose this method to vulnerabilities: by collecting enough keystreams associated with different IV values, an attacker can analyze the data to recover the network’s secret key.
+During router-side decryption, the process begins by appending the root key with the 24-bit Initialization Vector (IV) extracted from the received data packet. This new key is then used as input to the RC4 algorithm, which generates a pseudorandom keystream. Next, this keystream is combined with the ciphertext using an XOR operation.
 
 ```mermaid
 graph TD
@@ -77,16 +77,13 @@ graph TD
     Keystream --> XOR
     Ciphertext --> XOR
     XOR --> Plaintext
-
 ```
+
+The result is the original data stream requested by the device. However, it is important to note that the mathematical weaknesses of RC4 expose this method to vulnerabilities: by collecting enough keystreams associated with different IV values, an attacker can analyze the data to recover the network’s secret key.
 
 ## Methodology
 
 Cracking a wireless network — especially one secured with WEP — relies on a deep understanding of stream cipher mechanics. At the heart of this process is the extraction of a keystream, a pseudorandom sequence used to encrypt data. To obtain the keystream, you need both ciphertext and at least a portion of the plaintext. By XORing the two, the keystream can be revealed, which can then be reused to decrypt other packets or even recover the original WEP key.
-
-The first practical step is capturing ciphertext, which is relatively straightforward. By setting your wireless interface to monitor mode, you can passively listen to all wireless traffic in range. This allows you to capture encrypted packets — including ARP requests and broadcast messages — without needing to be connected to the network. These packets become the foundation for further steps like traffic injection, keystream recovery, and ultimately key extraction.
-
-This methodology is central to WEP cracking and sets the stage for more advanced techniques, such as ARP replay attacks and dictionary-based keystream matching, which exploit predictable plaintext to speed up the attack process.
 
 ```mermaid
 graph TD
@@ -99,6 +96,48 @@ graph TD
     PlainText --> XOR
     XOR --> Keystream
 ```
+
+The first practical step is capturing ciphertext, which is relatively straightforward. By setting your wireless interface to monitor mode, you can passively listen to all wireless traffic in range. This allows you to capture encrypted packets — including ARP requests and broadcast messages — without needing to be connected to the network. These packets become the foundation for further steps like traffic injection, keystream recovery, and ultimately key extraction.
+
+This methodology is central to WEP cracking and sets the stage for more advanced techniques, such as ARP replay attacks and dictionary-based keystream matching, which exploit predictable plaintext to speed up the attack process.
+
+### Capture Ciphertext
+
+Capturing ciphertext is relatively simple.
+By setting the network adapter to monitor mode, it becomes possible to listen to and collect wireless data packets transmitted over the air.
+
+### Retrieve Plaintext
+
+Extracting the plaintext from encrypted packets is a more complex task. Fortunately, the ARP (Address Resolution Protocol) provides useful assistance in this process. ARP operates with two primary packet types: requests and replies. An ARP request is essentially a broadcast message that asks for the MAC address corresponding to a specific IP on the local network — for instance, “Who has IP 10.20.242.34?” In turn, the device with that IP responds with an ARP reply, sharing its MAC address, such as “I have 10.20.242.34, MAC address e4:35:54:ad:4f:45.”
+
+A key point is that both ARP request and reply packets contain a header of fixed, predictable length — 16 bytes. By capturing these packets, it is possible to know part of the plaintext in advance. This known plaintext can then be used to recover the initial bytes of the encryption keystream. Therefore, capturing a large number of ARP packets significantly aids the decryption effort.
+
+However, the attack demands a substantial volume of packets — on the order of 10,000 — to be effective. Such high traffic is typically found only on busy networks, making it challenging to gather enough data. To address this limitation, attackers often resort to an ARP replay technique.
+
+### Arp Replay attack
+
+With an ARP replay attack, an adversary captures an ARP request and repeatedly injects it into the network. This forces the client or network devices to generate many packets, each with new initialization vectors and keystream fragments. By collecting these replayed packets, the attacker gains access to a wealth of encrypted data that can be analyzed. For example, sending a single ARP request repeatedly in a network with one client can produce multiple keystream samples to capture and exploit.
+
+```mermaid
+graph TD
+    Capture["Capture Network Packets"]
+    ARP_Packets["Identify ARP Packets"]
+    ARP_Request["ARP Request Packet\n(e.g. Who has 10.20.242.34?)"]
+    ARP_Reply["ARP Reply Packet\n(e.g. I have 10.20.242.34\nMAC: e4:35:54:ad:4f:45)"]
+    Predictable_Header["Known 16-byte Header"]
+    Extract_Keystream["Extract First 16 Bytes of Keystream"]
+    Use_Keystream["Use Keystream to Decrypt Other Packets"]
+
+    Capture --> ARP_Packets
+    ARP_Packets --> ARP_Request
+    ARP_Packets --> ARP_Reply
+    ARP_Request --> Predictable_Header
+    ARP_Reply --> Predictable_Header
+    Predictable_Header --> Extract_Keystream
+    Extract_Keystream --> Use_Keystream
+```
+
+## Exploiting WEP
 
 ## Monitoring
 
