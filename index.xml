@@ -1,121 +1,133 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.6 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 30 May 2025 19:20:54 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Wireless Hacking Part 3</title><link>https://Pr0xyG33k.github.io/posts/wireless03/</link><pubDate>Mon, 26 May 2025 17:05:48 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless03/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><description>&lt;h2 class="heading-element" id="about">&lt;span>16 About&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.6 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 30 May 2025 19:20:54 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Wireless Hacking Part 3</title><link>https://Pr0xyG33k.github.io/posts/wireless03/</link><pubDate>Mon, 26 May 2025 17:05:48 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless03/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><description>&lt;h2 class="heading-element" id="about">&lt;span>19 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>In Part 3 of our Wireless Hacking series, we will delve into the practical application of wireless attacks. After exploring the basics of Wi-Fi and setting up a safe testing environment, it’s time to get hands-on. In this post, we’ll focus on attacking WEP (Wired Equivalent Privacy) — a once-standard but now outdated and highly vulnerable wireless encryption protocol.&lt;/p>
 &lt;p>In this post, you’ll learn how WEP works, the cryptographic weaknesses it suffers from, and step-by-step how to exploit these flaws using tools like &lt;strong>aircrack-ng&lt;/strong> and &lt;strong>aireplay-ng&lt;/strong>. By the end, you’ll understand why WEP is obsolete and how attackers can recover a WEP key within minutes.&lt;/p>
-&lt;div class="alert alert-caution">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M4.47.22A.749.749.0 015 0h6c.199.0.389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749.0 01-.22.53l-4.25 4.25A.749.749.0 0111 16H5a.749.749.0 01-.53-.22L.22 11.53A.749.749.0 010 11V5c0-.199.079-.389.22-.53zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5zM8 4a.75.75.0 01.75.75v3.5a.75.75.0 01-1.5.0v-3.5A.75.75.0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Caution&lt;/p>&lt;p>&lt;strong>Ethical Hacking Reminder&lt;/strong>: Only perform wireless penetration tests on networks you own or have explicit permission to test. Unauthorized hacking is illegal and unethical.&lt;/p>&lt;/div>&lt;h2 class="heading-element" id="rc4-stream-cipher">&lt;span>17 RC4/ Stream Cipher&lt;/span>
+&lt;div class="alert alert-caution">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M4.47.22A.749.749.0 015 0h6c.199.0.389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749.0 01-.22.53l-4.25 4.25A.749.749.0 0111 16H5a.749.749.0 01-.53-.22L.22 11.53A.749.749.0 010 11V5c0-.199.079-.389.22-.53zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5zM8 4a.75.75.0 01.75.75v3.5a.75.75.0 01-1.5.0v-3.5A.75.75.0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Caution&lt;/p>&lt;p>&lt;strong>Ethical Hacking Reminder&lt;/strong>: Only perform wireless penetration tests on networks you own or have explicit permission to test. Unauthorized hacking is illegal and unethical.&lt;/p>&lt;/div>&lt;h2 class="heading-element" id="rc4-stream-cipher">&lt;span>20 RC4/ Stream Cipher&lt;/span>
  &lt;a href="#rc4-stream-cipher" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>The process starts when the user creates a root key of size 128 bits. This root key is then encrypted using the RC4 algorithm, which generates a keystream. Once the keystream is generated, it is combined with the plaintext data using an XOR gate (logical operation). The result of this operation gives us the &lt;strong>ciphertext&lt;/strong>, which can then be sent.&lt;/p>
-&lt;pre class="mermaid">flowchart LR
- RK[128-bit Root Key] --> RC4[RC4 Algorithm]
- RC4 --> KS[Pseudorandom Keystream]
- PT[Plaintext Data] --> XOR[XOR Operation]
- KS --> XOR
- XOR --> CT[Ciphertext]
- CT --> NET[Send over Network]&lt;/pre>
-&lt;template>flowchart LR
- RK[128-bit Root Key] --> RC4[RC4 Algorithm]
- RC4 --> KS[Pseudorandom Keystream]
- PT[Plaintext Data] --> XOR[XOR Operation]
- KS --> XOR
- XOR --> CT[Ciphertext]
- CT --> NET[Send over Network]&lt;/template>&lt;h2 class="heading-element" id="wep-packet">&lt;span>18 WEP Packet&lt;/span>
+&lt;pre class="mermaid">graph TD
+ RootKey["Root Key (128 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream&lt;br>(Generated by RC4)"]
+ Plaintext["Plaintext Data"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext&lt;br>(Output)"]
+
+ RootKey --> RC4
+ RC4 --> Keystream
+ Keystream --> XOR
+ Plaintext --> XOR
+ XOR --> Ciphertext&lt;/pre>
+&lt;template>graph TD
+ RootKey["Root Key (128 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream&lt;br>(Generated by RC4)"]
+ Plaintext["Plaintext Data"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext&lt;br>(Output)"]
+
+ RootKey --> RC4
+ RC4 --> Keystream
+ Keystream --> XOR
+ Plaintext --> XOR
+ XOR --> Ciphertext&lt;/template>&lt;h2 class="heading-element" id="wep-packet">&lt;span>21 WEP Packet&lt;/span>
  &lt;a href="#wep-packet" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>The process of sending a packet using WEP begins with appending a 24-bit Initialization Vector (IV) to the root key. This new combined key is then input into the RC4 encryption algorithm, which generates a keystream unique to that packet. Next, this keystream is combined with the plaintext data using an XOR operation, producing the ciphertext that will be transmitted over the wireless network.&lt;/p>
 &lt;p>Since the IV changes with every packet, it is appended along with the ciphertext. This is necessary because the receiving device (such as a router) needs the IV to recreate the same keystream and correctly decrypt the message. Without the IV, decryption would not be possible, as the key would not match the keystream used for encryption.&lt;/p>
 &lt;pre class="mermaid">graph TD
- RK[128-bit Root Key]
- IV[24-bit Initialization Vector]
- RK --> IV
+ RootKey["Root Key (128 bits)"]
+ IV["IV (24 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream:&lt;br>1101101010110010101&lt;br>1001010110010101"]
+ Plaintext["Plain Text:\nGET / HTTP 1.1\nHost: google.com"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext:\na1b2c3d4e5f67890=="]
 
- KS[Generate Keystream with RC4]
- XOR[XOR Keystream with Plaintext]
- CT[Obtain Ciphertext]
- IV --> KS
- KS --> XOR
- XOR --> CT
-
- TX[Send Ciphertext + IV]
- CT --> TX
- IV --> TX
-
- RX[Receive Ciphertext + IV]
- KS2[Generate Keystream with RC4]
- XOR2[XOR Keystream with Ciphertext]
- PT[Retrieve Plaintext Data]
- RX --> KS2
- KS2 --> XOR2
- XOR2 --> PT&lt;/pre>
+ RootKey --> RC4
+ IV --> RC4
+ RC4 --> Keystream
+ Keystream --> XOR
+ Plaintext --> XOR
+ XOR --> Ciphertext&lt;/pre>
 &lt;template>graph TD
- RK[128-bit Root Key]
- IV[24-bit Initialization Vector]
- RK --> IV
+ RootKey["Root Key (128 bits)"]
+ IV["IV (24 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream:&lt;br>1101101010110010101&lt;br>1001010110010101"]
+ Plaintext["Plain Text:\nGET / HTTP 1.1\nHost: google.com"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext:\na1b2c3d4e5f67890=="]
 
- KS[Generate Keystream with RC4]
- XOR[XOR Keystream with Plaintext]
- CT[Obtain Ciphertext]
- IV --> KS
- KS --> XOR
- XOR --> CT
-
- TX[Send Ciphertext + IV]
- CT --> TX
- IV --> TX
-
- RX[Receive Ciphertext + IV]
- KS2[Generate Keystream with RC4]
- XOR2[XOR Keystream with Ciphertext]
- PT[Retrieve Plaintext Data]
- RX --> KS2
- KS2 --> XOR2
- XOR2 --> PT&lt;/template>&lt;h2 class="heading-element" id="router-side-decryption">&lt;span>19 Router-side Decryption&lt;/span>
+ RootKey --> RC4
+ IV --> RC4
+ RC4 --> Keystream
+ Keystream --> XOR
+ Plaintext --> XOR
+ XOR --> Ciphertext&lt;/template>&lt;h2 class="heading-element" id="router-side-decryption">&lt;span>22 Router-side Decryption&lt;/span>
  &lt;a href="#router-side-decryption" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>During router-side decryption, the process begins by appending the root key with the 24-bit Initialization Vector (IV) extracted from the received data packet. This new key is then used as input to the RC4 algorithm, which generates a pseudorandom keystream. Next, this keystream is combined with the ciphertext using an XOR operation. The result is the original data stream requested by the device. However, it is important to note that the mathematical weaknesses of RC4 expose this method to vulnerabilities: by collecting enough keystreams associated with different IV values, an attacker can analyze the data to recover the network’s secret key.&lt;/p>
 &lt;pre class="mermaid">graph TD
- RX[Receive Ciphertext + 24-bit IV]
- RK[128-bit Root Key]
- IV[24-bit Initialization Vector from Packet]
- CONCAT[Append IV to Root Key]
- RC4[RC4 Algorithm]
- KS[Pseudorandom Keystream]
- XOR[XOR Operation]
- CT[Ciphertext Data]
- PT[Recovered Plaintext Data]
+ RootKey["Root Key (128 bits)"]
+ IV["IV (24 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream:&lt;br>1101101010110010101&lt;br>1001010110010101"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext:\na1b2c3d4e5f67890=="]
+ Plaintext["Plain Text:\nGET / HTTP 1.1\nHost: google.com"]
 
- RX --> IV
- RK --> CONCAT
- IV --> CONCAT
- CONCAT --> RC4
- RC4 --> KS
- CT --> XOR
- KS --> XOR
- XOR --> PT&lt;/pre>
+ RootKey --> RC4
+ IV --> RC4
+ RC4 --> Keystream
+ Keystream --> XOR
+ Ciphertext --> XOR
+ XOR --> Plaintext&lt;/pre>
 &lt;template>graph TD
- RX[Receive Ciphertext + 24-bit IV]
- RK[128-bit Root Key]
- IV[24-bit Initialization Vector from Packet]
- CONCAT[Append IV to Root Key]
- RC4[RC4 Algorithm]
- KS[Pseudorandom Keystream]
- XOR[XOR Operation]
- CT[Ciphertext Data]
- PT[Recovered Plaintext Data]
+ RootKey["Root Key (128 bits)"]
+ IV["IV (24 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream:&lt;br>1101101010110010101&lt;br>1001010110010101"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext:\na1b2c3d4e5f67890=="]
+ Plaintext["Plain Text:\nGET / HTTP 1.1\nHost: google.com"]
 
- RX --> IV
- RK --> CONCAT
- IV --> CONCAT
- CONCAT --> RC4
- RC4 --> KS
- CT --> XOR
- KS --> XOR
- XOR --> PT&lt;/template>&lt;h2 class="heading-element" id="monitoring">&lt;span>20 Monitoring&lt;/span>
+ RootKey --> RC4
+ IV --> RC4
+ RC4 --> Keystream
+ Keystream --> XOR
+ Ciphertext --> XOR
+ XOR --> Plaintext&lt;/template>&lt;h2 class="heading-element" id="methodology">&lt;span>23 Methodology&lt;/span>
+ &lt;a href="#methodology" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Cracking a wireless network — especially one secured with WEP — relies on a deep understanding of stream cipher mechanics. At the heart of this process is the extraction of a keystream, a pseudorandom sequence used to encrypt data. To obtain the keystream, you need both ciphertext and at least a portion of the plaintext. By XORing the two, the keystream can be revealed, which can then be reused to decrypt other packets or even recover the original WEP key.&lt;/p>
+&lt;p>The first practical step is capturing ciphertext, which is relatively straightforward. By setting your wireless interface to monitor mode, you can passively listen to all wireless traffic in range. This allows you to capture encrypted packets — including ARP requests and broadcast messages — without needing to be connected to the network. These packets become the foundation for further steps like traffic injection, keystream recovery, and ultimately key extraction.&lt;/p>
+&lt;p>This methodology is central to WEP cracking and sets the stage for more advanced techniques, such as ARP replay attacks and dictionary-based keystream matching, which exploit predictable plaintext to speed up the attack process.&lt;/p>
+&lt;pre class="mermaid">graph TD
+ Ciphertext["Ciphertext: na1b2c3d4e5f67890=="]
+ PlainText["Plain Text: GET / HTTP 1.1\nHost: google.com"]
+ XOR["XOR Operation"]
+ Keystream["Keystream:&lt;br>1101101010110010101&lt;br>1001010110010101"]
+
+ Ciphertext --> XOR
+ PlainText --> XOR
+ XOR --> Keystream&lt;/pre>
+&lt;template>graph TD
+ Ciphertext["Ciphertext: na1b2c3d4e5f67890=="]
+ PlainText["Plain Text: GET / HTTP 1.1\nHost: google.com"]
+ XOR["XOR Operation"]
+ Keystream["Keystream:&lt;br>1101101010110010101&lt;br>1001010110010101"]
+
+ Ciphertext --> XOR
+ PlainText --> XOR
+ XOR --> Keystream&lt;/template>&lt;h2 class="heading-element" id="monitoring">&lt;span>24 Monitoring&lt;/span>
  &lt;a href="#monitoring" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
