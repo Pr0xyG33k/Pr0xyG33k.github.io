@@ -7,8 +7,6 @@ After years of hands-on experience in cybersecurity and development, I’ve lear
 
 This GitHub Page is more than just a collection of code — it's a reflection of my workflow, my evolution, and the systems I’ve put in place to stay adaptable in a fast-changing world.
 
-## Repository
-
 Each directory, file, and branch serves a purpose. Here’s a high-level overview of how my main repository is structured:
 
 ```mermaid
@@ -36,8 +34,6 @@ flowchart LR
     Actions -->|Deploy| More
 
 ```
-
-## Branch
 
 Maintaining a clean and sustainable workflow is key in collaborative and long-term projects. Here’s the branching model I follow:
 
