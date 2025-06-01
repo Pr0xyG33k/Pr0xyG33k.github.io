@@ -232,7 +232,7 @@ To do so, run the following command to capture packets, replacing the BSSID and 
 
 ```bash
 ┌──(proxygeek㉿VMware-kali)-[~]
-└─$ sudo airodump-ng --bssid F0:9F:C2:71:22:11 -c 3 -w wep.cap wlan0mon
+└─$ sudo airodump-ng --bssid F0:9F:C2:71:22:11 -c 3 -w wep.cap wlan0
 
 CH  3 ][ Elapsed: 24 s ][ 2025-06-01 20:41            
                                                        
