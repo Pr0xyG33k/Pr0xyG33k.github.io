@@ -139,6 +139,84 @@ graph TD
 
 ## Exploiting WEP
 
+To sniff packets on a network without being connected, you need to switch your wireless adapter into **monitor mode**. This special mode allows the adapter to capture all wireless traffic in its vicinity, unlike the default managed mode which only processes packets addressed to your device. Monitor mode is essential for tasks such as network analysis and packet sniffing.
+
+First, you need to identify the wireless adapter you want to use. You can do this by running the command `iwconfig`, which lists all wireless interfaces and their current modes. Once you know the adapter’s name (for example, `wlan0`), you can change its mode from managed to monitor using the command `sudo airmon-ng start wlan0`.
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo airmon-ng start wlan0         
+
+Found 2 processes that could cause trouble.
+Kill them using 'airmon-ng check kill' before putting
+the card in monitor mode, they will interfere by changing channels
+and sometimes putting the interface back in managed mode
+
+    PID Name
+   5584 NetworkManager
+   5732 wpa_supplicant
+
+PHY     Interface       Driver          Chipset
+
+phy0    wlan0           rtl8814au       Realtek Semiconductor Corp. RTL8814AU 802.11a/b/g/n/ac
+                (mac80211 monitor mode already enabled for [phy0]wlan0 on [phy0]10)
+```
+
+> [!NOTE]
+> On some wireless adapters, enabling monitor mode creates a new interface with a `mon` suffix (e.g., `wlan0mon`). However, some adapters, like the Realtek RTL8814AU, enable monitor mode directly on the existing interface without renaming it.
+
+After switching to monitor mode, you can verify that the change was successful by running `iwconfig` again. This will show the new mode and the updated interface name. When you are done with packet sniffing and want to revert to the standard managed mode, you can stop monitor mode by running `sudo airmon-ng stop wlan0` (or the appropriate interface name). This will restore your adapter to its normal state, ready to connect to networks as usual.
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo airmon-ng stop wlan0 
+
+PHY     Interface       Driver          Chipset
+
+phy0    wlan0           rtl8814au       Realtek Semiconductor Corp. RTL8814AU 802.11a/b/g/n/ac
+                (monitor mode disabled)
+```
+
+Switching to monitor mode is a powerful technique that gives you deep insight into wireless traffic around you, but remember to always use it responsibly and respect privacy and legal guidelines.
+
+### Case 1: Capturing Packets
+
+As remembered from our discussion above, we know that we need to get keystreams along with different IVs, and to achieve this, we need both ciphertext and plaintext. To obtain plaintext data, we will make use of ARP packets. So, let’s capture those packets. In this example, we are assuming the network is busy, so we will not combine this with an ARP replay attack and will simply try to get as many keystreams as possible.
+
+First, change your network adapter mode to monitor. You can do this by running the following command, replacing `wlan0` with your adapter’s monitor mode interface name if different
+
+Once this is done, use `airodump-ng` followed by the name of the adapter to list all available Access Points nearby. You will see a list of networks, and you need to identify the ones where the ENC used is WEP.
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo airodump-ng wlan0
+
+ CH  2 ][ Elapsed: 1 min ][ 2025-06-01 03:55 ][ paused output                                                                                               
+                                                                                                                                                            
+ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                            
+                                                                                                                                                            
+ 1X:XX:XX:XX:XX:XX  -82       15        0    0   1  130   WPA2 CCMP   PSK  1XXXXXX                                                                     
+ 2X:XX:XX:XX:XX:XX  -82        9        0    0  11  130   WPA2 CCMP   PSK  <length:  0>                                                                    
+ 3X:XX:XX:XX:XX:XX  -83        9        0    0  11  130   WPA2 CCMP   PSK  <length:  0>                                                                    
+ 4X:XX:XX:XX:XX:XX  -82       18        1    0  11  195   WPA2 CCMP   PSK  4XXXXXX                                                                  
+ 5X:XX:XX:XX:XX:XX  -82       21        8    0   1  130   WPA2 CCMP   PSK  5XXXXXX                                                                         
+ 6X:XX:XX:XX:XX:XX  -80       34        0    0   1  135   WPA2 CCMP   PSK  <length:  0>                                                                    
+ 7X:XX:XX:XX:XX:XX  -81       35        4    0   6  130   WEP  WEP         GUEST                                                                        
+ 8X:XX:XX:XX:XX:XX  -71       95        0    0   6  130   WPA2 CCMP   PSK  8XXXXXX                                                                      
+ 9X:XX:XX:XX:XX:XX  -61       22        2    0  11  260   WPA2 CCMP   PSK  9XXXXXX                                                                       
+ 10:XX:XX:XX:XX:XX  -57      158       93    0   6  260   WPA2 CCMP   PSK  10XXXXX                                                                      
+ 11:XX:XX:XX:XX:XX  -70       96       36    0   6  130   WPA3 CCMP   SAE  <length:  0>                                                                    
+ 12:XX:XX:XX:XX:XX  -57      156      332    2   6  260   WPA3 CCMP   SAE  <length:  0>                                                                    
+
+ BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes
+
+ 8X:XX:XX:XX:XX:XX  AX:XX:XX:XX:XX:XX  -91    0 - 6      0        3                                                                                         
+ 9X:XX:XX:XX:XX:XX  DX:XX:XX:XX:XX:XX  -73    0 - 1e     0        3    
+```
+
+In my case, the Access Point named `GUEST` is using a WEP connection. Now we will capture packets from this target network.
+To do so, run the following command to capture packets, replacing the BSSID and channel with those of the victim network:
+
 ## Monitoring
 
 As we continue to explore wireless security in a controlled and isolated environment, we can utilize tools like Wifite2 to audit and capture network data. For example, the following command:

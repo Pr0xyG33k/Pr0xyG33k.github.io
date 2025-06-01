@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.7 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 01 Jun 2025 00:12:52 +0000</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Sat, 31 May 2025 21:28:25 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.7 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 01 Jun 2025 00:35:28 +0000</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Sat, 31 May 2025 21:28:25 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
  &lt;a href="#proxygeek-blog" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -198,7 +198,129 @@ By setting the network adapter to monitor mode, it becomes possible to listen to
  &lt;a href="#exploiting-wep" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;h2 class="heading-element" id="monitoring">&lt;span>28 Monitoring&lt;/span>
+&lt;/h2>&lt;p>To sniff packets on a network without being connected, you need to switch your wireless adapter into &lt;strong>monitor mode&lt;/strong>. This special mode allows the adapter to capture all wireless traffic in its vicinity, unlike the default managed mode which only processes packets addressed to your device. Monitor mode is essential for tasks such as network analysis and packet sniffing.&lt;/p>
+&lt;p>First, you need to identify the wireless adapter you want to use. You can do this by running the command &lt;code>iwconfig&lt;/code>, which lists all wireless interfaces and their current modes. Once you know the adapter’s name (for example, &lt;code>wlan0&lt;/code>), you can change its mode from managed to monitor using the command &lt;code>sudo airmon-ng start wlan0&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">┌──&lt;span class="o">(&lt;/span>proxygeek㉿VMware-kali&lt;span class="o">)&lt;/span>-&lt;span class="o">[&lt;/span>~&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└─$ sudo airmon-ng start wlan0 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Found &lt;span class="m">2&lt;/span> processes that could cause trouble.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Kill them using &lt;span class="s1">&amp;#39;airmon-ng check kill&amp;#39;&lt;/span> before putting
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">the card in monitor mode, they will interfere by changing channels
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">and sometimes putting the interface back in managed mode
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> PID Name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">5584&lt;/span> NetworkManager
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">5732&lt;/span> wpa_supplicant
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">PHY Interface Driver Chipset
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">phy0 wlan0 rtl8814au Realtek Semiconductor Corp. RTL8814AU 802.11a/b/g/n/ac
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 monitor mode already enabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0 on &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>10&lt;span class="o">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>On some wireless adapters, enabling monitor mode creates a new interface with a &lt;code>mon&lt;/code> suffix (e.g., &lt;code>wlan0mon&lt;/code>). However, some adapters, like the Realtek RTL8814AU, enable monitor mode directly on the existing interface without renaming it.&lt;/p>&lt;/div>&lt;p>After switching to monitor mode, you can verify that the change was successful by running &lt;code>iwconfig&lt;/code> again. This will show the new mode and the updated interface name. When you are done with packet sniffing and want to revert to the standard managed mode, you can stop monitor mode by running &lt;code>sudo airmon-ng stop wlan0&lt;/code> (or the appropriate interface name). This will restore your adapter to its normal state, ready to connect to networks as usual.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">┌──&lt;span class="o">(&lt;/span>proxygeek㉿VMware-kali&lt;span class="o">)&lt;/span>-&lt;span class="o">[&lt;/span>~&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└─$ sudo airmon-ng stop wlan0 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">PHY Interface Driver Chipset
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">phy0 wlan0 rtl8814au Realtek Semiconductor Corp. RTL8814AU 802.11a/b/g/n/ac
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>monitor mode disabled&lt;span class="o">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Switching to monitor mode is a powerful technique that gives you deep insight into wireless traffic around you, but remember to always use it responsibly and respect privacy and legal guidelines.&lt;/p>
+&lt;h3 class="heading-element" id="case-1-capturing-packets">&lt;span>27.1 Case 1: Capturing Packets&lt;/span>
+ &lt;a href="#case-1-capturing-packets" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>As remembered from our discussion above, we know that we need to get keystreams along with different IVs, and to achieve this, we need both ciphertext and plaintext. To obtain plaintext data, we will make use of ARP packets. So, let’s capture those packets. In this example, we are assuming the network is busy, so we will not combine this with an ARP replay attack and will simply try to get as many keystreams as possible.&lt;/p>
+&lt;p>First, change your network adapter mode to monitor. You can do this by running the following command, replacing &lt;code>wlan0&lt;/code> with your adapter’s monitor mode interface name if different&lt;/p>
+&lt;p>Once this is done, use &lt;code>airodump-ng&lt;/code> followed by the name of the adapter to list all available Access Points nearby. You will see a list of networks, and you need to identify the ones where the ENC used is WEP.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">┌──&lt;span class="o">(&lt;/span>proxygeek㉿VMware-kali&lt;span class="o">)&lt;/span>-&lt;span class="o">[&lt;/span>~&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└─$ sudo airodump-ng wlan0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> CH &lt;span class="m">2&lt;/span> &lt;span class="o">][&lt;/span> Elapsed: &lt;span class="m">1&lt;/span> min &lt;span class="o">][&lt;/span> 2025-06-01 03:55 &lt;span class="o">][&lt;/span> paused output 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> BSSID PWR Beacons &lt;span class="c1">#Data, #/s CH MB ENC CIPHER AUTH ESSID &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1X:XX:XX:XX:XX:XX -82 &lt;span class="m">15&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">1&lt;/span> &lt;span class="m">130&lt;/span> WPA2 CCMP PSK 1XXXXXX 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 2X:XX:XX:XX:XX:XX -82 &lt;span class="m">9&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">11&lt;/span> &lt;span class="m">130&lt;/span> WPA2 CCMP PSK &amp;lt;length: 0&amp;gt; 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 3X:XX:XX:XX:XX:XX -83 &lt;span class="m">9&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">11&lt;/span> &lt;span class="m">130&lt;/span> WPA2 CCMP PSK &amp;lt;length: 0&amp;gt; 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 4X:XX:XX:XX:XX:XX -82 &lt;span class="m">18&lt;/span> &lt;span class="m">1&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">11&lt;/span> &lt;span class="m">195&lt;/span> WPA2 CCMP PSK 4XXXXXX 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 5X:XX:XX:XX:XX:XX -82 &lt;span class="m">21&lt;/span> &lt;span class="m">8&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">1&lt;/span> &lt;span class="m">130&lt;/span> WPA2 CCMP PSK 5XXXXXX 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 6X:XX:XX:XX:XX:XX -80 &lt;span class="m">34&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">1&lt;/span> &lt;span class="m">135&lt;/span> WPA2 CCMP PSK &amp;lt;length: 0&amp;gt; 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 7X:XX:XX:XX:XX:XX -81 &lt;span class="m">35&lt;/span> &lt;span class="m">4&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> &lt;span class="m">130&lt;/span> WEP WEP GUEST 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 8X:XX:XX:XX:XX:XX -71 &lt;span class="m">95&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> &lt;span class="m">130&lt;/span> WPA2 CCMP PSK 8XXXXXX 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 9X:XX:XX:XX:XX:XX -61 &lt;span class="m">22&lt;/span> &lt;span class="m">2&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">11&lt;/span> &lt;span class="m">260&lt;/span> WPA2 CCMP PSK 9XXXXXX 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 10:XX:XX:XX:XX:XX -57 &lt;span class="m">158&lt;/span> &lt;span class="m">93&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> &lt;span class="m">260&lt;/span> WPA2 CCMP PSK 10XXXXX 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 11:XX:XX:XX:XX:XX -70 &lt;span class="m">96&lt;/span> &lt;span class="m">36&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> &lt;span class="m">130&lt;/span> WPA3 CCMP SAE &amp;lt;length: 0&amp;gt; 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 12:XX:XX:XX:XX:XX -57 &lt;span class="m">156&lt;/span> &lt;span class="m">332&lt;/span> &lt;span class="m">2&lt;/span> &lt;span class="m">6&lt;/span> &lt;span class="m">260&lt;/span> WPA3 CCMP SAE &amp;lt;length: 0&amp;gt; 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> BSSID STATION PWR Rate Lost Frames Notes Probes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 8X:XX:XX:XX:XX:XX AX:XX:XX:XX:XX:XX -91 &lt;span class="m">0&lt;/span> - &lt;span class="m">6&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">3&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 9X:XX:XX:XX:XX:XX DX:XX:XX:XX:XX:XX -73 &lt;span class="m">0&lt;/span> - 1e &lt;span class="m">0&lt;/span> &lt;span class="m">3&lt;/span> &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>In my case, the Access Point named &lt;code>GUEST&lt;/code> is using a WEP connection. Now we will capture packets from this target network.
+To do so, run the following command to capture packets, replacing the BSSID and channel with those of the victim network:&lt;/p>
+&lt;h2 class="heading-element" id="monitoring">&lt;span>28 Monitoring&lt;/span>
  &lt;a href="#monitoring" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
