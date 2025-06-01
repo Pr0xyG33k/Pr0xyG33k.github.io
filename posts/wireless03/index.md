@@ -246,7 +246,7 @@ CH  3 ][ Elapsed: 24 s ][ 2025-06-01 20:41
 ```
 
 The `--write` option saves all captured packets to the specified file. Capture around 10,000 packets; the capture file will be saved in your current working directory.
-After you have enough packets, run aireplay-ng with the capture file to try and recover the password:
+After you have enough packets, run `airecrack-ng` with the capture file to try and recover the password:
 
 ```bash
 ┌──(proxygeek㉿VMware-kali)-[~]
