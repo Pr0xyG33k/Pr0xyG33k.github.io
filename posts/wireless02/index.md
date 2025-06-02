@@ -216,7 +216,8 @@ Once added, start the VM again. Inside Kali Linux, open a terminal and run:
 
 ```bash
 ┌──(proxygeek㉿VMware-kali)-[~]
-└─$ iwconfig 
+└─$ iwconfig
+
 lo        no wireless extensions.
 
 eth0      no wireless extensions.
