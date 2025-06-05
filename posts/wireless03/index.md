@@ -331,7 +331,7 @@ If successful, the WEP key will be displayed, allowing access to the network.
 
 At the end of the process, remember to disable monitor mode and switch your adapter back to managed mode
 
-### 6.3 Case 3: Fragmentation Attack Authentication (WEP Active Advanced Attack)
+### Case 3: Fragmentation Attack Authentication (WEP Active Advanced Attack)
 
 In the first two cases, we focused on capturing packets either passively or actively by accelerating traffic through ARP replay attacks. Both techniques depend on the presence of at least one client connected to the WEP network to generate sufficient encrypted traffic. But what if the network is quiet, or no clients are connected? In such scenarios, traditional ARP replay attacks fail because there is no traffic to capture or stimulate.
 
