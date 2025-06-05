@@ -470,7 +470,7 @@ In this list, each entry represents a wireless access point (AP) detected within
 
 This tool is essential for understanding and evaluating the security of wireless networks within a controlled and isolated environment, providing insight into nearby networks and preparing for more complex penetration testing in future parts of this series.
 
-## 6 Conclusion
+## Conclusion
 
 In this third part, we focused on the practical weaknesses of the WEP encryption protocol. We explored passive and active attack techniques, including packet capturing, ARP replay injection, and fragmentation attacks combined with fake authentication. These real-world examples highlighted why WEP is no longer considered secure and should be avoided whenever possible.
 
