@@ -1,4 +1,4 @@
-# 
+# Hugo Blog
 
 # ProxyGeek Blog
 
@@ -8,7 +8,7 @@
 
 6 articles in total
 
-- 05-31 [Hugo Blog](https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/ "2025-05-31 21:28:25")
+- 05-31 [](https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/ "2025-05-31 21:28:25")
 - 05-26 [Wireless Hacking Part 3](https://Pr0xyG33k.github.io/posts/wireless03/ "2025-05-26 17:05:48")
 - 05-23 [Wireless Hacking Part 2](https://Pr0xyG33k.github.io/posts/wireless02/ "2025-05-23 08:50:15")
 - 05-20 [Wireless Hacking Part 1](https://Pr0xyG33k.github.io/posts/wireless01/ "2025-05-20 10:48:10")
