@@ -1,4 +1,4 @@
-# Github Page
+# GitHub Workflow
 
 
 > "Behind every well-organized repo lies a story of purpose, experimentation, and constant iteration."
