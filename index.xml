@@ -1,4 +1,197 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.7 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 07 Jun 2025 00:10:16 +0000</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Github Page</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Sat, 31 May 2025 21:28:25 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.7 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 08 Jun 2025 00:11:49 +0000</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Honeypot Server</title><link>https://Pr0xyG33k.github.io/projects/honeypot/</link><pubDate>Sun, 08 Jun 2025 10:13:11 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/projects/honeypot/</guid><category domain="https://Pr0xyG33k.github.io/categories/cyber-threat-intelligence/">Cyber Threat Intelligence</category><description>&lt;h2 class="heading-element" id="about">&lt;span>10 About&lt;/span>
+ &lt;a href="#about" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>&lt;a href="https://prometheus.io"target="_blank" rel="external nofollow noopener noreferrer">Prometheus&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a> is an open-source monitoring and alerting toolkit designed for reliability and scalability. Initially developed at SoundCloud in 2012, it&amp;rsquo;s now a graduated project under the Cloud Native Computing Foundation (CNCF).&lt;/p>
+&lt;h2 class="heading-element" id="git">&lt;span>11 Git&lt;/span>
+ &lt;a href="#git" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>This project uses a clean and scalable Git workflow to organize the development and deployment lifecycle. By leveraging feature branches and a clear separation between stable and in-progress code, we ensure that our honeypot system remains reliable while encouraging rapid iteration and experimentation.&lt;/p>
+&lt;h3 class="heading-element" id="branch-strategy">&lt;span>11.1 Branch Strategy&lt;/span>
+ &lt;a href="#branch-strategy" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>&lt;code>main&lt;/code>&lt;/strong> – The production branch. Only stable, tested code is merged here.&lt;/li>
+&lt;li>&lt;strong>&lt;code>develop&lt;/code>&lt;/strong> – Active development branch. All features are integrated here before being released.&lt;/li>
+&lt;li>&lt;strong>&lt;code>feature/*&lt;/code>&lt;/strong> – Temporary branches for individual features such as log capture, alerting, or interface improvements.&lt;/li>
+&lt;/ul>
+&lt;h3 class="heading-element" id="git-flow">&lt;span>11.2 Git Flow&lt;/span>
+ &lt;a href="#git-flow" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;pre class="mermaid">
+gitGraph
+ commit id: "Initial commit"
+ commit id: "Setup Hugo and theme"
+ branch develop
+ checkout develop
+ commit id: "Create honeypot layout and structure"
+ branch feature/logging
+ checkout feature/logging
+ commit id: "Implement traffic logging"
+ checkout develop
+ merge feature/logging
+ branch feature/alerting
+ checkout feature/alerting
+ commit id: "Add alert system for intrusions"
+ commit id: "Connect webhook for alert delivery"
+ checkout develop
+ merge feature/alerting
+ branch feature/visualization
+ checkout feature/visualization
+ commit id: "Add data visualization dashboard"
+ checkout develop
+ merge feature/visualization
+ commit id: "Final testing and cleanup"
+ checkout main
+ merge develop
+ commit id: "Release v1.0"
+&lt;/pre>
+&lt;template>
+gitGraph
+ commit id: "Initial commit"
+ commit id: "Setup Hugo and theme"
+ branch develop
+ checkout develop
+ commit id: "Create honeypot layout and structure"
+ branch feature/logging
+ checkout feature/logging
+ commit id: "Implement traffic logging"
+ checkout develop
+ merge feature/logging
+ branch feature/alerting
+ checkout feature/alerting
+ commit id: "Add alert system for intrusions"
+ commit id: "Connect webhook for alert delivery"
+ checkout develop
+ merge feature/alerting
+ branch feature/visualization
+ checkout feature/visualization
+ commit id: "Add data visualization dashboard"
+ checkout develop
+ merge feature/visualization
+ commit id: "Final testing and cleanup"
+ checkout main
+ merge develop
+ commit id: "Release v1.0"
+&lt;/template>
+&lt;h2 class="heading-element" id="architecture">&lt;span>12 Architecture&lt;/span>
+ &lt;a href="#architecture" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Prometheus automatically collects metrics from applications and services using exporters. For short-lived jobs, it relies on an intermediary called the Pushgateway. It discovers monitoring targets through automatic methods like Kubernetes or configuration files. The collected data is stored in a specialized time series database called TSDB on disk. Prometheus provides a web interface and can integrate with Grafana for data visualization. It also manages alerts via the Alertmanager, which sends notifications when issues occur. This architecture enables efficient and comprehensive system monitoring.&lt;/p>
+&lt;pre class="mermaid">graph TD
+
+subgraph "Jobs"
+ J1[Jobs/exporters]
+ J2[Short-lived jobs]
+end
+
+subgraph "Service Discovery"
+ SD1[Kubernetes]
+ SD2[file_sd]
+end
+
+subgraph "Prometheus Server"
+ RET[Retrieval]
+ TSDB[TSDB]
+ HTTP[HTTP server]
+end
+
+subgraph "Storage"
+ HDD[HDD/SSD]
+end
+
+subgraph "Visualization"
+ UI[Prometheus web UI]
+ G[Grafana]
+ API[API clients]
+end
+
+subgraph "Alerting"
+ AM[Alertmanager]
+ PD[pagerduty]
+ Email[Email]
+ ETC[etc]
+end
+
+subgraph "Pushgateway"
+ PG[Pushgateway]
+end
+
+%% Data Flow
+J1 -->|pull metrics| RET
+J2 -->|push metrics at exit| PG
+PG -->|pull metrics| RET
+SD1 -->|discover targets| RET
+SD2 -->|discover targets| RET
+RET --> TSDB
+TSDB --> HTTP
+TSDB --> HDD
+HTTP --> UI
+HTTP --> G
+HTTP --> API
+HTTP -->|push alerts| AM
+AM -->|notify| PD
+AM -->|notify| Email
+AM -->|notify| ETC&lt;/pre>
+&lt;template>graph TD
+
+subgraph "Jobs"
+ J1[Jobs/exporters]
+ J2[Short-lived jobs]
+end
+
+subgraph "Service Discovery"
+ SD1[Kubernetes]
+ SD2[file_sd]
+end
+
+subgraph "Prometheus Server"
+ RET[Retrieval]
+ TSDB[TSDB]
+ HTTP[HTTP server]
+end
+
+subgraph "Storage"
+ HDD[HDD/SSD]
+end
+
+subgraph "Visualization"
+ UI[Prometheus web UI]
+ G[Grafana]
+ API[API clients]
+end
+
+subgraph "Alerting"
+ AM[Alertmanager]
+ PD[pagerduty]
+ Email[Email]
+ ETC[etc]
+end
+
+subgraph "Pushgateway"
+ PG[Pushgateway]
+end
+
+%% Data Flow
+J1 -->|pull metrics| RET
+J2 -->|push metrics at exit| PG
+PG -->|pull metrics| RET
+SD1 -->|discover targets| RET
+SD2 -->|discover targets| RET
+RET --> TSDB
+TSDB --> HTTP
+TSDB --> HDD
+HTTP --> UI
+HTTP --> G
+HTTP --> API
+HTTP -->|push alerts| AM
+AM -->|notify| PD
+AM -->|notify| Email
+AM -->|notify| ETC&lt;/template></description></item><item><title>Github Page</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Sat, 31 May 2025 21:28:25 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
  &lt;a href="#proxygeek-blog" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
