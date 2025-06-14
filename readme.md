@@ -1,11 +1,12 @@
 # ProxyGeek Blog
 
-6 articles in total
+7 articles in total
 
 ## 2025
 
-6 articles in total
+7 articles in total
 
+- 06-14 [Linux Kernel Exploitation Part 1](https://Pr0xyG33k.github.io/posts/kernel01/ "2025-06-14 07:20:10")
 - 05-31 [Github Page](https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/ "2025-05-31 21:28:25")
 - 05-26 [Wireless Hacking Part 3](https://Pr0xyG33k.github.io/posts/wireless03/ "2025-05-26 17:05:48")
 - 05-23 [Wireless Hacking Part 2](https://Pr0xyG33k.github.io/posts/wireless02/ "2025-05-23 08:50:15")

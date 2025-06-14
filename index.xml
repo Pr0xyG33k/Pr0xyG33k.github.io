@@ -1,22 +1,354 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.7 &amp; FixIt v0.3.21-a85a6655</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 14 Jun 2025 00:10:06 +0000</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Github Page</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Sat, 31 May 2025 21:28:25 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.8 &amp; FixIt v0.3.21-b2e6f70a</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 14 Jun 2025 23:10:22 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux Kernel Exploitation Part 1</title><link>https://Pr0xyG33k.github.io/posts/kernel01/</link><pubDate>Sat, 14 Jun 2025 07:20:10 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/kernel01/</guid><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>22 About&lt;/span>
+ &lt;a href="#about" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>In this first part of our Linux Kernel Exploitation series, we’ll lay down the essential knowledge needed to understand what the Linux kernel is, why it matters in security, and how vulnerabilities at this low level can impact entire systems.&lt;/p>
+&lt;p>The Linux kernel is the core component that manages hardware, processes, memory, and system resources. It acts as the critical bridge between software applications and the physical machine. Because it runs with the highest privileges, any flaw or exploit within the kernel can give attackers full control over a system.&lt;/p>
+&lt;p>Understanding kernel exploitation is a complex but rewarding journey. It requires a solid grasp of operating system internals, memory management, system calls, and security mechanisms.&lt;/p>
+&lt;div class="alert alert-caution">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M4.47.22A.749.749.0 015 0h6c.199.0.389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749.0 01-.22.53l-4.25 4.25A.749.749.0 0111 16H5a.749.749.0 01-.53-.22L.22 11.53A.749.749.0 010 11V5c0-.199.079-.389.22-.53zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5zM8 4a.75.75.0 01.75.75v3.5a.75.75.0 01-1.5.0v-3.5A.75.75.0 018 4zm0 8a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Caution&lt;/p>&lt;p>&lt;strong>Ethical Hacking Reminder&lt;/strong>: Only perform kernel penetration tests on networks you own or have explicit permission to test. Unauthorized hacking is illegal and unethical.&lt;/p>&lt;/div>&lt;h2 class="heading-element" id="linux-kernel-exploitation">&lt;span>23 Linux Kernel Exploitation&lt;/span>
+ &lt;a href="#linux-kernel-exploitation" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>In today’s computing landscape, the Linux kernel stands at the heart of countless systems — from personal computers and servers to cloud infrastructures and embedded devices. It manages critical functions like memory, processes, and hardware communication, silently powering the technology we rely on every day.&lt;/p>
+&lt;p>But have you ever wondered how this complex piece of software actually works under the hood? What happens when vulnerabilities arise deep within the kernel, and how can attackers leverage them to gain control over entire systems?&lt;/p>
+&lt;p>In this series, &lt;strong>Linux Kernel Exploitation&lt;/strong> we will delve into the core of the Linux operating system, uncovering how the kernel operates, how security mechanisms protect it, and how these protections can sometimes be bypassed. We’ll explore practical techniques for setting up a controlled lab environment, analyzing kernel behavior, and developing exploits—all while building a strong foundation of understanding.&lt;/p>
+&lt;h2 class="heading-element" id="what-is-the-linux-kernel">&lt;span>24 What is the Linux Kernel?&lt;/span>
+ &lt;a href="#what-is-the-linux-kernel" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>The Linux kernel is the core component of the Linux operating system. It acts as a bridge between software applications and the physical hardware of a computer. Managing everything from CPU scheduling and memory allocation to device communication and system security, the kernel ensures that all parts of the system work together seamlessly.&lt;/p>
+&lt;p>Because it operates with the highest level of privilege on the machine (ring 0), the kernel has complete control over the system’s resources and hardware. This central role makes it both incredibly powerful and a critical target for attackers.&lt;/p>
+&lt;h2 class="heading-element" id="key-concepts">&lt;span>25 Key Concepts&lt;/span>
+ &lt;a href="#key-concepts" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Before diving into exploitation, it’s essential to understand some key aspects of the Linux kernel. These foundational concepts help explain why the kernel is such a powerful — and attractive — target.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Concept&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Privilege Levels&lt;/td>
+ &lt;td>The kernel runs in &lt;strong>ring 0&lt;/strong>, with full access to hardware and memory. User applications run in &lt;strong>ring 3&lt;/strong>.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Monolithic Architecture&lt;/td>
+ &lt;td>Linux uses a monolithic kernel, meaning it includes device drivers and modules within the kernel space.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Syscalls&lt;/td>
+ &lt;td>System calls are the interface between user applications and the kernel (e.g., &lt;code>read()&lt;/code>, &lt;code>write()&lt;/code>).&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Kernel Space vs User Space&lt;/td>
+ &lt;td>Separation between kernel memory and user memory helps maintain system stability and security.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Memory Management&lt;/td>
+ &lt;td>The kernel controls virtual memory, paging, and physical memory allocation.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Modules&lt;/td>
+ &lt;td>Kernel modules are pieces of code that can be dynamically loaded into the kernel (e.g., drivers).&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Scheduling&lt;/td>
+ &lt;td>Responsible for task switching, process priorities, and CPU time allocation.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Filesystem Interface&lt;/td>
+ &lt;td>The kernel manages filesystems and interacts with storage devices.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>These components are often the basis for real-world vulnerabilities, such as buffer overflows in device drivers or misconfigurations in syscall implementations.&lt;/p>
+&lt;h2 class="heading-element" id="evolution">&lt;span>26 Evolution&lt;/span>
+ &lt;a href="#evolution" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Linux has evolved dramatically since its first release in 1991. With each new version, features, performance, and security mechanisms have been improved — but so have the opportunities for discovering bugs.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Year&lt;/th>
+ &lt;th>Kernel Version&lt;/th>
+ &lt;th>Key Features Introduced&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>1991&lt;/td>
+ &lt;td>0.01&lt;/td>
+ &lt;td>First public release by Linus Torvalds&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2001&lt;/td>
+ &lt;td>2.4.x&lt;/td>
+ &lt;td>Netfilter/iptables, improved USB support, enhanced memory management&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2003&lt;/td>
+ &lt;td>2.6.x&lt;/td>
+ &lt;td>Kernel preemption, Native POSIX threads, SELinux integration&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2011&lt;/td>
+ &lt;td>3.x&lt;/td>
+ &lt;td>Improved scalability, transparent huge pages, Btrfs improvements&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2015&lt;/td>
+ &lt;td>4.x&lt;/td>
+ &lt;td>Live patching, better NUMA support, perf events framework&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2020&lt;/td>
+ &lt;td>5.x&lt;/td>
+ &lt;td>WireGuard VPN integration, io_uring, improved hardware support&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2024&lt;/td>
+ &lt;td>6.x&lt;/td>
+ &lt;td>Ongoing enhancements to Rust support, memory isolation features, more secure syscall filtering&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>Even as security mechanisms improve, new vulnerabilities continue to emerge — especially in device drivers and legacy code that hasn’t aged well.&lt;/p>&lt;/div>&lt;h2 class="heading-element" id="basic-terms">&lt;span>27 Basic Terms&lt;/span>
+ &lt;a href="#basic-terms" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h3 class="heading-element" id="security-mechanisms">&lt;span>27.1 Security Mechanisms&lt;/span>
+ &lt;a href="#security-mechanisms" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Modern Linux kernels implement multiple layers of defense to make exploitation harder. Understanding these is crucial to learning how attackers bypass them.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Mechanism&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Mitigation Strength (0-10)&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>KASLR&lt;/strong>&lt;/td>
+ &lt;td>Randomizes kernel memory layout to prevent predictable memory addresses.&lt;/td>
+ &lt;td>8&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>SMEP/SMAP&lt;/strong>&lt;/td>
+ &lt;td>Prevents kernel from executing or accessing user-space memory.&lt;/td>
+ &lt;td>9&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Stack Canaries&lt;/strong>&lt;/td>
+ &lt;td>Detects and prevents stack buffer overflow attacks by checking integrity before function return.&lt;/td>
+ &lt;td>7&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>NX (No-eXecute)&lt;/strong>&lt;/td>
+ &lt;td>Marks memory regions non-executable to prevent code injection attacks.&lt;/td>
+ &lt;td>8&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Seccomp&lt;/strong>&lt;/td>
+ &lt;td>Restricts system calls allowed for processes, reducing attack surface.&lt;/td>
+ &lt;td>6&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>AppArmor/SELinux&lt;/strong>&lt;/td>
+ &lt;td>Mandatory Access Control enforcing strict policies on program capabilities.&lt;/td>
+ &lt;td>5&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>In the upcoming parts, we&amp;rsquo;ll study how these protections work — and how to defeat or bypass them when developing kernel exploits.&lt;/p>
+&lt;div class="echarts" style="width: 100%; height: 30rem;">&lt;/div>&lt;template data-fmt="js" data-async="false">{ title: { text: &amp;#39;Kernel Defense Mechanisms Overview&amp;#39;, left: &amp;#39;center&amp;#39;, top: &amp;#39;2%&amp;#39; }, tooltip: { trigger: &amp;#39;item&amp;#39; }, radar: { indicator: [ { name: &amp;#39;KASLR&amp;#39;, max: 10 }, { name: &amp;#39;SMEP/SMAP&amp;#39;, max: 10 }, { name: &amp;#39;Stack Canaries&amp;#39;, max: 10 }, { name: &amp;#39;NX&amp;#39;, max: 10 }, { name: &amp;#39;Seccomp&amp;#39;, max: 10 }, { name: &amp;#39;AppArmor/SELinux&amp;#39;, max: 10 } ], radius: &amp;#39;60%&amp;#39;, splitNumber: 4 }, series: [{ name: &amp;#39;Kernel Defenses&amp;#39;, type: &amp;#39;radar&amp;#39;, data: [{ value: [8, 9, 7, 8, 6, 5], name: &amp;#39;Mitigation Strength&amp;#39;, lineStyle: { color: &amp;#39;#66CFFF&amp;#39; }, itemStyle: { color: &amp;#39;#66CFFF&amp;#39; }, areaStyle: { color: &amp;#39;rgba(102,207,255,0.3)&amp;#39; } }] }] }&lt;/template>&lt;h3 class="heading-element" id="user-space-vs-kernel-space">&lt;span>27.2 User Space vs Kernel Space&lt;/span>
+ &lt;a href="#user-space-vs-kernel-space" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Linux divides system memory into two distinct areas to ensure security and stability:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>User Space&lt;/strong>: This is where regular applications run—web browsers, editors, scripts, and so on. Programs in user space have limited access to system resources and cannot interact directly with hardware or critical kernel data. This isolation helps prevent accidental or malicious damage to the system.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Kernel Space&lt;/strong>: This is where the Linux kernel operates, with full control over hardware, memory management, process scheduling, device drivers, and system security. Kernel code runs with the highest privileges (called &lt;strong>ring 0&lt;/strong>), allowing unrestricted access to all system resources.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>This separation between user and kernel spaces is vital. When a user program needs to perform an operation requiring elevated privileges—like reading a file or sending network data—it must communicate with the kernel through a controlled interface called a &lt;strong>system call&lt;/strong>.&lt;/p>
+&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>The Linux kernel runs in &lt;strong>ring 0&lt;/strong>, which is the most privileged CPU mode. All user programs run in &lt;strong>ring 3&lt;/strong>, with limited access.&lt;/p>&lt;/div>&lt;h3 class="heading-element" id="what-is-a-system-call">&lt;span>27.3 What is a System Call?&lt;/span>
+ &lt;a href="#what-is-a-system-call" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>A &lt;strong>system call (syscall)&lt;/strong> is a controlled gateway for user-space programs to request services from the kernel. It acts as a safe bridge between restricted applications and the privileged kernel.&lt;/p>
+&lt;p>When a syscall is invoked, the CPU switches from user mode (&lt;strong>ring 3&lt;/strong>) to kernel mode (&lt;strong>ring 0&lt;/strong>). The kernel then executes the requested operation—such as opening a file, allocating memory, or sending data—and finally returns control back to the user program.&lt;/p>
+&lt;p>Common examples of syscalls include &lt;code>read()&lt;/code>, &lt;code>write()&lt;/code>, &lt;code>open()&lt;/code>, and &lt;code>mmap()&lt;/code>.&lt;/p>
+&lt;p>This mechanism is critical because it maintains system stability and security while still allowing user applications to perform necessary tasks.&lt;/p>
+&lt;h3 class="heading-element" id="kernel-memory-layout">&lt;span>27.4 Kernel Memory Layout&lt;/span>
+ &lt;a href="#kernel-memory-layout" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>The Linux kernel’s memory is organized into several segments, each serving a different purpose:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Segment&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Text (code)&lt;/strong>&lt;/td>
+ &lt;td>Contains the executable instructions of the kernel itself&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Data&lt;/strong>&lt;/td>
+ &lt;td>Holds global variables and static data, both initialized and uninitialized&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Heap&lt;/strong>&lt;/td>
+ &lt;td>Area used for dynamic memory allocations within the kernel&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Stack&lt;/strong>&lt;/td>
+ &lt;td>Used for per-thread function calls, local variables, and return addresses&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>To increase security, modern kernels implement protections like &lt;strong>Kernel Address Space Layout Randomization (KASLR)&lt;/strong>, which randomizes the locations of these memory segments at boot time. This makes it much harder for attackers to predict where critical kernel code or data reside, complicating exploitation attempts.&lt;/p>
+&lt;p>The text segment holds executable code and is often targeted for code injection or modification. The data and heap segments are frequent targets for overflow or corruption attacks. The stack is critical for control flow and vulnerable to buffer overflows and return-oriented programming (ROP) attacks.&lt;/p>
+&lt;h3 class="heading-element" id="common-kernel-vulnerabilities">&lt;span>27.5 Common Kernel Vulnerabilities&lt;/span>
+ &lt;a href="#common-kernel-vulnerabilities" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>The kernel, despite its protections, can have bugs that lead to vulnerabilities. Some of the most common types include:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Vulnerability&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Buffer Overflow&lt;/strong>&lt;/td>
+ &lt;td>Occurs when data is written beyond the bounds of a buffer, potentially overwriting important control data or code pointers. This can lead to arbitrary code execution.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Use-After-Free&lt;/strong>&lt;/td>
+ &lt;td>Happens when the kernel accesses memory that has already been freed, leading to undefined behavior or exploitation opportunities.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Race Conditions&lt;/strong>&lt;/td>
+ &lt;td>Arise when multiple threads or processes access shared resources simultaneously, causing inconsistent or unexpected states that attackers can exploit.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Integer Overflows&lt;/strong>&lt;/td>
+ &lt;td>Errors in arithmetic calculations can result in incorrect memory size computations, leading to memory corruption or buffer overflows.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>Understanding these vulnerabilities is key to developing kernel exploits and also to designing better defenses.&lt;/p>
+&lt;h3 class="heading-element" id="kernel-modules">&lt;span>27.6 Kernel Modules&lt;/span>
+ &lt;a href="#kernel-modules" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Kernel modules are pieces of code—often device drivers or filesystem drivers—that can be dynamically loaded and unloaded into the kernel at runtime.&lt;/p>
+&lt;p>Since modules run with full kernel privileges, any flaw or bug in their code can directly compromise the entire system. Poorly written or malicious modules are frequent sources of kernel vulnerabilities and exploitation vectors.&lt;/p>
+&lt;pre class="mermaid">graph LR
+ Kernel["Kernel Space"]
+ Module["Kernel Module"]
+ Hardware["Hardware Device"]
+ UserApp["User Application"]
+
+ UserApp -->|Syscalls| Kernel
+ Kernel -->|Loads| Module
+ Module -->|Controls| Hardware
+ Module -->|Calls Kernel APIs| Kernel&lt;/pre>
+&lt;template>graph LR
+ Kernel["Kernel Space"]
+ Module["Kernel Module"]
+ Hardware["Hardware Device"]
+ UserApp["User Application"]
+
+ UserApp -->|Syscalls| Kernel
+ Kernel -->|Loads| Module
+ Module -->|Controls| Hardware
+ Module -->|Calls Kernel APIs| Kernel&lt;/template>&lt;h3 class="heading-element" id="exploit-development-workflow">&lt;span>27.7 Exploit Development Workflow&lt;/span>
+ &lt;a href="#exploit-development-workflow" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Developing a kernel exploit typically follows a multi-step process:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Vulnerability Discovery&lt;/strong>&lt;br>
+Finding bugs via code auditing, fuzzing, or analyzing kernel crash reports.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Proof of Concept (PoC)&lt;/strong>&lt;br>
+Creating a minimal piece of code that reliably triggers the vulnerability to confirm its existence.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Exploit Development&lt;/strong>&lt;br>
+Crafting a payload that leverages the bug to escalate privileges, usually from user space (ring 3) to kernel space (ring 0).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Bypassing Protections&lt;/strong>&lt;br>
+Implementing techniques to circumvent kernel defenses such as KASLR, SMEP/SMAP (Supervisor Mode Execution/Access Prevention), and stack canaries.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Payload Execution&lt;/strong>&lt;br>
+Running the final payload with kernel-level privileges to achieve goals like root shell access or kernel memory manipulation.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 class="heading-element" id="stack--heap">&lt;span>27.7.1 Stack &amp;amp; Heap&lt;/span>
+ &lt;a href="#stack--heap" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>Stack&lt;/strong>: Used for managing function calls and local variables. Vulnerabilities like stack buffer overflows are common.&lt;/li>
+&lt;li>&lt;strong>Heap&lt;/strong>: A dynamic memory region for allocating objects at runtime. Heap corruption is another common exploitation vector.&lt;/li>
+&lt;/ul>
+&lt;h4 class="heading-element" id="device-driver">&lt;span>27.7.2 Device Driver&lt;/span>
+ &lt;a href="#device-driver" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>A &lt;strong>device driver&lt;/strong> is kernel code that allows the OS to interface with hardware (e.g., network cards, USB devices). Poorly written drivers are a &lt;strong>frequent source of kernel vulnerabilities&lt;/strong>.&lt;/p>
+&lt;h4 class="heading-element" id="context-switch">&lt;span>27.7.3 Context Switch&lt;/span>
+ &lt;a href="#context-switch" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>A &lt;strong>context switch&lt;/strong> occurs when the CPU changes from executing one process to another. The kernel is responsible for this operation, and it involves saving and restoring process states.&lt;/p>
+&lt;h2 class="heading-element" id="conclusion">&lt;span>28 Conclusion&lt;/span>
+ &lt;a href="#conclusion" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>In this first part, we explored the foundational concepts of the Linux kernel, its memory layout, key defense mechanisms, and common vulnerabilities that affect this critical part of the system.&lt;/p>
+&lt;p>Understanding these basics is essential for anyone looking to dive into kernel exploitation, as they shape how attacks are crafted and defenses bypassed.&lt;/p>
+&lt;p>In the upcoming parts, we will dive into practical exploitation examples, setting up a safe testing environment, and techniques to analyze and circumvent kernel protections.&lt;/p></description></item><item><title>Github Page</title><link>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</link><pubDate>Sat, 31 May 2025 21:28:25 +0000</pubDate><guid>https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/</guid><category domain="https://Pr0xyG33k.github.io/categories/github/">GitHub</category><description>&lt;h2 class="heading-element" id="proxygeek-blog">&lt;span>ProxyGeek Blog&lt;/span>
  &lt;a href="#proxygeek-blog" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>7 articles in total&lt;/p>
+&lt;/h2>&lt;p>6 articles in total&lt;/p>
 &lt;h2 class="heading-element" id="2025">&lt;span>2025&lt;/span>
  &lt;a href="#2025" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>7 articles in total&lt;/p>
+&lt;/h2>&lt;p>6 articles in total&lt;/p>
 &lt;ul>
-&lt;li>06-08 &lt;a href="https://Pr0xyG33k.github.io/projects/honeypot/" title="2025-06-08 10:13:11"target="_blank" rel="external nofollow noopener noreferrer">Honeypot Server&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>05-31 &lt;a href="https://Pr0xyG33k.github.io/projects/pr0xyg33k/pr0xyg33k.github.io/" title="2025-05-31 21:28:25"target="_blank" rel="external nofollow noopener noreferrer">Github Page&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>05-26 &lt;a href="https://Pr0xyG33k.github.io/posts/wireless03/" title="2025-05-26 17:05:48"target="_blank" rel="external nofollow noopener noreferrer">Wireless Hacking Part 3&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>05-23 &lt;a href="https://Pr0xyG33k.github.io/posts/wireless02/" title="2025-05-23 08:50:15"target="_blank" rel="external nofollow noopener noreferrer">Wireless Hacking Part 2&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>05-20 &lt;a href="https://Pr0xyG33k.github.io/posts/wireless01/" title="2025-05-20 10:48:10"target="_blank" rel="external nofollow noopener noreferrer">Wireless Hacking Part 1&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>05-12 &lt;a href="https://Pr0xyG33k.github.io/posts/github/" title="2025-05-12 18:26:49"target="_blank" rel="external nofollow noopener noreferrer">GitHub Workflow&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
 &lt;li>05-10 &lt;a href="https://Pr0xyG33k.github.io/posts/hello-world/" title="2025-05-10 02:47:00"target="_blank" rel="external nofollow noopener noreferrer">Hello World&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Wireless Hacking Part 3</title><link>https://Pr0xyG33k.github.io/posts/wireless03/</link><pubDate>Mon, 26 May 2025 17:05:48 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless03/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><description>&lt;h2 class="heading-element" id="about">&lt;span>25 About&lt;/span>
+&lt;/ul></description></item><item><title>Wireless Hacking Part 3</title><link>https://Pr0xyG33k.github.io/posts/wireless03/</link><pubDate>Mon, 26 May 2025 17:05:48 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless03/</guid><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>25 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -692,7 +1024,7 @@ Finally, crack the WEP key using aircrack-ng:&lt;/p>
  &lt;/a>
 &lt;/h2>&lt;p>In this third part, we focused on the practical weaknesses of the WEP encryption protocol. We explored passive and active attack techniques, including packet capturing, ARP replay injection, and fragmentation attacks combined with fake authentication. These real-world examples highlighted why WEP is no longer considered secure and should be avoided whenever possible.&lt;/p>
 &lt;p>Additionally, we introduced automation tools like &lt;strong>Wifite&lt;/strong> to streamline the process of auditing WEP networks, making attacks more accessible while reinforcing the importance of understanding the underlying concepts.&lt;/p>
-&lt;p>With a solid grasp of WEP vulnerabilities and attack methods, we are now ready to move forward and tackle more modern wireless security protocols. In the next part, we will dive into WPA and WPA2, uncovering their strengths and weaknesses, and learning how to capture handshakes and perform dictionary attacks.&lt;/p></description></item><item><title>Wireless Hacking Part 2</title><link>https://Pr0xyG33k.github.io/posts/wireless02/</link><pubDate>Fri, 23 May 2025 08:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless02/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><description>&lt;h2 class="heading-element" id="about">&lt;span>19 About&lt;/span>
+&lt;p>With a solid grasp of WEP vulnerabilities and attack methods, we are now ready to move forward and tackle more modern wireless security protocols. In the next part, we will dive into WPA and WPA2, uncovering their strengths and weaknesses, and learning how to capture handshakes and perform dictionary attacks.&lt;/p></description></item><item><title>Wireless Hacking Part 2</title><link>https://Pr0xyG33k.github.io/posts/wireless02/</link><pubDate>Fri, 23 May 2025 08:50:15 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless02/</guid><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>19 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1014,7 +1346,7 @@ The first step is to install the necessary packages that will allow Kali to buil
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>In this second part, we have focused on setting up a secure and isolated environment to safely explore wireless hacking techniques. By preparing the necessary tools and addressing potential conflicts with networking processes, we’ve laid the groundwork for testing wireless security in a controlled manner. This is a crucial step before diving into more complex attacks and deeper exploitation of vulnerabilities.&lt;/p>
-&lt;p>With these configurations in place, you are now ready to experiment and start using tools like Wifite for capturing traffic and testing wireless network security. The next step will take us into the world of active attacks and intrusion attempts in Part 3, where we will explore the first of many practical wireless attacks.&lt;/p></description></item><item><title>Wireless Hacking Part 1</title><link>https://Pr0xyG33k.github.io/posts/wireless01/</link><pubDate>Tue, 20 May 2025 10:48:10 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless01/</guid><category domain="https://Pr0xyG33k.github.io/categories/network-security/">Network Security</category><description>&lt;h2 class="heading-element" id="about">&lt;span>31 About&lt;/span>
+&lt;p>With these configurations in place, you are now ready to experiment and start using tools like Wifite for capturing traffic and testing wireless network security. The next step will take us into the world of active attacks and intrusion attempts in Part 3, where we will explore the first of many practical wireless attacks.&lt;/p></description></item><item><title>Wireless Hacking Part 1</title><link>https://Pr0xyG33k.github.io/posts/wireless01/</link><pubDate>Tue, 20 May 2025 10:48:10 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/wireless01/</guid><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>31 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1629,54 +1961,7 @@ It allows features, hotfixes, and releases to evolve in parallel, with clear bou
 
  checkout develop
  branch feature/ui-redesign
- commit id: "Start UI redesign"&lt;/template>&lt;div class="music-player" data-fixed="true">
- 
-
- &lt;div class="music-embed soundcloud-container" data-url="https://soundcloud.com/lorientestard/sets/clair-obscur-expedition-33-6">
- &lt;div class="loading">Loading player…&lt;/div>
- &lt;/div>
-&lt;/div>
-
-&lt;script>
- document.addEventListener("DOMContentLoaded", function () {
- const containers = document.querySelectorAll(".soundcloud-container");
- containers.forEach(container => {
- const url = encodeURIComponent(container.dataset.url);
- const iframe = document.createElement("iframe");
- iframe.width = "100%";
- iframe.height = "100";
- iframe.scrolling = "no";
- iframe.frameBorder = "no";
- iframe.allow = "autoplay";
- iframe.src = `https://w.soundcloud.com/player/?url=${url}&amp;color=%23ff5500&amp;auto_play=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true`;
- container.innerHTML = "";
- container.appendChild(iframe);
- });
- });
-&lt;/script>
-
-&lt;style>
-
- .music-info {
- margin-bottom: 0.5em;
- font-weight: bold;
- color: #333;
- }
-
- .loading {
- font-size: 0.9em;
- color: #888;
- }
-
- [data-fixed="true"] iframe {
- position: fixed;
- bottom: 0;
- left: 0;
- width: 20% !important;
- z-index: 9999;
- }
-&lt;/style>
-
+ commit id: "Start UI redesign"&lt;/template>&lt;meting-js auto="https://music.163.com/#/album?id=268399691" theme="#448aff" fixed="true">&lt;/meting-js>
 &lt;!--
 ![Снег падает без конца, покрывая души, как невидимый саван. Каждый снежинка — это забытое воспоминание, утерянный звук в безбрежной тишине. Здесь, в самом сердце зимы, когда ветер воет как зверь, человек идет, не зная точно, куда](images/coffee.jpg 'Человек продолжает идти, без цели, без вопросов, ведомый странной уверенностью, что всё уже написано, но всё равно он должен искать, снова и снова')
 --></description></item><item><title>Hello World</title><link>https://Pr0xyG33k.github.io/posts/hello-world/</link><pubDate>Sat, 10 May 2025 02:47:00 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/hello-world/</guid><category domain="https://Pr0xyG33k.github.io/categories/thoughts/">Thoughts</category><description>&lt;blockquote>
@@ -1687,54 +1972,7 @@ It allows features, hotfixes, and releases to evolve in parallel, with clear bou
 &lt;p>Time doesn’t pause because we hesitate. Like you, there are countless others chasing their dreams. No one is born a cybersecurity expert, but each day is an opportunity to grow, to protect, and to evolve. Never be content with where you are; always strive to learn, to adapt, and to secure.&lt;/p>
 &lt;p>I started this blog to share my journey — from early security challenges to tips on staying safe online. In the early days, I followed the guidance of mentors, learned from books, and coded through the night. The name &amp;ldquo;Securing the Digital World&amp;rdquo; was born from the countless hours spent defending what many people overlook: the safety of our digital lives.&lt;/p>
 &lt;p>Here’s to the next chapter of cybersecurity, as we continue to evolve in a world where data is power, and protection is key.&lt;/p>
-&lt;div class="music-player" data-fixed="true">
- 
-
- &lt;div class="music-embed soundcloud-container" data-url="https://soundcloud.com/lorientestard/sets/clair-obscur-expedition-33-6">
- &lt;div class="loading">Loading player…&lt;/div>
- &lt;/div>
-&lt;/div>
-
-&lt;script>
- document.addEventListener("DOMContentLoaded", function () {
- const containers = document.querySelectorAll(".soundcloud-container");
- containers.forEach(container => {
- const url = encodeURIComponent(container.dataset.url);
- const iframe = document.createElement("iframe");
- iframe.width = "100%";
- iframe.height = "100";
- iframe.scrolling = "no";
- iframe.frameBorder = "no";
- iframe.allow = "autoplay";
- iframe.src = `https://w.soundcloud.com/player/?url=${url}&amp;color=%23ff5500&amp;auto_play=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true`;
- container.innerHTML = "";
- container.appendChild(iframe);
- });
- });
-&lt;/script>
-
-&lt;style>
-
- .music-info {
- margin-bottom: 0.5em;
- font-weight: bold;
- color: #333;
- }
-
- .loading {
- font-size: 0.9em;
- color: #888;
- }
-
- [data-fixed="true"] iframe {
- position: fixed;
- bottom: 0;
- left: 0;
- width: 20% !important;
- z-index: 9999;
- }
-&lt;/style>
-
+&lt;meting-js auto="https://music.163.com/#/album?id=268399691" theme="#448aff" fixed="true">&lt;/meting-js>
 &lt;!--
 ![Снег падает без конца, покрывая души, как невидимый саван. Каждый снежинка — это забытое воспоминание, утерянный звук в безбрежной тишине. Здесь, в самом сердце зимы, когда ветер воет как зверь, человек идет, не зная точно, куда](images/coffee.jpg 'Человек продолжает идти, без цели, без вопросов, ведомый странной уверенностью, что всё уже написано, но всё равно он должен искать, снова и снова')
 --></description></item></channel></rss>

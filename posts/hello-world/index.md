@@ -15,12 +15,7 @@ I started this blog to share my journey — from early security challenges to ti
 
 Here’s to the next chapter of cybersecurity, as we continue to evolve in a world where data is power, and protection is key.
 
-{{< music
-  url="https://soundcloud.com/lorientestard/sets/clair-obscur-expedition-33-6"
-  name="Clair Obscur"
-  artist=" Lorien Testard ft. Alice Duport-Percier Orchestral performance by Orchestre Curieux"
-  fixed=true
->}}
+{{< music auto="https://music.163.com/#/album?id=268399691" fixed=true >}}
 
 <!--
 ![Снег падает без конца, покрывая души, как невидимый саван. Каждый снежинка — это забытое воспоминание, утерянный звук в безбрежной тишине. Здесь, в самом сердце зимы, когда ветер воет как зверь, человек идет, не зная точно, куда](images/coffee.jpg 'Человек продолжает идти, без цели, без вопросов, ведомый странной уверенностью, что всё уже написано, но всё равно он должен искать, снова и снова')
