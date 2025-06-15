@@ -222,6 +222,7 @@ Understanding these basics is essential for anyone looking to dive into kernel e
 
 In the upcoming parts, we will dive into practical exploitation examples, setting up a safe testing environment, and techniques to analyze and circumvent kernel protections.
 
+
 ---
 
 > Author: [ProxyGeek](https://github.com/Pr0xyG33k)  
