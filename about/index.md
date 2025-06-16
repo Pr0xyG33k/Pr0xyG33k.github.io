@@ -58,13 +58,13 @@ const website = new Blog('A Collection of Strengths', 'ProxyGeek', 'https://prox
 {{< details "History" >}}
 ```timeline {reverse=true, animation=true, height="230px"}
 events:
-  - timestamp: 2025-05-01
+  - timestamp: 2025-06-17
     content: Official launch of this cybersecurity-focused blog. A space to share learning, experiments, and reflections.
   - timestamp: 2025-05-10
     content: Started working toward OffSec certifications to deepen technical skills and validate knowledge.
-  - timestamp: 2024-12-12
+  - timestamp: 2025-04-12
     content: Started drafting write-ups on CTFs and security tooling. Idea for a blog took shape.
-  - timestamp: 2024-08-20
+  - timestamp: 2025-01-20
     content: Began diving seriously into InfoSec and ethical hacking. Joined a few beginner-friendly CTFs.
 {{< /details >}}
 
