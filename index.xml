@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.8 &amp; FixIt v0.3.21-b2e6f70a</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 15 Jun 2025 17:56:41 +0000</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux Kernel Exploitation Part 1</title><link>https://Pr0xyG33k.github.io/posts/kernel01/</link><pubDate>Sat, 14 Jun 2025 07:20:10 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/kernel01/</guid><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>22 About&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.147.8 &amp; FixIt v0.3.21-b2e6f70a</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 16 Jun 2025 23:00:00 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux Kernel Exploitation Part 1</title><link>https://Pr0xyG33k.github.io/posts/kernel01/</link><pubDate>Sat, 14 Jun 2025 07:20:10 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/kernel01/</guid><category domain="https://Pr0xyG33k.github.io/categories/penetration-testing/">Penetration Testing</category><description>&lt;h2 class="heading-element" id="about">&lt;span>22 About&lt;/span>
  &lt;a href="#about" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1825,9 +1825,13 @@ Example: &lt;code>00:1A:2B:3C:4D:5E&lt;/code> — the first half is the &lt;stro
 &lt;/h2>&lt;p>In this first part of our wireless hacking series, we’ve laid the foundation for understanding how Wi-Fi networks work, covering the fundamental concepts, essential terms, and the history behind the technology. Understanding these basics is key to mastering more advanced topics like network security, encryption protocols, and wireless attacks.&lt;/p>
 &lt;p>As we move forward, we’ll dive deeper into practical techniques and tools that will help us secure and audit wireless networks. In the next part, we’ll set up a safe, isolated testing environment to begin experimenting with attacks, allowing us to learn by doing.&lt;/p></description></item><item><title>GitHub Workflow</title><link>https://Pr0xyG33k.github.io/posts/github/</link><pubDate>Mon, 12 May 2025 18:26:49 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/github/</guid><category domain="https://Pr0xyG33k.github.io/categories/thoughts/">Thoughts</category><description>&lt;blockquote>
 &lt;p>&amp;ldquo;Behind every well-organized repo lies a story of purpose, experimentation, and constant iteration.&amp;rdquo;&lt;/p>&lt;/blockquote>
-&lt;p>After years of hands-on experience in cybersecurity and development, I’ve learned that code is just one part of the battle. The &lt;strong>structure&lt;/strong> we build around our work — our process, our repository, our mindset — is what allows our projects to scale, evolve, and remain resilient.&lt;/p>
+&lt;h2 class="heading-element" id="about">&lt;span>13 About&lt;/span>
+ &lt;a href="#about" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>After years of hands-on experience in cybersecurity and development, I’ve learned that code is just one part of the battle. The &lt;strong>structure&lt;/strong> we build around our work — our process, our repository, our mindset — is what allows our projects to scale, evolve, and remain resilient.&lt;/p>
 &lt;p>This GitHub Page is more than just a collection of code — it&amp;rsquo;s a reflection of my workflow, my evolution, and the systems I’ve put in place to stay adaptable in a fast-changing world.&lt;/p>
-&lt;h2 class="heading-element" id="architecture">&lt;span>7 Architecture&lt;/span>
+&lt;h2 class="heading-element" id="architecture">&lt;span>14 Architecture&lt;/span>
  &lt;a href="#architecture" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1876,7 +1880,7 @@ Example: &lt;code>00:1A:2B:3C:4D:5E&lt;/code> — the first half is the &lt;stro
 
  Actions -->|Deploy| GH_Pages
  Actions -->|Deploy| Vercel
- Actions -->|Deploy| More&lt;/template>&lt;h2 class="heading-element" id="branch">&lt;span>8 Branch&lt;/span>
+ Actions -->|Deploy| More&lt;/template>&lt;h2 class="heading-element" id="branch">&lt;span>15 Branch&lt;/span>
  &lt;a href="#branch" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1962,7 +1966,187 @@ It allows features, hotfixes, and releases to evolve in parallel, with clear bou
 
  checkout develop
  branch feature/ui-redesign
- commit id: "Start UI redesign"&lt;/template>&lt;meting-js auto="https://music.163.com/#/album?id=268399691" theme="#448aff" fixed="true">&lt;/meting-js>
+ commit id: "Start UI redesign"&lt;/template>&lt;h2 class="heading-element" id="automation">&lt;span>16 Automation&lt;/span>
+ &lt;a href="#automation" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>This repository follows a customized Git Flow strategy using helper shell scripts to simplify and streamline branch management, releases, and cleanup via the GitHub CLI.&lt;/p>
+&lt;div class="alert alert-important">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 1.75C0 .784.784.0 1.75.0h12.5C15.216.0 16 .784 16 1.75v9.5A1.75 1.75.0 0114.25 13H8.06l-2.573 2.573A1.458 1.458.0 013 14.543V13H1.75A1.75 1.75.0 010 11.25zm1.75-.25a.25.25.0 00-.25.25v9.5c0 .138.112.25.25.25h2a.75.75.0 01.75.75v2.19l2.72-2.72a.749.749.0 01.53-.22h6.5a.25.25.0 00.25-.25v-9.5a.25.25.0 00-.25-.25zm7 2.25v2.5a.75.75.0 01-1.5.0v-2.5a.75.75.0 011.5.0zM9 9A1 1 0 117 9a1 1 0 012 0z"/>&lt;/svg>Important&lt;/p>&lt;p>Before running any scripts, make sure you are in the root directory of the project. You’ll also need to have Git installed on your machine, as well as the &lt;a href="https://cli.github.com/"target="_blank" rel="external nofollow noopener noreferrer">GitHub CLI (&lt;code>gh&lt;/code>)&lt;i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true">&lt;/i>&lt;/a>. Ensure that &lt;code>gh&lt;/code> is authenticated by running &lt;code>gh auth login&lt;/code> if you haven’t already.&lt;/p>&lt;/div>&lt;h3 class="heading-element" id="script-overview">&lt;span>16.1 Script Overview&lt;/span>
+ &lt;a href="#script-overview" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Script&lt;/th>
+ &lt;th>Purpose&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>github-branch.sh&lt;/code>&lt;/td>
+ &lt;td>Create a branch (&lt;code>feature/&lt;/code>, &lt;code>bugfix/&lt;/code>, &lt;code>hotfix/&lt;/code>, &lt;code>release/&lt;/code>) and optionally open a pull request&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>github-deploy&lt;/code>&lt;/td>
+ &lt;td>Prepare and merge a release branch into &lt;code>main&lt;/code>, then sync with &lt;code>develop&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>github-merged.sh&lt;/code>&lt;/td>
+ &lt;td>Clean up a merged branch locally and remotely&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>All scripts used to automate and simplify the Git workflow are stored in the &lt;code>.shell/&lt;/code> directory at the root of the project.
+This dedicated folder centralizes all shell scripts related to branch management, deployment, and cleanup tasks, making it easier to maintain and update the automation tools.
+By keeping these scripts organized in one place, you can quickly locate, modify, or extend the workflow helpers as needed, ensuring a clean and manageable project structure.&lt;/p>&lt;/div>&lt;h3 class="heading-element" id="usage">&lt;span>16.2 Usage&lt;/span>
+ &lt;a href="#usage" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;h4 class="heading-element" id="create-a-branch-feature-bugfix-etc">&lt;span>16.2.1 Create a Branch (Feature, Bugfix, etc.)&lt;/span>
+ &lt;a href="#create-a-branch-feature-bugfix-etc" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./.shell/github-branch.sh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>You will be prompted to:&lt;/p>
+&lt;ul>
+&lt;li>Choose the branch type:
+&lt;ul>
+&lt;li>&lt;code>feature/&lt;/code>&lt;/li>
+&lt;li>&lt;code>bugfix/&lt;/code>&lt;/li>
+&lt;li>&lt;code>hotfix/&lt;/code>&lt;/li>
+&lt;li>&lt;code>release/&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Enter a descriptive name (e.g., &lt;code>fix-login-error&lt;/code>)&lt;/li>
+&lt;li>Decide whether to push and create a Pull Request (PR) right away&lt;/li>
+&lt;/ul>
+&lt;p>The script will:&lt;/p>
+&lt;ul>
+&lt;li>Checkout the correct base branch (&lt;code>main&lt;/code> or &lt;code>develop&lt;/code>)&lt;/li>
+&lt;li>Create and switch to the new branch&lt;/li>
+&lt;li>Optionally push and open a PR via GitHub CLI&lt;/li>
+&lt;/ul>
+&lt;h4 class="heading-element" id="deploy-a-release">&lt;span>16.2.2 Deploy a Release&lt;/span>
+ &lt;a href="#deploy-a-release" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./.scripts/github-deploy&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This script helps with the release process:&lt;/p>
+&lt;ol>
+&lt;li>Create a &lt;code>release/x.y.z&lt;/code> branch from &lt;code>develop&lt;/code>&lt;/li>
+&lt;li>Wait for you to finalize and commit all changes&lt;/li>
+&lt;li>Push and open a PR into &lt;code>main&lt;/code>&lt;/li>
+&lt;li>After confirming merge, it:
+&lt;ul>
+&lt;li>Updates &lt;code>main&lt;/code>&lt;/li>
+&lt;li>Merges &lt;code>main&lt;/code> back into &lt;code>develop&lt;/code>&lt;/li>
+&lt;li>Pushes changes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h4 class="heading-element" id="clean-up-merged-branches">&lt;span>16.2.3 Clean Up Merged Branches&lt;/span>
+ &lt;a href="#clean-up-merged-branches" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./.scripts/github-merged.sh&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Once your Pull Request has been merged on GitHub:&lt;/p>
+&lt;ul>
+&lt;li>Run this script &lt;strong>from the feature/hotfix/release branch&lt;/strong>&lt;/li>
+&lt;li>It will:
+&lt;ul>
+&lt;li>Confirm you’re on a non-protected branch&lt;/li>
+&lt;li>Switch to &lt;code>main&lt;/code> or &lt;code>develop&lt;/code>&lt;/li>
+&lt;li>Delete the merged branch locally and remotely&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm8-6.5a6.5 6.5.0 100 13 6.5 6.5.0 000-13zM6.5 7.75A.75.75.0 017.25 7h1a.75.75.0 01.75.75v2.75h.25a.75.75.0 010 1.5h-2a.75.75.0 010-1.5h.25v-2h-.25a.75.75.0 01-.75-.75zM8 6a1 1 0 110-2 1 1 0 010 2z"/>&lt;/svg>Note&lt;/p>&lt;p>Protected branches such as &lt;code>main&lt;/code> and &lt;code>develop&lt;/code> are safeguarded by repository settings to prevent accidental deletion or force-pushes. For this reason, the cleanup script will &lt;strong>not&lt;/strong> allow you to delete these branches locally or remotely. This ensures the stability and integrity of your main development and production branches throughout your workflow.&lt;/p>&lt;/div>&lt;h3 class="heading-element" id="branch-protection-recommended-github-settings">&lt;span>16.3 Branch Protection (Recommended GitHub Settings)&lt;/span>
+ &lt;a href="#branch-protection-recommended-github-settings" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>Enable protection rules on:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>main&lt;/code>&lt;/li>
+&lt;li>&lt;code>develop&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>With:&lt;/p>
+&lt;ul>
+&lt;li>Require pull request reviews before merging&lt;/li>
+&lt;li>Require status checks (if you have CI)&lt;/li>
+&lt;li>Prevent force pushes&lt;/li>
+&lt;/ul>
+&lt;h3 class="heading-element" id="example-workflow">&lt;span>16.4 Example Workflow&lt;/span>
+ &lt;a href="#example-workflow" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Start a new feature&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./.shell/github-branch.sh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Work, commit, push, and open PR&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># After merge:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./.shell/github-merged.sh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># For release:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./.shell/github-deploy&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="alert alert-tip">&lt;p class="alert-title">&lt;svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">&lt;path d="M8 1.5c-2.363.0-4 1.69-4 3.75.0.984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75.0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456.0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863.0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751.0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304.0-2.06-1.637-3.75-4-3.75zM5.75 12h4.5a.75.75.0 010 1.5h-4.5a.75.75.0 010-1.5zM6 15.25a.75.75.0 01.75-.75h2.5a.75.75.0 010 1.5h-2.5A.75.75.0 016 15.25z"/>&lt;/svg>Tip&lt;/p>&lt;p>For easier and quicker access to the Git Flow helper scripts, you can create shell aliases by adding the following lines to your shell configuration file (e.g., &lt;code>.bashrc&lt;/code> or &lt;code>.zshrc&lt;/code>):&lt;/p>&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> gitflow-branch&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;./.shell/github-branch.sh&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> gitflow-deploy&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;./.shell/github-deploy&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">alias&lt;/span> gitflow-clean&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;./.shell/github-merged.sh&amp;#34;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Then simply run:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">gitflow-branch
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gitflow-deploy
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gitflow-clean&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;meting-js auto="https://music.163.com/#/album?id=268399691" theme="#448aff" fixed="true">&lt;/meting-js>
 &lt;!--
 ![Снег падает без конца, покрывая души, как невидимый саван. Каждый снежинка — это забытое воспоминание, утерянный звук в безбрежной тишине. Здесь, в самом сердце зимы, когда ветер воет как зверь, человек идет, не зная точно, куда](images/coffee.jpg 'Человек продолжает идти, без цели, без вопросов, ведомый странной уверенностью, что всё уже написано, но всё равно он должен искать, снова и снова')
 --></description></item><item><title>Hello World</title><link>https://Pr0xyG33k.github.io/posts/hello-world/</link><pubDate>Sat, 10 May 2025 02:47:00 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/hello-world/</guid><category domain="https://Pr0xyG33k.github.io/categories/thoughts/">Thoughts</category><description>&lt;blockquote>
