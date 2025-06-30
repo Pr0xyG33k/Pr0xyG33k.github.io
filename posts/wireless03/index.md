@@ -478,6 +478,7 @@ Additionally, we introduced automation tools like **Wifite** to streamline the p
 
 With a solid grasp of WEP vulnerabilities and attack methods, we are now ready to move forward and tackle more modern wireless security protocols. In the next part, we will dive into WPA and WPA2, uncovering their strengths and weaknesses, and learning how to capture handshakes and perform dictionary attacks.
 
+
 ---
 
 > Author: [ProxyGeek](https://github.com/Pr0xyG33k)  
