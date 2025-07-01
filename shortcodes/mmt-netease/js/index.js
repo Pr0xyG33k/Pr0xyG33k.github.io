@@ -7,8 +7,6 @@ const RNC = new (function () {
   const $comment = document.querySelector('.comment-163');
   const $loading = document.querySelector('.loading-indicator-wrapper');
   let lastMusic = void 0;
-  let timer = void 0;
-  const TIME_OUT = 60;
 
   /**
    * 获取随机网易云评论
@@ -22,6 +20,8 @@ const RNC = new (function () {
     fetch(`https://api.lruihao.cn/netease/comment?mid=${$music.dataset.mid}`)
       .then(response => response.json())
       .then((comment) => {
+        $comment.classList.toggle('d-none');
+        $loading.classList.toggle('d-none');
         const nickname = comment.data?.nickname || '未知用户';
         const musicURL = comment.data?.musicUrl;
         if (comment.data.picUrl) {
@@ -34,8 +34,6 @@ const RNC = new (function () {
           $avatar.classList.remove('d-none');
         }
         $comment.querySelector('.comment-nickname').innerHTML = nickname;
-        $comment.querySelector('.comment-time').innerHTML = comment.data.timeStr;
-        $comment.querySelector('.comment-liked').innerHTML = comment.data.likedCount;
         $comment.querySelector('.comment-content').innerHTML = comment.data.content?.replace('\n', '<br/>');
         $comment.querySelector('.music-name').innerHTML = comment.data?.musicName;
         $comment.querySelector('.artists-name').innerHTML = comment.data?.artist;
@@ -53,10 +51,7 @@ const RNC = new (function () {
         }
       }).catch((error) => {
         console.error('Error fetching comment:', error);
-        $comment.querySelector('.comment-content').innerHTML = '获取评论失败，请稍后再试...';
-      }).finally(() => {
-        $comment.classList.toggle('d-none');
-        $loading.classList.toggle('d-none');
+        $comment.querySelector('.comment-content').innerHTML = '获取评论失败，请稍后再试';
       });
   };
 
@@ -75,16 +70,6 @@ const RNC = new (function () {
     }
   };
 
-  this.refresh = (autoplay = false, current = false) => {
-    this.getRandomComment(autoplay, current);
-    if (timer) {
-      clearInterval(timer);
-    }
-    timer = setInterval(() => {
-      this.getRandomComment(autoplay, current);
-    }, TIME_OUT * 1000);
-  };
-
   /**
    * 初始化 mmt-netease shortcode
    * @name RNC#initRandomComment
@@ -94,23 +79,10 @@ const RNC = new (function () {
       return;
     }
     this.getRequire();
+    this.getRandomComment();
     $comment.addEventListener('click', () => {
-      this.refresh($music.dataset.autoplay, $music.dataset.current);
+      this.getRandomComment($music.dataset.autoplay, $music.dataset.current);
     });
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // 进入视口时开始获取评论
-          this.refresh();
-          // 取消观察
-          observer.disconnect();
-        }
-      });
-    }, { threshold: 0.1 });
-    const target = document.querySelector('.section-comment');
-    if (target) {
-      observer.observe(target);
-    }
   };
 })();
 

@@ -76,6 +76,6 @@ events:
 
 ---
 
-> Author: [ProxyGeek](https://github.com/Pr0xyG33k)  
+> Author: <no value>  
 > URL: https://Pr0xyG33k.github.io/about/  
 
