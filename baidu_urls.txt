@@ -1,6 +1,11 @@
 https://Pr0xyG33k.github.io/development/_hackthebox/machines/artificial/
 https://Pr0xyG33k.github.io/posts/kernel01/
 https://Pr0xyG33k.github.io/posts/wireless03/
+https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-ruby/
+https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-javascript/
+https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-cpp/
+https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-csharp/
+https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-bash/
 https://Pr0xyG33k.github.io/projects/pr0xyg33k/offsec-python/
 https://Pr0xyG33k.github.io/posts/wireless02/
 https://Pr0xyG33k.github.io/posts/wireless01/
