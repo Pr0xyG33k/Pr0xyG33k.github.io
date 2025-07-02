@@ -1,4 +1,4 @@
-# The `offsec-cpp` directory contains low-level C++ code designed for crafting exploits, shellcode, and rootkits, and for interacting directly with system memory and APIs.
+# C++ programs for low-level exploits, shellcode, and system interaction
 
 <!--   my-icons -->
 <p align="center">

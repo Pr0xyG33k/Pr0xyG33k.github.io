@@ -1,4 +1,4 @@
-# The `offsec-python` directory contains the Python source code for the project, including automation scripts, exploit PoCs, and offensive security tools.
+# Python tools for offensive security, exploit development, and scripting
 
 <!--   my-icons -->
 <p align="center">

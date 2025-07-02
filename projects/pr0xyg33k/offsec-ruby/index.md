@@ -1,4 +1,4 @@
-# The `offsec-ruby` directory houses Ruby scripts and modules tailored for use with the Metasploit Framework, including custom exploits, payloads, and automation tools. 
+# Ruby scripts for offensive security, red teaming, and automation
 
 <!--   my-icons -->
 <p align="center">

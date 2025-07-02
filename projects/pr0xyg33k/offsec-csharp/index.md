@@ -1,4 +1,4 @@
-# The `offsec-csharp` directory contains C# source code that implements offensive tools for Windows environments, including payloads, post-exploitation frameworks, and Windows API interactions.
+# C# payloads and tools for Windows post-exploitation and red teaming
 
 <!--   my-icons -->
 <p align="center">

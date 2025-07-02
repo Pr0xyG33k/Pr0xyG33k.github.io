@@ -1,4 +1,4 @@
-# The `offsec-bash` directory contains Bash scripts used for enumeration, exploitation, privilege escalation, and system administration in Unix/Linux environments.
+# Bash scripts for reconnaissance, privilege escalation, and system attacks
 
 <!--   my-icons -->
 <p align="center">

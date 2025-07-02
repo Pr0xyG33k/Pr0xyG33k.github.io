@@ -1,4 +1,4 @@
-# The `offsec-javascript` directory includes JavaScript payloads, exploit code, and components for browser-based attacks such as XSS, CSRF, and malicious extensions. 
+# JavaScript code for offensive web attacks like XSS, CSRF, and client-side abuse
 
 <!--   my-icons -->
 <p align="center">
