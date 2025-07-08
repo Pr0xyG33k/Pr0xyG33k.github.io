@@ -1,13 +1,14 @@
 # ProxyGeek Blog
 
-8 articles in total
+9 articles in total
 
 ## 2025
 
-8 articles in total
+9 articles in total
 
 - 07-03 [CTF HackTheBox Fluffy](https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/fluffy/ "2025-07-03 21:45:12")
 - 06-28 [CTF HackTheBox Artificial](https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/artificial/ "2025-06-28 17:15:55")
+- 06-27 [LeHack Adventure 2025](https://Pr0xyG33k.github.io/posts/hack5/ "2025-06-27 10:47:00")
 - 06-14 [Linux Kernel Exploitation Part 1](https://Pr0xyG33k.github.io/posts/kernel01/ "2025-06-14 07:20:10")
 - 05-26 [Wireless Hacking Part 3](https://Pr0xyG33k.github.io/posts/wireless03/ "2025-05-26 17:05:48")
 - 05-23 [Wireless Hacking Part 2](https://Pr0xyG33k.github.io/posts/wireless02/ "2025-05-23 08:50:15")

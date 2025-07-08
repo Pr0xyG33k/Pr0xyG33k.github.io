@@ -1,5 +1,6 @@
 https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/fluffy/
 https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/artificial/
+https://Pr0xyG33k.github.io/posts/hack5/
 https://Pr0xyG33k.github.io/posts/kernel01/
 https://Pr0xyG33k.github.io/posts/wireless03/
 https://Pr0xyG33k.github.io/posts/wireless02/
