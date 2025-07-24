@@ -6,8 +6,8 @@
 
 10 articles in total
 
+- 07-22 [CTF HackTheBox RustyKey](https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/rustykey/ "2025-07-22 22:15:55")
 - 07-03 [CTF HackTheBox Fluffy](https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/fluffy/ "2025-07-03 21:45:12")
-- 06-28 [CTF HackTheBox RustyKey](https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/rustykey/ "2025-06-28 17:15:55")
 - 06-28 [CTF HackTheBox Artificial](https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/artificial/ "2025-06-28 17:15:55")
 - 06-27 [LeHack Adventure 2025](https://Pr0xyG33k.github.io/posts/hack5/ "2025-06-27 10:47:00")
 - 06-14 [Linux Kernel Exploitation Part 1](https://Pr0xyG33k.github.io/posts/kernel01/ "2025-06-14 07:20:10")
