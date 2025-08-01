@@ -1,10 +1,13 @@
 # ProxyGeek Blog
 
-10 articles in total
+> Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.
+
+10 articles in total by [ProxyGeek](https://github.com/Pr0xyG33k).
 
 ## 2025
 
-10 articles in total
+<details>
+<summary>10 articles in total</summary>
 
 - 07-22 [CTF HackTheBox RustyKey](https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/rustykey/ "2025-07-22 22:15:55")
 - 07-03 [CTF HackTheBox Fluffy](https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/fluffy/ "2025-07-03 21:45:12")
@@ -16,3 +19,5 @@
 - 05-20 [Wireless Hacking Part 1](https://Pr0xyG33k.github.io/posts/wireless01/ "2025-05-20 10:48:10")
 - 05-12 [Github Workflow](https://Pr0xyG33k.github.io/posts/github/ "2025-05-12 18:26:49")
 - 05-10 [Hello World](https://Pr0xyG33k.github.io/posts/hello-world/ "2025-05-10 02:47:00")
+
+</details>
