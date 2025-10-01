@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.150.1 &amp; FixIt v0.4.0-alpha</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 29 Jun 2025 05:24:44 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>LeHack Adventure 2025</title><link>https://Pr0xyG33k.github.io/posts/hack5/</link><pubDate>Fri, 27 Jun 2025 10:47:00 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/hack5/</guid><category domain="https://Pr0xyG33k.github.io/categories/thoughts/">Thoughts</category><description>&lt;img src="https://Pr0xyG33k.github.io/posts/lehack/images/lehack.jpg" alt="featured image" referrerpolicy="no-referrer"&gt;&lt;p&gt;LeHack, one of the most renowned cybersecurity events in Europe, had been on my radar for a while. Known for its thrilling Capture The Flag (CTF) challenges, hands-on workshops, and the opportunity to meet some of the brightest minds in cybersecurity, I knew it would be a day to remember. From the moment I registered, I couldn’t wait to dive into the challenges that awaited me.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProxyGeek Blog</title><link>https://Pr0xyG33k.github.io/</link><description>Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.</description><generator>Hugo 0.150.1 &amp; FixIt v0.4.0-alpha.1</generator><language>en</language><managingEditor>1024@Pr0xyG33k.github.io (ProxyGeek)</managingEditor><webMaster>1024@Pr0xyG33k.github.io (ProxyGeek)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 29 Jun 2025 05:24:44 +0200</lastBuildDate><atom:link href="https://Pr0xyG33k.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>LeHack Adventure 2025</title><link>https://Pr0xyG33k.github.io/posts/hack5/</link><pubDate>Fri, 27 Jun 2025 10:47:00 +0200</pubDate><author>1024@Pr0xyG33k.github.io (ProxyGeek)</author><guid>https://Pr0xyG33k.github.io/posts/hack5/</guid><category domain="https://Pr0xyG33k.github.io/categories/thoughts/">Thoughts</category><description>&lt;img src="https://Pr0xyG33k.github.io/posts/lehack/images/lehack.jpg" alt="featured image" referrerpolicy="no-referrer"&gt;&lt;p&gt;LeHack, one of the most renowned cybersecurity events in Europe, had been on my radar for a while. Known for its thrilling Capture The Flag (CTF) challenges, hands-on workshops, and the opportunity to meet some of the brightest minds in cybersecurity, I knew it would be a day to remember. From the moment I registered, I couldn’t wait to dive into the challenges that awaited me.&lt;/p&gt;
 &lt;p&gt;Upon arriving, the buzz was palpable. People from all walks of cybersecurity—ethical hackers, penetration testers, and curious enthusiasts—gathered under one roof to push the limits of what we could learn and achieve. The event had a relaxed yet competitive vibe, and I was immediately pulled into the spirit of the community.&lt;/p&gt;
 &lt;p&gt;The workshops were a perfect mix of theory and practice. One of the most interesting sessions was dedicated to &lt;strong&gt;IoT vulnerabilities&lt;/strong&gt;. We learned how easily common devices could be exploited if not properly secured. It was fascinating to see the instructor demonstrate in real time how an insecure device could be hacked—something I had only read about until then. The hands-on nature of these sessions made it feel less like a lecture and more like an immersion into real-world hacking.&lt;/p&gt;
 &lt;p&gt;Of course, the &lt;strong&gt;CTF challenges&lt;/strong&gt; were one of the main attractions of LeHack. These competitions are a test of skill, speed, and creativity, where participants work in teams or alone to solve cybersecurity puzzles and hack into systems. I joined a team for a few challenges, and the adrenaline was incredible. The problems ranged from exploiting web vulnerabilities to decrypting encrypted messages. It was intense, but each solved challenge brought a rush of accomplishment.&lt;/p&gt;
@@ -175,7 +175,8 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;In the upcoming parts, we&amp;rsquo;ll study how these protections work — and how to defeat or bypass them when developing kernel exploits.&lt;/p&gt;
-&lt;div class="echarts" style="width: 100%; height: 30rem;"&gt;&lt;/div&gt;&lt;template data-fmt="js" data-async="false"&gt;{ title: { text: &amp;#39;Kernel Defense Mechanisms Overview&amp;#39;, left: &amp;#39;center&amp;#39;, top: &amp;#39;2%&amp;#39; }, tooltip: { trigger: &amp;#39;item&amp;#39; }, radar: { indicator: [ { name: &amp;#39;KASLR&amp;#39;, max: 10 }, { name: &amp;#39;SMEP/SMAP&amp;#39;, max: 10 }, { name: &amp;#39;Stack Canaries&amp;#39;, max: 10 }, { name: &amp;#39;NX&amp;#39;, max: 10 }, { name: &amp;#39;Seccomp&amp;#39;, max: 10 }, { name: &amp;#39;AppArmor/SELinux&amp;#39;, max: 10 } ], radius: &amp;#39;60%&amp;#39;, splitNumber: 4 }, series: [{ name: &amp;#39;Kernel Defenses&amp;#39;, type: &amp;#39;radar&amp;#39;, data: [{ value: [8, 9, 7, 8, 6, 5], name: &amp;#39;Mitigation Strength&amp;#39;, lineStyle: { color: &amp;#39;#66CFFF&amp;#39; }, itemStyle: { color: &amp;#39;#66CFFF&amp;#39; }, areaStyle: { color: &amp;#39;rgba(102,207,255,0.3)&amp;#39; } }] }] }&lt;/template&gt;&lt;h3 class="heading-element" id="user-space-vs-kernel-space"&gt;&lt;span&gt;27.2 User Space vs Kernel Space&lt;/span&gt;
+&lt;div class="diagram-container"&gt;&lt;div class="diagram-copy-btn" aria-label="Copy ECharts code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;div class="echarts" style="width: 100%; height: 30rem;"&gt;&lt;/div&gt;&lt;template data-fmt="js" data-async="false"&gt;{ title: { text: &amp;#39;Kernel Defense Mechanisms Overview&amp;#39;, left: &amp;#39;center&amp;#39;, top: &amp;#39;2%&amp;#39; }, tooltip: { trigger: &amp;#39;item&amp;#39; }, radar: { indicator: [ { name: &amp;#39;KASLR&amp;#39;, max: 10 }, { name: &amp;#39;SMEP/SMAP&amp;#39;, max: 10 }, { name: &amp;#39;Stack Canaries&amp;#39;, max: 10 }, { name: &amp;#39;NX&amp;#39;, max: 10 }, { name: &amp;#39;Seccomp&amp;#39;, max: 10 }, { name: &amp;#39;AppArmor/SELinux&amp;#39;, max: 10 } ], radius: &amp;#39;60%&amp;#39;, splitNumber: 4 }, series: [{ name: &amp;#39;Kernel Defenses&amp;#39;, type: &amp;#39;radar&amp;#39;, data: [{ value: [8, 9, 7, 8, 6, 5], name: &amp;#39;Mitigation Strength&amp;#39;, lineStyle: { color: &amp;#39;#66CFFF&amp;#39; }, itemStyle: { color: &amp;#39;#66CFFF&amp;#39; }, areaStyle: { color: &amp;#39;rgba(102,207,255,0.3)&amp;#39; } }] }] }&lt;/template&gt;&lt;/div&gt;&lt;h3 class="heading-element" id="user-space-vs-kernel-space"&gt;&lt;span&gt;27.2 User Space vs Kernel Space&lt;/span&gt;
  &lt;a href="#user-space-vs-kernel-space" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -268,7 +269,8 @@
  &lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;Kernel modules are pieces of code—often device drivers or filesystem drivers—that can be dynamically loaded and unloaded into the kernel at runtime.&lt;/p&gt;
 &lt;p&gt;Since modules run with full kernel privileges, any flaw or bug in their code can directly compromise the entire system. Poorly written or malicious modules are frequent sources of kernel vulnerabilities and exploitation vectors.&lt;/p&gt;
-&lt;pre class="mermaid"&gt;graph LR
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;graph LR
  Kernel["Kernel Space"]
  Module["Kernel Module"]
  Hardware["Hardware Device"]
@@ -278,7 +280,7 @@
  Kernel --&gt;|Loads| Module
  Module --&gt;|Controls| Hardware
  Module --&gt;|Calls Kernel APIs| Kernel&lt;/pre&gt;
-&lt;template&gt;graph LR
+ &lt;pre class="mermaid-dark"&gt;graph LR
  Kernel["Kernel Space"]
  Module["Kernel Module"]
  Hardware["Hardware Device"]
@@ -287,7 +289,28 @@
  UserApp --&gt;|Syscalls| Kernel
  Kernel --&gt;|Loads| Module
  Module --&gt;|Controls| Hardware
- Module --&gt;|Calls Kernel APIs| Kernel&lt;/template&gt;&lt;h3 class="heading-element" id="exploit-development-workflow"&gt;&lt;span&gt;27.7 Exploit Development Workflow&lt;/span&gt;
+ Module --&gt;|Calls Kernel APIs| Kernel&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;graph LR
+ Kernel["Kernel Space"]
+ Module["Kernel Module"]
+ Hardware["Hardware Device"]
+ UserApp["User Application"]
+
+ UserApp --&gt;|Syscalls| Kernel
+ Kernel --&gt;|Loads| Module
+ Module --&gt;|Controls| Hardware
+ Module --&gt;|Calls Kernel APIs| Kernel&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;graph LR
+ Kernel["Kernel Space"]
+ Module["Kernel Module"]
+ Hardware["Hardware Device"]
+ UserApp["User Application"]
+
+ UserApp --&gt;|Syscalls| Kernel
+ Kernel --&gt;|Loads| Module
+ Module --&gt;|Controls| Hardware
+ Module --&gt;|Calls Kernel APIs| Kernel&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;h3 class="heading-element" id="exploit-development-workflow"&gt;&lt;span&gt;27.7 Exploit Development Workflow&lt;/span&gt;
  &lt;a href="#exploit-development-workflow" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -349,7 +372,8 @@ Running the final payload with kernel-level privileges to achieve goals like roo
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
 &lt;/h2&gt;&lt;p&gt;The process starts when the user creates a root key of size 128 bits. This root key is then encrypted using the RC4 algorithm, which generates a keystream. Once the keystream is generated, it is combined with the plaintext data using an XOR gate (logical operation). The result of this operation gives us the &lt;strong&gt;ciphertext&lt;/strong&gt;, which can then be sent.&lt;/p&gt;
-&lt;pre class="mermaid"&gt;graph TD
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;graph TD
  RootKey["Root Key (128 bits)"]
  RC4["RC4 Algorithm"]
  Keystream["Keystream&lt;br&gt;(Generated by RC4)"]
@@ -362,7 +386,7 @@ Running the final payload with kernel-level privileges to achieve goals like roo
  Keystream --&gt; XOR
  Plaintext --&gt; XOR
  XOR --&gt; Ciphertext&lt;/pre&gt;
-&lt;template&gt;graph TD
+ &lt;pre class="mermaid-dark"&gt;graph TD
  RootKey["Root Key (128 bits)"]
  RC4["RC4 Algorithm"]
  Keystream["Keystream&lt;br&gt;(Generated by RC4)"]
@@ -374,13 +398,41 @@ Running the final payload with kernel-level privileges to achieve goals like roo
  RC4 --&gt; Keystream
  Keystream --&gt; XOR
  Plaintext --&gt; XOR
- XOR --&gt; Ciphertext&lt;/template&gt;&lt;h2 class="heading-element" id="wep-packet"&gt;&lt;span&gt;27 WEP Packet&lt;/span&gt;
+ XOR --&gt; Ciphertext&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;graph TD
+ RootKey["Root Key (128 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream&lt;br&gt;(Generated by RC4)"]
+ Plaintext["Plaintext Data"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext&lt;br&gt;(Output)"]
+
+ RootKey --&gt; RC4
+ RC4 --&gt; Keystream
+ Keystream --&gt; XOR
+ Plaintext --&gt; XOR
+ XOR --&gt; Ciphertext&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;graph TD
+ RootKey["Root Key (128 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream&lt;br&gt;(Generated by RC4)"]
+ Plaintext["Plaintext Data"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext&lt;br&gt;(Output)"]
+
+ RootKey --&gt; RC4
+ RC4 --&gt; Keystream
+ Keystream --&gt; XOR
+ Plaintext --&gt; XOR
+ XOR --&gt; Ciphertext&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;h2 class="heading-element" id="wep-packet"&gt;&lt;span&gt;27 WEP Packet&lt;/span&gt;
  &lt;a href="#wep-packet" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
 &lt;/h2&gt;&lt;p&gt;The process of sending a packet using WEP begins with appending a 24-bit Initialization Vector (IV) to the root key. This new combined key is then input into the RC4 encryption algorithm, which generates a keystream unique to that packet. Next, this keystream is combined with the plaintext data using an XOR operation, producing the ciphertext that will be transmitted over the wireless network.&lt;/p&gt;
 &lt;p&gt;Since the IV changes with every packet, it is appended along with the ciphertext. This is necessary because the receiving device (such as a router) needs the IV to recreate the same keystream and correctly decrypt the message. Without the IV, decryption would not be possible, as the key would not match the keystream used for encryption.&lt;/p&gt;
-&lt;pre class="mermaid"&gt;graph TD
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;graph TD
  RootKey["Root Key (128 bits)"]
  IV["IV (24 bits)"]
  RC4["RC4 Algorithm"]
@@ -395,7 +447,7 @@ Running the final payload with kernel-level privileges to achieve goals like roo
  Keystream --&gt; XOR
  Plaintext --&gt; XOR
  XOR --&gt; Ciphertext&lt;/pre&gt;
-&lt;template&gt;graph TD
+ &lt;pre class="mermaid-dark"&gt;graph TD
  RootKey["Root Key (128 bits)"]
  IV["IV (24 bits)"]
  RC4["RC4 Algorithm"]
@@ -409,12 +461,44 @@ Running the final payload with kernel-level privileges to achieve goals like roo
  RC4 --&gt; Keystream
  Keystream --&gt; XOR
  Plaintext --&gt; XOR
- XOR --&gt; Ciphertext&lt;/template&gt;&lt;h2 class="heading-element" id="router-side-decryption"&gt;&lt;span&gt;28 Router-side Decryption&lt;/span&gt;
+ XOR --&gt; Ciphertext&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;graph TD
+ RootKey["Root Key (128 bits)"]
+ IV["IV (24 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream:&lt;br&gt;1101101010110010101&lt;br&gt;1001010110010101"]
+ Plaintext["Plain Text:\nGET / HTTP 1.1\nHost: google.com"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext:\na1b2c3d4e5f67890=="]
+
+ RootKey --&gt; RC4
+ IV --&gt; RC4
+ RC4 --&gt; Keystream
+ Keystream --&gt; XOR
+ Plaintext --&gt; XOR
+ XOR --&gt; Ciphertext&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;graph TD
+ RootKey["Root Key (128 bits)"]
+ IV["IV (24 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream:&lt;br&gt;1101101010110010101&lt;br&gt;1001010110010101"]
+ Plaintext["Plain Text:\nGET / HTTP 1.1\nHost: google.com"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext:\na1b2c3d4e5f67890=="]
+
+ RootKey --&gt; RC4
+ IV --&gt; RC4
+ RC4 --&gt; Keystream
+ Keystream --&gt; XOR
+ Plaintext --&gt; XOR
+ XOR --&gt; Ciphertext&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;h2 class="heading-element" id="router-side-decryption"&gt;&lt;span&gt;28 Router-side Decryption&lt;/span&gt;
  &lt;a href="#router-side-decryption" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
 &lt;/h2&gt;&lt;p&gt;During router-side decryption, the process begins by appending the root key with the 24-bit Initialization Vector (IV) extracted from the received data packet. This new key is then used as input to the RC4 algorithm, which generates a pseudorandom keystream. Next, this keystream is combined with the ciphertext using an XOR operation.&lt;/p&gt;
-&lt;pre class="mermaid"&gt;graph TD
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;graph TD
  RootKey["Root Key (128 bits)"]
  IV["IV (24 bits)"]
  RC4["RC4 Algorithm"]
@@ -429,7 +513,7 @@ Running the final payload with kernel-level privileges to achieve goals like roo
  Keystream --&gt; XOR
  Ciphertext --&gt; XOR
  XOR --&gt; Plaintext&lt;/pre&gt;
-&lt;template&gt;graph TD
+ &lt;pre class="mermaid-dark"&gt;graph TD
  RootKey["Root Key (128 bits)"]
  IV["IV (24 bits)"]
  RC4["RC4 Algorithm"]
@@ -443,13 +527,45 @@ Running the final payload with kernel-level privileges to achieve goals like roo
  RC4 --&gt; Keystream
  Keystream --&gt; XOR
  Ciphertext --&gt; XOR
- XOR --&gt; Plaintext&lt;/template&gt;&lt;p&gt;The result is the original data stream requested by the device. However, it is important to note that the mathematical weaknesses of RC4 expose this method to vulnerabilities: by collecting enough keystreams associated with different IV values, an attacker can analyze the data to recover the network’s secret key.&lt;/p&gt;
+ XOR --&gt; Plaintext&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;graph TD
+ RootKey["Root Key (128 bits)"]
+ IV["IV (24 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream:&lt;br&gt;1101101010110010101&lt;br&gt;1001010110010101"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext:\na1b2c3d4e5f67890=="]
+ Plaintext["Plain Text:\nGET / HTTP 1.1\nHost: google.com"]
+
+ RootKey --&gt; RC4
+ IV --&gt; RC4
+ RC4 --&gt; Keystream
+ Keystream --&gt; XOR
+ Ciphertext --&gt; XOR
+ XOR --&gt; Plaintext&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;graph TD
+ RootKey["Root Key (128 bits)"]
+ IV["IV (24 bits)"]
+ RC4["RC4 Algorithm"]
+ Keystream["Keystream:&lt;br&gt;1101101010110010101&lt;br&gt;1001010110010101"]
+ XOR["XOR Operation"]
+ Ciphertext["Ciphertext:\na1b2c3d4e5f67890=="]
+ Plaintext["Plain Text:\nGET / HTTP 1.1\nHost: google.com"]
+
+ RootKey --&gt; RC4
+ IV --&gt; RC4
+ RC4 --&gt; Keystream
+ Keystream --&gt; XOR
+ Ciphertext --&gt; XOR
+ XOR --&gt; Plaintext&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;p&gt;The result is the original data stream requested by the device. However, it is important to note that the mathematical weaknesses of RC4 expose this method to vulnerabilities: by collecting enough keystreams associated with different IV values, an attacker can analyze the data to recover the network’s secret key.&lt;/p&gt;
 &lt;h2 class="heading-element" id="methodology"&gt;&lt;span&gt;29 Methodology&lt;/span&gt;
  &lt;a href="#methodology" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
 &lt;/h2&gt;&lt;p&gt;Cracking a wireless network — especially one secured with WEP — relies on a deep understanding of stream cipher mechanics. At the heart of this process is the extraction of a keystream, a pseudorandom sequence used to encrypt data. To obtain the keystream, you need both ciphertext and at least a portion of the plaintext. By XORing the two, the keystream can be revealed, which can then be reused to decrypt other packets or even recover the original WEP key.&lt;/p&gt;
-&lt;pre class="mermaid"&gt;graph TD
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;graph TD
  Ciphertext["Ciphertext: na1b2c3d4e5f67890=="]
  PlainText["Plain Text: GET / HTTP 1.1\nHost: google.com"]
  XOR["XOR Operation"]
@@ -458,7 +574,7 @@ Running the final payload with kernel-level privileges to achieve goals like roo
  Ciphertext --&gt; XOR
  PlainText --&gt; XOR
  XOR --&gt; Keystream&lt;/pre&gt;
-&lt;template&gt;graph TD
+ &lt;pre class="mermaid-dark"&gt;graph TD
  Ciphertext["Ciphertext: na1b2c3d4e5f67890=="]
  PlainText["Plain Text: GET / HTTP 1.1\nHost: google.com"]
  XOR["XOR Operation"]
@@ -466,7 +582,26 @@ Running the final payload with kernel-level privileges to achieve goals like roo
 
  Ciphertext --&gt; XOR
  PlainText --&gt; XOR
- XOR --&gt; Keystream&lt;/template&gt;&lt;p&gt;The first practical step is capturing ciphertext, which is relatively straightforward. By setting your wireless interface to monitor mode, you can passively listen to all wireless traffic in range. This allows you to capture encrypted packets — including ARP requests and broadcast messages — without needing to be connected to the network. These packets become the foundation for further steps like traffic injection, keystream recovery, and ultimately key extraction.&lt;/p&gt;
+ XOR --&gt; Keystream&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;graph TD
+ Ciphertext["Ciphertext: na1b2c3d4e5f67890=="]
+ PlainText["Plain Text: GET / HTTP 1.1\nHost: google.com"]
+ XOR["XOR Operation"]
+ Keystream["Keystream:&lt;br&gt;1101101010110010101&lt;br&gt;1001010110010101"]
+
+ Ciphertext --&gt; XOR
+ PlainText --&gt; XOR
+ XOR --&gt; Keystream&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;graph TD
+ Ciphertext["Ciphertext: na1b2c3d4e5f67890=="]
+ PlainText["Plain Text: GET / HTTP 1.1\nHost: google.com"]
+ XOR["XOR Operation"]
+ Keystream["Keystream:&lt;br&gt;1101101010110010101&lt;br&gt;1001010110010101"]
+
+ Ciphertext --&gt; XOR
+ PlainText --&gt; XOR
+ XOR --&gt; Keystream&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;p&gt;The first practical step is capturing ciphertext, which is relatively straightforward. By setting your wireless interface to monitor mode, you can passively listen to all wireless traffic in range. This allows you to capture encrypted packets — including ARP requests and broadcast messages — without needing to be connected to the network. These packets become the foundation for further steps like traffic injection, keystream recovery, and ultimately key extraction.&lt;/p&gt;
 &lt;p&gt;This methodology is central to WEP cracking and sets the stage for more advanced techniques, such as ARP replay attacks and dictionary-based keystream matching, which exploit predictable plaintext to speed up the attack process.&lt;/p&gt;
 &lt;h3 class="heading-element" id="capture-ciphertext"&gt;&lt;span&gt;29.1 Capture Ciphertext&lt;/span&gt;
  &lt;a href="#capture-ciphertext" class="heading-mark"&gt;
@@ -486,7 +621,8 @@ By setting the network adapter to monitor mode, it becomes possible to listen to
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;With an ARP replay attack, an adversary captures an ARP request and repeatedly injects it into the network. This forces the client or network devices to generate many packets, each with new initialization vectors and keystream fragments. By collecting these replayed packets, the attacker gains access to a wealth of encrypted data that can be analyzed. For example, sending a single ARP request repeatedly in a network with one client can produce multiple keystream samples to capture and exploit.&lt;/p&gt;
-&lt;pre class="mermaid"&gt;graph TD
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;graph TD
  Capture["Capture Network Packets"]
  ARP_Packets["Identify ARP Packets"]
  ARP_Request["ARP Request Packet\n(e.g. Who has 10.20.242.34?)"]
@@ -502,7 +638,7 @@ By setting the network adapter to monitor mode, it becomes possible to listen to
  ARP_Reply --&gt; Predictable_Header
  Predictable_Header --&gt; Extract_Keystream
  Extract_Keystream --&gt; Use_Keystream&lt;/pre&gt;
-&lt;template&gt;graph TD
+ &lt;pre class="mermaid-dark"&gt;graph TD
  Capture["Capture Network Packets"]
  ARP_Packets["Identify ARP Packets"]
  ARP_Request["ARP Request Packet\n(e.g. Who has 10.20.242.34?)"]
@@ -517,7 +653,40 @@ By setting the network adapter to monitor mode, it becomes possible to listen to
  ARP_Request --&gt; Predictable_Header
  ARP_Reply --&gt; Predictable_Header
  Predictable_Header --&gt; Extract_Keystream
- Extract_Keystream --&gt; Use_Keystream&lt;/template&gt;&lt;h2 class="heading-element" id="exploiting-wep"&gt;&lt;span&gt;30 Exploiting WEP&lt;/span&gt;
+ Extract_Keystream --&gt; Use_Keystream&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;graph TD
+ Capture["Capture Network Packets"]
+ ARP_Packets["Identify ARP Packets"]
+ ARP_Request["ARP Request Packet\n(e.g. Who has 10.20.242.34?)"]
+ ARP_Reply["ARP Reply Packet\n(e.g. I have 10.20.242.34\nMAC: e4:35:54:ad:4f:45)"]
+ Predictable_Header["Known 16-byte Header"]
+ Extract_Keystream["Extract First 16 Bytes of Keystream"]
+ Use_Keystream["Use Keystream to Decrypt Other Packets"]
+
+ Capture --&gt; ARP_Packets
+ ARP_Packets --&gt; ARP_Request
+ ARP_Packets --&gt; ARP_Reply
+ ARP_Request --&gt; Predictable_Header
+ ARP_Reply --&gt; Predictable_Header
+ Predictable_Header --&gt; Extract_Keystream
+ Extract_Keystream --&gt; Use_Keystream&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;graph TD
+ Capture["Capture Network Packets"]
+ ARP_Packets["Identify ARP Packets"]
+ ARP_Request["ARP Request Packet\n(e.g. Who has 10.20.242.34?)"]
+ ARP_Reply["ARP Reply Packet\n(e.g. I have 10.20.242.34\nMAC: e4:35:54:ad:4f:45)"]
+ Predictable_Header["Known 16-byte Header"]
+ Extract_Keystream["Extract First 16 Bytes of Keystream"]
+ Use_Keystream["Use Keystream to Decrypt Other Packets"]
+
+ Capture --&gt; ARP_Packets
+ ARP_Packets --&gt; ARP_Request
+ ARP_Packets --&gt; ARP_Reply
+ ARP_Request --&gt; Predictable_Header
+ ARP_Reply --&gt; Predictable_Header
+ Predictable_Header --&gt; Extract_Keystream
+ Extract_Keystream --&gt; Use_Keystream&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;h2 class="heading-element" id="exploiting-wep"&gt;&lt;span&gt;30 Exploiting WEP&lt;/span&gt;
  &lt;a href="#exploiting-wep" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -1080,7 +1249,8 @@ Having explored the fundamental concepts of wireless networks and security in th
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
 &lt;/h2&gt;&lt;p&gt;The architecture of a Wi-Fi hacking lab is designed to create a controlled environment for safely testing wireless security. At the core of the lab is the Attacker Machine (Kali Linux), which runs penetration testing tools to perform attacks on the Target Access Point (Test AP). The Test Client Device connects to the AP, simulating a user’s interaction with the network. The Isolation Switch/Firewall ensures the lab is separated from the wider network and blocks unauthorized internet access, protecting the external network from any potential disruption. Finally, the Monitoring &amp;amp; Logging Station captures and analyzes the traffic between the attacker, the AP, and the client, allowing for detailed analysis and logging of all actions. This setup ensures that wireless security testing can be performed safely and ethically within an isolated environment.&lt;/p&gt;
-&lt;pre class="mermaid"&gt;graph TD
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;graph TD
  attacker["Attacker Machine (Kali Linux)"]
  ap["Target Access Point (Test AP)"]
  client["Test Client Device"]
@@ -1096,7 +1266,7 @@ Having explored the fundamental concepts of wireless networks and security in th
  firewall -.-&gt;|Blocks traffic to Internet| Internet
  
  class attacker,ap,client,firewall,monitor,Internet neutral;&lt;/pre&gt;
-&lt;template&gt;graph TD
+ &lt;pre class="mermaid-dark"&gt;graph TD
  attacker["Attacker Machine (Kali Linux)"]
  ap["Target Access Point (Test AP)"]
  client["Test Client Device"]
@@ -1111,7 +1281,40 @@ Having explored the fundamental concepts of wireless networks and security in th
  client --&gt;|Traffic monitored by| monitor
  firewall -.-&gt;|Blocks traffic to Internet| Internet
  
- class attacker,ap,client,firewall,monitor,Internet neutral;&lt;/template&gt;&lt;h2 class="heading-element" id="checksum"&gt;&lt;span&gt;22 Checksum&lt;/span&gt;
+ class attacker,ap,client,firewall,monitor,Internet neutral;&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;graph TD
+ attacker["Attacker Machine (Kali Linux)"]
+ ap["Target Access Point (Test AP)"]
+ client["Test Client Device"]
+ firewall["Isolation Switch / Firewall"]
+ monitor["Monitoring &amp; Logging Station"]
+ Internet["Internet"]
+
+ attacker --&gt;|Inject &amp; Capture Traffic| ap
+ client --&gt;|Connects to| ap
+ ap --&gt;|Connects through| firewall
+ attacker --&gt;|Sends data for analysis| monitor
+ client --&gt;|Traffic monitored by| monitor
+ firewall -.-&gt;|Blocks traffic to Internet| Internet
+ 
+ class attacker,ap,client,firewall,monitor,Internet neutral;&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;graph TD
+ attacker["Attacker Machine (Kali Linux)"]
+ ap["Target Access Point (Test AP)"]
+ client["Test Client Device"]
+ firewall["Isolation Switch / Firewall"]
+ monitor["Monitoring &amp; Logging Station"]
+ Internet["Internet"]
+
+ attacker --&gt;|Inject &amp; Capture Traffic| ap
+ client --&gt;|Connects to| ap
+ ap --&gt;|Connects through| firewall
+ attacker --&gt;|Sends data for analysis| monitor
+ client --&gt;|Traffic monitored by| monitor
+ firewall -.-&gt;|Blocks traffic to Internet| Internet
+ 
+ class attacker,ap,client,firewall,monitor,Internet neutral;&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;h2 class="heading-element" id="checksum"&gt;&lt;span&gt;22 Checksum&lt;/span&gt;
  &lt;a href="#checksum" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -1588,7 +1791,8 @@ The first step is to install the necessary packages that will allow Kali to buil
 &lt;li&gt;&lt;strong&gt;2.4 GHz&lt;/strong&gt;: The 2.4 GHz band is the older and more widely used frequency band in Wi-Fi. It provides good coverage and can obstacles like walls more effectively.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;5 GHz&lt;/strong&gt;: The 5 GHz band is a newer addition to Wi-Fi and offers more available channels with wider frequency ranges. It provides faster data speeds and is less congested compared to the 2.4 GHz band since fewer devices operate in this range. However, the 5 GHz signals have a shorter range and may encounter more attenuation when passing through walls and other obstacles.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="echarts" style="width: 100%; height: 30rem;"&gt;&lt;/div&gt;&lt;template data-fmt="js" data-async="false"&gt;{ color: [&amp;#39;#00BFFF&amp;#39;, &amp;#39;#FF7F50&amp;#39;], title: { text: &amp;#39;Wi-Fi Frequency Bands Overview&amp;#39;, top: &amp;#39;2%&amp;#39;, left: &amp;#39;center&amp;#39; }, tooltip: { trigger: &amp;#39;axis&amp;#39;, axisPointer: { type: &amp;#39;shadow&amp;#39;, label: { backgroundColor: &amp;#39;#6a7985&amp;#39; } }, formatter: function(params) { const defs = { &amp;#34;Coverage&amp;#34;: &amp;#34;Area where the Wi-Fi signal can be effectively received.&amp;#34;, &amp;#34;Channels&amp;#34;: &amp;#34;Number of available channels for data transmission.&amp;#34;, &amp;#34;Speed&amp;#34;: &amp;#34;Maximum theoretical data transmission speed.&amp;#34;, &amp;#34;Obstacle&amp;#34;: &amp;#34;Ability of the signal to pass through walls and obstacles.&amp;#34;, &amp;#34;Congestion&amp;#34;: &amp;#34;Level of interference caused by other devices.&amp;#34;, &amp;#34;Connectivity&amp;#34;: &amp;#34;Ease of connection without physical cables.&amp;#34;, &amp;#34;Portability&amp;#34;: &amp;#34;Ability to use Wi-Fi on mobile and portable devices.&amp;#34;, &amp;#34;Security&amp;#34;: &amp;#34;Level of data protection on the network (WPA2/WPA3).&amp;#34;, &amp;#34;Compatibility&amp;#34;: &amp;#34;Number of devices supporting this frequency band.&amp;#34;, &amp;#34;Range&amp;#34;: &amp;#34;Maximum distance at which the signal is usable.&amp;#34;, &amp;#34;Interference&amp;#34;: &amp;#34;Disturbances caused by other electronic devices.&amp;#34; }; let category = params[0].axisValue; let tooltipText = `&amp;lt;b&amp;gt;${category}&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;${defs[category]}&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;`; params.forEach(item =&amp;gt; { tooltipText &amp;#43;= `${item.marker} ${item.seriesName}: ${item.data}&amp;lt;br&amp;gt;`; }); return tooltipText; } }, legend: { data: [&amp;#39;2.4 GHz&amp;#39;, &amp;#39;5 GHz&amp;#39;], top: &amp;#39;10%&amp;#39; }, toolbox: { feature: { saveAsImage: {} } }, grid: { left: &amp;#39;5%&amp;#39;, right: &amp;#39;5%&amp;#39;, bottom: &amp;#39;10%&amp;#39;, top: &amp;#39;20%&amp;#39;, containLabel: true }, xAxis: { type: &amp;#39;category&amp;#39;, data: [ &amp;#34;Coverage&amp;#34;, &amp;#34;Channels&amp;#34;, &amp;#34;Speed&amp;#34;, &amp;#34;Obstacle&amp;#34;, &amp;#34;Congestion&amp;#34;, &amp;#34;Connectivity&amp;#34;, &amp;#34;Portability&amp;#34;, &amp;#34;Security&amp;#34;, &amp;#34;Compatibility&amp;#34;, &amp;#34;Range&amp;#34;, &amp;#34;Interference&amp;#34; ], axisLine: { lineStyle: { color: &amp;#39;#888&amp;#39; } }, axisTick: { alignWithLabel: true } }, yAxis: { type: &amp;#39;value&amp;#39;, max: 10, axisLine: { lineStyle: { color: &amp;#39;#888&amp;#39; } }, splitLine: { lineStyle: { type: &amp;#39;dashed&amp;#39;, color: &amp;#39;#ddd&amp;#39; } } }, series: [ { name: &amp;#39;2.4 GHz&amp;#39;, type: &amp;#39;bar&amp;#39;, barGap: 0, barCategoryGap: &amp;#39;40%&amp;#39;, emphasis: { focus: &amp;#39;series&amp;#39; }, data: [9, 3, 5, 8, 7, 10, 10, 7, 10, 9, 6], itemStyle: { color: &amp;#39;rgb(0, 191, 255)&amp;#39; } }, { name: &amp;#39;5 GHz&amp;#39;, type: &amp;#39;bar&amp;#39;, emphasis: { focus: &amp;#39;series&amp;#39; }, data: [6, 9, 9, 5, 3, 10, 10, 9, 10, 6, 4], itemStyle: { color: &amp;#39;rgb(255, 127, 80)&amp;#39; } } ] }&lt;/template&gt;&lt;h3 class="heading-element" id="channels"&gt;&lt;span&gt;38.4 Channels&lt;/span&gt;
+&lt;div class="diagram-container"&gt;&lt;div class="diagram-copy-btn" aria-label="Copy ECharts code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;div class="echarts" style="width: 100%; height: 30rem;"&gt;&lt;/div&gt;&lt;template data-fmt="js" data-async="false"&gt;{ color: [&amp;#39;#00BFFF&amp;#39;, &amp;#39;#FF7F50&amp;#39;], title: { text: &amp;#39;Wi-Fi Frequency Bands Overview&amp;#39;, top: &amp;#39;2%&amp;#39;, left: &amp;#39;center&amp;#39; }, tooltip: { trigger: &amp;#39;axis&amp;#39;, axisPointer: { type: &amp;#39;shadow&amp;#39;, label: { backgroundColor: &amp;#39;#6a7985&amp;#39; } }, formatter: function(params) { const defs = { &amp;#34;Coverage&amp;#34;: &amp;#34;Area where the Wi-Fi signal can be effectively received.&amp;#34;, &amp;#34;Channels&amp;#34;: &amp;#34;Number of available channels for data transmission.&amp;#34;, &amp;#34;Speed&amp;#34;: &amp;#34;Maximum theoretical data transmission speed.&amp;#34;, &amp;#34;Obstacle&amp;#34;: &amp;#34;Ability of the signal to pass through walls and obstacles.&amp;#34;, &amp;#34;Congestion&amp;#34;: &amp;#34;Level of interference caused by other devices.&amp;#34;, &amp;#34;Connectivity&amp;#34;: &amp;#34;Ease of connection without physical cables.&amp;#34;, &amp;#34;Portability&amp;#34;: &amp;#34;Ability to use Wi-Fi on mobile and portable devices.&amp;#34;, &amp;#34;Security&amp;#34;: &amp;#34;Level of data protection on the network (WPA2/WPA3).&amp;#34;, &amp;#34;Compatibility&amp;#34;: &amp;#34;Number of devices supporting this frequency band.&amp;#34;, &amp;#34;Range&amp;#34;: &amp;#34;Maximum distance at which the signal is usable.&amp;#34;, &amp;#34;Interference&amp;#34;: &amp;#34;Disturbances caused by other electronic devices.&amp;#34; }; let category = params[0].axisValue; let tooltipText = `&amp;lt;b&amp;gt;${category}&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;${defs[category]}&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;`; params.forEach(item =&amp;gt; { tooltipText &amp;#43;= `${item.marker} ${item.seriesName}: ${item.data}&amp;lt;br&amp;gt;`; }); return tooltipText; } }, legend: { data: [&amp;#39;2.4 GHz&amp;#39;, &amp;#39;5 GHz&amp;#39;], top: &amp;#39;10%&amp;#39; }, toolbox: { feature: { saveAsImage: {} } }, grid: { left: &amp;#39;5%&amp;#39;, right: &amp;#39;5%&amp;#39;, bottom: &amp;#39;10%&amp;#39;, top: &amp;#39;20%&amp;#39;, containLabel: true }, xAxis: { type: &amp;#39;category&amp;#39;, data: [ &amp;#34;Coverage&amp;#34;, &amp;#34;Channels&amp;#34;, &amp;#34;Speed&amp;#34;, &amp;#34;Obstacle&amp;#34;, &amp;#34;Congestion&amp;#34;, &amp;#34;Connectivity&amp;#34;, &amp;#34;Portability&amp;#34;, &amp;#34;Security&amp;#34;, &amp;#34;Compatibility&amp;#34;, &amp;#34;Range&amp;#34;, &amp;#34;Interference&amp;#34; ], axisLine: { lineStyle: { color: &amp;#39;#888&amp;#39; } }, axisTick: { alignWithLabel: true } }, yAxis: { type: &amp;#39;value&amp;#39;, max: 10, axisLine: { lineStyle: { color: &amp;#39;#888&amp;#39; } }, splitLine: { lineStyle: { type: &amp;#39;dashed&amp;#39;, color: &amp;#39;#ddd&amp;#39; } } }, series: [ { name: &amp;#39;2.4 GHz&amp;#39;, type: &amp;#39;bar&amp;#39;, barGap: 0, barCategoryGap: &amp;#39;40%&amp;#39;, emphasis: { focus: &amp;#39;series&amp;#39; }, data: [9, 3, 5, 8, 7, 10, 10, 7, 10, 9, 6], itemStyle: { color: &amp;#39;rgb(0, 191, 255)&amp;#39; } }, { name: &amp;#39;5 GHz&amp;#39;, type: &amp;#39;bar&amp;#39;, emphasis: { focus: &amp;#39;series&amp;#39; }, data: [6, 9, 9, 5, 3, 10, 10, 9, 10, 6, 4], itemStyle: { color: &amp;#39;rgb(255, 127, 80)&amp;#39; } } ] }&lt;/template&gt;&lt;/div&gt;&lt;h3 class="heading-element" id="channels"&gt;&lt;span&gt;38.4 Channels&lt;/span&gt;
  &lt;a href="#channels" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -1636,7 +1840,8 @@ Example: &lt;code&gt;00:1A:2B:3C:4D:5E&lt;/code&gt; — the first half is the &l
  &lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;ARP&lt;/strong&gt; stands for &lt;strong&gt;Address Resolution Protocol&lt;/strong&gt;. It is used in networks to &lt;strong&gt;map an IP address to a MAC address&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;When a device wants to communicate with another on the same network, it uses ARP to find the &lt;strong&gt;MAC address&lt;/strong&gt; of the destination by sending an &lt;strong&gt;ARP request&lt;/strong&gt;.&lt;/p&gt;
-&lt;pre class="mermaid"&gt;sequenceDiagram
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;sequenceDiagram
  participant PC1 as PC1 (Requester)
  participant Network as Network (Broadcast)
  participant PC2 as PC2 (Responder)
@@ -1649,7 +1854,7 @@ Example: &lt;code&gt;00:1A:2B:3C:4D:5E&lt;/code&gt; — the first half is the &l
  Network-&gt;&gt;PC1: ARP Reply
 
  PC1-&gt;&gt;PC2: Direct communication using found MAC address&lt;/pre&gt;
-&lt;template&gt;sequenceDiagram
+ &lt;pre class="mermaid-dark"&gt;sequenceDiagram
  participant PC1 as PC1 (Requester)
  participant Network as Network (Broadcast)
  participant PC2 as PC2 (Responder)
@@ -1661,7 +1866,34 @@ Example: &lt;code&gt;00:1A:2B:3C:4D:5E&lt;/code&gt; — the first half is the &l
  PC2-&gt;&gt;Network: ARP Reply (The MAC address for 192.168.1.2 is 00:11:22:33:44:55)
  Network-&gt;&gt;PC1: ARP Reply
 
- PC1-&gt;&gt;PC2: Direct communication using found MAC address&lt;/template&gt;&lt;h3 class="heading-element" id="ip-address"&gt;&lt;span&gt;39.3 IP Address&lt;/span&gt;
+ PC1-&gt;&gt;PC2: Direct communication using found MAC address&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;sequenceDiagram
+ participant PC1 as PC1 (Requester)
+ participant Network as Network (Broadcast)
+ participant PC2 as PC2 (Responder)
+
+ PC1-&gt;&gt;Network: ARP Request (Who has IP 192.168.1.2?)
+ Note over Network: Broadcast message to all devices
+ Network-&gt;&gt;PC2: ARP Request
+
+ PC2-&gt;&gt;Network: ARP Reply (The MAC address for 192.168.1.2 is 00:11:22:33:44:55)
+ Network-&gt;&gt;PC1: ARP Reply
+
+ PC1-&gt;&gt;PC2: Direct communication using found MAC address&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;sequenceDiagram
+ participant PC1 as PC1 (Requester)
+ participant Network as Network (Broadcast)
+ participant PC2 as PC2 (Responder)
+
+ PC1-&gt;&gt;Network: ARP Request (Who has IP 192.168.1.2?)
+ Note over Network: Broadcast message to all devices
+ Network-&gt;&gt;PC2: ARP Request
+
+ PC2-&gt;&gt;Network: ARP Reply (The MAC address for 192.168.1.2 is 00:11:22:33:44:55)
+ Network-&gt;&gt;PC1: ARP Reply
+
+ PC1-&gt;&gt;PC2: Direct communication using found MAC address&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;h3 class="heading-element" id="ip-address"&gt;&lt;span&gt;39.3 IP Address&lt;/span&gt;
  &lt;a href="#ip-address" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -1690,7 +1922,8 @@ Example: &lt;code&gt;00:1A:2B:3C:4D:5E&lt;/code&gt; — the first half is the &l
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;DHCP&lt;/strong&gt; (Dynamic Host Configuration Protocol) is responsible for &lt;strong&gt;automatically assigning IP addresses&lt;/strong&gt; and other network settings to devices on a network.&lt;/p&gt;
-&lt;pre class="mermaid"&gt;sequenceDiagram
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;sequenceDiagram
  participant Client as Client (Device)
  participant Network as Network (Broadcast)
  participant DHCPServer as DHCP Server
@@ -1708,7 +1941,7 @@ Example: &lt;code&gt;00:1A:2B:3C:4D:5E&lt;/code&gt; — the first half is the &l
  Network-&gt;&gt;Client: DHCP Acknowledgment
 
  Client-&gt;&gt;DHCPServer: Communication with assigned IP&lt;/pre&gt;
-&lt;template&gt;sequenceDiagram
+ &lt;pre class="mermaid-dark"&gt;sequenceDiagram
  participant Client as Client (Device)
  participant Network as Network (Broadcast)
  participant DHCPServer as DHCP Server
@@ -1725,7 +1958,44 @@ Example: &lt;code&gt;00:1A:2B:3C:4D:5E&lt;/code&gt; — the first half is the &l
  DHCPServer-&gt;&gt;Network: DHCP Acknowledgment (Confirm IP assigned)
  Network-&gt;&gt;Client: DHCP Acknowledgment
 
- Client-&gt;&gt;DHCPServer: Communication with assigned IP&lt;/template&gt;&lt;h3 class="heading-element" id="working-of-wifi"&gt;&lt;span&gt;39.8 Working Of WIFI&lt;/span&gt;
+ Client-&gt;&gt;DHCPServer: Communication with assigned IP&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;sequenceDiagram
+ participant Client as Client (Device)
+ participant Network as Network (Broadcast)
+ participant DHCPServer as DHCP Server
+
+ Client-&gt;&gt;Network: DHCP Discover (Looking for DHCP server)
+ Network-&gt;&gt;DHCPServer: DHCP Discover
+
+ DHCPServer-&gt;&gt;Network: DHCP Offer (IP address + config)
+ Network-&gt;&gt;Client: DHCP Offer
+
+ Client-&gt;&gt;Network: DHCP Request (Requesting offered IP)
+ Network-&gt;&gt;DHCPServer: DHCP Request
+
+ DHCPServer-&gt;&gt;Network: DHCP Acknowledgment (Confirm IP assigned)
+ Network-&gt;&gt;Client: DHCP Acknowledgment
+
+ Client-&gt;&gt;DHCPServer: Communication with assigned IP&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;sequenceDiagram
+ participant Client as Client (Device)
+ participant Network as Network (Broadcast)
+ participant DHCPServer as DHCP Server
+
+ Client-&gt;&gt;Network: DHCP Discover (Looking for DHCP server)
+ Network-&gt;&gt;DHCPServer: DHCP Discover
+
+ DHCPServer-&gt;&gt;Network: DHCP Offer (IP address + config)
+ Network-&gt;&gt;Client: DHCP Offer
+
+ Client-&gt;&gt;Network: DHCP Request (Requesting offered IP)
+ Network-&gt;&gt;DHCPServer: DHCP Request
+
+ DHCPServer-&gt;&gt;Network: DHCP Acknowledgment (Confirm IP assigned)
+ Network-&gt;&gt;Client: DHCP Acknowledgment
+
+ Client-&gt;&gt;DHCPServer: Communication with assigned IP&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;h3 class="heading-element" id="working-of-wifi"&gt;&lt;span&gt;39.8 Working Of WIFI&lt;/span&gt;
  &lt;a href="#working-of-wifi" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -1826,7 +2096,8 @@ Example: &lt;code&gt;00:1A:2B:3C:4D:5E&lt;/code&gt; — the first half is the &l
  &lt;/a&gt;
 &lt;/h2&gt;&lt;p&gt;To give you a better idea of how I separate concerns and automate deployments, here&amp;rsquo;s a simplified view of the repository workflow&lt;/p&gt;
 &lt;p&gt;Each directory, file, and branch serves a purpose. Here’s a high-level overview of how my main repository is structured:&lt;/p&gt;
-&lt;pre class="mermaid"&gt;flowchart LR
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;flowchart LR
  L[Local Files]
  L2[Local Files]
 
@@ -1848,7 +2119,7 @@ Example: &lt;code&gt;00:1A:2B:3C:4D:5E&lt;/code&gt; — the first half is the &l
  Actions --&gt;|Deploy| GH_Pages
  Actions --&gt;|Deploy| Vercel
  Actions --&gt;|Deploy| More&lt;/pre&gt;
-&lt;template&gt;flowchart LR
+ &lt;pre class="mermaid-dark"&gt;flowchart LR
  L[Local Files]
  L2[Local Files]
 
@@ -1869,7 +2140,52 @@ Example: &lt;code&gt;00:1A:2B:3C:4D:5E&lt;/code&gt; — the first half is the &l
 
  Actions --&gt;|Deploy| GH_Pages
  Actions --&gt;|Deploy| Vercel
- Actions --&gt;|Deploy| More&lt;/template&gt;&lt;h2 class="heading-element" id="branch"&gt;&lt;span&gt;15 Branch&lt;/span&gt;
+ Actions --&gt;|Deploy| More&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;flowchart LR
+ L[Local Files]
+ L2[Local Files]
+
+ GH_Private[(GitHub Private Repo)]
+ GH_Public[(GitHub Public Repo)]
+
+ Actions[GitHub Actions]
+
+ GH_Pages[GitHub Pages]
+ Vercel[Vercel]
+ More[More...]
+
+ L --&gt;|Git Push| GH_Private
+ L2 --&gt;|Git Push| GH_Public
+
+ GH_Private --&gt;|Git Submodule| GH_Public
+ GH_Public --&gt; Actions
+
+ Actions --&gt;|Deploy| GH_Pages
+ Actions --&gt;|Deploy| Vercel
+ Actions --&gt;|Deploy| More&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;flowchart LR
+ L[Local Files]
+ L2[Local Files]
+
+ GH_Private[(GitHub Private Repo)]
+ GH_Public[(GitHub Public Repo)]
+
+ Actions[GitHub Actions]
+
+ GH_Pages[GitHub Pages]
+ Vercel[Vercel]
+ More[More...]
+
+ L --&gt;|Git Push| GH_Private
+ L2 --&gt;|Git Push| GH_Public
+
+ GH_Private --&gt;|Git Submodule| GH_Public
+ GH_Public --&gt; Actions
+
+ Actions --&gt;|Deploy| GH_Pages
+ Actions --&gt;|Deploy| Vercel
+ Actions --&gt;|Deploy| More&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;h2 class="heading-element" id="branch"&gt;&lt;span&gt;15 Branch&lt;/span&gt;
  &lt;a href="#branch" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;
@@ -1884,7 +2200,8 @@ It allows features, hotfixes, and releases to evolve in parallel, with clear bou
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;release/*&lt;/code&gt;&lt;/strong&gt; – For preparing stable releases, including documentation and final testing.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This structure allows me to stay agile while ensuring quality and traceability in the work I deliver.&lt;/p&gt;
-&lt;pre class="mermaid"&gt;gitGraph
+&lt;div class="diagram-container"&gt;
+ &lt;pre class="mermaid"&gt;gitGraph
  commit id: "Initial commit"
  branch develop
  checkout develop
@@ -1920,7 +2237,7 @@ It allows features, hotfixes, and releases to evolve in parallel, with clear bou
  checkout develop
  branch feature/ui-redesign
  commit id: "Start UI redesign"&lt;/pre&gt;
-&lt;template&gt;gitGraph
+ &lt;pre class="mermaid-dark"&gt;gitGraph
  commit id: "Initial commit"
  branch develop
  checkout develop
@@ -1955,7 +2272,80 @@ It allows features, hotfixes, and releases to evolve in parallel, with clear bou
 
  checkout develop
  branch feature/ui-redesign
- commit id: "Start UI redesign"&lt;/template&gt;&lt;h2 class="heading-element" id="automation"&gt;&lt;span&gt;16 Automation&lt;/span&gt;
+ commit id: "Start UI redesign"&lt;/pre&gt;
+ &lt;pre class="mermaid-neutral"&gt;gitGraph
+ commit id: "Initial commit"
+ branch develop
+ checkout develop
+ commit id: "Init project structure"
+ commit id: "Setup CI/CD"
+ 
+ branch feature/log-capture
+ checkout feature/log-capture
+ commit id: "Add log capture module"
+ checkout develop
+ merge feature/log-capture id: "Merge log-capture"
+
+ branch feature/api-hardening
+ checkout feature/api-hardening
+ commit id: "Improve API input validation"
+ commit id: "Add rate limiting"
+ checkout develop
+ merge feature/api-hardening id: "Merge api-hardening"
+
+ branch bugfix/token-expiry
+ checkout bugfix/token-expiry
+ commit id: "Fix token expiry bug"
+ checkout develop
+ merge bugfix/token-expiry id: "Merge token fix"
+
+ branch release/v1.0
+ checkout release/v1.0
+ commit id: "Prepare release v1.0"
+ checkout main
+ merge release/v1.0 id: "Release v1.0 to production"
+ commit id: "Hotfix README"
+
+ checkout develop
+ branch feature/ui-redesign
+ commit id: "Start UI redesign"&lt;/pre&gt;&lt;div class="diagram-copy-btn" aria-label="Copy Mermaid code" role="button"&gt;&lt;i class="fa-regular fa-clone" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa-solid fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;template&gt;&lt;pre&gt;gitGraph
+ commit id: "Initial commit"
+ branch develop
+ checkout develop
+ commit id: "Init project structure"
+ commit id: "Setup CI/CD"
+ 
+ branch feature/log-capture
+ checkout feature/log-capture
+ commit id: "Add log capture module"
+ checkout develop
+ merge feature/log-capture id: "Merge log-capture"
+
+ branch feature/api-hardening
+ checkout feature/api-hardening
+ commit id: "Improve API input validation"
+ commit id: "Add rate limiting"
+ checkout develop
+ merge feature/api-hardening id: "Merge api-hardening"
+
+ branch bugfix/token-expiry
+ checkout bugfix/token-expiry
+ commit id: "Fix token expiry bug"
+ checkout develop
+ merge bugfix/token-expiry id: "Merge token fix"
+
+ branch release/v1.0
+ checkout release/v1.0
+ commit id: "Prepare release v1.0"
+ checkout main
+ merge release/v1.0 id: "Release v1.0 to production"
+ commit id: "Hotfix README"
+
+ checkout develop
+ branch feature/ui-redesign
+ commit id: "Start UI redesign"&lt;/pre&gt;&lt;/template&gt;
+&lt;/div&gt;&lt;h2 class="heading-element" id="automation"&gt;&lt;span&gt;16 Automation&lt;/span&gt;
  &lt;a href="#automation" class="heading-mark"&gt;
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
  &lt;/a&gt;

@@ -1,4 +1,4 @@
-# ProxyGeek Blog
+# [ProxyGeek Blog](https://Pr0xyG33k.github.io/ "Home")
 
 > Author of Hugo FixIt, fond of experimenting, building tools, and writing. Sharing thoughts, experiences, and observations in front-end development.
 
@@ -6,7 +6,7 @@
 
 ## 2025
 
-<details>
+<details open>
 <summary>10 articles in total</summary>
 
 - 07-22 [CTF HackTheBox RustyKey](https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/rustykey/ "2025-07-22 22:15:55")
