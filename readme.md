@@ -6,7 +6,7 @@
 
 ## 2025
 
-<details open>
+<details>
 <summary>10 articles in total</summary>
 
 - 07-22 [CTF HackTheBox RustyKey](https://Pr0xyG33k.github.io/ctf/_hackthebox/machines/rustykey/ "2025-07-22 22:15:55")
